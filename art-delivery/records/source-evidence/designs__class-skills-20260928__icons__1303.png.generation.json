@@ -1,0 +1,94 @@
+{
+  "file": "icons/1303.png",
+  "skillId": 1303,
+  "name": "玉露涤尘",
+  "semanticIntent": "为1名存活友方恢复气血，并移除1个可驱散减益。技能等级越高，恢复量越高。",
+  "sha256": "1e2921babe7435179dc02855a110d12ded65b8bc8183d3cd9a3231a49501d89c",
+  "generatedAt": "2026-10-21T05:31:01.666293-04:00",
+  "generatedAtEvidence": "Local completion and recording time, not a model-provided timestamp",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "mode": "RGB",
+  "nativeDimensions": [
+    1254,
+    1254
+  ],
+  "exportDimensions": [
+    1254,
+    1254
+  ],
+  "tool": "image_gen.imagegen",
+  "route": "builtin",
+  "configSnapshot": {
+    "schema_version": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "quality": "max",
+    "builtin_product": "ChatGPT Images 2.5",
+    "selection": "latest_verified",
+    "preferred_route": "builtin",
+    "verified_on": "2026-10-21",
+    "sources": {
+      "release": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "model": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+      "quality": "https://developers.openai.com/api/reference/resources/images/methods/generate"
+    }
+  },
+  "submittedParameters": {
+    "model": null,
+    "quality": null,
+    "transparent_background": false
+  },
+  "actualModel": null,
+  "actualQuality": null,
+  "unverifiedReason": "Host managed; tool has no model or quality selectors and returns no verified model or quality metadata.",
+  "evidence": [
+    {
+      "file": "icons-style-20261021/records/1303.tool-response.json",
+      "fields": [
+        "output_hint"
+      ]
+    }
+  ],
+  "prompt": "icons-style-20261021/prompts/1303.txt",
+  "references": [
+    {
+      "file": "../../mail-ui-v1/01-mail-event.png",
+      "role": "authoritative mail UI style"
+    },
+    {
+      "file": "../../team-ui-v2/team-ui-v2.png",
+      "role": "authoritative team UI style"
+    },
+    {
+      "file": "E:\\work\\image\\designs\\class-skills-20260928\\icons-style-20261021\\style-anchor.png",
+      "role": "same-set border, palette and illustration style anchor",
+      "submittedPath": "icons/1101.png",
+      "sha256": "69f4c537a9dea5a8f44a5b69f815a516a97e19cc958141cdfa45392a7fed6e27"
+    }
+  ],
+  "sourceFile": "C:\\Users\\luyua\\.codex\\generated_images\\01a15d68-520d-76d1-8aa6-6e0d08dc6fce\\exec-bfa147e7-12e7-4a12-a671-53801b2ad538.png",
+  "operation": "Native generated PNG copied byte-for-byte; no crop, resize, repaint or synthesis by code.",
+  "semanticLabel": "净化并恢复",
+  "pathBase": "icons-style-20261021 directory unless an absolute path is given",
+  "finalVisualReview": {
+    "status": "passed",
+    "reviewedAt": "2026-10-22T02:35:03.141139-04:00",
+    "sizes": [
+      38,
+      45,
+      50,
+      60,
+      74,
+      160,
+      288
+    ],
+    "evidence": "icons-style-20261021/qa/visual-review.json",
+    "reviewedSha256": "1e2921babe7435179dc02855a110d12ded65b8bc8183d3cd9a3231a49501d89c"
+  },
+  "derivedFrom": {
+    "file": "icons-style-20261021/icons/1303.png",
+    "sha256": "1e2921babe7435179dc02855a110d12ded65b8bc8183d3cd9a3231a49501d89c",
+    "generationRecord": "icons-style-20261021/icons/1303.png.generation.json"
+  }
+}

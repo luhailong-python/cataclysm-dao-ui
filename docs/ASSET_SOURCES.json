@@ -1,0 +1,181 @@
+{
+  "verifiedDate": "2026-10-26",
+  "repository": "https://luyuacpp.visualstudio.com/image/_git/image",
+  "newProject": "Cataclysm: Dark Days Ahead — Daoist theme launcher",
+  "projectSourceUrl": "https://github.com/CleverRaven/Cataclysm-DDA",
+  "localRoot": "E:\\work\\image\\cataclysm-dao-ui",
+  "references": [
+    {
+      "file": "docs/reference-images/mail-style.png",
+      "original": "designs/mail-ui-v1/01-mail-event.png",
+      "sha256": "3cf0b7d7b3bae337d51e947719588419a01ae21bdce9bccedd6258ce1feef0a2",
+      "usage": "style-reference"
+    },
+    {
+      "file": "docs/reference-images/team-style.png",
+      "original": "designs/team-ui-v2/team-ui-v2.png",
+      "sha256": "5fab5229de7030ac48172cfa39bb45f612a545cee0dba6303ae6f2dcfdf38750",
+      "usage": "style-reference"
+    },
+    {
+      "file": null,
+      "original": "qdao_ui_redesign_v5/01_login_2560x1080.png",
+      "sha256": "b080e2d8ec0bdf773570098baa92fc74ff1d4a510ce877631a6e31a287414b1c",
+      "usage": "layout-study-only; actually viewed; not a generation input; not copied into runtime assets"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/ui/title_plate.png",
+      "sourceRepository": "F:\\work\\image",
+      "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/title_plate.png",
+      "sha256": "7b81c7b17fa7d219f181c3edc1fa40412fe34a39e0bbe0e77b25088c83707871",
+      "width": 716,
+      "height": 145,
+      "borderLeftBottomRightTop": [
+        142.0,
+        29.0,
+        142.0,
+        35.0
+      ],
+      "relationship": "direct-reuse",
+      "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+      "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+      "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+      "actualModel": null,
+      "actualQuality": null,
+      "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+    },
+    {
+      "file": "assets/ui/button_primary.png",
+      "sourceRepository": "F:\\work\\image",
+      "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/button_primary.png",
+      "sha256": "601439876422eb7cc1375b40960702c46e16728025d979d8d30b9b3dd4e1c4ea",
+      "width": 225,
+      "height": 66,
+      "borderLeftBottomRightTop": [
+        45.0,
+        16.0,
+        45.0,
+        16.0
+      ],
+      "relationship": "direct-reuse",
+      "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+      "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+      "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+      "actualModel": null,
+      "actualQuality": null,
+      "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+    },
+    {
+      "file": "assets/ui/button_secondary.png",
+      "sourceRepository": "F:\\work\\image",
+      "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/button_secondary.png",
+      "sha256": "d1703b1c9ea3bb659addd4682a76d7955d045ddd6652e9312769352dc2fcdecc",
+      "width": 220,
+      "height": 66,
+      "borderLeftBottomRightTop": [
+        45.0,
+        16.0,
+        45.0,
+        16.0
+      ],
+      "relationship": "direct-reuse",
+      "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+      "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+      "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+      "actualModel": null,
+      "actualQuality": null,
+      "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+    },
+    {
+      "file": "assets/ui/section_plate.png",
+      "sourceRepository": "F:\\work\\image",
+      "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/section_plate.png",
+      "sha256": "0233d6e1ba16bd2b4b7c11a5a4680ef61fae9b1c6b161c3f3d28f047d23c305f",
+      "width": 433,
+      "height": 72,
+      "borderLeftBottomRightTop": [
+        76.0,
+        16.0,
+        72.0,
+        21.0
+      ],
+      "relationship": "direct-reuse",
+      "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+      "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+      "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+      "actualModel": null,
+      "actualQuality": null,
+      "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+    },
+    {
+      "file": "assets/ui/member_row.png",
+      "sourceRepository": "F:\\work\\image",
+      "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/member_row.png",
+      "sha256": "706797419d8d1d8daa67b3915af7b53a01f760ae5590ed5214655985a79a155b",
+      "width": 851,
+      "height": 97,
+      "borderLeftBottomRightTop": [
+        24.0,
+        19.0,
+        24.0,
+        19.0
+      ],
+      "relationship": "direct-reuse",
+      "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+      "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+      "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+      "actualModel": null,
+      "actualQuality": null,
+      "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+    }
+  ],
+  "removedUnusedCopies": {
+    "reason": "Acceptance retained only five runtime skins. main_frame source had paper patch seams; clean member_row used instead. close unused. Only task copies removed; reference originals untouched.",
+    "records": [
+      {
+        "file": "assets/ui/main_frame.png",
+        "sourceRepository": "F:\\work\\image",
+        "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/main_frame.png",
+        "sha256": "6a378f42223fe31a264837bbb48cf7612ec558edc3edab36a211360c4f243330",
+        "width": 1664,
+        "height": 705,
+        "borderLeftBottomRightTop": [
+          76.0,
+          79.0,
+          76.0,
+          79.0
+        ],
+        "relationship": "direct-reuse",
+        "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+        "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+        "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+        "actualModel": null,
+        "actualQuality": null,
+        "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+      },
+      {
+        "file": "assets/ui/close.png",
+        "sourceRepository": "F:\\work\\image",
+        "sourceRelativePath": "designs/team-ui-v2/unity-slices/png/close.png",
+        "sha256": "26b3ccd040e44df84573174ab22bbfe72bceacc35dd96f5538c879ccfb8df3cc",
+        "width": 82,
+        "height": 82,
+        "borderLeftBottomRightTop": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "relationship": "direct-reuse",
+        "operation": "byte-for-byte copy; historical crop/reconstruction, not newly generated",
+        "historicalSourceRecord": "designs/team-ui-v2/source/generation.json",
+        "sourceContract": "designs/team-ui-v2/unity-slices/manifest.json",
+        "actualModel": null,
+        "actualQuality": null,
+        "unverifiedReason": "Historical tool did not disclose exact model or quality. Current config not backfilled."
+      }
+    ]
+  }
+}

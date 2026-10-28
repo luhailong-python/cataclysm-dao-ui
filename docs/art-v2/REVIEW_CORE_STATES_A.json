@@ -1,0 +1,3032 @@
+{
+  "reviewId": "REVIEW_CORE_STATES_A",
+  "reviewer": "/root/core_states_a",
+  "reviewedAtUTC": "2026-10-26T15:40:23.178921+00:00",
+  "status": "passed",
+  "scope": "Assigned 9 contact sheets / 36 state boards / 164 state cards. Initial actual visual review is reused for unchanged content after independently verified bounded ghost-text repair; only 2 final native PNGs were actually reopened.",
+  "summary": "Passed. All 164 state-card messages and action semantics matched copy-core.json. The sole P3 ghost-text defect is resolved. Independent checks bind all 36 prior-reviewed source hashes to current PNG hashes and confine changes below every state card.",
+  "constraints": {
+    "FDriveReadOnly": true,
+    "officialPNGsChangedByReviewer": false,
+    "rendererCopyLayoutsChangedByReviewer": false,
+    "gitTouchedByReviewer": false,
+    "aiGenerationPerformed": false
+  },
+  "inputs": {
+    "priorContactSheetManifest": {
+      "file": "art-delivery/records/CORE_STATE_CONTACT_SHEETS.json",
+      "sha256": "474127f13018a5e655181618c00be672edd78146d65a6342976e5b4d3771a1c8"
+    },
+    "copyCore": {
+      "file": "docs/art-v2/copy-core.json",
+      "sha256": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+      "unchangedSincePriorVisualReview": true
+    },
+    "boundedRepairProof": {
+      "file": "art-delivery/records/state-ghost-repair.json",
+      "sha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5",
+      "status": "passed"
+    },
+    "repairVerifier": {
+      "file": "tools/check_state_ghost_repair.py",
+      "sha256": "9722fa81732349091e53b2d8b813f5db582aeecbffd324fe14f7c5568b111900"
+    }
+  },
+  "method": [
+    "Actually viewed all nine assigned contact sheets in the prior round, covering 36 boards; 11 native PNGs were additionally inspected in that round. The complete historical record and old hashes are retained below.",
+    "After the coordinated frozen repair, actually reopened only world-options--states-1.png and main-menu--states-1.png at original detail. Both show the former ghost-text area clean. No claim is made that all final sheets or all final PNGs were visually reopened.",
+    "Independently matched all 36 proof before hashes against the exact old source hashes embedded in the actually viewed contact sheets and against temporary baseline PNG bytes; matched all 36 proof after hashes against current final PNG bytes.",
+    "Independently recomputed Pillow RGB pixel differences for all 36 assigned PNG pairs. Each delta is exactly [93,923,207,935] in [left,top,right,bottom) coordinates. Alpha is byte-identical; the full RGBA area y=0..897 is byte-identical. Thus prior visual decisions about state-card text, buttons, confirmations and cancellation are reused only where pixels did not change.",
+    "Rechecked all 164 final layout stateControls against the unchanged copy-core.json. This supplements actual image inspection and is not treated as rendering-based visual acceptance."
+  ],
+  "checks": {
+    "priorContactSheetsActuallyViewed": 9,
+    "priorStateBoardsVisuallyReviewed": 36,
+    "priorNativePNGsActuallyViewed": 11,
+    "finalNativePNGsActuallyViewed": 2,
+    "all36ProofBeforeHashesMatchPriorViewedSourcesAndBaselines": true,
+    "all36ProofAfterHashesMatchCurrentFinalPNGs": true,
+    "all36IndependentPixelDeltasMatchProof": true,
+    "all36StateContentAndControlPixelsY0to897ByteIdentical": true,
+    "all36AlphaByteIdentical": true,
+    "observedUniqueDeltaBounds": [
+      [
+        93,
+        923,
+        207,
+        935
+      ]
+    ],
+    "allChangesBelowStateCardBottomY897": true,
+    "stateCardsCompared": 164,
+    "blockedStateCardsCompared": 62,
+    "explicitSecondaryStateCardsCompared": 16,
+    "copyMismatches": [],
+    "textClippingOrControlOcclusionInStateCards": "none observed in prior reviewed pixels, proven unchanged",
+    "confirmationCancellation": "passed",
+    "unexpectedUnresolvedProductionCopyInsideStateCards": "none observed"
+  },
+  "proofGlobalContext": {
+    "mainScreenCount": 101,
+    "mainScreensByteIdenticalAsRecordedByProof": true,
+    "stateBoardCount": 133,
+    "allStateDifferencesBoundedAsRecordedByProof": true,
+    "scopeNote": "The independent before/after hash and pixel comparison in this review covers the assigned 36 PNGs. The global 101/133 values are read from the coordinator proof, not claimed as a new 234-image visual review."
+  },
+  "findings": [
+    {
+      "id": "CSA-01",
+      "priority": "P3",
+      "status": "resolved",
+      "title": "Underlying sample-data glyph remnants below the main state panel",
+      "resolution": "Coordinated renderer repair omitted the covered navigation/sample note before composing state boards. Independent bounded pixel comparison proves the only change on all assigned sources is the small footer-edge area; two final native PNGs visually confirm clean removal.",
+      "proofFile": "art-delivery/records/state-ghost-repair.json",
+      "proofSha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5",
+      "resolvedFinalNativePNGViews": [
+        {
+          "file": "art-delivery/designs/states/main-menu--states-1.png",
+          "sha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+          "detail": "original",
+          "actuallyViewed": true,
+          "observation": "The former gray glyph fringe below the main panel is gone. Panel border and footer are clean; state copy and action controls remain legible."
+        },
+        {
+          "file": "art-delivery/designs/states/world-options--states-1.png",
+          "sha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+          "detail": "original",
+          "actuallyViewed": true,
+          "observation": "The former gray glyph fringe below the main panel is gone. Panel border and footer are clean; state copy and action controls remain legible."
+        }
+      ]
+    }
+  ],
+  "nonBlockingContext": [
+    {
+      "topic": "Design-delivery labels",
+      "observation": "Visible header/footer text such as 暂定名, UI 美术方案, 状态与反馈合同 and 非游戏运行截图 is intentional design-delivery disclosure described by art-delivery/README.md. These labels were not misreported as proof of running game business or unresolved TODO copy."
+    },
+    {
+      "topic": "Wrapping punctuation",
+      "observation": "Several copy strings wrap a final full stop onto a separate line. The glyph remains inside the card with ample space above the buttons; treated as a minor typesetting preference, not a clipping defect."
+    }
+  ],
+  "finalNativePNGViews": [
+    {
+      "file": "art-delivery/designs/states/main-menu--states-1.png",
+      "sha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+      "detail": "original",
+      "actuallyViewed": true,
+      "observation": "The former gray glyph fringe below the main panel is gone. Panel border and footer are clean; state copy and action controls remain legible."
+    },
+    {
+      "file": "art-delivery/designs/states/world-options--states-1.png",
+      "sha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+      "detail": "original",
+      "actuallyViewed": true,
+      "observation": "The former gray glyph fringe below the main panel is gone. Panel border and footer are clean; state copy and action controls remain legible."
+    }
+  ],
+  "reviewedSheets": [
+    {
+      "file": "art-delivery/previews/review-core/core-states-01.jpg",
+      "sha256": "5912e3ac7a718f86ccf8c8aecc215b615154480e1621004a035cfa66c9fbcd41",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/main-menu--states-1.png",
+          "priorReviewedSha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+          "repairProofBeforeSha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+          "baselineSha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+          "finalSha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+          "repairProofAfterSha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": true,
+          "finalReviewMethod": "new native PNG actually viewed plus bounded-diff validation",
+          "finalLayoutSha256": "fe340c959d323f48fd880f33affdaa206f252fa0beec268be39029237bddbe66"
+        },
+        {
+          "file": "art-delivery/designs/states/motd--states-1.png",
+          "priorReviewedSha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+          "repairProofBeforeSha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+          "baselineSha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+          "finalSha256": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+          "repairProofAfterSha256": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "b64b418ca180cfe40ba53e111cc87b1773f869d6e1267232448696380e0e6ca6"
+        },
+        {
+          "file": "art-delivery/designs/states/credits--states-1.png",
+          "priorReviewedSha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+          "repairProofBeforeSha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+          "baselineSha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+          "finalSha256": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+          "repairProofAfterSha256": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "d746cfecdfe159ae65ecf374c8aa5be7b2f57ef5732de7aa685b48180949bf6a"
+        },
+        {
+          "file": "art-delivery/designs/states/world-list--states-1.png",
+          "priorReviewedSha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+          "repairProofBeforeSha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+          "baselineSha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+          "finalSha256": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+          "repairProofAfterSha256": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "8035907ab94791bd4bc65633cc54d1b954826af9511a0438c2d68d7fd050e4e9"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-02.jpg",
+      "sha256": "77a1680327fe102fbff83c50a42abd1b47abf8d60a03c7b1c476a1bae3b165c5",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/world-list--states-2.png",
+          "priorReviewedSha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+          "repairProofBeforeSha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+          "baselineSha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+          "finalSha256": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+          "repairProofAfterSha256": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "90fcff0cb2431b2355bb50a78d0398baf749317c817372644569ca70894aaca4"
+        },
+        {
+          "file": "art-delivery/designs/states/world-create--states-1.png",
+          "priorReviewedSha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+          "repairProofBeforeSha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+          "baselineSha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+          "finalSha256": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+          "repairProofAfterSha256": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "eb5f877afe2012a4260de156b7a14e3d3d9429095acfec1caaa9b826a14b7acb"
+        },
+        {
+          "file": "art-delivery/designs/states/world-create--states-2.png",
+          "priorReviewedSha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+          "repairProofBeforeSha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+          "baselineSha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+          "finalSha256": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+          "repairProofAfterSha256": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "1e153addfd285369e7b18d3ed88405292b1d7d5bf64a5bbbf597a268f3e8d06d"
+        },
+        {
+          "file": "art-delivery/designs/states/world-mods--states-1.png",
+          "priorReviewedSha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+          "repairProofBeforeSha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+          "baselineSha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+          "finalSha256": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+          "repairProofAfterSha256": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "90f5be7259dedca69e84a48f7f7d40004f706c312669e0829e7ff124d0db345a"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-03.jpg",
+      "sha256": "5ebcaa2476ac30295bcc2f7b2e19c9693984120fe0f200bb0648f057457a2d26",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/world-mods--states-2.png",
+          "priorReviewedSha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+          "repairProofBeforeSha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+          "baselineSha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+          "finalSha256": "e249fbf2f2eb0f48be7543e9bda0ee6f4cd585d263014ae3ba03452560bbae1b",
+          "repairProofAfterSha256": "e249fbf2f2eb0f48be7543e9bda0ee6f4cd585d263014ae3ba03452560bbae1b",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "a0d65db91f175ec5d674e15b289fd525ffc78a5e463d7f66c55500e1159c380f"
+        },
+        {
+          "file": "art-delivery/designs/states/world-options--states-1.png",
+          "priorReviewedSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+          "repairProofBeforeSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+          "baselineSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+          "finalSha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+          "repairProofAfterSha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": true,
+          "finalReviewMethod": "new native PNG actually viewed plus bounded-diff validation",
+          "finalLayoutSha256": "b99e258740be5194a44113dfb33c914968566e87d1f951acf73a3c2713e7ff23"
+        },
+        {
+          "file": "art-delivery/designs/states/load-character--states-1.png",
+          "priorReviewedSha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+          "repairProofBeforeSha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+          "baselineSha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+          "finalSha256": "400e4de21f8e9c8c30a3c91ed988c8140bcac82f34565f306da7a643ef5efb12",
+          "repairProofAfterSha256": "400e4de21f8e9c8c30a3c91ed988c8140bcac82f34565f306da7a643ef5efb12",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "ae1eb241ea773809a2739b05d9170c648eb144a20c399ff0f837460c07c97583"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-mode--states-1.png",
+          "priorReviewedSha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+          "repairProofBeforeSha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+          "baselineSha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+          "finalSha256": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+          "repairProofAfterSha256": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "13192180c058f54517a0747dc54e7809d1cbe9cf9e26c9f30456415474d2de1e"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-04.jpg",
+      "sha256": "77d0f796d82b88d01d9e118f8f75a240e253f608e102a426156269fbf13acd1f",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+          "priorReviewedSha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+          "repairProofBeforeSha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+          "baselineSha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+          "finalSha256": "a653cf6b28ef1266f6862399df362a7bc2a86747daa378d9a54d9a0a74eec7d0",
+          "repairProofAfterSha256": "a653cf6b28ef1266f6862399df362a7bc2a86747daa378d9a54d9a0a74eec7d0",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "4b8a02c7419c61f201e024dc287b39eb79040a33fa0128203e3b9cfa5cfe466a"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-profession--states-1.png",
+          "priorReviewedSha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+          "repairProofBeforeSha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+          "baselineSha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+          "finalSha256": "6441ae0f4f5cf314f28a62647d0fde677c57bbeaea73423b680e50b02f9bd821",
+          "repairProofAfterSha256": "6441ae0f4f5cf314f28a62647d0fde677c57bbeaea73423b680e50b02f9bd821",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "69a132d5b31fb8dd43c016476ed9feb09ecc297776c5fcee8239d86f278d28f4"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-background--states-1.png",
+          "priorReviewedSha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+          "repairProofBeforeSha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+          "baselineSha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+          "finalSha256": "723723f6cc9eacedc7dc28fd340ca446333740a645a8ba9847f104bb01dae416",
+          "repairProofAfterSha256": "723723f6cc9eacedc7dc28fd340ca446333740a645a8ba9847f104bb01dae416",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "0813ad651ae5539327685e6ee2fba55d44b577a627ea11c7af49500479d01d6a"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-stats--states-1.png",
+          "priorReviewedSha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+          "repairProofBeforeSha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+          "baselineSha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+          "finalSha256": "f148c85b876f49474ce88acf612c914330a735033d4ca9f2f65c000b05437ad8",
+          "repairProofAfterSha256": "f148c85b876f49474ce88acf612c914330a735033d4ca9f2f65c000b05437ad8",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "24530f136613062f444b55fbc66dbb1d69ac1c91df7288afc68f08bf9fe47372"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-05.jpg",
+      "sha256": "c8087ff1d3e7eb9f349fbf694f72db88653f93aa4b3a46f98b63f0552980bdb5",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/creation-traits--states-1.png",
+          "priorReviewedSha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+          "repairProofBeforeSha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+          "baselineSha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+          "finalSha256": "6e0711d8b79bf96358f21dd83a609fef59e72082c5378a095577f84d1df375d5",
+          "repairProofAfterSha256": "6e0711d8b79bf96358f21dd83a609fef59e72082c5378a095577f84d1df375d5",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "624f17853840fc9d404469e25609eca468b7e74677c68db7e1eaefb42189f9d7"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-traits--states-2.png",
+          "priorReviewedSha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+          "repairProofBeforeSha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+          "baselineSha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+          "finalSha256": "292d51c29f6b4fd6ea7bf7cf2309343b824dfc34026f529e52c39245855af99c",
+          "repairProofAfterSha256": "292d51c29f6b4fd6ea7bf7cf2309343b824dfc34026f529e52c39245855af99c",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "00de87cadbdfdb8de55b278067d29177f45875fa75627b5e131bfcbde0bc19fc"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-skills--states-1.png",
+          "priorReviewedSha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+          "repairProofBeforeSha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+          "baselineSha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+          "finalSha256": "32a999d4bd2879b4fe3c613bbc59b9153ab11d298e160b534075dcc7ace46dbd",
+          "repairProofAfterSha256": "32a999d4bd2879b4fe3c613bbc59b9153ab11d298e160b534075dcc7ace46dbd",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "22df847c0d86ca683f5d90c5fb8b106f95a6a9ad4255b45811a9745897c188bc"
+        },
+        {
+          "file": "art-delivery/designs/states/creation-summary--states-1.png",
+          "priorReviewedSha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+          "repairProofBeforeSha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+          "baselineSha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+          "finalSha256": "7cb81f2e2541a4a94af76976a61372455bbc8fb605f355219046548227313261",
+          "repairProofAfterSha256": "7cb81f2e2541a4a94af76976a61372455bbc8fb605f355219046548227313261",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "7752d9a28dba04abb46bc4619cfaca0de24d6b74728c95d2b59879816e1f0cf9"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-06.jpg",
+      "sha256": "f5b926dcbdfdc4aab88e971ced7bd612ea58d32606b98a201cc2df9b6bb18217",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/creation-summary--states-2.png",
+          "priorReviewedSha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+          "repairProofBeforeSha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+          "baselineSha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+          "finalSha256": "9bb5185a3826469bb86c3bd46dc86b952125e179dd7b07462f2a1fb4cd15c4c8",
+          "repairProofAfterSha256": "9bb5185a3826469bb86c3bd46dc86b952125e179dd7b07462f2a1fb4cd15c4c8",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "4cd5713f139e69bcd79cb90aac2180f3921a1a748f8c538084d86f8baa2cf24e"
+        },
+        {
+          "file": "art-delivery/designs/states/character-templates--states-1.png",
+          "priorReviewedSha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+          "repairProofBeforeSha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+          "baselineSha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+          "finalSha256": "23fad223e7a11f886058f7651430f252b568a7a0b4c5200a20a9a00835b4ebbc",
+          "repairProofAfterSha256": "23fad223e7a11f886058f7651430f252b568a7a0b4c5200a20a9a00835b4ebbc",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "2c8a120b8269806c1ec69f43662b68dba10da95de6c4965c8a674fed9165ecb0"
+        },
+        {
+          "file": "art-delivery/designs/states/character-sheet--states-1.png",
+          "priorReviewedSha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+          "repairProofBeforeSha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+          "baselineSha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+          "finalSha256": "270a08aef2b3de1ef8ad40e96fd4a96602bf10d460554373159132ce2bae914e",
+          "repairProofAfterSha256": "270a08aef2b3de1ef8ad40e96fd4a96602bf10d460554373159132ce2bae914e",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "67fa98d926009f79622370c61cd581d3b508fdbf4b326e4b939ffac169c86d0c"
+        },
+        {
+          "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+          "priorReviewedSha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+          "repairProofBeforeSha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+          "baselineSha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+          "finalSha256": "d4b4f4f7c284fd9b55c87b77e1fa3b730b72c26c709667ebf5c61986b3653f3b",
+          "repairProofAfterSha256": "d4b4f4f7c284fd9b55c87b77e1fa3b730b72c26c709667ebf5c61986b3653f3b",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "5283849a296b4d52d552f98d071a8c3e2015d9bb75f6b08e20f5ee8ab1a41432"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-07.jpg",
+      "sha256": "93fb899872b8020cfbaffc51e619a4731da6c09aedf6e4c2358022745ad7a0e2",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/character-skills--states-1.png",
+          "priorReviewedSha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+          "repairProofBeforeSha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+          "baselineSha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+          "finalSha256": "0df332f62c5361454ba0e9217b21de349806713f30e5da39a525385bc5b90b0f",
+          "repairProofAfterSha256": "0df332f62c5361454ba0e9217b21de349806713f30e5da39a525385bc5b90b0f",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "be994b6bfe2fca0695a0c66b672b359fb30817c7d0b4fced6e01be8a1afb3126"
+        },
+        {
+          "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+          "priorReviewedSha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+          "repairProofBeforeSha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+          "baselineSha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+          "finalSha256": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+          "repairProofAfterSha256": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "3597a6d5875c49e9eed66e30b2cde0788c47051900635cdec827ed68211cb623"
+        },
+        {
+          "file": "art-delivery/designs/states/inventory--states-1.png",
+          "priorReviewedSha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+          "repairProofBeforeSha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+          "baselineSha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+          "finalSha256": "3b95f8c737591c4c962711f6af3714ceef375dcd844ece09f669a28eeb9bae3d",
+          "repairProofAfterSha256": "3b95f8c737591c4c962711f6af3714ceef375dcd844ece09f669a28eeb9bae3d",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "2cb046d619dca1410227854b09b209646b2960d6e3d9cf423dae91c89db6c59f"
+        },
+        {
+          "file": "art-delivery/designs/states/inventory--states-2.png",
+          "priorReviewedSha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+          "repairProofBeforeSha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+          "baselineSha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+          "finalSha256": "119c8809dde6484f0d19592a95bb9118e4eaa44a7cbeff2eece1cced7b3bda82",
+          "repairProofAfterSha256": "119c8809dde6484f0d19592a95bb9118e4eaa44a7cbeff2eece1cced7b3bda82",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "ef0f4bb7b3473e4cf92b895c5b2bfd3d86c2ae45063fa93b96a4794fe04a875d"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-08.jpg",
+      "sha256": "5e3a5397b5b88bd6bfd86e41028d954293e059b79955fc7cf4cc82323d16b7eb",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/item-detail--states-1.png",
+          "priorReviewedSha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+          "repairProofBeforeSha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+          "baselineSha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+          "finalSha256": "c2d830ef8725e63b719dc58a67ef7dacd55728d5ffd2b45e8fbc9bf0d3640ebb",
+          "repairProofAfterSha256": "c2d830ef8725e63b719dc58a67ef7dacd55728d5ffd2b45e8fbc9bf0d3640ebb",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "33d8429a14e982cb85dc7b4314db9a9e599c8bab152024ef6795fb1ad03ae545"
+        },
+        {
+          "file": "art-delivery/designs/states/item-compare--states-1.png",
+          "priorReviewedSha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+          "repairProofBeforeSha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+          "baselineSha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+          "finalSha256": "065b2ba1f1bc646dbe253b89bfb5ceeb243e8a563d74b93eb3a4db9f81b30530",
+          "repairProofAfterSha256": "065b2ba1f1bc646dbe253b89bfb5ceeb243e8a563d74b93eb3a4db9f81b30530",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "408a51f41c76f15a34b6eab6bc0931ffd87f7302cd5c95f30528f1c87cd92101"
+        },
+        {
+          "file": "art-delivery/designs/states/item-containers--states-1.png",
+          "priorReviewedSha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+          "repairProofBeforeSha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+          "baselineSha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+          "finalSha256": "6d3e3bc9e0073e0fc28c12d571300ca7ec36611e46328d54d72edb5f25f5395b",
+          "repairProofAfterSha256": "6d3e3bc9e0073e0fc28c12d571300ca7ec36611e46328d54d72edb5f25f5395b",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "946fdc01e5303baffc36099692162788946e3c028ca9c0f728d70ab7e44c6cd6"
+        },
+        {
+          "file": "art-delivery/designs/states/item-containers--states-2.png",
+          "priorReviewedSha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+          "repairProofBeforeSha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+          "baselineSha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+          "finalSha256": "8b3bedb258bac82d41571fdf1194fd477d2f491941cb72795608434ae1881c83",
+          "repairProofAfterSha256": "8b3bedb258bac82d41571fdf1194fd477d2f491941cb72795608434ae1881c83",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "f339829809995741196a6e1c6cca44fca54a9507314ef2911679de703378fd1f"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-09.jpg",
+      "sha256": "6d8afd209950ed2886a3f4b5d22d7f7f49395972571f1610341780934b9efbdc",
+      "actuallyViewedInPriorRound": true,
+      "actuallyViewedAgainAfterRepair": false,
+      "containsPreRepairThumbnails": true,
+      "sources": [
+        {
+          "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+          "priorReviewedSha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+          "repairProofBeforeSha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+          "baselineSha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+          "finalSha256": "752fdb24a50e6bc75451cc055f4239e01cf81b1c6e095437cf8d2a879dea1ef2",
+          "repairProofAfterSha256": "752fdb24a50e6bc75451cc055f4239e01cf81b1c6e095437cf8d2a879dea1ef2",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "b5908b48ca18736a40584444a5234109556a1e697df75a7ce784b9e5d07fab48"
+        },
+        {
+          "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+          "priorReviewedSha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+          "repairProofBeforeSha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+          "baselineSha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+          "finalSha256": "89e7e5af717ca7202b773fde33563e2fee7274ed68f03379d04953cf49791f9e",
+          "repairProofAfterSha256": "89e7e5af717ca7202b773fde33563e2fee7274ed68f03379d04953cf49791f9e",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "7756bd2339c9f12973e5d4b64b43a3ad49a3048356d522a9adbd68f3c39338d0"
+        },
+        {
+          "file": "art-delivery/designs/states/worn-layers--states-1.png",
+          "priorReviewedSha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+          "repairProofBeforeSha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+          "baselineSha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+          "finalSha256": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+          "repairProofAfterSha256": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "8c8ed7408588bb7efb4437e56afc3ccf1fa4919286bf6fcd3b415c0e6be656dc"
+        },
+        {
+          "file": "art-delivery/designs/states/wield--states-1.png",
+          "priorReviewedSha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+          "repairProofBeforeSha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+          "baselineSha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+          "finalSha256": "9f2d5c0ec223f1e5bbbfc3f68f6ca49de9cb85ec4a27a241b07c9e083bdb1a4a",
+          "repairProofAfterSha256": "9f2d5c0ec223f1e5bbbfc3f68f6ca49de9cb85ec4a27a241b07c9e083bdb1a4a",
+          "beforeMatchesPriorReviewedSourceAndBaseline": true,
+          "afterMatchesCurrentSource": true,
+          "independentlyCalculatedRGBDeltaBounds": [
+            93,
+            923,
+            207,
+            935
+          ],
+          "matchesProofDeltaBounds": true,
+          "stateContentAndControlsY0to897ByteIdentical": true,
+          "alphaByteIdentical": true,
+          "finalNativePNGActuallyViewed": false,
+          "finalReviewMethod": "prior actually viewed sheet/source content reused only after independent bounded-diff validation; final PNG was not visually reopened",
+          "finalLayoutSha256": "3e2f6493a107806631ff2d5da8f162fcd6bfe2e502f0cc5f518ec0921d9137cb"
+        }
+      ]
+    }
+  ],
+  "priorRound": {
+    "reviewId": "REVIEW_CORE_STATES_A",
+    "reviewer": "/root/core_states_a",
+    "reviewedAtUTC": "2026-10-26T11:23:51.379388-04:00",
+    "scope": "Frozen final art only: core-states-01 through core-states-09; 9 contact sheets, 36 state-board PNGs, 164 state cards. No new research or scope added.",
+    "status": "invalidated_by_parallel_image_changes",
+    "summary": "The observed frozen contact sheets showed correct state-card copy and actions plus minor CSA-01. During final hash capture, 9 source PNGs differed from their embedded contact-sheet sources; those new image bytes are not covered by this review.",
+    "constraints": {
+      "sourceFDriveReadOnly": true,
+      "officialPNGsUnchanged": true,
+      "rendererCopyLayoutsUnchanged": true,
+      "gitUntouched": true,
+      "aiGenerationPerformed": false
+    },
+    "instructionsRead": [
+      {
+        "file": "F:\\work\\image\\AGENTS.md",
+        "sha256": "434bcc5c195648c482531a6418389d500c25e76dca708e92ed4fe12241071e30"
+      },
+      {
+        "file": "art-delivery/README.md",
+        "sha256": "e855f7605b07bd5a37f386b5228733f4fefbe2bca43de60e406a55bb2989a6de"
+      }
+    ],
+    "inputs": {
+      "contactSheetManifest": {
+        "file": "art-delivery/records/CORE_STATE_CONTACT_SHEETS.json",
+        "sha256": "474127f13018a5e655181618c00be672edd78146d65a6342976e5b4d3771a1c8"
+      },
+      "copyCore": {
+        "file": "docs/art-v2/copy-core.json",
+        "sha256": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8"
+      }
+    },
+    "method": [
+      "Actually viewed every assigned contact sheet using tools.view_image at original detail; each sheet contains four final PNG thumbnails.",
+      "Additionally viewed the 11 listed source PNGs at original detail for destructive confirmations, long labels, disabled controls and local artifacts.",
+      "Compared all 164 state-card labels/messages/action labels/enabled flags recorded in the frozen layouts against copy-core.json. This textual comparison supplements visual inspection; rendering success was not treated as visual acceptance.",
+      "Computed current SHA-256 for each viewed contact sheet, each referenced final source PNG, the copy and the layout records."
+    ],
+    "checks": {
+      "sheetsActuallyViewed": 9,
+      "boardsVisuallyViewedThroughSheets": 36,
+      "nativePNGsActuallyViewed": 11,
+      "stateCardsCompared": 164,
+      "blockedStateCardsCompared": 62,
+      "explicitSecondaryStateCardsCompared": 16,
+      "copyMismatches": [],
+      "allCurrentImageHashesMatchContactManifest": false,
+      "stateCardTextAndActions": "passed",
+      "cardTextClippingOrObscuringControls": "none observed",
+      "confirmationCancellation": "passed",
+      "unexpectedTODOOrUnresolvedProductionCopy": "none observed inside state cards"
+    },
+    "findings": [
+      {
+        "id": "CSA-01",
+        "priority": "P3",
+        "severity": "minor cosmetic",
+        "status": "open",
+        "category": "underlying text leakage at panel edge",
+        "title": "Bottom strokes of covered sample-data text remain visible below the state panel",
+        "description": "At the lower left of the main state panel, approximately x140–215 and y930–937 on the 1920×1080 PNG, a short gray fringe of Chinese text remains visible immediately below the panel border. Native inspection and an enlarged diagnostic crop confirm that these are glyph remnants, not contact-sheet compression. The world-options layout still records the underlying sample-data note at rect [93,882,220,56]; the state overlay covers most but not all of it. Card content, buttons and footer disclosure remain legible.",
+        "representativeSource": "art-delivery/designs/states/world-options--states-1.png",
+        "representativeSourceSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+        "approximateRect": [
+          140,
+          930,
+          75,
+          8
+        ],
+        "nativePNGConfirmedFiles": [
+          "art-delivery/designs/states/main-menu--states-1.png",
+          "art-delivery/designs/states/world-list--states-1.png",
+          "art-delivery/designs/states/world-list--states-2.png",
+          "art-delivery/designs/states/world-create--states-1.png",
+          "art-delivery/designs/states/world-mods--states-1.png",
+          "art-delivery/designs/states/world-options--states-1.png",
+          "art-delivery/designs/states/creation-background--states-1.png",
+          "art-delivery/designs/states/creation-summary--states-1.png",
+          "art-delivery/designs/states/character-templates--states-1.png",
+          "art-delivery/designs/states/item-detail--states-1.png",
+          "art-delivery/designs/states/advanced-inventory--states-1.png"
+        ],
+        "diagnosticCrop": {
+          "file": "C:\\Users\\luyua\\AppData\\Local\\Temp\\core-states-a-world-options-footer-inspect.png",
+          "temporary": true,
+          "sourceCropRect": [
+            100,
+            900,
+            700,
+            70
+          ],
+          "displayResize": [
+            1400,
+            140
+          ],
+          "purpose": "Inspection only; no final art modified."
+        },
+        "requestedDisposition": "Remove the hidden base-note remnants when the coordinator permits a new render, or explicitly accept this minor cosmetic defect before an unconditional visual pass.",
+        "scopeLimit": "Confirmed on the 11 native PNGs listed. Similarity of the other boards alone is not used to claim native confirmation for all 36."
+      }
+    ],
+    "nonBlockingContext": [
+      {
+        "topic": "Design-delivery labels",
+        "observation": "Visible header/footer text such as 暂定名, UI 美术方案, 状态与反馈合同 and 非游戏运行截图 is intentional design-delivery disclosure described by art-delivery/README.md. These labels were not misreported as proof of running game business or unresolved TODO copy."
+      },
+      {
+        "topic": "Wrapping punctuation",
+        "observation": "Several copy strings wrap a final full stop onto a separate line. The glyph remains inside the card with ample space above the buttons; treated as a minor typesetting preference, not a clipping defect."
+      }
+    ],
+    "reviewedSheets": [
+      {
+        "file": "art-delivery/previews/review-core/core-states-01.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-01.jpg",
+        "sha256": "5912e3ac7a718f86ccf8c8aecc215b615154480e1621004a035cfa66c9fbcd41",
+        "manifestSha256": "5912e3ac7a718f86ccf8c8aecc215b615154480e1621004a035cfa66c9fbcd41",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Main menu exit confirmation preserves cancel; unavailable world/save/data states show disabled gray primary and independent safe action. Notice/credits message and scrolling text are readable.",
+        "sourceImages": [
+          {
+            "id": "main-menu",
+            "file": "art-delivery/designs/states/main-menu--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\main-menu--states-1.png",
+            "sha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+            "manifestSha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/main-menu--states-1.json",
+            "layoutSha256": "fe340c959d323f48fd880f33affdaa206f252fa0beec268be39029237bddbe66",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "有可读取存档",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择人物",
+                "secondary": "返回"
+              },
+              {
+                "state": "无世界",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "创建世界"
+              },
+              {
+                "state": "无存档",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "创建人物"
+              },
+              {
+                "state": "加载数据失败",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回首页"
+              },
+              {
+                "state": "退出确认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "退出游戏",
+                "secondary": "取消"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "motd",
+            "file": "art-delivery/designs/states/motd--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\motd--states-1.png",
+            "sha256": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+            "manifestSha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/motd--states-1.json",
+            "layoutSha256": "b64b418ca180cfe40ba53e111cc87b1773f869d6e1267232448696380e0e6ca6",
+            "stateCount": 4,
+            "stateChecks": [
+              {
+                "state": "有告示",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续阅读",
+                "secondary": "返回"
+              },
+              {
+                "state": "无消息",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回首页",
+                "secondary": "返回"
+              },
+              {
+                "state": "长文滚动",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续阅读",
+                "secondary": "返回"
+              },
+              {
+                "state": "文件缺失回退",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回首页"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "credits",
+            "file": "art-delivery/designs/states/credits--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\credits--states-1.png",
+            "sha256": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+            "manifestSha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/credits--states-1.json",
+            "layoutSha256": "d746cfecdfe159ae65ecf374c8aa5be7b2f57ef5732de7aa685b48180949bf6a",
+            "stateCount": 3,
+            "stateChecks": [
+              {
+                "state": "名单可用",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续阅读",
+                "secondary": "返回"
+              },
+              {
+                "state": "无名单信息",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回首页"
+              },
+              {
+                "state": "长文滚动",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续阅读",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "world-list",
+            "file": "art-delivery/designs/states/world-list--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-list--states-1.png",
+            "sha256": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+            "manifestSha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/world-list--states-1.json",
+            "layoutSha256": "8035907ab94791bd4bc65633cc54d1b954826af9511a0438c2d68d7fd050e4e9",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "空列表",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "创建世界"
+              },
+              {
+                "state": "世界选中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看世界",
+                "secondary": "返回"
+              },
+              {
+                "state": "无人物",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "创建人物"
+              },
+              {
+                "state": "复制规则",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "复制规则",
+                "secondary": "取消"
+              },
+              {
+                "state": "压缩切换",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认切换",
+                "secondary": "取消"
+              },
+              {
+                "state": "删除确认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "删除世界",
+                "secondary": "取消"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+            "currentSourceCoveredByVisualReview": false
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-02.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-02.jpg",
+        "sha256": "77a1680327fe102fbff83c50a42abd1b47abf8d60a03c7b1c476a1bae3b165c5",
+        "manifestSha256": "77a1680327fe102fbff83c50a42abd1b47abf8d60a03c7b1c476a1bae3b165c5",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "World reset and world-creation abandonment preserve cancel/continue-editing alternatives. Invalid name and duplicate name are disabled with edit action; mod dependency/conflict/obsolete/search states are disabled with safe alternatives.",
+        "sourceImages": [
+          {
+            "id": "world-list",
+            "file": "art-delivery/designs/states/world-list--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-list--states-2.png",
+            "sha256": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+            "manifestSha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/world-list--states-2.json",
+            "layoutSha256": "90fcff0cb2431b2355bb50a78d0398baf749317c817372644569ca70894aaca4",
+            "stateCount": 2,
+            "stateChecks": [
+              {
+                "state": "重置确认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "重置世界",
+                "secondary": "取消"
+              },
+              {
+                "state": "保存失败",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回管理"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "world-create",
+            "file": "art-delivery/designs/states/world-create--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-create--states-1.png",
+            "sha256": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+            "manifestSha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/world-create--states-1.json",
+            "layoutSha256": "eb5f877afe2012a4260de156b7a14e3d3d9429095acfec1caaa9b826a14b7acb",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "默认规则",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认创建",
+                "secondary": "返回"
+              },
+              {
+                "state": "编辑后未保存",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认创建",
+                "secondary": "继续编辑"
+              },
+              {
+                "state": "空名称随机确认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "随机命名",
+                "secondary": "返回填写"
+              },
+              {
+                "state": "非法字符",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "修改名称"
+              },
+              {
+                "state": "同名世界",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "修改名称"
+              },
+              {
+                "state": "取消创建",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "放弃创建",
+                "secondary": "继续编辑"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "world-create",
+            "file": "art-delivery/designs/states/world-create--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-create--states-2.png",
+            "sha256": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+            "manifestSha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/world-create--states-2.json",
+            "layoutSha256": "1e153addfd285369e7b18d3ed88405292b1d7d5bf64a5bbbf597a268f3e8d06d",
+            "stateCount": 1,
+            "stateChecks": [
+              {
+                "state": "创建失败",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回编辑"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "world-mods",
+            "file": "art-delivery/designs/states/world-mods--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-mods--states-1.png",
+            "sha256": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+            "manifestSha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/world-mods--states-1.json",
+            "layoutSha256": "90f5be7259dedca69e84a48f7f7d40004f706c312669e0829e7ff124d0db345a",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "可用",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "启用模组",
+                "secondary": "返回"
+              },
+              {
+                "state": "已启用",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看已启用模组",
+                "secondary": "返回"
+              },
+              {
+                "state": "依赖缺失",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看依赖"
+              },
+              {
+                "state": "模组冲突",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整模组"
+              },
+              {
+                "state": "过时模组",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他内容"
+              },
+              {
+                "state": "搜索无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除搜索"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+            "currentSourceCoveredByVisualReview": false
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-03.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-03.jpg",
+        "sha256": "5ebcaa2476ac30295bcc2f7b2e19c9693984120fe0f200bb0648f057457a2d26",
+        "manifestSha256": "5ebcaa2476ac30295bcc2f7b2e19c9693984120fe0f200bb0648f057457a2d26",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "World-option reset has cancel. Numeric, fixed-option and save-error states are disabled. Character load failure and in-progress states do not expose read/start as an enabled primary. Creation mode choices match copy.",
+        "sourceImages": [
+          {
+            "id": "world-mods",
+            "file": "art-delivery/designs/states/world-mods--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-mods--states-2.png",
+            "sha256": "a50a411fd00fe00836a2c888a7be67b9b4fcb6f37d7e2eeb6d792b7746cf9d50",
+            "manifestSha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+            "matchesManifest": false,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/world-mods--states-2.json",
+            "layoutSha256": "8fdf0f3a5c88b6d8e85c26d8a4a2c4958fe984391716ed87d304f14b7ddf865b",
+            "stateCount": 1,
+            "stateChecks": [
+              {
+                "state": "不可调整顺序",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回列表"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+            "currentSourceCoveredByVisualReview": false
+          },
+          {
+            "id": "world-options",
+            "file": "art-delivery/designs/states/world-options--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\world-options--states-1.png",
+            "sha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+            "manifestSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/world-options--states-1.json",
+            "layoutSha256": "6dd92407b4d56bda40a41febb18c67971c747f4acc110d6864be962e0c28acda",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "默认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回世界规则",
+                "secondary": "返回"
+              },
+              {
+                "state": "已修改",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "保存规则",
+                "secondary": "返回"
+              },
+              {
+                "state": "重置确认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "恢复默认",
+                "secondary": "取消"
+              },
+              {
+                "state": "数值边界",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整数值"
+              },
+              {
+                "state": "模组隐藏项",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回规则"
+              },
+              {
+                "state": "保存异常",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回编辑"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "load-character",
+            "file": "art-delivery/designs/states/load-character--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\load-character--states-1.png",
+            "sha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+            "manifestSha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/load-character--states-1.json",
+            "layoutSha256": "37137514a84f8d11d3666a71c91157009ff072a1a041725db3dd520f03424b37",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "有存档",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择人物",
+                "secondary": "返回"
+              },
+              {
+                "state": "无人物可读",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回世界"
+              },
+              {
+                "state": "存档选中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "读取人物",
+                "secondary": "返回"
+              },
+              {
+                "state": "读取中",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "等待载入"
+              },
+              {
+                "state": "存档读取失败",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回人物列表"
+              },
+              {
+                "state": "取消",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回世界",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-mode",
+            "file": "art-delivery/designs/states/creation-mode--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-mode--states-1.png",
+            "sha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+            "manifestSha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-mode--states-1.json",
+            "layoutSha256": "e923a9088e8717f37fb5bcdadfbad64050dcae6f5823a6807d29b308f00ebdaf",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "自定义",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "自定义人物",
+                "secondary": "返回"
+              },
+              {
+                "state": "预设模板",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择人物模板",
+                "secondary": "返回"
+              },
+              {
+                "state": "随机预览",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看随机人物",
+                "secondary": "返回"
+              },
+              {
+                "state": "保留情景重新随机",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "重新随机",
+                "secondary": "返回预览"
+              },
+              {
+                "state": "立即游玩",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "立即出发",
+                "secondary": "返回选择"
+              },
+              {
+                "state": "无模板",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "自定义人物"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-04.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-04.jpg",
+        "sha256": "77d0f796d82b88d01d9e118f8f75a240e253f608e102a426156269fbf13acd1f",
+        "manifestSha256": "77d0f796d82b88d01d9e118f8f75a240e253f608e102a426156269fbf13acd1f",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Scenario/profession/background restrictions retain safe alternatives; attribute bounds are disabled. Attribute restore has cancel. Long action labels remain legible within controls.",
+        "sourceImages": [
+          {
+            "id": "creation-scenario",
+            "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-scenario--states-1.png",
+            "sha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+            "manifestSha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-scenario--states-1.json",
+            "layoutSha256": "76972401e04d315d6b8432992c0fbcb56e8edb0cbb4557a68c8f977dd3f73501",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "可选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择情景",
+                "secondary": "返回"
+              },
+              {
+                "state": "已选",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认情景",
+                "secondary": "返回"
+              },
+              {
+                "state": "成就条件未满足",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看解锁要求"
+              },
+              {
+                "state": "起点限制",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他情景"
+              },
+              {
+                "state": "搜索无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除筛选"
+              },
+              {
+                "state": "取消",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回创建",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-profession",
+            "file": "art-delivery/designs/states/creation-profession--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-profession--states-1.png",
+            "sha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+            "manifestSha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-profession--states-1.json",
+            "layoutSha256": "60c17ed4cc3906eeaf8eca38586971ccbb30a49beb8a6c6e3d0b9ea44de29c4c",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "可选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择职业",
+                "secondary": "返回"
+              },
+              {
+                "state": "已选",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认职业",
+                "secondary": "返回"
+              },
+              {
+                "state": "成就条件未满足",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看解锁要求"
+              },
+              {
+                "state": "情景限制",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他职业"
+              },
+              {
+                "state": "筛选无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除筛选"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-background",
+            "file": "art-delivery/designs/states/creation-background--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-background--states-1.png",
+            "sha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+            "manifestSha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/creation-background--states-1.json",
+            "layoutSha256": "8e2fba779fc3815f8b940a4eff05e01525351f408508671827207f4c13bc4f9f",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "未选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续创建",
+                "secondary": "返回"
+              },
+              {
+                "state": "已选择多项",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认已选背景",
+                "secondary": "返回"
+              },
+              {
+                "state": "背景条件不满足",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看背景要求"
+              },
+              {
+                "state": "冲突说明",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整已选背景"
+              },
+              {
+                "state": "搜索无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除筛选"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-stats",
+            "file": "art-delivery/designs/states/creation-stats--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-stats--states-1.png",
+            "sha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+            "manifestSha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-stats--states-1.json",
+            "layoutSha256": "d2f1f00cccfd90989172b90e91c210cf2d5545be42d39b84c601bee350531b8f",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "默认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认属性",
+                "secondary": "返回"
+              },
+              {
+                "state": "已调整",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认属性",
+                "secondary": "返回"
+              },
+              {
+                "state": "数值下限",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整其他属性"
+              },
+              {
+                "state": "数值上限",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整其他属性"
+              },
+              {
+                "state": "恢复调整",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "恢复属性",
+                "secondary": "取消"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-05.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-05.jpg",
+        "sha256": "c8087ff1d3e7eb9f349fbf694f72db88653f93aa4b3a46f98b63f0552980bdb5",
+        "manifestSha256": "c8087ff1d3e7eb9f349fbf694f72db88653f93aa4b3a46f98b63f0552980bdb5",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Trait locks/conflicts/search and skill boundary/search states are disabled. Summary missing-name/origin states are disabled; date selection preserves cancel and creation confirmation preserves return-to-edit.",
+        "sourceImages": [
+          {
+            "id": "creation-traits",
+            "file": "art-delivery/designs/states/creation-traits--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-traits--states-1.png",
+            "sha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+            "manifestSha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-traits--states-1.json",
+            "layoutSha256": "e209564c7c09e8c38ae00d9ba7a8b8ff8b02118487cb7d90ff932b4c779a62f5",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "未选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续创建",
+                "secondary": "返回"
+              },
+              {
+                "state": "已选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认特征",
+                "secondary": "返回"
+              },
+              {
+                "state": "情景锁定",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看情景"
+              },
+              {
+                "state": "职业锁定",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看职业"
+              },
+              {
+                "state": "互斥冲突",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整已选特征"
+              },
+              {
+                "state": "不可切换",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回特征列表"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-traits",
+            "file": "art-delivery/designs/states/creation-traits--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-traits--states-2.png",
+            "sha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+            "manifestSha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-traits--states-2.json",
+            "layoutSha256": "3afafbfb6f9b3b8f7c61e306016809478768a488fbbc36679d90b85b34c06534",
+            "stateCount": 1,
+            "stateChecks": [
+              {
+                "state": "搜索无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除搜索"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-skills",
+            "file": "art-delivery/designs/states/creation-skills--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-skills--states-1.png",
+            "sha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+            "manifestSha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-skills--states-1.json",
+            "layoutSha256": "e1f55878b3dea5d9a304457bfda9a09f96534a1730ff7cdf55d7bf9c60f01ce5",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "基础值",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认技能",
+                "secondary": "返回"
+              },
+              {
+                "state": "已调整",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认技能",
+                "secondary": "返回"
+              },
+              {
+                "state": "等级上下限",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整其他技能"
+              },
+              {
+                "state": "职业背景加成",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看加成来源",
+                "secondary": "返回"
+              },
+              {
+                "state": "搜索无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除搜索"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "creation-summary",
+            "file": "art-delivery/designs/states/creation-summary--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-summary--states-1.png",
+            "sha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+            "manifestSha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/creation-summary--states-1.json",
+            "layoutSha256": "b126cb2553dfdd11cce7c94a83e737e66e2c660ddfd3e0c0a53ddc8674be0691",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "信息完整",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认出发",
+                "secondary": "返回"
+              },
+              {
+                "state": "名字待填",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "填写姓名"
+              },
+              {
+                "state": "随机描述",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "保留人物描述",
+                "secondary": "返回"
+              },
+              {
+                "state": "起点未选",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择起点"
+              },
+              {
+                "state": "开局日期选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "使用这个日期",
+                "secondary": "取消"
+              },
+              {
+                "state": "创建确认",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "开始旅程",
+                "secondary": "返回修改"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-06.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-06.jpg",
+        "sha256": "f5b926dcbdfdc4aab88e971ced7bd612ea58d32606b98a201cc2df9b6bb18217",
+        "manifestSha256": "f5b926dcbdfdc4aab88e971ced7bd612ea58d32606b98a201cc2df9b6bb18217",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Summary save-template preserves cancel; character-template failure/empty states have safe alternatives. Character attribute and encumbrance explanation cards remain within their borders.",
+        "sourceImages": [
+          {
+            "id": "creation-summary",
+            "file": "art-delivery/designs/states/creation-summary--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\creation-summary--states-2.png",
+            "sha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+            "manifestSha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/creation-summary--states-2.json",
+            "layoutSha256": "baba6c4c0326db022a5fcf78a681dc4553f68d9ec78d6893a218d86beec53d2a",
+            "stateCount": 2,
+            "stateChecks": [
+              {
+                "state": "返回修改",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回人物创建",
+                "secondary": "返回"
+              },
+              {
+                "state": "保存模板",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "保存模板",
+                "secondary": "取消"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "character-templates",
+            "file": "art-delivery/designs/states/character-templates--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\character-templates--states-1.png",
+            "sha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+            "manifestSha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/character-templates--states-1.json",
+            "layoutSha256": "96f9410146c3be4490d857f1ee4b81dded214bd1f7caef6a965946e0f5abea89",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "有模板",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择模板",
+                "secondary": "返回"
+              },
+              {
+                "state": "空列表",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回创建方式"
+              },
+              {
+                "state": "模板选中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "载入模板",
+                "secondary": "返回"
+              },
+              {
+                "state": "模板不可读",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他模板"
+              },
+              {
+                "state": "取消",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回人物创建",
+                "secondary": "返回"
+              },
+              {
+                "state": "新模板保存",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回模板列表",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "character-sheet",
+            "file": "art-delivery/designs/states/character-sheet--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\character-sheet--states-1.png",
+            "sha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+            "manifestSha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/character-sheet--states-1.json",
+            "layoutSha256": "f9c9873498a4487a01c4aa2a162c091f84a0337c324c37c8ccd3347ffa7eb1da",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "正常",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看属性详情",
+                "secondary": "返回"
+              },
+              {
+                "state": "属性受影响",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看影响来源",
+                "secondary": "返回"
+              },
+              {
+                "state": "说明选中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续查看",
+                "secondary": "返回"
+              },
+              {
+                "state": "长文滚动",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续查看",
+                "secondary": "返回"
+              },
+              {
+                "state": "外观自定义",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认外观",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "character-encumbrance",
+            "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\character-encumbrance--states-1.png",
+            "sha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+            "manifestSha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/character-encumbrance--states-1.json",
+            "layoutSha256": "f973e7fd07b02de832f1605b58933f486dbea6d9a1722808b9dd9180930d22ec",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "正常",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看穿戴",
+                "secondary": "返回"
+              },
+              {
+                "state": "轻度阻碍",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看阻碍详情",
+                "secondary": "返回"
+              },
+              {
+                "state": "严重阻碍",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "调整穿戴",
+                "secondary": "返回"
+              },
+              {
+                "state": "速度修正",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看速度来源",
+                "secondary": "返回"
+              },
+              {
+                "state": "部位详情选中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看部位详情",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-07.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-07.jpg",
+        "sha256": "93fb899872b8020cfbaffc51e619a4731da6c09aedf6e4c2358022745ad7a0e2",
+        "manifestSha256": "93fb899872b8020cfbaffc51e619a4731da6c09aedf6e4c2358022745ad7a0e2",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Skill training/pause labels and proficiency states match their distinct meanings. Inventory empty/filter/capacity states are disabled with safe alternative; overload remains a warning with organize action.",
+        "sourceImages": [
+          {
+            "id": "character-skills",
+            "file": "art-delivery/designs/states/character-skills--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\character-skills--states-1.png",
+            "sha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+            "manifestSha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/character-skills--states-1.json",
+            "layoutSha256": "5cf8056223def52f5e875c4ad1eb6a9a8f70c9d7dbd596e9bb4a1cd63aadbe0c",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "未习得",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看学习途径",
+                "secondary": "返回"
+              },
+              {
+                "state": "训练中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "暂停训练",
+                "secondary": "返回"
+              },
+              {
+                "state": "暂停训练",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "恢复训练",
+                "secondary": "返回"
+              },
+              {
+                "state": "实作与理论不同",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看技能详情",
+                "secondary": "返回"
+              },
+              {
+                "state": "可继续提升",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看学习途径",
+                "secondary": "返回"
+              },
+              {
+                "state": "列表滚动",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续查看",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "character-proficiencies",
+            "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\character-proficiencies--states-1.png",
+            "sha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+            "manifestSha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/character-proficiencies--states-1.json",
+            "layoutSha256": "6192bd1b20b4196b13853f0c65ca002452f0b01b4849b4f0ad8c75290d762050",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "尚未掌握",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看关联工作",
+                "secondary": "返回"
+              },
+              {
+                "state": "学习中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看学习进度",
+                "secondary": "返回"
+              },
+              {
+                "state": "已掌握",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看关联工作",
+                "secondary": "返回"
+              },
+              {
+                "state": "进度条",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看技艺进度",
+                "secondary": "返回"
+              },
+              {
+                "state": "空列表",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回人物"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "inventory",
+            "file": "art-delivery/designs/states/inventory--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\inventory--states-1.png",
+            "sha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+            "manifestSha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/inventory--states-1.json",
+            "layoutSha256": "a1b6a3fe2448e80c720b2ca1c98d996ef8174615951db3967a0b8b74a4db5d1a",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "有物品",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看物品",
+                "secondary": "返回"
+              },
+              {
+                "state": "空行囊",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回世界"
+              },
+              {
+                "state": "筛选无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除筛选"
+              },
+              {
+                "state": "超出负重",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "整理行囊",
+                "secondary": "返回"
+              },
+              {
+                "state": "容量不足",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他容器"
+              },
+              {
+                "state": "物品选中",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看物品详情",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "inventory",
+            "file": "art-delivery/designs/states/inventory--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\inventory--states-2.png",
+            "sha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+            "manifestSha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/inventory--states-2.json",
+            "layoutSha256": "7b900040cdaa7b5fed6c794b6e5e149426ca643460e97d0ee866b226d64b554d",
+            "stateCount": 1,
+            "stateChecks": [
+              {
+                "state": "收藏标记",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回行囊",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-08.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-08.jpg",
+        "sha256": "5e3a5397b5b88bd6bfd86e41028d954293e059b79955fc7cf4cc82323d16b7eb",
+        "manifestSha256": "5e3a5397b5b88bd6bfd86e41028d954293e059b79955fc7cf4cc82323d16b7eb",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Item warning/unknown/scroll states and comparison actions match copy; container capacity/incompatibility/automatic insertion states are disabled with safe alternatives. No card text obscures controls.",
+        "sourceImages": [
+          {
+            "id": "item-detail",
+            "file": "art-delivery/designs/states/item-detail--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\item-detail--states-1.png",
+            "sha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+            "manifestSha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/item-detail--states-1.json",
+            "layoutSha256": "6feb8d92305882bae23b7d216a88efd1dc458886f0036389ec61228d7ec6a201",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "正常",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "物品操作",
+                "secondary": "返回"
+              },
+              {
+                "state": "损坏",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看耐久",
+                "secondary": "返回"
+              },
+              {
+                "state": "耐久不足",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看可用操作",
+                "secondary": "返回"
+              },
+              {
+                "state": "腐败或污染",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看风险说明",
+                "secondary": "返回"
+              },
+              {
+                "state": "未知信息",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回物品列表",
+                "secondary": "返回"
+              },
+              {
+                "state": "详细说明滚动",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "继续查看",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "item-compare",
+            "file": "art-delivery/designs/states/item-compare--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\item-compare--states-1.png",
+            "sha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+            "manifestSha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/item-compare--states-1.json",
+            "layoutSha256": "da7c6fbe3b4b8b936f2a97a10fc5e0d2bb451c57ee0cf00826254f72f96db1e4",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "仅选一件",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择第二件"
+              },
+              {
+                "state": "两件已选",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看对照",
+                "secondary": "返回"
+              },
+              {
+                "state": "指标更优",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看完整差异",
+                "secondary": "返回"
+              },
+              {
+                "state": "指标更差",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看完整差异",
+                "secondary": "返回"
+              },
+              {
+                "state": "无法比较的项目",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看各自详情",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "item-containers",
+            "file": "art-delivery/designs/states/item-containers--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\item-containers--states-1.png",
+            "sha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+            "manifestSha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/item-containers--states-1.json",
+            "layoutSha256": "c931b0b66e28a3c31271e80676ede24b711606c325c44aedfed791bdf3034d56",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "空口袋",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择物品",
+                "secondary": "返回"
+              },
+              {
+                "state": "已装物品",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看内容物",
+                "secondary": "返回"
+              },
+              {
+                "state": "容量不足",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整数量"
+              },
+              {
+                "state": "物品不兼容",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他口袋"
+              },
+              {
+                "state": "白名单黑名单",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "调整容纳规则",
+                "secondary": "返回"
+              },
+              {
+                "state": "优先级",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "调整优先级",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "item-containers",
+            "file": "art-delivery/designs/states/item-containers--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\item-containers--states-2.png",
+            "sha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+            "manifestSha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/item-containers--states-2.json",
+            "layoutSha256": "13de21392cca0cd4a5784daca8e2aaedfd801052dfabc33705e28ce951150866",
+            "stateCount": 1,
+            "stateChecks": [
+              {
+                "state": "自动插入限制",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "查看口袋规则"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      },
+      {
+        "file": "art-delivery/previews/review-core/core-states-09.jpg",
+        "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-09.jpg",
+        "sha256": "6d8afd209950ed2886a3f4b5d22d7f7f49395972571f1610341780934b9efbdc",
+        "manifestSha256": "6d8afd209950ed2886a3f4b5d22d7f7f49395972571f1610341780934b9efbdc",
+        "matchesManifest": true,
+        "visuallyViewed": true,
+        "detail": "original",
+        "visualObservation": "Transfer quantity selection preserves cancel. Empty source, overweight, capacity and unreachable states are disabled. Clothing and wield restrictions preserve safe alternatives; longer page title and action labels remain readable.",
+        "sourceImages": [
+          {
+            "id": "advanced-inventory",
+            "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\advanced-inventory--states-1.png",
+            "sha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+            "manifestSha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "contact sheet and native PNG at original detail",
+            "nativePNGViewed": true,
+            "layoutFile": "art-delivery/records/layouts/advanced-inventory--states-1.json",
+            "layoutSha256": "371664068418311d83b970550e2e284fb49f7a240d767cdd927d865b50359e59",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "两侧有物品",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认转移",
+                "secondary": "返回"
+              },
+              {
+                "state": "空来源",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "更换来源"
+              },
+              {
+                "state": "空目标",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "选择转移物",
+                "secondary": "返回"
+              },
+              {
+                "state": "数量选择",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "使用此数量",
+                "secondary": "取消"
+              },
+              {
+                "state": "超重",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "调整转移"
+              },
+              {
+                "state": "容器容量不足",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他目标"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "advanced-inventory",
+            "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\advanced-inventory--states-2.png",
+            "sha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+            "manifestSha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/advanced-inventory--states-2.json",
+            "layoutSha256": "fb97c4299acc4200fdbd206124217ee0dd838e6641513a2ede3a9e33d7a2255e",
+            "stateCount": 2,
+            "stateChecks": [
+              {
+                "state": "位置不可达",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回选择"
+              },
+              {
+                "state": "过滤无结果",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "清除筛选"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "worn-layers",
+            "file": "art-delivery/designs/states/worn-layers--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\worn-layers--states-1.png",
+            "sha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+            "manifestSha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/worn-layers--states-1.json",
+            "layoutSha256": "9182e16ecd91101d43966cb4e083108e258f46eb03b7fc12f4294c8decd42337",
+            "stateCount": 6,
+            "stateChecks": [
+              {
+                "state": "衣层正常",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看衣层详情",
+                "secondary": "返回"
+              },
+              {
+                "state": "衣层冲突",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "调整衣层",
+                "secondary": "返回"
+              },
+              {
+                "state": "部位未覆盖",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "查看可穿物",
+                "secondary": "返回"
+              },
+              {
+                "state": "阻碍过高",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "调整穿戴",
+                "secondary": "返回"
+              },
+              {
+                "state": "无法脱下",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回穿戴列表"
+              },
+              {
+                "state": "选中移动",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认衣层位置",
+                "secondary": "返回"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+            "currentSourceCoveredByVisualReview": true
+          },
+          {
+            "id": "wield",
+            "file": "art-delivery/designs/states/wield--states-1.png",
+            "absolutePath": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\wield--states-1.png",
+            "sha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+            "manifestSha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+            "matchesManifest": true,
+            "visuallyViewed": true,
+            "viewMethod": "actual PNG thumbnail embedded in contact sheet",
+            "nativePNGViewed": false,
+            "layoutFile": "art-delivery/records/layouts/wield--states-1.json",
+            "layoutSha256": "092fea8777b7c01ebd596d560421f648affcb0780af7435917910ec36cc0aa0a",
+            "stateCount": 5,
+            "stateChecks": [
+              {
+                "state": "可持用",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "确认持用",
+                "secondary": "返回"
+              },
+              {
+                "state": "已持用",
+                "copyAndActionComparison": "matched",
+                "blocked": false,
+                "primary": "返回行囊",
+                "secondary": "返回"
+              },
+              {
+                "state": "双手需求",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "选择其他物品"
+              },
+              {
+                "state": "无法持用",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回选择"
+              },
+              {
+                "state": "无可选物品",
+                "copyAndActionComparison": "matched",
+                "blocked": true,
+                "primary": "条件未满足",
+                "secondary": "返回世界"
+              }
+            ],
+            "contactSheetEmbeddedSourceSha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+            "currentSourceCoveredByVisualReview": true
+          }
+        ]
+      }
+    ],
+    "conclusion": "Not an unconditional pass. The old embedded/contact-sheet versions were actually reviewed. 9 newer source hashes require a fresh visual inspection, and CSA-01 remains recorded against the observed versions. No formal inputs were changed by this reviewer.",
+    "invalidation": {
+      "reason": "Source image hashes changed while independent review was in progress; contact sheets still refer to the previous hashes.",
+      "changedSourceCount": 9,
+      "officialFilesChangedByReviewer": false,
+      "requiredNextStep": "Wait for a stable regenerated contact-sheet manifest and actually inspect changed final images before marking passed."
+    }
+  },
+  "conclusion": "Passed at the final hashes recorded per source. Prior state-card visual acceptance is valid by independently checked unchanged pixels; CSA-01 is resolved by actual final native-image inspection. No formal inputs were changed by this reviewer."
+}

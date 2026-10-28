@@ -1,0 +1,67 @@
+{
+  "file": "art-delivery/resources/ui/clean-header-master.png",
+  "sha256": "22a9a26495a86065e1ed4f0c8642d07852f376cecef2c6a23ab928ce7c816564",
+  "generatedAt": "2026-10-26T07:09:14.851789-04:00",
+  "generatedAtEvidence": "Original host output file completion mtime; tool did not return generation timestamp",
+  "width": 2203,
+  "height": 714,
+  "format": "PNG",
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "tool": "image_gen.imagegen",
+  "route": "builtin",
+  "art_source": "host_image",
+  "configSnapshot": {
+    "schema_version": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "quality": "max",
+    "builtin_product": "ChatGPT Images 2.5",
+    "selection": "latest_verified",
+    "preferred_route": "builtin",
+    "verified_on": "2026-10-22",
+    "sources": {
+      "release": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "model": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+      "quality": "https://developers.openai.com/api/reference/resources/images/methods/generate"
+    }
+  },
+  "submittedParameters": {
+    "model": null,
+    "quality": null,
+    "transparent_background": true,
+    "referenced_image_paths": [
+      "F:\\work\\image\\designs\\mail-ui-v1\\01-mail-event.png",
+      "F:\\work\\image\\designs\\team-ui-v2\\team-ui-v2.png"
+    ]
+  },
+  "actualModel": null,
+  "actualQuality": null,
+  "unverifiedReason": "宿主管理；调用工具未开放 model/quality 选择器，实际返回没有可核实型号/质量。配置目标和提示词不作为实际返回证明。",
+  "prompt": "art-delivery/records/clean-header.prompt.txt",
+  "references": [
+    {
+      "file": "F:\\work\\image\\designs\\mail-ui-v1\\01-mail-event.png",
+      "sha256": "3cf0b7d7b3bae337d51e947719588419a01ae21bdce9bccedd6258ce1feef0a2",
+      "usage": "actual style image input"
+    },
+    {
+      "file": "F:\\work\\image\\designs\\team-ui-v2\\team-ui-v2.png",
+      "sha256": "5fab5229de7030ac48172cfa39bb45f612a545cee0dba6303ae6f2dcfdf38750",
+      "usage": "actual style image input"
+    }
+  ],
+  "evidence": {
+    "sourceOutput": "C:\\Users\\luyua\\.codex\\generated_images\\01a17787-b8fd-7f30-a97f-1c03f4aa7770\\exec-e1452fb5-2308-4abe-bb7d-37b396c723b5.png",
+    "returnedFields": [
+      "image_url",
+      "output_hint"
+    ],
+    "pngMetadataKeys": [],
+    "parentHandoff": "Parent agent supplied exact successful host output path and actual two-reference invocation."
+  },
+  "operation": "Byte-for-byte adoption of native host image; no resize/crop/edit of master. UI derivatives tracked independently.",
+  "nativeOutputPreserved": true
+}

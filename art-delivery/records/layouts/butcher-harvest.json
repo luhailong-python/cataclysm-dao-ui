@@ -1,0 +1,433 @@
+{
+  "id": "butcher-harvest",
+  "file": "art-delivery/designs/screens/butcher-harvest.png",
+  "sha256": "08d08347ef15d113d994f79bbe84ec50dfedf9045df44232e0c58fcf2475cb74",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-meat.png",
+      "sha256": "71235215c1c9e588b1a0b77541df89912a24363b6f20592a643cb06bfa2de040",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/icons/survival-meat.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "处理遗骸与收获",
+      "displayText": "处理遗骸与收获",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "butcher-harvest  ·  设计预览 / 非游戏运行截图",
+      "displayText": "butcher-harvest  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "快速处理",
+      "displayText": "快速处理",
+      "rect": [
+        525,
+        290,
+        270,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "耗时较短",
+      "displayText": "耗时较短",
+      "rect": [
+        420,
+        395,
+        370,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "完整处理",
+      "displayText": "完整处理",
+      "rect": [
+        999,
+        290,
+        270,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "需要工具",
+      "displayText": "需要工具",
+      "rect": [
+        894,
+        395,
+        370,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "解剖",
+      "displayText": "解剖",
+      "rect": [
+        1473,
+        290,
+        270,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "检查工具与知识",
+      "displayText": "检查工具与知识",
+      "rect": [
+        1368,
+        395,
+        370,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        525,
+        612,
+        270,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "暂不处理",
+      "displayText": "暂不处理",
+      "rect": [
+        420,
+        717,
+        370,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "选中的遗骸仍有可用材料。快速处理耗时较短，完整处理需要更多工具与时间。解剖前请检查所需工具和知识。",
+      "displayText": "选中的遗骸仍有可用材料。快速处理耗时较短，完整处理需要更多工具与时…",
+      "rect": [
+        450,
+        884,
+        680,
+        30
+      ],
+      "fontSize": 20,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "选择处理方式",
+      "displayText": "选择处理方式",
+      "rect": [
+        1162,
+        947.02,
+        346,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/butchery.cpp",
+      "symbol": "butcher_submenu(",
+      "line": 1184
+    }
+  ]
+}

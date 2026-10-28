@@ -1,0 +1,461 @@
+{
+  "id": "tutorial",
+  "file": "art-delivery/designs/screens/tutorial.png",
+  "sha256": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-book.png",
+      "sha256": "797e947ef96371e9b0f390e3149df30c2b0acfcd9c8b46942e4cb87434d9df40",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-selected.png",
+      "sha256": "841a8bba5c31946986af399ddfe5abf1d2c9879467e8a2cfe98e6cd7babee925",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/icons/survival-book.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/row-normal.png",
+    "art-delivery/resources/ui/row-selected.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "生存教学",
+      "displayText": "生存教学",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "tutorial  ·  设计预览 / 非游戏运行截图",
+      "displayText": "tutorial  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "生存教学 · 第一课",
+      "displayText": "生存教学 · 第一课",
+      "rect": [
+        640,
+        280,
+        1080,
+        50
+      ],
+      "fontSize": 34,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "观察周围（示例教学）\n查看附近的地形、物品与生物。\n完成观察后，沿走廊继续前进。",
+      "displayText": "观察周围（示例教学）\n查看附近的地形、物品与生物。\n完成观察后，沿走廊继续前进。",
+      "rect": [
+        640,
+        355,
+        1065,
+        120
+      ],
+      "fontSize": 27,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "观察周围",
+      "displayText": "观察周围",
+      "rect": [
+        495,
+        587,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#fff4d7",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "查看地形与物品",
+      "displayText": "查看地形与物品",
+      "rect": [
+        1520,
+        592,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#e9e6d2",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "移动一步",
+      "displayText": "移动一步",
+      "rect": [
+        495,
+        655,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "理解回合推进",
+      "displayText": "理解回合推进",
+      "rect": [
+        1520,
+        660,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "拾取物品",
+      "displayText": "拾取物品",
+      "rect": [
+        495,
+        723,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "打开附近物品",
+      "displayText": "打开附近物品",
+      "rect": [
+        1520,
+        728,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "查看身体",
+      "displayText": "查看身体",
+      "rect": [
+        495,
+        791,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "了解伤势和需求",
+      "displayText": "了解伤势和需求",
+      "rect": [
+        1520,
+        796,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "查看操作",
+      "displayText": "查看操作",
+      "rect": [
+        1162,
+        947.02,
+        346,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "data/mods/dda_tutorial/traps.json",
+      "symbol": "tr_tutorial popup messages / main_menu tutorial entry",
+      "line": 19,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/data/mods/dda_tutorial/traps.json#L19"
+    }
+  ]
+}

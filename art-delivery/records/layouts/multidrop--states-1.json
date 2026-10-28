@@ -1,0 +1,576 @@
+{
+  "id": "multidrop",
+  "file": "art-delivery/designs/states/multidrop--states-1.png",
+  "sha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-disabled.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "丢弃与数量 · 状态",
+      "displayText": "丢弃与数量 · 状态",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "multidrop  ·  设计预览 / 非游戏运行截图",
+      "displayText": "multidrop  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "未选择",
+      "displayText": "未选择",
+      "rect": [
+        165,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "还没有选择要丢弃的物品。",
+      "displayText": "还没有选择要丢弃的物品。",
+      "rect": [
+        134,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "条件未满足",
+      "displayText": "条件未满足",
+      "rect": [
+        146,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "选择物品",
+      "displayText": "选择物品",
+      "rect": [
+        401,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "选中一件",
+      "displayText": "选中一件",
+      "rect": [
+        737,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "已选择一种物品准备丢弃，数量仍可调整。",
+      "displayText": "已选择一种物品准备丢弃，数量仍可调整。",
+      "rect": [
+        706,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "确认丢弃",
+      "displayText": "确认丢弃",
+      "rect": [
+        718,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        973,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "选中多件",
+      "displayText": "选中多件",
+      "rect": [
+        1309,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "已选择多种物品，确认后按各自选定数量丢弃。",
+      "displayText": "已选择多种物品，确认后按各自选定数量丢弃\n。",
+      "rect": [
+        1278,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "确认丢弃",
+      "displayText": "确认丢弃",
+      "rect": [
+        1290,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "数量边界",
+      "displayText": "数量边界",
+      "rect": [
+        165,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "丢弃数量必须在现有数量范围内。",
+      "displayText": "丢弃数量必须在现有数量范围内。",
+      "rect": [
+        134,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "条件未满足",
+      "displayText": "条件未满足",
+      "rect": [
+        146,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "调整数量",
+      "displayText": "调整数量",
+      "rect": [
+        401,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "收藏物提醒",
+      "displayText": "收藏物提醒",
+      "rect": [
+        737,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "选中内容包含收藏物品。确定仍要丢弃？",
+      "displayText": "选中内容包含收藏物品。确定仍要丢弃？",
+      "rect": [
+        706,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "仍要丢弃",
+      "displayText": "仍要丢弃",
+      "rect": [
+        718,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "取消",
+      "displayText": "取消",
+      "rect": [
+        973,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "取消",
+      "displayText": "取消",
+      "rect": [
+        1309,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "已取消丢弃，所有物品保留在原处。",
+      "displayText": "已取消丢弃，所有物品保留在原处。",
+      "rect": [
+        1278,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "返回行囊",
+      "displayText": "返回行囊",
+      "rect": [
+        1290,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-29",
+      "text": "状态与反馈合同 · 不执行游戏业务",
+      "displayText": "状态与反馈合同 · 不执行游戏业务",
+      "rect": [
+        365,
+        935,
+        1050,
+        30
+      ],
+      "fontSize": 20,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [
+    {
+      "label": "未选择",
+      "message": "还没有选择要丢弃的物品。",
+      "primaryLabel": "条件未满足",
+      "primaryEnabled": false,
+      "secondaryLabel": "选择物品",
+      "tone": "warning"
+    },
+    {
+      "label": "选中一件",
+      "message": "已选择一种物品准备丢弃，数量仍可调整。",
+      "primaryLabel": "确认丢弃",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "选中多件",
+      "message": "已选择多种物品，确认后按各自选定数量丢弃。",
+      "primaryLabel": "确认丢弃",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "数量边界",
+      "message": "丢弃数量必须在现有数量范围内。",
+      "primaryLabel": "条件未满足",
+      "primaryEnabled": false,
+      "secondaryLabel": "调整数量",
+      "tone": "warning"
+    },
+    {
+      "label": "收藏物提醒",
+      "message": "选中内容包含收藏物品。确定仍要丢弃？",
+      "primaryLabel": "仍要丢弃",
+      "primaryEnabled": true,
+      "secondaryLabel": "取消",
+      "tone": "danger"
+    },
+    {
+      "label": "取消",
+      "message": "已取消丢弃，所有物品保留在原处。",
+      "primaryLabel": "返回行囊",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    }
+  ],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/game_inventory.cpp",
+      "symbol": "game_menus::inv::multidrop / Multidrop selector",
+      "line": 2512,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/game_inventory.cpp#L2512"
+    }
+  ]
+}

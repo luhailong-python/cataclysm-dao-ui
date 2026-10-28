@@ -1,0 +1,576 @@
+{
+  "id": "worn-layers",
+  "file": "art-delivery/designs/states/worn-layers--states-1.png",
+  "sha256": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-disabled.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "穿戴与衣层 · 状态",
+      "displayText": "穿戴与衣层 · 状态",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "worn-layers  ·  设计预览 / 非游戏运行截图",
+      "displayText": "worn-layers  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "衣层正常",
+      "displayText": "衣层正常",
+      "rect": [
+        165,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "当前穿戴按内层、普通层、外层与绑缚层列出，可检查每层阻碍。",
+      "displayText": "当前穿戴按内层、普通层、外层与绑缚层列出\n，可检查每层阻碍。",
+      "rect": [
+        134,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "查看衣层详情",
+      "displayText": "查看衣层详情",
+      "rect": [
+        146,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "衣层冲突",
+      "displayText": "衣层冲突",
+      "rect": [
+        737,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "当前顺序产生额外衣层阻碍，可重新排列穿戴。",
+      "displayText": "当前顺序产生额外衣层阻碍，可重新排列穿戴\n。",
+      "rect": [
+        706,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "调整衣层",
+      "displayText": "调整衣层",
+      "rect": [
+        718,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        973,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "部位未覆盖",
+      "displayText": "部位未覆盖",
+      "rect": [
+        1309,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "这个部位没有被当前穿戴覆盖，请留意防护与保暖。",
+      "displayText": "这个部位没有被当前穿戴覆盖，请留意防护与\n保暖。",
+      "rect": [
+        1278,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "查看可穿物",
+      "displayText": "查看可穿物",
+      "rect": [
+        1290,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "阻碍过高",
+      "displayText": "阻碍过高",
+      "rect": [
+        165,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "该部位穿戴过多，行动会受到较大影响。",
+      "displayText": "该部位穿戴过多，行动会受到较大影响。",
+      "rect": [
+        134,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "调整穿戴",
+      "displayText": "调整穿戴",
+      "rect": [
+        146,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "无法脱下",
+      "displayText": "无法脱下",
+      "rect": [
+        737,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "当前条件不允许脱下这件装备。",
+      "displayText": "当前条件不允许脱下这件装备。",
+      "rect": [
+        706,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "条件未满足",
+      "displayText": "条件未满足",
+      "rect": [
+        718,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "返回穿戴列表",
+      "displayText": "返回穿戴列表",
+      "rect": [
+        973,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "选中移动",
+      "displayText": "选中移动",
+      "rect": [
+        1309,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "已选中一件衣物，可在允许的层次范围内调整穿戴顺序。",
+      "displayText": "已选中一件衣物，可在允许的层次范围内调整\n穿戴顺序。",
+      "rect": [
+        1278,
+        683,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "确认衣层位置",
+      "displayText": "确认衣层位置",
+      "rect": [
+        1290,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-29",
+      "text": "状态与反馈合同 · 不执行游戏业务",
+      "displayText": "状态与反馈合同 · 不执行游戏业务",
+      "rect": [
+        365,
+        935,
+        1050,
+        30
+      ],
+      "fontSize": 20,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [
+    {
+      "label": "衣层正常",
+      "message": "当前穿戴按内层、普通层、外层与绑缚层列出，可检查每层阻碍。",
+      "primaryLabel": "查看衣层详情",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "衣层冲突",
+      "message": "当前顺序产生额外衣层阻碍，可重新排列穿戴。",
+      "primaryLabel": "调整衣层",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "部位未覆盖",
+      "message": "这个部位没有被当前穿戴覆盖，请留意防护与保暖。",
+      "primaryLabel": "查看可穿物",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "阻碍过高",
+      "message": "该部位穿戴过多，行动会受到较大影响。",
+      "primaryLabel": "调整穿戴",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "无法脱下",
+      "message": "当前条件不允许脱下这件装备。",
+      "primaryLabel": "条件未满足",
+      "primaryEnabled": false,
+      "secondaryLabel": "返回穿戴列表",
+      "tone": "warning"
+    },
+    {
+      "label": "选中移动",
+      "message": "已选中一件衣物，可在允许的层次范围内调整穿戴顺序。",
+      "primaryLabel": "确认衣层位置",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    }
+  ],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/armor_layers.cpp",
+      "symbol": "outfit::sort_armor",
+      "line": 594,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/armor_layers.cpp#L594"
+    }
+  ]
+}

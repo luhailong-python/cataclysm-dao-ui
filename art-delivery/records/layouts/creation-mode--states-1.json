@@ -1,0 +1,576 @@
+{
+  "id": "creation-mode",
+  "file": "art-delivery/designs/states/creation-mode--states-1.png",
+  "sha256": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-disabled.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "创建方式 · 状态",
+      "displayText": "创建方式 · 状态",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "creation-mode  ·  设计预览 / 非游戏运行截图",
+      "displayText": "creation-mode  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "自定义",
+      "displayText": "自定义",
+      "rect": [
+        165,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "逐项选择情景、职业、属性与特征后，再确认身份出发。",
+      "displayText": "逐项选择情景、职业、属性与特征后，再确认\n身份出发。",
+      "rect": [
+        134,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "自定义人物",
+      "displayText": "自定义人物",
+      "rect": [
+        146,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "预设模板",
+      "displayText": "预设模板",
+      "rect": [
+        737,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "从已经保存的人物模板载入设定，出发前仍可检查调整。",
+      "displayText": "从已经保存的人物模板载入设定，出发前仍可\n检查调整。",
+      "rect": [
+        706,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "选择人物模板",
+      "displayText": "选择人物模板",
+      "rect": [
+        718,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        973,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "随机预览",
+      "displayText": "随机预览",
+      "rect": [
+        1309,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "随机人物已经生成。请预览其情景与能力，再决定是否出发。",
+      "displayText": "随机人物已经生成。请预览其情景与能力，再\n决定是否出发。",
+      "rect": [
+        1278,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "查看随机人物",
+      "displayText": "查看随机人物",
+      "rect": [
+        1290,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "保留情景重新随机",
+      "displayText": "保留情景重新随机",
+      "rect": [
+        165,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "保留当前开局情景，重新生成其余人物设定。",
+      "displayText": "保留当前开局情景，重新生成其余人物设定。",
+      "rect": [
+        134,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "重新随机",
+      "displayText": "重新随机",
+      "rect": [
+        146,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "返回预览",
+      "displayText": "返回预览",
+      "rect": [
+        401,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "立即游玩",
+      "displayText": "立即游玩",
+      "rect": [
+        737,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "将使用随机人物立即开始旅程，不再逐页调整。",
+      "displayText": "将使用随机人物立即开始旅程，不再逐页调整\n。",
+      "rect": [
+        706,
+        683,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "立即出发",
+      "displayText": "立即出发",
+      "rect": [
+        718,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "返回选择",
+      "displayText": "返回选择",
+      "rect": [
+        973,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "无模板",
+      "displayText": "无模板",
+      "rect": [
+        1309,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "尚未保存人物模板。可先自定义一名幸存者。",
+      "displayText": "尚未保存人物模板。可先自定义一名幸存者。",
+      "rect": [
+        1278,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "条件未满足",
+      "displayText": "条件未满足",
+      "rect": [
+        1290,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "自定义人物",
+      "displayText": "自定义人物",
+      "rect": [
+        1545,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-29",
+      "text": "状态与反馈合同 · 不执行游戏业务",
+      "displayText": "状态与反馈合同 · 不执行游戏业务",
+      "rect": [
+        365,
+        935,
+        1050,
+        30
+      ],
+      "fontSize": 20,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [
+    {
+      "label": "自定义",
+      "message": "逐项选择情景、职业、属性与特征后，再确认身份出发。",
+      "primaryLabel": "自定义人物",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "预设模板",
+      "message": "从已经保存的人物模板载入设定，出发前仍可检查调整。",
+      "primaryLabel": "选择人物模板",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "随机预览",
+      "message": "随机人物已经生成。请预览其情景与能力，再决定是否出发。",
+      "primaryLabel": "查看随机人物",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "保留情景重新随机",
+      "message": "保留当前开局情景，重新生成其余人物设定。",
+      "primaryLabel": "重新随机",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回预览",
+      "tone": "normal"
+    },
+    {
+      "label": "立即游玩",
+      "message": "将使用随机人物立即开始旅程，不再逐页调整。",
+      "primaryLabel": "立即出发",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回选择",
+      "tone": "normal"
+    },
+    {
+      "label": "无模板",
+      "message": "尚未保存人物模板。可先自定义一名幸存者。",
+      "primaryLabel": "条件未满足",
+      "primaryEnabled": false,
+      "secondaryLabel": "自定义人物",
+      "tone": "warning"
+    }
+  ],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/main_menu.cpp",
+      "symbol": "main_menu::new_character_tab / vNewGameSubItems",
+      "line": 476,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/main_menu.cpp#L476"
+    }
+  ]
+}

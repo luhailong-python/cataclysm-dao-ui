@@ -1,0 +1,10 @@
+{
+  "tool": "image_gen.imagegen",
+  "completedAt": "2026-10-26T05:43:42-04:00",
+  "returnedFields": ["image_url", "output_hint"],
+  "output_hint": "Generated images are saved to C:\\Users\\luyua\\.codex\\generated_images\\01a17787-b8fd-7f30-a97f-1c03f4aa7770 as C:\\Users\\luyua\\.codex\\generated_images\\01a17787-b8fd-7f30-a97f-1c03f4aa7770\\exec-f9f8fdbb-1d13-4928-acd8-eae015c57c70.png by default.",
+  "imageBytesStoredAt": "assets/art/survivor-keyart.png",
+  "actualModel": null,
+  "actualQuality": null,
+  "note": "No model, quality, snapshot version or generation ID was disclosed. The filename is an output filename, not model/version evidence. Base64 payload omitted from text record; the exact returned image bytes are retained in the final asset."
+}

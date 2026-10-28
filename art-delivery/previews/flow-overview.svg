@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<style>@font-face{font-family:NotoCJK;src:url(../resources/fonts/NotoSansCJKsc-Regular.otf)}text{font-family:NotoCJK,"Noto Sans CJK SC",sans-serif}</style>
+<rect width="1920" height="1080" fill="#f8f1df"/>
+<defs><pattern id="paper" x="0" y="0" width="375" height="57" patternUnits="userSpaceOnUse"><image href="../resources/ui/paper-tile.png" width="375" height="57" opacity="0.35"/></pattern></defs>
+<rect width="1920" height="1080" fill="url(#paper)"/>
+<rect x="54" y="38" width="1812" height="118" rx="24" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="92.0" y="104.0" font-size="44" fill="#fff2d0">青岚余生（暂定名） · 全游戏 UI 流程总览</text>
+<text x="92.0" y="194.0" font-size="24" fill="#69776a">固定参考提交 eb86dffd · 100 个玩家界面族 + 1 组通用弹窗 · 本阶段仅美术</text>
+<line x1="80" y1="216" x2="1840" y2="216" stroke="#b38e4c" stroke-width="2"/>
+<rect x="80" y="247" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="94" y="260" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="112.0" y="296.0" font-size="30" fill="#fff4d8">01  启程与创建</text>
+<text x="107.0" y="351.0" font-size="23" fill="#29463c">首页 → 世界 → 创建 / 读取</text>
+<text x="107.0" y="388.0" font-size="23" fill="#29463c">模组与世界规则独立确认</text>
+<text x="107.0" y="425.0" font-size="23" fill="#29463c">人物创建保留七个步骤</text>
+<rect x="680" y="247" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="694" y="260" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="712.0" y="296.0" font-size="30" fill="#fff4d8">02  行囊与容器</text>
+<text x="707.0" y="351.0" font-size="23" fill="#29463c">分类列表 → 物品详情 → 操作</text>
+<text x="707.0" y="388.0" font-size="23" fill="#29463c">容器容量与兼容条件可见</text>
+<text x="707.0" y="425.0" font-size="23" fill="#29463c">周边物品采用左右来源转移</text>
+<rect x="1280" y="247" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="1294" y="260" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1312.0" y="296.0" font-size="30" fill="#fff4d8">03  成长与制作</text>
+<text x="1307.0" y="351.0" font-size="23" fill="#29463c">配方 → 条件 → 批量 → 活动</text>
+<text x="1307.0" y="388.0" font-size="23" fill="#29463c">理论 / 实作 / 熟练技艺分开</text>
+<text x="1307.0" y="425.0" font-size="23" fill="#29463c">制作、建造与修理保留耗时</text>
+<rect x="80" y="494" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="94" y="507" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="112.0" y="543.0" font-size="30" fill="#fff4d8">04  生存与战斗</text>
+<text x="107.0" y="598.0" font-size="23" fill="#29463c">选择行动 → 目标 → 回合推进</text>
+<text x="107.0" y="635.0" font-size="23" fill="#29463c">伤势、饥渴、疲劳与士气可见</text>
+<text x="107.0" y="672.0" font-size="23" fill="#29463c">终局记录与返回入口分开</text>
+<rect x="680" y="494" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="694" y="507" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="712.0" y="543.0" font-size="30" fill="#fff4d8">05  探索与目标</text>
+<text x="707.0" y="598.0" font-size="23" fill="#29463c">地图地点 → 路线 → 到达 / 中断</text>
+<text x="707.0" y="635.0" font-size="23" fill="#29463c">任务含进行中 / 完成 / 失败</text>
+<text x="707.0" y="672.0" font-size="23" fill="#29463c">交互终端保留权限与警报</text>
+<rect x="1280" y="494" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="1294" y="507" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1312.0" y="543.0" font-size="30" fill="#fff4d8">06  社交与载具</text>
+<text x="1307.0" y="598.0" font-size="23" fill="#29463c">人物对话连接任务与交易</text>
+<text x="1307.0" y="635.0" font-size="23" fill="#29463c">营地派遣检查同伴和资源</text>
+<text x="1307.0" y="672.0" font-size="23" fill="#29463c">载具按部件进行维护补给</text>
+<rect x="680" y="741" width="560" height="217" rx="18" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<rect x="694" y="754" width="532" height="51" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="712.0" y="790.0" font-size="30" fill="#fff4d8">07  辅助与能力</text>
+<text x="707.0" y="845.0" font-size="23" fill="#29463c">设置保留应用 / 放弃 / 重启</text>
+<text x="707.0" y="882.0" font-size="23" fill="#29463c">规则可编辑、测试与保存</text>
+<text x="707.0" y="919.0" font-size="23" fill="#29463c">法术仅在适用内容启用时出现</text>
+<text x="598.5" y="1025.0" font-size="22" fill="#69776a">可选内容须满足启用条件；未确认的运营 / 联网系统不纳入本体已有功能。</text>
+</svg>

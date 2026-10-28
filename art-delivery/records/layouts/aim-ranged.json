@@ -1,0 +1,466 @@
+{
+  "id": "aim-ranged",
+  "file": "art-delivery/designs/screens/aim-ranged.png",
+  "sha256": "bdca811d6000b0d052a3d2f5bf055cf0bf56d4d68c75dbe177e66fa93342fab4",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/expedition-playfield.png",
+      "sha256": "514ec6c3e037d13ec5e4857cfa0ec9f8994a3cd9636205e239e435ca8a4e12ff",
+      "record": "art-delivery/resources/backgrounds/expedition-playfield.png.generation.json"
+    },
+    {
+      "file": "art-delivery/resources/characters/hero-survivor.png",
+      "sha256": "89402f654adbe05a1d1e93a1b0ec8c2f9bb2ca512a5d19d12d5ebd2cf526f471",
+      "record": "art-delivery/resources/characters/hero-survivor.png.generation.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-tooltip.png",
+      "sha256": "2318ef2fbc029a38d062660923c98631cd7a4965116e94e97c8a72d63784f7cd",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/progress-track.png",
+      "sha256": "f35d337bd76d4481db6636aba64172c0d86621fbddc043f3af1c6f7e1ae9697f",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/expedition-playfield.png",
+    "art-delivery/resources/characters/hero-survivor.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-tooltip.png",
+    "art-delivery/resources/ui/progress-track.png",
+    "art-delivery/resources/ui/row-normal.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "青岚 · 幸存者（样例）",
+      "displayText": "青岚 · 幸存者（样例）",
+      "rect": [
+        105,
+        62.0,
+        460,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "体力  82 / 100",
+      "displayText": "体力  82 / 100",
+      "rect": [
+        85,
+        118,
+        260,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "瞄准与目标",
+      "displayText": "瞄准与目标",
+      "rect": [
+        1420,
+        62.5,
+        410,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "时间",
+      "displayText": "时间",
+      "rect": [
+        1420,
+        154,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "春 · 第 3 日 08:40",
+      "displayText": "春 · 第 3 日 08:40",
+      "rect": [
+        1530,
+        154,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "天气",
+      "displayText": "天气",
+      "rect": [
+        1420,
+        228,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "晴朗 · 微风",
+      "displayText": "晴朗 · 微风",
+      "rect": [
+        1530,
+        228,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "行动",
+      "displayText": "行动",
+      "rect": [
+        1420,
+        302,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "步行 / 安全模式",
+      "displayText": "步行 / 安全模式",
+      "rect": [
+        1530,
+        302,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "口渴",
+      "displayText": "口渴",
+      "rect": [
+        1420,
+        376,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "轻度口渴",
+      "displayText": "轻度口渴",
+      "rect": [
+        1530,
+        376,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "饥饿",
+      "displayText": "饥饿",
+      "rect": [
+        1420,
+        450,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "尚可",
+      "displayText": "尚可",
+      "rect": [
+        1530,
+        450,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "疲劳",
+      "displayText": "疲劳",
+      "rect": [
+        1420,
+        524,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "精神良好",
+      "displayText": "精神良好",
+      "rect": [
+        1530,
+        524,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "徘徊者距你 6 格，当前弹药 3 / 5。快速射击耗时较少；继续瞄准可提高稳定性。弹道附近有人时，射击前需要再次确认。",
+      "displayText": "徘徊者距你 6 格，当前弹药 3 / 5。快速\n射击耗时较少；继续瞄准可提高稳定性\n。弹道附近有人时，射击前需要再次确\n认。",
+      "rect": [
+        1420,
+        650,
+        405,
+        136
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "命中预测  72%     距离  6 格     预计消耗  100 行动",
+      "displayText": "命中预测  72%     距离  6 格     预计消耗  100 行动",
+      "rect": [
+        473,
+        816,
+        750,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "移动",
+      "displayText": "移动",
+      "rect": [
+        72,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "等待",
+      "displayText": "等待",
+      "rect": [
+        230,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "观察",
+      "displayText": "观察",
+      "rect": [
+        388,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "物品",
+      "displayText": "物品",
+      "rect": [
+        546,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "制作",
+      "displayText": "制作",
+      "rect": [
+        704,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "射击",
+      "displayText": "射击",
+      "rect": [
+        862,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "地图",
+      "displayText": "地图",
+      "rect": [
+        1020,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "取消",
+      "displayText": "取消",
+      "rect": [
+        1178,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "瞄准与射击 · UI 美术示意",
+      "displayText": "瞄准与射击 · UI 美术示意",
+      "rect": [
+        720,
+        37,
+        560,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/ranged.cpp",
+      "symbol": "target_ui::run",
+      "line": 2847
+    }
+  ]
+}

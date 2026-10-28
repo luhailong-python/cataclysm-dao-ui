@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<style>@font-face{font-family:NotoCJK;src:url(../resources/fonts/NotoSansCJKsc-Regular.otf)}text{font-family:NotoCJK,"Noto Sans CJK SC",sans-serif}</style>
+<rect width="1920" height="1080" fill="#f8f1df"/>
+<defs><pattern id="paper" x="0" y="0" width="375" height="57" patternUnits="userSpaceOnUse"><image href="../resources/ui/paper-tile.png" width="375" height="57" opacity="0.35"/></pattern></defs>
+<rect width="1920" height="1080" fill="url(#paper)"/>
+<rect x="54" y="38" width="1812" height="118" rx="24" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="92.0" y="104.0" font-size="44" fill="#fff2d0">流程 01  ·  启程、世界与人物创建</text>
+<text x="92.0" y="194.0" font-size="24" fill="#69776a">青岚余生（暂定名） · 功能关系美术说明 · 入口、条件、确认、反馈与返回</text>
+<line x1="80" y1="216" x2="1840" y2="216" stroke="#b38e4c" stroke-width="2"/>
+<text x="88.0" y="269.0" font-size="27" fill="#235347">创建世界</text>
+<rect x="88.0" y="289" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="145.5" y="328.5" font-size="24" fill="#fff5d9">首页世界入口</text>
+<line x1="352.0" y1="326.5" x2="378.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,326.5 L369.0,320.5 L369.0,332.5 Z" fill="#235347"/>
+<rect x="385.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="466.5" y="328.5" font-size="24" fill="#29463c">世界列表</text>
+<line x1="649.0" y1="326.5" x2="675.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,326.5 L666.0,320.5 L666.0,332.5 Z" fill="#235347"/>
+<rect x="682.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="751.5" y="328.5" font-size="24" fill="#29463c">模组与规则</text>
+<line x1="946.0" y1="326.5" x2="972.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,326.5 L963.0,320.5 L963.0,332.5 Z" fill="#235347"/>
+<rect x="979.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="328.5" font-size="24" fill="#29463c">名称确认</text>
+<line x1="1243.0" y1="326.5" x2="1269.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,326.5 L1260.0,320.5 L1260.0,332.5 Z" fill="#235347"/>
+<rect x="1276.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1357.5" y="328.5" font-size="24" fill="#29463c">创建世界</text>
+<line x1="1540.0" y1="326.5" x2="1566.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,326.5 L1557.0,320.5 L1557.0,332.5 Z" fill="#235347"/>
+<rect x="1573.0" y="289" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="328.5" font-size="24" fill="#fff5d9">人物创建</text>
+<text x="88.0" y="442.0" font-size="27" fill="#235347">自定义人物 · 七步</text>
+<rect x="88.0" y="462" width="226.85714285714286" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="153.4" y="501.5" font-size="24" fill="#fff5d9">开局情景</text>
+<line x1="319.8571428571429" y1="499.5" x2="333.8571428571429" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M333.8571428571429,499.5 L324.8571428571429,493.5 L324.8571428571429,505.5 Z" fill="#235347"/>
+<rect x="340.8571428571429" y="462" width="226.85714285714286" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="430.3" y="501.5" font-size="24" fill="#29463c">职业</text>
+<line x1="572.7142857142858" y1="499.5" x2="586.7142857142858" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M586.7142857142858,499.5 L577.7142857142858,493.5 L577.7142857142858,505.5 Z" fill="#235347"/>
+<rect x="593.7142857142858" y="462" width="226.85714285714286" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="659.1" y="501.5" font-size="24" fill="#29463c">人生背景</text>
+<line x1="825.5714285714287" y1="499.5" x2="839.5714285714287" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M839.5714285714287,499.5 L830.5714285714287,493.5 L830.5714285714287,505.5 Z" fill="#235347"/>
+<rect x="846.5714285714286" y="462" width="226.85714285714286" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="912.0" y="501.5" font-size="24" fill="#29463c">初始属性</text>
+<line x1="1078.4285714285713" y1="499.5" x2="1092.4285714285713" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M1092.4285714285713,499.5 L1083.4285714285713,493.5 L1083.4285714285713,505.5 Z" fill="#235347"/>
+<rect x="1099.4285714285716" y="462" width="226.85714285714286" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1164.9" y="501.5" font-size="24" fill="#29463c">天赋特征</text>
+<line x1="1331.2857142857144" y1="499.5" x2="1345.2857142857144" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M1345.2857142857144,499.5 L1336.2857142857144,493.5 L1336.2857142857144,505.5 Z" fill="#235347"/>
+<rect x="1352.2857142857142" y="462" width="226.85714285714286" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1417.7" y="501.5" font-size="24" fill="#29463c">初始技能</text>
+<line x1="1584.142857142857" y1="499.5" x2="1598.142857142857" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M1598.142857142857,499.5 L1589.142857142857,493.5 L1589.142857142857,505.5 Z" fill="#235347"/>
+<rect x="1605.142857142857" y="462" width="226.85714285714286" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1670.6" y="501.5" font-size="24" fill="#fff5d9">身份总览</text>
+<text x="88.0" y="615.0" font-size="27" fill="#235347">出发与读取</text>
+<rect x="88.0" y="635" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="160.0" y="674.5" font-size="24" fill="#fff5d9">新建 / 读取</text>
+<line x1="352.0" y1="672.5" x2="378.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,672.5 L369.0,666.5 L369.0,678.5 Z" fill="#235347"/>
+<rect x="385.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="466.5" y="674.5" font-size="24" fill="#29463c">人物列表</text>
+<line x1="649.0" y1="672.5" x2="675.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,672.5 L666.0,666.5 L666.0,678.5 Z" fill="#235347"/>
+<rect x="682.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="751.5" y="674.5" font-size="24" fill="#29463c">身份与存档</text>
+<line x1="946.0" y1="672.5" x2="972.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,672.5 L963.0,666.5 L963.0,678.5 Z" fill="#235347"/>
+<rect x="979.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="674.5" font-size="24" fill="#29463c">出发确认</text>
+<line x1="1243.0" y1="672.5" x2="1269.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,672.5 L1260.0,666.5 L1260.0,678.5 Z" fill="#235347"/>
+<rect x="1276.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1357.5" y="674.5" font-size="24" fill="#29463c">加载步骤</text>
+<line x1="1540.0" y1="672.5" x2="1566.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,672.5 L1557.0,666.5 L1557.0,678.5 Z" fill="#235347"/>
+<rect x="1573.0" y="635" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1642.5" y="674.5" font-size="24" fill="#fff5d9">生存主界面</text>
+<rect x="70" y="810" width="1780" height="220" rx="12" fill="#eee7d4" stroke="#d0b578" stroke-width="2"/>
+<text x="96.0" y="848.0" font-size="24" fill="#29463c">情景、职业的解锁条件与特征冲突必须说明原因。</text>
+<text x="96.0" y="888.0" font-size="24" fill="#29463c">无世界 / 无人物 / 无模板 / 非法名称 / 读取失败各自有返回出口。</text>
+<text x="96.0" y="928.0" font-size="22" fill="#69776a">人物总览内可调整开局日期与起点；不是游戏中任意传送。</text>
+</svg>

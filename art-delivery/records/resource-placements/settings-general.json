@@ -1,0 +1,773 @@
+{
+  "file": "art-delivery/designs/screens/settings-general.png",
+  "screenSha256": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "rectOrder": "x,y,width,height",
+  "operation": "Geometry trace of the exact frozen composition recipe; no PNG pixels were regenerated or modified",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "traceTool": {
+    "file": "tools/export_resource_placements.py",
+    "sha256": "36f5db005c8b50c4e853f2542157584e249b45055be3e4ef0051f706fb713310"
+  },
+  "imageAreas": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "render": "Pillow ImageOps.fit, Lanczos, centering=(0.5,0.5)",
+      "layer": "background",
+      "drawOrder": 0,
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae"
+    },
+    {
+      "id": "panel-main",
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "rect": [
+        38,
+        62,
+        1844,
+        972
+      ],
+      "sourceSize": [
+        1440,
+        840
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        148,
+        125,
+        148,
+        112
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        115,
+        98,
+        115,
+        87
+      ],
+      "layer": "skin",
+      "drawOrder": 1,
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e"
+    },
+    {
+      "id": "title",
+      "file": "art-delivery/resources/ui/title.png",
+      "rect": [
+        645,
+        24,
+        630,
+        131
+      ],
+      "sourceSize": [
+        716,
+        145
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        180,
+        34,
+        170,
+        31
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        140,
+        27,
+        133,
+        24
+      ],
+      "layer": "skin",
+      "drawOrder": 2,
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        235,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 3,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        324,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 4,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        413,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 5,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        502,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 6,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        591,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 7,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        680,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 8,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-selected",
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "rect": [
+        86,
+        769,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 9,
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        95,
+        956,
+        220,
+        62
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 10,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        359,
+        225,
+        1473,
+        698
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 11,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        405,
+        345,
+        1370,
+        62
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 12,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        1270,
+        350,
+        452,
+        49
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        62,
+        26,
+        62,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 13,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        405,
+        415,
+        1370,
+        62
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 14,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        1270,
+        420,
+        452,
+        49
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        62,
+        26,
+        62,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 15,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        405,
+        485,
+        1370,
+        62
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 16,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        1270,
+        490,
+        452,
+        49
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        62,
+        26,
+        62,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 17,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        405,
+        555,
+        1370,
+        62
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 18,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        1270,
+        560,
+        452,
+        49
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        62,
+        26,
+        62,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 19,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        405,
+        625,
+        1370,
+        62
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 20,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        1270,
+        630,
+        452,
+        49
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        62,
+        26,
+        62,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 21,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        405,
+        695,
+        1370,
+        62
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 22,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        1270,
+        700,
+        452,
+        49
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        62,
+        26,
+        62,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 23,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        1150,
+        934,
+        370,
+        72
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 24,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    }
+  ],
+  "vectorUI": [
+    {
+      "shape": "full-canvas-dim",
+      "colorRGBA": [
+        23,
+        49,
+        39,
+        55
+      ]
+    }
+  ],
+  "textLayout": "art-delivery/records/layouts/settings-general.json",
+  "unityStatus": "Placement advice, not imported or verified in Unity"
+}

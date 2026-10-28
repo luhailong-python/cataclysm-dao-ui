@@ -1,0 +1,116 @@
+{
+  "file": "icons/1301.png",
+  "skillId": 1301,
+  "name": "丹华续脉",
+  "semanticIntent": "为1名存活友方恢复气血。技能等级越高，恢复量越高。",
+  "sha256": "5e3cf1bc778e1250c6df598be93a80c548e02053e65dc61fd2d04be2c12d6270",
+  "generatedAt": "2026-10-21T05:29:43.101034-04:00",
+  "generatedAtEvidence": "Time of persisting successful builtin edit; tool does not expose its own exact generation timestamp",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "mode": "RGB",
+  "nativeDimensions": [
+    1254,
+    1254
+  ],
+  "exportDimensions": [
+    1254,
+    1254
+  ],
+  "tool": "image_gen.imagegen",
+  "route": "builtin",
+  "configSnapshot": {
+    "schema_version": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "quality": "max",
+    "builtin_product": "ChatGPT Images 2.5",
+    "selection": "latest_verified",
+    "preferred_route": "builtin",
+    "verified_on": "2026-10-21",
+    "sources": {
+      "release": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "model": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+      "quality": "https://developers.openai.com/api/reference/resources/images/methods/generate"
+    }
+  },
+  "submittedParameters": {
+    "model": null,
+    "quality": null,
+    "transparent_background": false,
+    "referenced_image_paths": [
+      "E:\\work\\image\\designs\\mail-ui-v1\\01-mail-event.png",
+      "E:\\work\\image\\designs\\team-ui-v2\\team-ui-v2.png",
+      "E:\\work\\image\\designs\\class-skills-20260928\\icons-style-20261021\\icons\\1301.png"
+    ]
+  },
+  "actualModel": null,
+  "actualQuality": null,
+  "unverifiedReason": "Host managed; builtin tool exposes neither model/quality selectors nor verified returned model or quality metadata.",
+  "evidence": [
+    {
+      "file": "icons-style-20261021/records/1301-corners.tool-response.json",
+      "fields": [
+        "output_hint"
+      ]
+    }
+  ],
+  "prompt": "icons-style-20261021/prompts/1301-corners.txt",
+  "references": [
+    {
+      "file": "../../mail-ui-v1/01-mail-event.png",
+      "role": "Authoritative approved mail UI palette and corner background",
+      "sha256": "3cf0b7d7b3bae337d51e947719588419a01ae21bdce9bccedd6258ce1feef0a2"
+    },
+    {
+      "file": "../../team-ui-v2/team-ui-v2.png",
+      "role": "Authoritative approved team UI palette and fine frame",
+      "sha256": "5fab5229de7030ac48172cfa39bb45f612a545cee0dba6303ae6f2dcfdf38750"
+    },
+    {
+      "file": "icons/1301.png",
+      "role": "Edit target as it existed before this corner-only edit; workspace path now contains the new output",
+      "sha256": "0708b95d6690a574084adca35399a036526a84aa458198134427249d6ca8bb8a",
+      "beforeRecord": "records/1301-before-corners.generation.json",
+      "originalToolSourceFile": "C:\\Users\\luyua\\.codex\\generated_images\\01a15d26-e89c-79d2-8b12-c3442737af82\\exec-74e8dc43-5d4c-45fa-99d3-f4909c753aa0.png",
+      "sourceRetention": "Superseded black-corner workspace PNG replaced as authorized; prior bytes identified by SHA256 and original native tool path, without creating an image backup."
+    }
+  ],
+  "sourceFile": "C:\\Users\\luyua\\.codex\\generated_images\\01a15d68-278d-7560-8668-768a8a9e680b\\exec-8fc09e30-a160-4f27-975d-6ce7ec93a3b8.png",
+  "editTarget": {
+    "file": "icons/1301.png",
+    "sha256": "0708b95d6690a574084adca35399a036526a84aa458198134427249d6ca8bb8a",
+    "generationRecord": "records/1301-before-corners.generation.json"
+  },
+  "operation": "Builtin AI edit requested only replacement of pure black exterior corner triangles with pale warm ivory; native PNG copied byte-for-byte without local pixel edits.",
+  "visualReview": {
+    "status": "pending",
+    "requiredChecks": [
+      "Ivory outer corners",
+      "Subject/effect/frame invariants",
+      "74px readability"
+    ]
+  },
+  "semanticLabel": "单体治疗",
+  "pathBase": "icons-style-20261021 directory unless an absolute path is given",
+  "finalVisualReview": {
+    "status": "passed",
+    "reviewedAt": "2026-10-22T02:35:03.141139-04:00",
+    "sizes": [
+      38,
+      45,
+      50,
+      60,
+      74,
+      160,
+      288
+    ],
+    "evidence": "icons-style-20261021/qa/visual-review.json",
+    "reviewedSha256": "5e3cf1bc778e1250c6df598be93a80c548e02053e65dc61fd2d04be2c12d6270"
+  },
+  "derivedFrom": {
+    "file": "icons-style-20261021/icons/1301.png",
+    "sha256": "5e3cf1bc778e1250c6df598be93a80c548e02053e65dc61fd2d04be2c12d6270",
+    "generationRecord": "icons-style-20261021/icons/1301.png.generation.json"
+  }
+}

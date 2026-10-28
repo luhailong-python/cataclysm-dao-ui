@@ -1,0 +1,575 @@
+{
+  "id": "companion-assignment",
+  "file": "art-delivery/designs/states/companion-assignment--states-1.png",
+  "sha256": "4533b29f26a95f7acd7579917b1e02dda086257c4e4de942f57d6f9ebe0159aa",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-disabled.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "同伴工作与派遣 · 状态",
+      "displayText": "同伴工作与派遣 · 状态",
+      "rect": [
+        772.0,
+        50.209999999999994,
+        376,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "companion-assignment  ·  设计预览 / 非游戏运行截图",
+      "displayText": "companion-assignment  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "无人",
+      "displayText": "无人",
+      "rect": [
+        165,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "没有可指派的空闲同伴。",
+      "displayText": "没有可指派的空闲同伴。",
+      "rect": [
+        134,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "派遣白榆",
+      "displayText": "派遣白榆",
+      "rect": [
+        146,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "可指派",
+      "displayText": "可指派",
+      "rect": [
+        737,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "白榆目前可用，符合所选工作的要求。",
+      "displayText": "白榆目前可用，符合所选工作的要求。",
+      "rect": [
+        706,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "派遣白榆",
+      "displayText": "派遣白榆",
+      "rect": [
+        718,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        973,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "技能不符",
+      "displayText": "技能不符",
+      "rect": [
+        1309,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "该同伴未达到这项工作的技能条件。",
+      "displayText": "该同伴未达到这项工作的技能条件。",
+      "rect": [
+        1278,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "派遣白榆",
+      "displayText": "派遣白榆",
+      "rect": [
+        1290,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "工作中",
+      "displayText": "工作中",
+      "rect": [
+        165,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "同伴正在执行该项工作，可查看当前进度。",
+      "displayText": "同伴正在执行该项工作，可查看当前进度。",
+      "rect": [
+        134,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "查看工作进度",
+      "displayText": "查看工作进度",
+      "rect": [
+        146,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "未到时间",
+      "displayText": "未到时间",
+      "rect": [
+        737,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "同伴仍在途中，暂时没有可回收的报告。",
+      "displayText": "同伴仍在途中，暂时没有可回收的报告。",
+      "rect": [
+        706,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "领取任务报告",
+      "displayText": "领取任务报告",
+      "rect": [
+        718,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        973,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "可回收",
+      "displayText": "可回收",
+      "rect": [
+        1309,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "同伴已经返回，可以查看报告与带回物资。",
+      "displayText": "同伴已经返回，可以查看报告与带回物资。",
+      "rect": [
+        1278,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "查看任务报告",
+      "displayText": "查看任务报告",
+      "rect": [
+        1290,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-29",
+      "text": "状态与反馈合同 · 不执行游戏业务 · 第 1 页",
+      "displayText": "状态与反馈合同 · 不执行游戏业务 · 第 1 页",
+      "rect": [
+        365,
+        935,
+        1050,
+        30
+      ],
+      "fontSize": 20,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [
+    {
+      "label": "无人",
+      "message": "没有可指派的空闲同伴。",
+      "primaryLabel": "派遣白榆",
+      "primaryEnabled": false,
+      "secondaryLabel": "返回",
+      "tone": "warning"
+    },
+    {
+      "label": "可指派",
+      "message": "白榆目前可用，符合所选工作的要求。",
+      "primaryLabel": "派遣白榆",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "技能不符",
+      "message": "该同伴未达到这项工作的技能条件。",
+      "primaryLabel": "派遣白榆",
+      "primaryEnabled": false,
+      "secondaryLabel": "返回",
+      "tone": "warning"
+    },
+    {
+      "label": "工作中",
+      "message": "同伴正在执行该项工作，可查看当前进度。",
+      "primaryLabel": "查看工作进度",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "未到时间",
+      "message": "同伴仍在途中，暂时没有可回收的报告。",
+      "primaryLabel": "领取任务报告",
+      "primaryEnabled": false,
+      "secondaryLabel": "返回",
+      "tone": "warning"
+    },
+    {
+      "label": "可回收",
+      "message": "同伴已经返回，可以查看报告与带回物资。",
+      "primaryLabel": "查看任务报告",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    }
+  ],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/faction_camp.cpp",
+      "symbol": "void basecamp::worker_assignment_ui",
+      "line": 2096
+    }
+  ]
+}

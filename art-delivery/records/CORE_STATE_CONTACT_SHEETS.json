@@ -1,0 +1,447 @@
+{
+  "method": "Actual state-board thumbnails; all contact sheets must be visually viewed before acceptance",
+  "sheets": [
+    {
+      "file": "art-delivery/previews/review-core/core-states-01.jpg",
+      "sha256": "5912e3ac7a718f86ccf8c8aecc215b615154480e1621004a035cfa66c9fbcd41",
+      "sourceImages": [
+        {
+          "id": "main-menu",
+          "file": "art-delivery/designs/states/main-menu--states-1.png",
+          "sha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b"
+        },
+        {
+          "id": "motd",
+          "file": "art-delivery/designs/states/motd--states-1.png",
+          "sha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb"
+        },
+        {
+          "id": "credits",
+          "file": "art-delivery/designs/states/credits--states-1.png",
+          "sha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581"
+        },
+        {
+          "id": "world-list",
+          "file": "art-delivery/designs/states/world-list--states-1.png",
+          "sha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-02.jpg",
+      "sha256": "77a1680327fe102fbff83c50a42abd1b47abf8d60a03c7b1c476a1bae3b165c5",
+      "sourceImages": [
+        {
+          "id": "world-list",
+          "file": "art-delivery/designs/states/world-list--states-2.png",
+          "sha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3"
+        },
+        {
+          "id": "world-create",
+          "file": "art-delivery/designs/states/world-create--states-1.png",
+          "sha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e"
+        },
+        {
+          "id": "world-create",
+          "file": "art-delivery/designs/states/world-create--states-2.png",
+          "sha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4"
+        },
+        {
+          "id": "world-mods",
+          "file": "art-delivery/designs/states/world-mods--states-1.png",
+          "sha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-03.jpg",
+      "sha256": "5ebcaa2476ac30295bcc2f7b2e19c9693984120fe0f200bb0648f057457a2d26",
+      "sourceImages": [
+        {
+          "id": "world-mods",
+          "file": "art-delivery/designs/states/world-mods--states-2.png",
+          "sha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8"
+        },
+        {
+          "id": "world-options",
+          "file": "art-delivery/designs/states/world-options--states-1.png",
+          "sha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd"
+        },
+        {
+          "id": "load-character",
+          "file": "art-delivery/designs/states/load-character--states-1.png",
+          "sha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a"
+        },
+        {
+          "id": "creation-mode",
+          "file": "art-delivery/designs/states/creation-mode--states-1.png",
+          "sha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-04.jpg",
+      "sha256": "77d0f796d82b88d01d9e118f8f75a240e253f608e102a426156269fbf13acd1f",
+      "sourceImages": [
+        {
+          "id": "creation-scenario",
+          "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+          "sha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13"
+        },
+        {
+          "id": "creation-profession",
+          "file": "art-delivery/designs/states/creation-profession--states-1.png",
+          "sha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19"
+        },
+        {
+          "id": "creation-background",
+          "file": "art-delivery/designs/states/creation-background--states-1.png",
+          "sha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7"
+        },
+        {
+          "id": "creation-stats",
+          "file": "art-delivery/designs/states/creation-stats--states-1.png",
+          "sha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-05.jpg",
+      "sha256": "c8087ff1d3e7eb9f349fbf694f72db88653f93aa4b3a46f98b63f0552980bdb5",
+      "sourceImages": [
+        {
+          "id": "creation-traits",
+          "file": "art-delivery/designs/states/creation-traits--states-1.png",
+          "sha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b"
+        },
+        {
+          "id": "creation-traits",
+          "file": "art-delivery/designs/states/creation-traits--states-2.png",
+          "sha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8"
+        },
+        {
+          "id": "creation-skills",
+          "file": "art-delivery/designs/states/creation-skills--states-1.png",
+          "sha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20"
+        },
+        {
+          "id": "creation-summary",
+          "file": "art-delivery/designs/states/creation-summary--states-1.png",
+          "sha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-06.jpg",
+      "sha256": "f5b926dcbdfdc4aab88e971ced7bd612ea58d32606b98a201cc2df9b6bb18217",
+      "sourceImages": [
+        {
+          "id": "creation-summary",
+          "file": "art-delivery/designs/states/creation-summary--states-2.png",
+          "sha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d"
+        },
+        {
+          "id": "character-templates",
+          "file": "art-delivery/designs/states/character-templates--states-1.png",
+          "sha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5"
+        },
+        {
+          "id": "character-sheet",
+          "file": "art-delivery/designs/states/character-sheet--states-1.png",
+          "sha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155"
+        },
+        {
+          "id": "character-encumbrance",
+          "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+          "sha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-07.jpg",
+      "sha256": "93fb899872b8020cfbaffc51e619a4731da6c09aedf6e4c2358022745ad7a0e2",
+      "sourceImages": [
+        {
+          "id": "character-skills",
+          "file": "art-delivery/designs/states/character-skills--states-1.png",
+          "sha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359"
+        },
+        {
+          "id": "character-proficiencies",
+          "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+          "sha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0"
+        },
+        {
+          "id": "inventory",
+          "file": "art-delivery/designs/states/inventory--states-1.png",
+          "sha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736"
+        },
+        {
+          "id": "inventory",
+          "file": "art-delivery/designs/states/inventory--states-2.png",
+          "sha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-08.jpg",
+      "sha256": "5e3a5397b5b88bd6bfd86e41028d954293e059b79955fc7cf4cc82323d16b7eb",
+      "sourceImages": [
+        {
+          "id": "item-detail",
+          "file": "art-delivery/designs/states/item-detail--states-1.png",
+          "sha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3"
+        },
+        {
+          "id": "item-compare",
+          "file": "art-delivery/designs/states/item-compare--states-1.png",
+          "sha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130"
+        },
+        {
+          "id": "item-containers",
+          "file": "art-delivery/designs/states/item-containers--states-1.png",
+          "sha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c"
+        },
+        {
+          "id": "item-containers",
+          "file": "art-delivery/designs/states/item-containers--states-2.png",
+          "sha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-09.jpg",
+      "sha256": "6d8afd209950ed2886a3f4b5d22d7f7f49395972571f1610341780934b9efbdc",
+      "sourceImages": [
+        {
+          "id": "advanced-inventory",
+          "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+          "sha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd"
+        },
+        {
+          "id": "advanced-inventory",
+          "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+          "sha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81"
+        },
+        {
+          "id": "worn-layers",
+          "file": "art-delivery/designs/states/worn-layers--states-1.png",
+          "sha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb"
+        },
+        {
+          "id": "wield",
+          "file": "art-delivery/designs/states/wield--states-1.png",
+          "sha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-10.jpg",
+      "sha256": "363acbb49184bb844c69a11aa37cf7fc45b8c41b34fb35c58fda2075819e226b",
+      "sourceImages": [
+        {
+          "id": "pickup",
+          "file": "art-delivery/designs/states/pickup--states-1.png",
+          "sha256": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0"
+        },
+        {
+          "id": "multidrop",
+          "file": "art-delivery/designs/states/multidrop--states-1.png",
+          "sha256": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7"
+        },
+        {
+          "id": "consume",
+          "file": "art-delivery/designs/states/consume--states-1.png",
+          "sha256": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1"
+        },
+        {
+          "id": "read",
+          "file": "art-delivery/designs/states/read--states-1.png",
+          "sha256": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-11.jpg",
+      "sha256": "044810be6ba04d3fa05bb696793ac4b55c2fe530b11ff5a058021abb31b7ae00",
+      "sourceImages": [
+        {
+          "id": "read",
+          "file": "art-delivery/designs/states/read--states-2.png",
+          "sha256": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d"
+        },
+        {
+          "id": "reload",
+          "file": "art-delivery/designs/states/reload--states-1.png",
+          "sha256": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a"
+        },
+        {
+          "id": "item-unload",
+          "file": "art-delivery/designs/states/item-unload--states-1.png",
+          "sha256": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3"
+        },
+        {
+          "id": "liquid-transfer",
+          "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+          "sha256": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-12.jpg",
+      "sha256": "e76f391894ed52164efe2be779b3b979f4ae28df03476991d4a9fad1a90fab04",
+      "sourceImages": [
+        {
+          "id": "item-use",
+          "file": "art-delivery/designs/states/item-use--states-1.png",
+          "sha256": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad"
+        },
+        {
+          "id": "electronic-files",
+          "file": "art-delivery/designs/states/electronic-files--states-1.png",
+          "sha256": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306"
+        },
+        {
+          "id": "electronic-files",
+          "file": "art-delivery/designs/states/electronic-files--states-2.png",
+          "sha256": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c"
+        },
+        {
+          "id": "repair",
+          "file": "art-delivery/designs/states/repair--states-1.png",
+          "sha256": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-13.jpg",
+      "sha256": "55cbb316b2353580c95367def1ed1149b3b8ec453a9aa1fab3dda2861a8cd992",
+      "sourceImages": [
+        {
+          "id": "repair",
+          "file": "art-delivery/designs/states/repair--states-2.png",
+          "sha256": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492"
+        },
+        {
+          "id": "gunmods",
+          "file": "art-delivery/designs/states/gunmods--states-1.png",
+          "sha256": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b"
+        },
+        {
+          "id": "gunmods",
+          "file": "art-delivery/designs/states/gunmods--states-2.png",
+          "sha256": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9"
+        },
+        {
+          "id": "craft-recipes",
+          "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+          "sha256": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-14.jpg",
+      "sha256": "2715ace9f0e226f70d8d18c4884a00418cc00d37900ab4901d08f5e311560153",
+      "sourceImages": [
+        {
+          "id": "craft-recipes",
+          "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+          "sha256": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae"
+        },
+        {
+          "id": "craft-batch",
+          "file": "art-delivery/designs/states/craft-batch--states-1.png",
+          "sha256": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f"
+        },
+        {
+          "id": "craft-batch",
+          "file": "art-delivery/designs/states/craft-batch--states-2.png",
+          "sha256": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812"
+        },
+        {
+          "id": "disassemble",
+          "file": "art-delivery/designs/states/disassemble--states-1.png",
+          "sha256": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-15.jpg",
+      "sha256": "ecc6b6d0e413598ba53c773bc9b4058a0b35e3e141656a48da06160a90667713",
+      "sourceImages": [
+        {
+          "id": "disassemble",
+          "file": "art-delivery/designs/states/disassemble--states-2.png",
+          "sha256": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597"
+        },
+        {
+          "id": "settings-general",
+          "file": "art-delivery/designs/states/settings-general--states-1.png",
+          "sha256": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c"
+        },
+        {
+          "id": "settings-interface",
+          "file": "art-delivery/designs/states/settings-interface--states-1.png",
+          "sha256": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2"
+        },
+        {
+          "id": "settings-graphics",
+          "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+          "sha256": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-16.jpg",
+      "sha256": "50367e5a7d27f293d4f7fca89694daea314a94ef9de454434317ff10f10350e4",
+      "sourceImages": [
+        {
+          "id": "settings-audio",
+          "file": "art-delivery/designs/states/settings-audio--states-1.png",
+          "sha256": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d"
+        },
+        {
+          "id": "keybindings",
+          "file": "art-delivery/designs/states/keybindings--states-1.png",
+          "sha256": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c"
+        },
+        {
+          "id": "keybindings",
+          "file": "art-delivery/designs/states/keybindings--states-2.png",
+          "sha256": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150"
+        },
+        {
+          "id": "help",
+          "file": "art-delivery/designs/states/help--states-1.png",
+          "sha256": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-17.jpg",
+      "sha256": "fb825797071d299fe33c8fb192bd239a59fd41ab7c5da811786512818c9c0978",
+      "sourceImages": [
+        {
+          "id": "colors-theme",
+          "file": "art-delivery/designs/states/colors-theme--states-1.png",
+          "sha256": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60"
+        },
+        {
+          "id": "loading",
+          "file": "art-delivery/designs/states/loading--states-1.png",
+          "sha256": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82"
+        },
+        {
+          "id": "tutorial",
+          "file": "art-delivery/designs/states/tutorial--states-1.png",
+          "sha256": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727"
+        },
+        {
+          "id": "common-dialogs",
+          "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+          "sha256": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36"
+        }
+      ]
+    }
+  ]
+}

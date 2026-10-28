@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-26T15:43:13.995532+00:00",
+  "reviewScope": "Directed documentation consistency review only: root README, art-delivery README, UNITY_IMPORT, complete resource index and CSV. No image regeneration, screen re-rendering, business or old launcher audit.",
+  "status": "passed-directed-doc-consistency; final production targets tracked separately",
+  "documents": [
+    {
+      "file": "README.md",
+      "sha256": "6c1959433ed2a3cc646404bfd1aac374fa9359a929e28a5c05948deb52f34985"
+    },
+    {
+      "file": "art-delivery/README.md",
+      "sha256": "e855f7605b07bd5a37f386b5228733f4fefbe2bca43de60e406a55bb2989a6de"
+    },
+    {
+      "file": "docs/art-v2/UNITY_IMPORT.md",
+      "sha256": "b5e20426386d3d37884ed9dcec7606cfd4ffd8ac78b48e270e4f404c718c3ccf"
+    }
+  ],
+  "evidence": [
+    {
+      "file": "art-delivery/records/ui-master-manifest.json",
+      "sha256": "a254695af6feefd5ef6c97096af041a6377833e604edf7f9ce5ab4de3d07d873"
+    },
+    {
+      "file": "art-delivery/records/complete-resource-manifest.json",
+      "sha256": "edf5f3bbe52a0cbfc382e165112049601486de4dafae71e98c2b5de9c47982f9"
+    },
+    {
+      "file": "art-delivery/records/asset-manifest.json",
+      "sha256": "0d6f4ed9bdf77e6d6817a920fb8b9393c21a063b8126093658c682d739f313fa"
+    },
+    {
+      "file": "art-delivery/records/unity-import-complete.csv",
+      "sha256": "37dc311f6b75d1f10341cefc46d4e38125669ae1926b338f0776c79e900aeed5"
+    },
+    {
+      "file": "art-delivery/records/flow-manifest.json",
+      "sha256": "e79aa2ec53d556e6ca28c7cd9f8c183f5f155137a366bc981a92d686f9a08162"
+    },
+    {
+      "file": "art-delivery/records/resource-placement-index.json",
+      "sha256": "58e725f8e2461c4d060039412449de0cb5d3d657db310bbf896974c2574047d7"
+    },
+    {
+      "file": "art-delivery/records/placement-validation.json",
+      "sha256": "33fc30eed5239c96813afcc000d4380abc114e9fbfab9b0eab045266f1d39770"
+    },
+    {
+      "file": "docs/art-v2/RESOURCE_PLACEMENTS.md",
+      "sha256": "7bef24f8d75f353989fd0ba9f5c32218d9f921e590df225abc5393a35bbb7d97"
+    },
+    {
+      "file": "art-delivery/records/state-ghost-repair.json",
+      "sha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5"
+    }
+  ],
+  "verifiedCounts": {
+    "sourceInterfaceFamilies": 100,
+    "commonInterfaceFamilies": 1,
+    "allInterfaceFamilies": 101,
+    "sourceStateEntries": 604,
+    "commonStateEntries": 6,
+    "allStateEntries": 610,
+    "mainDesignPngs": 101,
+    "stateBoardPngs": 133,
+    "expectedStateBoardsAtMostSixPerBoard": 133,
+    "formalIndependentResources": 112,
+    "sourceOnlyMasterImages": 2,
+    "baseKitResources": 108,
+    "flowOverviewPngs": 1,
+    "flowGroupPngs": 7,
+    "resourcePlacementRecords": 234
+  },
+  "resourceCategoryCounts": {
+    "ui": 54,
+    "icons": 54,
+    "backgrounds": 3,
+    "characters": 1
+  },
+  "checks": {
+    "numericStatementsConsistent": true,
+    "source604PlusCommon6Equals610": true,
+    "source100PlusCommon1Equals101": true,
+    "formal112PlusSourceOnly2ClearlySeparated": true,
+    "csv112IdsMatchManifest": true,
+    "base108EntriesUnchanged": true,
+    "base108ManifestHashBindingVerified": true,
+    "allNonDeferredLocalMarkdownLinksExist": true,
+    "unityAdviceExplicitlyNotEngineValidated": true,
+    "nativeBackgroundAndCharacterPixelSizesConsistent": true,
+    "noFWritePerformed": true,
+    "noOldAppDirectoryAuditPerformed": true,
+    "resourcePlacementLinksExist": true,
+    "resourcePlacement234MetadataBindingsIndependentlyVerified": true,
+    "reviewDidNotModifyImagesRendererCopyOrLayouts": true,
+    "currentRepairedPlacementBindingsVerified": true
+  },
+  "corrections": [
+    {
+      "file": "README.md",
+      "change": "State total explicitly separated into 604 source-system entries + 6 common entries = 610."
+    },
+    {
+      "file": "art-delivery/README.md",
+      "change": "Clarified 100 source families + 1 common family = 101, and 604 + 6 = 610; corrected complete CSV path to records/unity-import-complete.csv and made resource index, CSV and file-validation links clickable."
+    },
+    {
+      "file": "docs/art-v2/UNITY_IMPORT.md",
+      "change": "Declared paths relative to project root; added correct clickable ../../art-delivery links; expanded clean header path to art-delivery/resources/ui/clean-header-master.png."
+    }
+  ],
+  "markdownLinkChecks": [
+    {
+      "document": "README.md",
+      "target": "art-delivery/previews/index.html",
+      "resolvedProjectPath": "art-delivery/previews/index.html",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "exports/qinglan-ui-art-20261026.zip",
+      "resolvedProjectPath": "exports/qinglan-ui-art-20261026.zip",
+      "check": "deferred-final-production-target"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/previews/UI_COVERAGE.md",
+      "resolvedProjectPath": "art-delivery/previews/UI_COVERAGE.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/records/ui-master-manifest.json",
+      "resolvedProjectPath": "art-delivery/records/ui-master-manifest.json",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/resources/",
+      "resolvedProjectPath": "art-delivery/resources",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/records/complete-resource-manifest.json",
+      "resolvedProjectPath": "art-delivery/records/complete-resource-manifest.json",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/previews/flow-overview.png",
+      "resolvedProjectPath": "art-delivery/previews/flow-overview.png",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/art-v2/FLOWS.md",
+      "resolvedProjectPath": "docs/art-v2/FLOWS.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/art-v2/UNITY_IMPORT.md",
+      "resolvedProjectPath": "docs/art-v2/UNITY_IMPORT.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/records/unity-import-complete.csv",
+      "resolvedProjectPath": "art-delivery/records/unity-import-complete.csv",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/records/FINAL_ACCEPTANCE.json",
+      "resolvedProjectPath": "art-delivery/records/FINAL_ACCEPTANCE.json",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "art-delivery/README.md",
+      "resolvedProjectPath": "art-delivery/README.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/image-reference-associations.md",
+      "resolvedProjectPath": "docs/image-reference-associations.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "https://github.com/CleverRaven/Cataclysm-DDA",
+      "check": "external-or-anchor-not-in-local-file-scope"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/art-v2/UI_REQUIREMENTS_CORE.md",
+      "resolvedProjectPath": "docs/art-v2/UI_REQUIREMENTS_CORE.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/art-v2/advanced-systems.md",
+      "resolvedProjectPath": "docs/art-v2/advanced-systems.md",
+      "check": "exists"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/legacy-launcher.md",
+      "resolvedProjectPath": "docs/legacy-launcher.md",
+      "check": "exists"
+    },
+    {
+      "document": "art-delivery/README.md",
+      "target": "records/ui-master-manifest.json",
+      "resolvedProjectPath": "art-delivery/records/ui-master-manifest.json",
+      "check": "exists"
+    },
+    {
+      "document": "art-delivery/README.md",
+      "target": "records/complete-resource-manifest.json",
+      "resolvedProjectPath": "art-delivery/records/complete-resource-manifest.json",
+      "check": "exists"
+    },
+    {
+      "document": "art-delivery/README.md",
+      "target": "records/unity-import-complete.csv",
+      "resolvedProjectPath": "art-delivery/records/unity-import-complete.csv",
+      "check": "exists"
+    },
+    {
+      "document": "art-delivery/README.md",
+      "target": "records/complete-resource-validation.json",
+      "resolvedProjectPath": "art-delivery/records/complete-resource-validation.json",
+      "check": "exists"
+    },
+    {
+      "document": "art-delivery/README.md",
+      "target": "records/FINAL_ACCEPTANCE.json",
+      "resolvedProjectPath": "art-delivery/records/FINAL_ACCEPTANCE.json",
+      "check": "exists"
+    },
+    {
+      "document": "art-delivery/README.md",
+      "target": "../docs/art-v2/UNITY_IMPORT.md",
+      "resolvedProjectPath": "docs/art-v2/UNITY_IMPORT.md",
+      "check": "exists"
+    },
+    {
+      "document": "docs/art-v2/UNITY_IMPORT.md",
+      "target": "../../art-delivery/records/complete-resource-manifest.json",
+      "resolvedProjectPath": "art-delivery/records/complete-resource-manifest.json",
+      "check": "exists"
+    },
+    {
+      "document": "docs/art-v2/UNITY_IMPORT.md",
+      "target": "../../art-delivery/records/unity-import-complete.csv",
+      "resolvedProjectPath": "art-delivery/records/unity-import-complete.csv",
+      "check": "exists"
+    },
+    {
+      "document": "docs/art-v2/UNITY_IMPORT.md",
+      "target": "../../art-delivery/records/complete-resource-validation.json",
+      "resolvedProjectPath": "art-delivery/records/complete-resource-validation.json",
+      "check": "exists"
+    },
+    {
+      "document": "docs/art-v2/UNITY_IMPORT.md",
+      "target": "../../art-delivery/records/resource-placement-index.json",
+      "resolvedProjectPath": "art-delivery/records/resource-placement-index.json",
+      "check": "exists"
+    },
+    {
+      "document": "docs/art-v2/UNITY_IMPORT.md",
+      "target": "RESOURCE_PLACEMENTS.md",
+      "resolvedProjectPath": "docs/art-v2/RESOURCE_PLACEMENTS.md",
+      "check": "exists"
+    }
+  ],
+  "parallelProductionTargets": [
+    {
+      "file": "art-delivery/records/FINAL_ACCEPTANCE.json",
+      "state": "reserved-final-production-target",
+      "reportedMissing": false
+    },
+    {
+      "file": "exports/qinglan-ui-art-20261026.zip",
+      "state": "reserved-final-production-target",
+      "reportedMissing": false
+    },
+    {
+      "file": "docs/art-v2/REVIEW_CORE_ART.json",
+      "state": "confirmed-in-progress-by-coordinator",
+      "reportedMissing": false,
+      "note": "Parent confirmed core visual-review agent is writing this exact path."
+    }
+  ],
+  "limitations": [
+    "This is a document and index consistency review; it does not replace independent visual acceptance or final archive checks.",
+    "Unity import, runtime, TMP and platform verification remain next-stage tasks."
+  ],
+  "latestRevisionNote": "Refreshed after coordinator repaired state-board footer ghost and re-exported 234 placements. Independently verified the current PNG/layout/index/four-recipe bindings, then refreshed documentation/evidence hashes and local links. The 112 resource index, base108 manifest and complete CSV hashes remain unchanged. No pixel re-review or historical baseline scan was performed by this validator.",
+  "postAcceptanceMetadataRefresh": {
+    "by": "root",
+    "sourceReviewSha256": "59d58c8ebee469871cb01ac52e46a962a465db61d89e23df3cea655b3c57bb04",
+    "changes": [
+      {
+        "file": "art-delivery/records/ui-master-manifest.json",
+        "before": "d35154c13375a88d9e2754573a22abedc624af565a484a6e7f58ede5b1d830ea",
+        "after": "a254695af6feefd5ef6c97096af041a6377833e604edf7f9ce5ab4de3d07d873"
+      }
+    ],
+    "reason": "Only master acceptance status/remaining-work metadata changed after 12127 formal checks passed; all three reviewed documents and other evidence hashes stayed identical. ZIP is the final packaging step."
+  }
+}

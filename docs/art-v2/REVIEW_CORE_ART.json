@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": 2,
+  "assembledAt": "2026-10-26T21:46:44.569508-04:00",
+  "assembledBy": "/root",
+  "overallStatus": "passed",
+  "scope": "Core 51 families plus shared-dialogue family: UI art only",
+  "method": "Coordinated aggregation of actual independent main-picture inspection, independent state-picture reports and exact bounded-repair checks. This aggregate is not a claim that the coordinator personally reopened every image.",
+  "mainReviewEvidence": {
+    "reviewer": "/root/art_final_qa",
+    "trustedTeamMessage": "最终主图9/9联系表已全实看（51），加之前20 pattern 原图+common6格、8流程原图；此前底部说明/对象/数量/导航修复均通过。核心主图无新增阻塞。",
+    "mainContactManifest": "art-delivery/records/CORE_CONTACT_SHEETS.json",
+    "mainContactManifestSha256": "2b4979c8abecbc65a41ae3f102963453ecb7f43c9c535356a5f8da12dc16efd0",
+    "mainPixelsUnchangedAfterReview": true
+  },
+  "stateReviewEvidence": [
+    {
+      "file": "docs/art-v2/REVIEW_CORE_STATES_A.json",
+      "sha256": "3ba2cff6b2f0711c42774a6d7300a6193e009a807e0161ddb6b316386481b2a0"
+    },
+    {
+      "file": "docs/art-v2/REVIEW_CORE_STATES_B.json",
+      "sha256": "e1a4e24050b385d8cb324105694c61582dfdbc641f6b2ee060845c0ae631151f"
+    }
+  ],
+  "boundedRepair": {
+    "file": "art-delivery/records/state-ghost-repair.json",
+    "sha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5",
+    "observedDelta": [
+      93,
+      923,
+      207,
+      935
+    ],
+    "allStateCardContentAndControlsUnchanged": true
+  },
+  "summary": {
+    "coreFamilies": 51,
+    "sharedFamilies": 1,
+    "mainScreens": 52,
+    "stateBoards": 68,
+    "coreStateEntries": 308,
+    "sharedStateEntries": 6,
+    "independentStateContactSheets": 17,
+    "afterRepairStateOriginalsActuallyViewed": 4,
+    "openBlockingFindings": 0,
+    "openMinorFindings": 0
+  },
+  "resolvedFindings": [
+    "Bottom descriptions intruding into panel decoration",
+    "Selected object, profession, location and detail mismatches",
+    "Unclear item comparison and repair object",
+    "Row icons and gun-modification subject mismatches",
+    "Missing visible quantity controls",
+    "Incorrect navigation fallback",
+    "Shared state-board underlying sample-footnote remnant"
+  ],
+  "reviewedFiles": [
+    {
+      "file": "art-delivery/designs/screens/main-menu.png",
+      "sha256": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/main-menu--states-1.png",
+      "sha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": true,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/motd.png",
+      "sha256": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/motd--states-1.png",
+      "sha256": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/credits.png",
+      "sha256": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/credits--states-1.png",
+      "sha256": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/world-list.png",
+      "sha256": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-1.png",
+      "sha256": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-2.png",
+      "sha256": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/world-create.png",
+      "sha256": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-1.png",
+      "sha256": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-2.png",
+      "sha256": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/world-mods.png",
+      "sha256": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-1.png",
+      "sha256": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-2.png",
+      "sha256": "e249fbf2f2eb0f48be7543e9bda0ee6f4cd585d263014ae3ba03452560bbae1b",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/world-options.png",
+      "sha256": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/world-options--states-1.png",
+      "sha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": true,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/load-character.png",
+      "sha256": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/load-character--states-1.png",
+      "sha256": "400e4de21f8e9c8c30a3c91ed988c8140bcac82f34565f306da7a643ef5efb12",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-mode.png",
+      "sha256": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-mode--states-1.png",
+      "sha256": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-scenario.png",
+      "sha256": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+      "sha256": "a653cf6b28ef1266f6862399df362a7bc2a86747daa378d9a54d9a0a74eec7d0",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-profession.png",
+      "sha256": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-profession--states-1.png",
+      "sha256": "6441ae0f4f5cf314f28a62647d0fde677c57bbeaea73423b680e50b02f9bd821",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-background.png",
+      "sha256": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-background--states-1.png",
+      "sha256": "723723f6cc9eacedc7dc28fd340ca446333740a645a8ba9847f104bb01dae416",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-stats.png",
+      "sha256": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-stats--states-1.png",
+      "sha256": "f148c85b876f49474ce88acf612c914330a735033d4ca9f2f65c000b05437ad8",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-traits.png",
+      "sha256": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-1.png",
+      "sha256": "6e0711d8b79bf96358f21dd83a609fef59e72082c5378a095577f84d1df375d5",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-2.png",
+      "sha256": "292d51c29f6b4fd6ea7bf7cf2309343b824dfc34026f529e52c39245855af99c",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-skills.png",
+      "sha256": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-skills--states-1.png",
+      "sha256": "32a999d4bd2879b4fe3c613bbc59b9153ab11d298e160b534075dcc7ace46dbd",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-summary.png",
+      "sha256": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-1.png",
+      "sha256": "7cb81f2e2541a4a94af76976a61372455bbc8fb605f355219046548227313261",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-2.png",
+      "sha256": "9bb5185a3826469bb86c3bd46dc86b952125e179dd7b07462f2a1fb4cd15c4c8",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/character-templates.png",
+      "sha256": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/character-templates--states-1.png",
+      "sha256": "23fad223e7a11f886058f7651430f252b568a7a0b4c5200a20a9a00835b4ebbc",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/character-sheet.png",
+      "sha256": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/character-sheet--states-1.png",
+      "sha256": "270a08aef2b3de1ef8ad40e96fd4a96602bf10d460554373159132ce2bae914e",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/character-encumbrance.png",
+      "sha256": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+      "sha256": "d4b4f4f7c284fd9b55c87b77e1fa3b730b72c26c709667ebf5c61986b3653f3b",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/character-skills.png",
+      "sha256": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/character-skills--states-1.png",
+      "sha256": "0df332f62c5361454ba0e9217b21de349806713f30e5da39a525385bc5b90b0f",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/character-proficiencies.png",
+      "sha256": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+      "sha256": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/inventory.png",
+      "sha256": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-1.png",
+      "sha256": "3b95f8c737591c4c962711f6af3714ceef375dcd844ece09f669a28eeb9bae3d",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-2.png",
+      "sha256": "119c8809dde6484f0d19592a95bb9118e4eaa44a7cbeff2eece1cced7b3bda82",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/item-detail.png",
+      "sha256": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/item-detail--states-1.png",
+      "sha256": "c2d830ef8725e63b719dc58a67ef7dacd55728d5ffd2b45e8fbc9bf0d3640ebb",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/item-compare.png",
+      "sha256": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/item-compare--states-1.png",
+      "sha256": "065b2ba1f1bc646dbe253b89bfb5ceeb243e8a563d74b93eb3a4db9f81b30530",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/item-containers.png",
+      "sha256": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-1.png",
+      "sha256": "6d3e3bc9e0073e0fc28c12d571300ca7ec36611e46328d54d72edb5f25f5395b",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-2.png",
+      "sha256": "8b3bedb258bac82d41571fdf1194fd477d2f491941cb72795608434ae1881c83",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/advanced-inventory.png",
+      "sha256": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+      "sha256": "752fdb24a50e6bc75451cc055f4239e01cf81b1c6e095437cf8d2a879dea1ef2",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+      "sha256": "89e7e5af717ca7202b773fde33563e2fee7274ed68f03379d04953cf49791f9e",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/worn-layers.png",
+      "sha256": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/worn-layers--states-1.png",
+      "sha256": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/wield.png",
+      "sha256": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/wield--states-1.png",
+      "sha256": "9f2d5c0ec223f1e5bbbfc3f68f6ca49de9cb85ec4a27a241b07c9e083bdb1a4a",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/pickup.png",
+      "sha256": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/pickup--states-1.png",
+      "sha256": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/multidrop.png",
+      "sha256": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/multidrop--states-1.png",
+      "sha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/consume.png",
+      "sha256": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/consume--states-1.png",
+      "sha256": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/read.png",
+      "sha256": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-1.png",
+      "sha256": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-2.png",
+      "sha256": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/reload.png",
+      "sha256": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/reload--states-1.png",
+      "sha256": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/item-unload.png",
+      "sha256": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/item-unload--states-1.png",
+      "sha256": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/liquid-transfer.png",
+      "sha256": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+      "sha256": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/item-use.png",
+      "sha256": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/item-use--states-1.png",
+      "sha256": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/electronic-files.png",
+      "sha256": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-1.png",
+      "sha256": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-2.png",
+      "sha256": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/repair.png",
+      "sha256": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-1.png",
+      "sha256": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-2.png",
+      "sha256": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/gunmods.png",
+      "sha256": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-1.png",
+      "sha256": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-2.png",
+      "sha256": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-recipes.png",
+      "sha256": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+      "sha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": true,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+      "sha256": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-batch.png",
+      "sha256": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-1.png",
+      "sha256": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-2.png",
+      "sha256": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/disassemble.png",
+      "sha256": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-1.png",
+      "sha256": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-2.png",
+      "sha256": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-general.png",
+      "sha256": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/settings-general--states-1.png",
+      "sha256": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-interface.png",
+      "sha256": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/settings-interface--states-1.png",
+      "sha256": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-graphics.png",
+      "sha256": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+      "sha256": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-audio.png",
+      "sha256": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/settings-audio--states-1.png",
+      "sha256": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/keybindings.png",
+      "sha256": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-1.png",
+      "sha256": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-2.png",
+      "sha256": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/help.png",
+      "sha256": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/help--states-1.png",
+      "sha256": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/colors-theme.png",
+      "sha256": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/colors-theme--states-1.png",
+      "sha256": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/loading.png",
+      "sha256": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/loading--states-1.png",
+      "sha256": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/tutorial.png",
+      "sha256": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/tutorial--states-1.png",
+      "sha256": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": false,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    },
+    {
+      "file": "art-delivery/designs/screens/common-dialogs.png",
+      "sha256": "e50e2ee72c772410b8e24b972601de23df75fac136e9761c0cddfda56b4d2240",
+      "reviewBasis": "Actual final main contact-sheet review by art_final_qa; common-dialogs original also reviewed; global repair proof confirms these PNG bytes did not change",
+      "actualView": true,
+      "actualViewBy": "/root/art_final_qa"
+    },
+    {
+      "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+      "sha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "reviewBasis": "Complete prior image/content review by independent core_states_a/b, then independent before/after pixel comparison and representative repaired-original views; no claim all repaired originals were reopened",
+      "actualView": true,
+      "previousCompleteContentReviewActuallyViewed": true,
+      "previouslyActuallyViewedSha256": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+      "independentPixelDifferenceBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "stateCardContentPixelsUnchanged": true
+    }
+  ],
+  "unityValidation": "Not performed; next phase",
+  "limitations": [
+    "Only four repaired core/shared state originals were reopened; the other repaired card contents were accepted through independently proven bit-identical pixels and the prior complete visual inspection.",
+    "Independent main-review observations above are retained from trusted team messages; the coordinator aggregated their evidence rather than claiming a new full manual view."
+  ]
+}

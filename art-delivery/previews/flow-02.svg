@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<style>@font-face{font-family:NotoCJK;src:url(../resources/fonts/NotoSansCJKsc-Regular.otf)}text{font-family:NotoCJK,"Noto Sans CJK SC",sans-serif}</style>
+<rect width="1920" height="1080" fill="#f8f1df"/>
+<defs><pattern id="paper" x="0" y="0" width="375" height="57" patternUnits="userSpaceOnUse"><image href="../resources/ui/paper-tile.png" width="375" height="57" opacity="0.35"/></pattern></defs>
+<rect width="1920" height="1080" fill="url(#paper)"/>
+<rect x="54" y="38" width="1812" height="118" rx="24" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="92.0" y="104.0" font-size="44" fill="#fff2d0">流程 02  ·  物品、容器与周边转移</text>
+<text x="92.0" y="194.0" font-size="24" fill="#69776a">青岚余生（暂定名） · 功能关系美术说明 · 入口、条件、确认、反馈与返回</text>
+<line x1="80" y1="216" x2="1840" y2="216" stroke="#b38e4c" stroke-width="2"/>
+<text x="88.0" y="269.0" font-size="27" fill="#235347">物品操作</text>
+<rect x="88.0" y="289" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="169.5" y="328.5" font-size="24" fill="#fff5d9">随身行囊</text>
+<line x1="352.0" y1="326.5" x2="378.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,326.5 L369.0,320.5 L369.0,332.5 Z" fill="#235347"/>
+<rect x="385.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="454.5" y="328.5" font-size="24" fill="#29463c">分类与搜索</text>
+<line x1="649.0" y1="326.5" x2="675.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,326.5 L666.0,320.5 L666.0,332.5 Z" fill="#235347"/>
+<rect x="682.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="763.5" y="328.5" font-size="24" fill="#29463c">物品详情</text>
+<line x1="946.0" y1="326.5" x2="972.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,326.5 L963.0,320.5 L963.0,332.5 Z" fill="#235347"/>
+<rect x="979.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="328.5" font-size="24" fill="#29463c">操作确认</text>
+<line x1="1243.0" y1="326.5" x2="1269.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,326.5 L1260.0,320.5 L1260.0,332.5 Z" fill="#235347"/>
+<rect x="1276.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1345.5" y="328.5" font-size="24" fill="#29463c">消耗与反馈</text>
+<line x1="1540.0" y1="326.5" x2="1566.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,326.5 L1557.0,320.5 L1557.0,332.5 Z" fill="#235347"/>
+<rect x="1573.0" y="289" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="328.5" font-size="24" fill="#fff5d9">返回行囊</text>
+<text x="88.0" y="442.0" font-size="27" fill="#235347">容器与口袋</text>
+<rect x="88.0" y="462" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="157.5" y="501.5" font-size="24" fill="#fff5d9">背包或容器</text>
+<line x1="352.0" y1="499.5" x2="378.0" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,499.5 L369.0,493.5 L369.0,505.5 Z" fill="#235347"/>
+<rect x="385.0" y="462" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="466.5" y="501.5" font-size="24" fill="#29463c">口袋列表</text>
+<line x1="649.0" y1="499.5" x2="675.0" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,499.5 L666.0,493.5 L666.0,505.5 Z" fill="#235347"/>
+<rect x="682.0" y="462" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="751.5" y="501.5" font-size="24" fill="#29463c">容量与规则</text>
+<line x1="946.0" y1="499.5" x2="972.0" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,499.5 L963.0,493.5 L963.0,505.5 Z" fill="#235347"/>
+<rect x="979.0" y="462" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="501.5" font-size="24" fill="#29463c">选择去向</text>
+<line x1="1243.0" y1="499.5" x2="1269.0" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,499.5 L1260.0,493.5 L1260.0,505.5 Z" fill="#235347"/>
+<rect x="1276.0" y="462" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1357.5" y="501.5" font-size="24" fill="#29463c">移动结果</text>
+<line x1="1540.0" y1="499.5" x2="1566.0" y2="499.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,499.5 L1557.0,493.5 L1557.0,505.5 Z" fill="#235347"/>
+<rect x="1573.0" y="462" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="501.5" font-size="24" fill="#fff5d9">返回容器</text>
+<text x="88.0" y="615.0" font-size="27" fill="#235347">周边转移</text>
+<rect x="88.0" y="635" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="145.5" y="674.5" font-size="24" fill="#fff5d9">高级物品管理</text>
+<line x1="352.0" y1="672.5" x2="378.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,672.5 L369.0,666.5 L369.0,678.5 Z" fill="#235347"/>
+<rect x="385.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="466.5" y="674.5" font-size="24" fill="#29463c">左右来源</text>
+<line x1="649.0" y1="672.5" x2="675.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,672.5 L666.0,666.5 L666.0,678.5 Z" fill="#235347"/>
+<rect x="682.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="763.5" y="674.5" font-size="24" fill="#29463c">多选物品</text>
+<line x1="946.0" y1="672.5" x2="972.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,672.5 L963.0,666.5 L963.0,678.5 Z" fill="#235347"/>
+<rect x="979.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="674.5" font-size="24" fill="#29463c">数量确认</text>
+<line x1="1243.0" y1="672.5" x2="1269.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,672.5 L1260.0,666.5 L1260.0,678.5 Z" fill="#235347"/>
+<rect x="1276.0" y="635" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1357.5" y="674.5" font-size="24" fill="#29463c">耗时转移</text>
+<line x1="1540.0" y1="672.5" x2="1566.0" y2="672.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,672.5 L1557.0,666.5 L1557.0,678.5 Z" fill="#235347"/>
+<rect x="1573.0" y="635" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="674.5" font-size="24" fill="#fff5d9">刷新来源</text>
+<rect x="70" y="810" width="1780" height="220" rx="12" fill="#eee7d4" stroke="#d0b578" stroke-width="2"/>
+<text x="96.0" y="848.0" font-size="24" fill="#29463c">饮食、阅读、装填、卸载、液体、电子资料共享选择 / 详情 / 结果结构。</text>
+<text x="96.0" y="888.0" font-size="24" fill="#29463c">容量不足、重量过高、弹药不兼容、容器不防水等限制不混成同一错误。</text>
+<text x="96.0" y="928.0" font-size="22" fill="#69776a">仓储来源是邻近地面、角色容器或载具货物，不新增远程公共仓库。</text>
+</svg>

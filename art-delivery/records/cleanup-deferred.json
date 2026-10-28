@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-27T02:00:36.6774909+00:00",
+  "status": "cleanup-rejected-by-automatic-policy",
+  "attemptedAction": "Remove 133 verified task-owned temporary comparison PNGs after final art acceptance",
+  "toolReason": "blocked by policy; no further detail supplied",
+  "retainedDirectory": "E:\\work\\image\\cataclysm-dao-ui\\.local\\state-review-baseline-20261026",
+  "retainedFiles": 133,
+  "finalArtworkModified": false,
+  "includedInDeliveryZip": false,
+  "furtherDeletionAttempted": false
+}

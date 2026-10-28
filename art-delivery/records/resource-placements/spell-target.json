@@ -1,0 +1,502 @@
+{
+  "file": "art-delivery/designs/screens/spell-target.png",
+  "screenSha256": "c1e296aef3bfb483c19dd0e1390a4b97b124d2b0be8bba11af0c802964b43a0a",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "rectOrder": "x,y,width,height",
+  "operation": "Geometry trace of the exact frozen composition recipe; no PNG pixels were regenerated or modified",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "traceTool": {
+    "file": "tools/export_resource_placements.py",
+    "sha256": "36f5db005c8b50c4e853f2542157584e249b45055be3e4ef0051f706fb713310"
+  },
+  "imageAreas": [
+    {
+      "file": "art-delivery/resources/backgrounds/expedition-playfield.png",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "render": "Pillow ImageOps.fit, Lanczos, centering=(0.5,0.5)",
+      "layer": "background",
+      "drawOrder": 0,
+      "sha256": "514ec6c3e037d13ec5e4857cfa0ec9f8994a3cd9636205e239e435ca8a4e12ff"
+    },
+    {
+      "id": "panel-tooltip",
+      "file": "art-delivery/resources/ui/panel-tooltip.png",
+      "rect": [
+        40,
+        35,
+        590,
+        174
+      ],
+      "sourceSize": [
+        448,
+        930
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        48,
+        80,
+        48,
+        160
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        35,
+        58,
+        35,
+        116
+      ],
+      "layer": "skin",
+      "drawOrder": 1,
+      "sha256": "2318ef2fbc029a38d062660923c98631cd7a4965116e94e97c8a72d63784f7cd"
+    },
+    {
+      "id": "progress-track",
+      "file": "art-delivery/resources/ui/progress-track.png",
+      "rect": [
+        90,
+        163,
+        460,
+        20
+      ],
+      "sourceSize": [
+        324,
+        23
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "layer": "skin",
+      "drawOrder": 2,
+      "sha256": "f35d337bd76d4481db6636aba64172c0d86621fbddc043f3af1c6f7e1ae9697f"
+    },
+    {
+      "id": "panel-tooltip",
+      "file": "art-delivery/resources/ui/panel-tooltip.png",
+      "rect": [
+        1370,
+        37,
+        510,
+        854
+      ],
+      "sourceSize": [
+        448,
+        930
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        48,
+        80,
+        48,
+        160
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        37,
+        62,
+        37,
+        125
+      ],
+      "layer": "skin",
+      "drawOrder": 3,
+      "sha256": "2318ef2fbc029a38d062660923c98631cd7a4965116e94e97c8a72d63784f7cd"
+    },
+    {
+      "file": "art-delivery/resources/characters/hero-survivor.png",
+      "rect": [
+        785,
+        407,
+        176,
+        264
+      ],
+      "resolvedRect": [
+        785,
+        407,
+        176,
+        264
+      ],
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 4,
+      "sha256": "89402f654adbe05a1d1e93a1b0ec8c2f9bb2ca512a5d19d12d5ebd2cf526f471"
+    },
+    {
+      "id": "panel-tooltip",
+      "file": "art-delivery/resources/ui/panel-tooltip.png",
+      "rect": [
+        430,
+        765,
+        825,
+        114
+      ],
+      "sourceSize": [
+        448,
+        930
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        48,
+        80,
+        48,
+        160
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        38,
+        23,
+        76
+      ],
+      "layer": "skin",
+      "drawOrder": 5,
+      "sha256": "2318ef2fbc029a38d062660923c98631cd7a4965116e94e97c8a72d63784f7cd"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        60,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 6,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        218,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 7,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        376,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 8,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        534,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 9,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        692,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 10,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        850,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 11,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        1008,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 12,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        1166,
+        941,
+        146,
+        75
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 13,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        700,
+        24,
+        600,
+        67
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 14,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    }
+  ],
+  "vectorUI": [
+    {
+      "shape": "rounded_rectangle",
+      "args": [
+        [
+          94,
+          167,
+          464,
+          179
+        ]
+      ],
+      "properties": {
+        "radius": 6,
+        "fill": "#214d41"
+      }
+    },
+    {
+      "shape": "ellipse",
+      "args": [
+        [
+          1020,
+          410,
+          1150,
+          540
+        ]
+      ],
+      "properties": {
+        "outline": "#a34f3f",
+        "width": 4
+      }
+    },
+    {
+      "shape": "line",
+      "args": [
+        [
+          875,
+          567,
+          1085,
+          475
+        ]
+      ],
+      "properties": {
+        "fill": "#a34f3f",
+        "width": 4
+      }
+    }
+  ],
+  "textLayout": "art-delivery/records/layouts/spell-target.json",
+  "unityStatus": "Placement advice, not imported or verified in Unity"
+}

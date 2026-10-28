@@ -1,0 +1,1652 @@
+{
+  "schemaVersion": 1,
+  "screenCount": 101,
+  "stateBoardCount": 133,
+  "recordCount": 234,
+  "sourceRecipe": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "records": [
+    {
+      "file": "art-delivery/designs/screens/main-menu.png",
+      "placementFile": "art-delivery/records/resource-placements/main-menu.json",
+      "sha256": "ddab786a40805daf7c1575650262c48c8297c590d0558504fd8d192a413e0b4c",
+      "screenSha256": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d",
+      "imageAreaCount": 7
+    },
+    {
+      "file": "art-delivery/designs/states/main-menu--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/main-menu--states-1.json",
+      "sha256": "8bd71761e19182cbef878ac9ea176d76578932bb63fea0894b4ea7915570d008",
+      "screenSha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/motd.png",
+      "placementFile": "art-delivery/records/resource-placements/motd.json",
+      "sha256": "421d4ac7f22577cae0a4f9414d0f8f79fc38b3026dfa2c8e68337d3e8ddb798c",
+      "screenSha256": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/states/motd--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/motd--states-1.json",
+      "sha256": "b223f908566040ca5d82332942954f98cf847e71bc2c9c45fcea38751e983b86",
+      "screenSha256": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/credits.png",
+      "placementFile": "art-delivery/records/resource-placements/credits.json",
+      "sha256": "56bc7ac659f3b5f19f22367ed8a35d573c4bfce321b47bcb8b163ab7cad9eeec",
+      "screenSha256": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/credits--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/credits--states-1.json",
+      "sha256": "0904781a0fc7f6b0720b429e82a0556c664a6c453ea01ede2eb30e1b77e3d2c3",
+      "screenSha256": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+      "imageAreaCount": 14
+    },
+    {
+      "file": "art-delivery/designs/screens/world-list.png",
+      "placementFile": "art-delivery/records/resource-placements/world-list.json",
+      "sha256": "97a0515a637f15b6aa68d3fc3b1cee2b00ddaaecab42e9400c15c5fe80cfdbb6",
+      "screenSha256": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/world-list--states-1.json",
+      "sha256": "58d0be6b14a2ce5fca0b27c1f3ea8bd54f7aa3c171bad91cee25539622531a16",
+      "screenSha256": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/world-list--states-2.json",
+      "sha256": "8411771283fc0656bcfdde426a6918c7e8907d27649e7b3c6a9ca4a546b6f86b",
+      "screenSha256": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/world-create.png",
+      "placementFile": "art-delivery/records/resource-placements/world-create.json",
+      "sha256": "7d3dfc840a0d8b56d5a52525efa2ed5fb57f4b22d5d98ffbe09aa2f152418240",
+      "screenSha256": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/world-create--states-1.json",
+      "sha256": "6b7be6af0c5788d686b59906549a07712086eee1456690db469d4711b654f325",
+      "screenSha256": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/world-create--states-2.json",
+      "sha256": "502672b39968cb35b1be1d3dabf2b8792a6db898d5ca7cadb7588d3360aeba06",
+      "screenSha256": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/world-mods.png",
+      "placementFile": "art-delivery/records/resource-placements/world-mods.json",
+      "sha256": "8756d0eba3ded8245a46f2ff87c0981d644f173b31563feecb790f512d6ee6e6",
+      "screenSha256": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb",
+      "imageAreaCount": 28
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/world-mods--states-1.json",
+      "sha256": "79e1972bfdebdb3c185b7ba7d5a04a2c233a95d264d247c975d13a0d5418ec70",
+      "screenSha256": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/world-mods--states-2.json",
+      "sha256": "55261433f779f42520d90c0f29fb654cf0bd0d456876f9bdad7e578a2ee7cb32",
+      "screenSha256": "e249fbf2f2eb0f48be7543e9bda0ee6f4cd585d263014ae3ba03452560bbae1b",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/world-options.png",
+      "placementFile": "art-delivery/records/resource-placements/world-options.json",
+      "sha256": "24cab462e676d097afa8056fbd55ca114e3462275beecdb25d80b4c353715766",
+      "screenSha256": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/world-options--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/world-options--states-1.json",
+      "sha256": "8f71fc9dbcd657928338494f4c3ac722a17041b8c43f4059cd6e641edd5d9d79",
+      "screenSha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/load-character.png",
+      "placementFile": "art-delivery/records/resource-placements/load-character.json",
+      "sha256": "1e9829252e1e472e8e5942da83f02c4a7a28f067366b03b5ba4d6e6b3ed3a203",
+      "screenSha256": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/load-character--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/load-character--states-1.json",
+      "sha256": "a2315b6df47397aec0581541da1e0b141e6e35722de4b4fb376c291517bb3608",
+      "screenSha256": "400e4de21f8e9c8c30a3c91ed988c8140bcac82f34565f306da7a643ef5efb12",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-mode.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-mode.json",
+      "sha256": "a5fe0fcfcbb881e37eb95f33d2894d8f2add08d8454df8f3d417a9122b0954a6",
+      "screenSha256": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/creation-mode--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-mode--states-1.json",
+      "sha256": "cb8787de14082e6556a3cb0c02a27902f09bba5701a8b5a747d7e8d1cee51b99",
+      "screenSha256": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-scenario.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-scenario.json",
+      "sha256": "8b16f7102d95ab00700b21ea9a61ddf8177bf49bc9b5ea7f645703e492adaa80",
+      "screenSha256": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-scenario--states-1.json",
+      "sha256": "5d5b623801342381d5a0dcc531ad91f7c9f917a828399f7f59d36c22e88688eb",
+      "screenSha256": "a653cf6b28ef1266f6862399df362a7bc2a86747daa378d9a54d9a0a74eec7d0",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-profession.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-profession.json",
+      "sha256": "32cdd846b837fce59fb154abe3af29c45a27b5fb989a4e0863e35bf64da959f8",
+      "screenSha256": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-profession--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-profession--states-1.json",
+      "sha256": "4faca52db54f3a829ca4b451624dcfb68037d45ebddf19d4b5138d0940e664fa",
+      "screenSha256": "6441ae0f4f5cf314f28a62647d0fde677c57bbeaea73423b680e50b02f9bd821",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-background.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-background.json",
+      "sha256": "e52afe83b7116b3a7c0aa45604c339d691ec3003db648974e4ad34b65054eb92",
+      "screenSha256": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-background--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-background--states-1.json",
+      "sha256": "4320925e3e730f1c1de82c0fce3d4eba2e336ea92e9369f553fa188e4a7afabf",
+      "screenSha256": "723723f6cc9eacedc7dc28fd340ca446333740a645a8ba9847f104bb01dae416",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-stats.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-stats.json",
+      "sha256": "be3a1a0c14f67447aa13b41fe16952af83ea379f202d796528072a3f2e442c99",
+      "screenSha256": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/creation-stats--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-stats--states-1.json",
+      "sha256": "85b072d63e2c74f45780623c180166694c8e5fb75ed8d72eebab6ea07bcf0df7",
+      "screenSha256": "f148c85b876f49474ce88acf612c914330a735033d4ca9f2f65c000b05437ad8",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-traits.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-traits.json",
+      "sha256": "923f29bf7c113b0cb8f35e35378418570102b3e84c440d63124fc95f38c7e8ac",
+      "screenSha256": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f",
+      "imageAreaCount": 28
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-traits--states-1.json",
+      "sha256": "e20cc9eb6b72c78aefa9b9579923791cf6180c70bf45e6410d15f694cae709d4",
+      "screenSha256": "6e0711d8b79bf96358f21dd83a609fef59e72082c5378a095577f84d1df375d5",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-traits--states-2.json",
+      "sha256": "f092dcfa9fbd088ca27be6b78670a3588cfb3d80edcce7a23da937b893eb75f5",
+      "screenSha256": "292d51c29f6b4fd6ea7bf7cf2309343b824dfc34026f529e52c39245855af99c",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-skills.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-skills.json",
+      "sha256": "6e2a1e934ed6d65e8ff5ccf28f55c0c983d539af3e9a24d05bb65c3de6370c53",
+      "screenSha256": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/creation-skills--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-skills--states-1.json",
+      "sha256": "2576ff46b8d90d7a20f1d8a467a0383f75d5c50fcdada159c6a687238ccc3836",
+      "screenSha256": "32a999d4bd2879b4fe3c613bbc59b9153ab11d298e160b534075dcc7ace46dbd",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-summary.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-summary.json",
+      "sha256": "8a45e13ab8a2243b2fa01881bef935a6c1a6eb3d6228761ed09f95f71da92654",
+      "screenSha256": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-summary--states-1.json",
+      "sha256": "9422341da118b4065b1c19a62491aa931212569ce4ba2ae872195abc5a12e5f8",
+      "screenSha256": "7cb81f2e2541a4a94af76976a61372455bbc8fb605f355219046548227313261",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/creation-summary--states-2.json",
+      "sha256": "0349f1ebbeb5947d15ec2f9e984f0067ef92d51dc4b696c39a970ff34cf41377",
+      "screenSha256": "9bb5185a3826469bb86c3bd46dc86b952125e179dd7b07462f2a1fb4cd15c4c8",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/character-templates.png",
+      "placementFile": "art-delivery/records/resource-placements/character-templates.json",
+      "sha256": "ee6f8c78031b497b8f508a6411ad6dceb852f36aa4b7a57b2d04cb9bafec4aae",
+      "screenSha256": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/character-templates--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/character-templates--states-1.json",
+      "sha256": "420a059417f0a8b1fe058b9060d9baf560ca67ea8622b15f85e5c9e29c22d649",
+      "screenSha256": "23fad223e7a11f886058f7651430f252b568a7a0b4c5200a20a9a00835b4ebbc",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/character-sheet.png",
+      "placementFile": "art-delivery/records/resource-placements/character-sheet.json",
+      "sha256": "b474fd4ea9116f9e7f145c99ec62f0c71c27882d38f246052590c92c42e43eaf",
+      "screenSha256": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/character-sheet--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/character-sheet--states-1.json",
+      "sha256": "518e1eb87e52b07161654300db8eb20d30d1e36945ef0d76290d6674c2b54100",
+      "screenSha256": "270a08aef2b3de1ef8ad40e96fd4a96602bf10d460554373159132ce2bae914e",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/character-encumbrance.png",
+      "placementFile": "art-delivery/records/resource-placements/character-encumbrance.json",
+      "sha256": "347fed6e75ccf5750503a60525ed61fe6751023c05bcdfba0663f59f0a77191c",
+      "screenSha256": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/character-encumbrance--states-1.json",
+      "sha256": "221477fc29e35d860b02d3901225adb66f6cd570aa3790ba9d7b0c8bd20276e2",
+      "screenSha256": "d4b4f4f7c284fd9b55c87b77e1fa3b730b72c26c709667ebf5c61986b3653f3b",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/character-skills.png",
+      "placementFile": "art-delivery/records/resource-placements/character-skills.json",
+      "sha256": "d2f04d60d51d85215b278bc87abaf7860eff2194a257c1ebebe46b7f86c06fba",
+      "screenSha256": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/character-skills--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/character-skills--states-1.json",
+      "sha256": "c0e1548d9da279270b59c9c143ef3b8d640cbfed54729b57f73a179da858e521",
+      "screenSha256": "0df332f62c5361454ba0e9217b21de349806713f30e5da39a525385bc5b90b0f",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/character-proficiencies.png",
+      "placementFile": "art-delivery/records/resource-placements/character-proficiencies.json",
+      "sha256": "e815b4230950719b6c2fa05d96c7daef9817fa14ff6ae73d61825db30418873b",
+      "screenSha256": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/character-proficiencies--states-1.json",
+      "sha256": "aa676f7b404b6ee3e537bb910109f507ac2f588508c10ce420e39b05ada57428",
+      "screenSha256": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/inventory.png",
+      "placementFile": "art-delivery/records/resource-placements/inventory.json",
+      "sha256": "50d62a15f357ee52d48091fb4b3e249f6c6f3049ca905c388571df3d882306b7",
+      "screenSha256": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/inventory--states-1.json",
+      "sha256": "e9c6dbb61b560f08bb4fe29ab0496394313036ee119d182f0843e2eecfe52f39",
+      "screenSha256": "3b95f8c737591c4c962711f6af3714ceef375dcd844ece09f669a28eeb9bae3d",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/inventory--states-2.json",
+      "sha256": "03ac24d190b214d3cf56e66e82c0b24d171950510ef41d97ef39055b56101263",
+      "screenSha256": "119c8809dde6484f0d19592a95bb9118e4eaa44a7cbeff2eece1cced7b3bda82",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/item-detail.png",
+      "placementFile": "art-delivery/records/resource-placements/item-detail.json",
+      "sha256": "dda11374495093e8d5f9fd656136e252867191a78052b1b300a830e1e72cbbe1",
+      "screenSha256": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/item-detail--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/item-detail--states-1.json",
+      "sha256": "aa010c3ccdde165aa413ecd3ebe0c0aec2855378ccb64672d36947a5981b46ff",
+      "screenSha256": "c2d830ef8725e63b719dc58a67ef7dacd55728d5ffd2b45e8fbc9bf0d3640ebb",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/item-compare.png",
+      "placementFile": "art-delivery/records/resource-placements/item-compare.json",
+      "sha256": "5fa37a78d609120ca6875d92c050e4f69db8f6ea077b6f32430cc98e94f3c66e",
+      "screenSha256": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858",
+      "imageAreaCount": 26
+    },
+    {
+      "file": "art-delivery/designs/states/item-compare--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/item-compare--states-1.json",
+      "sha256": "bcea862bea52c19123c71621f2c4167f6bdfe7c8188c9133606b8ad0f3476283",
+      "screenSha256": "065b2ba1f1bc646dbe253b89bfb5ceeb243e8a563d74b93eb3a4db9f81b30530",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/item-containers.png",
+      "placementFile": "art-delivery/records/resource-placements/item-containers.json",
+      "sha256": "c1f99f3e9ed4095fbf4a1a504888f7586dd8eec2a3c3bbb1600f6715a8e86cf3",
+      "screenSha256": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/item-containers--states-1.json",
+      "sha256": "6e9cacbc9f56bd32ca1409dd499aff62d560e87d1b55bca41739928834a396c6",
+      "screenSha256": "6d3e3bc9e0073e0fc28c12d571300ca7ec36611e46328d54d72edb5f25f5395b",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/item-containers--states-2.json",
+      "sha256": "e146e0e178633cc2c3c373727169c59b33f217e05f8e845a6e003eea16a06439",
+      "screenSha256": "8b3bedb258bac82d41571fdf1194fd477d2f491941cb72795608434ae1881c83",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/advanced-inventory.png",
+      "placementFile": "art-delivery/records/resource-placements/advanced-inventory.json",
+      "sha256": "95c69d157467be41556f57b3cae606925920cc1d841af50c259f1bbac849b38a",
+      "screenSha256": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4",
+      "imageAreaCount": 33
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/advanced-inventory--states-1.json",
+      "sha256": "ab9c73ca83178d54715468dd44740237576815d160cc415e904e0c4816ec2251",
+      "screenSha256": "752fdb24a50e6bc75451cc055f4239e01cf81b1c6e095437cf8d2a879dea1ef2",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/advanced-inventory--states-2.json",
+      "sha256": "01204e215226b054a0c6d001679be0e6738baa4b9c0e63c4db0c6837f82acac5",
+      "screenSha256": "89e7e5af717ca7202b773fde33563e2fee7274ed68f03379d04953cf49791f9e",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/worn-layers.png",
+      "placementFile": "art-delivery/records/resource-placements/worn-layers.json",
+      "sha256": "b252ce7fb6b183cfd4d749b8395f65f90e413a9197e7fa49a62dcec17527a7f7",
+      "screenSha256": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/worn-layers--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/worn-layers--states-1.json",
+      "sha256": "18b526bd411e230dce6bce79af50dc94fecfcaa4055a1eb2361d44ffad720ba0",
+      "screenSha256": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/wield.png",
+      "placementFile": "art-delivery/records/resource-placements/wield.json",
+      "sha256": "3464bb6ccbb7fab9376dbfe7fea915a2699ce494a000868d0eac807aa5de0a89",
+      "screenSha256": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/wield--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/wield--states-1.json",
+      "sha256": "bd3dab9349f18e89c591ec162da7568bf053333da025b78ca4d41ffeaf6d948a",
+      "screenSha256": "9f2d5c0ec223f1e5bbbfc3f68f6ca49de9cb85ec4a27a241b07c9e083bdb1a4a",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/pickup.png",
+      "placementFile": "art-delivery/records/resource-placements/pickup.json",
+      "sha256": "efc0e53a086ff2359e1427aef294259e6a46f6fedcb57c87b85b5ed08ae16e1a",
+      "screenSha256": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/pickup--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/pickup--states-1.json",
+      "sha256": "2ea063f513b4e26b4ad75ee0024d4151b7c8acc49aff55ed9b5d362f3fe9731f",
+      "screenSha256": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/multidrop.png",
+      "placementFile": "art-delivery/records/resource-placements/multidrop.json",
+      "sha256": "b2c8aeea31b41eb02d76d7e7eaf4172e28b8e8796b89ad36bfff3f938e54e56a",
+      "screenSha256": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/multidrop--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/multidrop--states-1.json",
+      "sha256": "403fbbb1e6a2be5fecc4cd391932e0dd9a9a855c9f1b3ceb686c213e7f54c2db",
+      "screenSha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/consume.png",
+      "placementFile": "art-delivery/records/resource-placements/consume.json",
+      "sha256": "320be899d9052c1078d2b285ae4fda4a7a33eb0660f8c44880d03875ea88adef",
+      "screenSha256": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/consume--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/consume--states-1.json",
+      "sha256": "4f3b2e8e826250e9f7b41b2c1dd5c657f8ca321925c5facd171f88f4f0cdd9b4",
+      "screenSha256": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/read.png",
+      "placementFile": "art-delivery/records/resource-placements/read.json",
+      "sha256": "e1d413b0538168dc9638c1e37e1717bcb77ae46653c58916569b6332f05530f7",
+      "screenSha256": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/read--states-1.json",
+      "sha256": "1815b46771e708d4fd7577a0828ece40679f1806a8e2a9d5b3bdafdc02dcba38",
+      "screenSha256": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/read--states-2.json",
+      "sha256": "2269cf881d02ded1440d49b52e860c9aaeacdb4523bf77afd3056383d0b34834",
+      "screenSha256": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/reload.png",
+      "placementFile": "art-delivery/records/resource-placements/reload.json",
+      "sha256": "3999991af1b14325a9a942747f8339878e7da7ab68da3b3d297b58acbe4dbd52",
+      "screenSha256": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/reload--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/reload--states-1.json",
+      "sha256": "ad79626d97561f86e173e4612748d0ef7014bf5e9f88f5e6edf2352c26a3736d",
+      "screenSha256": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/item-unload.png",
+      "placementFile": "art-delivery/records/resource-placements/item-unload.json",
+      "sha256": "6be5e9d3646176bddcf9f061184f67e57eb572bdf17ab5ea5b349c9dd0c46f5f",
+      "screenSha256": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/item-unload--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/item-unload--states-1.json",
+      "sha256": "2c08ef15929089995b591d482102327aced5ea1fbdd34cbaf0254a1079c9637b",
+      "screenSha256": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/liquid-transfer.png",
+      "placementFile": "art-delivery/records/resource-placements/liquid-transfer.json",
+      "sha256": "27b390e6cc93082ac5d1ee9c1c9bc0db0b76ca28e56e71c225e3e3848231c6e8",
+      "screenSha256": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/liquid-transfer--states-1.json",
+      "sha256": "b7f5ecf84603e3a39f3fc522b3be0ad1793e8eb832ff5b2656bb597e55e7f541",
+      "screenSha256": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/item-use.png",
+      "placementFile": "art-delivery/records/resource-placements/item-use.json",
+      "sha256": "5bdc5496d1699e3766fc170f5ea60959f736f9a80c2fe5c766768d9afbfcd675",
+      "screenSha256": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731",
+      "imageAreaCount": 24
+    },
+    {
+      "file": "art-delivery/designs/states/item-use--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/item-use--states-1.json",
+      "sha256": "81e505143733f3c777f045c3076320f625d873726f5a8e66238643258dbe7d44",
+      "screenSha256": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/electronic-files.png",
+      "placementFile": "art-delivery/records/resource-placements/electronic-files.json",
+      "sha256": "71c63cea67f1c9979e6661e1bcca8897ebf4c3098b51537032469cc9282e000d",
+      "screenSha256": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b",
+      "imageAreaCount": 30
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/electronic-files--states-1.json",
+      "sha256": "8cf2fc4351f001e2bcf9e7db617c223c4c8c94fe5e8591d7eaec83c1287264ac",
+      "screenSha256": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/electronic-files--states-2.json",
+      "sha256": "36316c7f669ce12ce7620a1a8a923d8e1b1f1ccb52e1f6d42210e287684c5514",
+      "screenSha256": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/repair.png",
+      "placementFile": "art-delivery/records/resource-placements/repair.json",
+      "sha256": "15200390bf65fb099eca1711302289f92d45bc9f4050584cd404e304cb56f021",
+      "screenSha256": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/repair--states-1.json",
+      "sha256": "b4a372529b1884bd251566213df7eb70c8e9e2ac2fa4c8b306f9c0ca94d0bd47",
+      "screenSha256": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/repair--states-2.json",
+      "sha256": "93acd4a511865c8738f80bfa3b44a67e201187a2f2c883bad760ced5b93f2866",
+      "screenSha256": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/gunmods.png",
+      "placementFile": "art-delivery/records/resource-placements/gunmods.json",
+      "sha256": "e8681d13ddf0daeb0803b532be78a20d7bc734bb4e77d1b0891304b1be2018e5",
+      "screenSha256": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/gunmods--states-1.json",
+      "sha256": "d7aa293e72d284aa2d996787fc2485dc7a6d9a455ef11b43a432138cce404fb8",
+      "screenSha256": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/gunmods--states-2.json",
+      "sha256": "62f8038c151444d38a1c7472056043ce3b5319658a4f74089963f3116ccbef84",
+      "screenSha256": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-recipes.png",
+      "placementFile": "art-delivery/records/resource-placements/craft-recipes.json",
+      "sha256": "2b4f0dc08bed73f5ea6aa759407f10654e652d0a065e374f5358f4a15a5947a7",
+      "screenSha256": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/craft-recipes--states-1.json",
+      "sha256": "877cea196aebe99678f8b24d2105e98785aa90d9d7df5aebbb3161dbf8116cbd",
+      "screenSha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/craft-recipes--states-2.json",
+      "sha256": "95411be6c23fe4005d316bac8e44e3d257de819967a8b126ce92e0cf27e02656",
+      "screenSha256": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-batch.png",
+      "placementFile": "art-delivery/records/resource-placements/craft-batch.json",
+      "sha256": "e63d21db6208f4a87330ea5936c4fafbd236883185638e7e2bf753335162a585",
+      "screenSha256": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a",
+      "imageAreaCount": 22
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/craft-batch--states-1.json",
+      "sha256": "c9323425f5b55284bbe68aa81e53dbec33028f58f50fdb2e1c466b570fb52204",
+      "screenSha256": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/craft-batch--states-2.json",
+      "sha256": "c1507bbe0a1ebc8d81d1631ab6f6400809e1a52617bb03a50661e3790aaf9f0c",
+      "screenSha256": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/disassemble.png",
+      "placementFile": "art-delivery/records/resource-placements/disassemble.json",
+      "sha256": "94010ed25bbe262ee027e118fecfa14525bc32285701f93a773dd146e2eb412f",
+      "screenSha256": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/disassemble--states-1.json",
+      "sha256": "d41c62e13c3d02d535191a87a92b9b3a0f9178b3d3fa9a5829df5dca7b5871d6",
+      "screenSha256": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/disassemble--states-2.json",
+      "sha256": "b0b2a5c8737d6181957798e25ecc2c3a976889910935acb54d159aa6a6e81d7c",
+      "screenSha256": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-general.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-general.json",
+      "sha256": "55179e3f86040b3dab64bb530093b584610d66176bf62cbd683bf600552b6a12",
+      "screenSha256": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-general--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-general--states-1.json",
+      "sha256": "4bc0ec97f284ca6bfd81c0d570b4a1ec859a1b0e6ea0cb93dd5b8cbf9c9899a6",
+      "screenSha256": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-interface.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-interface.json",
+      "sha256": "c92c722737be9525d349a8e7f4228c52e160274f4c1797c832262b5f1c5bb28b",
+      "screenSha256": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-interface--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-interface--states-1.json",
+      "sha256": "acf6d0117b714f1aee45286026f5970be3719a454e31c1dd89f923b498b8980c",
+      "screenSha256": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-graphics.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-graphics.json",
+      "sha256": "d868266ff48d9d69acce9145f3fb68d251b0c4c2b26b5c57014319c6ad1c8f4e",
+      "screenSha256": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-graphics--states-1.json",
+      "sha256": "d458abfef770a7e931be462b68b00008454d7a7b3687a52e2ff1d557f419b7bf",
+      "screenSha256": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-audio.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-audio.json",
+      "sha256": "be9fc434a959246c0c4296794ccb8333a01e5d527fc4064cce4a13229143c174",
+      "screenSha256": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-audio--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/settings-audio--states-1.json",
+      "sha256": "f9c66173d45e7dfcaf4416a0d4bf12c18499ecb10d1357822b1973ae2ff13066",
+      "screenSha256": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/keybindings.png",
+      "placementFile": "art-delivery/records/resource-placements/keybindings.json",
+      "sha256": "6e07e83e190e13a0a17d3ddc8d478568be6d7791f5816a304e2e46d302c63830",
+      "screenSha256": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/keybindings--states-1.json",
+      "sha256": "1d714a506b84af47538faf9b018abb0afeaa716ac0a5133572cb3830b71ba47d",
+      "screenSha256": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/keybindings--states-2.json",
+      "sha256": "52747a599e54c01214af711806dc24b300d3e6bc07b9ed88c0aa70e15b20d914",
+      "screenSha256": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/help.png",
+      "placementFile": "art-delivery/records/resource-placements/help.json",
+      "sha256": "0ed4cd37f5a674e2a4fc906ceea02ceaa1228de1107aa6db00fbaf152e631f4f",
+      "screenSha256": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/help--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/help--states-1.json",
+      "sha256": "60166fa142db27a3eccf4d2e3f275cbdb717d1bdc687103280a91ec048bc11d1",
+      "screenSha256": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/colors-theme.png",
+      "placementFile": "art-delivery/records/resource-placements/colors-theme.json",
+      "sha256": "3a49450667bac62affdf84a3a5314d18feeb1e6b92e30bf00da855eedbe3f860",
+      "screenSha256": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/colors-theme--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/colors-theme--states-1.json",
+      "sha256": "3647c58683cc5ec2c62b956010d5a1cd6093612931899589f581e2cd974b8059",
+      "screenSha256": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/loading.png",
+      "placementFile": "art-delivery/records/resource-placements/loading.json",
+      "sha256": "94b1360daa9467a33f814a0caa1f195695556d18d68eff87f1b788911ecc0273",
+      "screenSha256": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/loading--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/loading--states-1.json",
+      "sha256": "7c95622d3272bc08e9a2698705e84125348f785e73f5392b702a0adf6f58fbd9",
+      "screenSha256": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/tutorial.png",
+      "placementFile": "art-delivery/records/resource-placements/tutorial.json",
+      "sha256": "ee56d148d50b1abd64c1a46595c0c6da6d2596cef86b66c3e7ed36f0ccf6a546",
+      "screenSha256": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/tutorial--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/tutorial--states-1.json",
+      "sha256": "5e7c980a97fff85ae3a7d5ba3328aee511552b350e9355fb434c2afd6b107e34",
+      "screenSha256": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/game-hud.png",
+      "placementFile": "art-delivery/records/resource-placements/game-hud.json",
+      "sha256": "0f89e34f256a7832afba9a1a21a38e8d67dec421cd1569b883428bc31de13e5e",
+      "screenSha256": "45ffe76dcf6cb3e321ee31275576e11ff436d9c07cd09da949569c8448a30c12",
+      "imageAreaCount": 14
+    },
+    {
+      "file": "art-delivery/designs/states/game-hud--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/game-hud--states-1.json",
+      "sha256": "f945c997a2f600253b17c1100ed241af6a3fda52bfd033950c2259406c191eb2",
+      "screenSha256": "e4c633754c1613a1453d66d3c657ecd95c7542665a98f26b5b081106a3ec1d15",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/game-hud--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/game-hud--states-2.json",
+      "sha256": "ca0d27660c77b4399c7865ff11255aac5e15c0cf9311b44af3a5a4020e33a946",
+      "screenSha256": "349ab184045ec9170f256effba16eab1729a27cdbab7a710ceb6bb37b9740235",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/aim-ranged.png",
+      "placementFile": "art-delivery/records/resource-placements/aim-ranged.json",
+      "sha256": "ce0cbe05ca444ab56ff033dd26dd049d8fd9bf9f1bd54b3f3259d4d6fb61f398",
+      "screenSha256": "bdca811d6000b0d052a3d2f5bf055cf0bf56d4d68c75dbe177e66fa93342fab4",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/aim-ranged--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/aim-ranged--states-1.json",
+      "sha256": "bbd1356d7705aa6518a66d037147d1573f948a7a7e6962fa27c5096397194abe",
+      "screenSha256": "c461e7b5df1c7ae978a759e02e40c84860040b73e8f890fc3d1550ae82cf4371",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/throw-target.png",
+      "placementFile": "art-delivery/records/resource-placements/throw-target.json",
+      "sha256": "c21421588e6cca13f21b164524c33c242fbc0bb3083a40711737a8a7080e357e",
+      "screenSha256": "5431e91e75b15a0dcfc734d56b4af20ee25358b285c6835210de48e46ae5799b",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/throw-target--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/throw-target--states-1.json",
+      "sha256": "d1f5ffd289cd0acc54d4196c480e044586e080488364cb1e0fea985839a116c0",
+      "screenSha256": "80a3b28fc613b32ab163ade8da1714c7a93ff6180603e02fccf695282c4ca734",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/look-examine.png",
+      "placementFile": "art-delivery/records/resource-placements/look-examine.json",
+      "sha256": "637e6d7a7f20a4bf58c946eb8bd6641057b3fdeeb4304e6553f48b52a2c928d2",
+      "screenSha256": "62fc9e1cf7cccf45e555e7cd5b3c95243e647f0ae1356416686f22d243378746",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/look-examine--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/look-examine--states-1.json",
+      "sha256": "7b96277acaa4f50a7535390131c55067daa0b967c0def4291a4d412c411a5d7b",
+      "screenSha256": "a341ddae6f2303a0a3d58ea859dd9f880be0390f4dea277b5bd8161892aadd50",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/nearby-creatures.png",
+      "placementFile": "art-delivery/records/resource-placements/nearby-creatures.json",
+      "sha256": "12df958326458d6c6aee716827ecf3b0098757ef41d353aec460299e58776b89",
+      "screenSha256": "47e603552933c47635c8bb237201e7c21bca32e31aa17b06a65a2ce1dc27ec19",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/nearby-creatures--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/nearby-creatures--states-1.json",
+      "sha256": "a240f7e4d51693aeb58d6b087f796ce81e6f86e708fbf1ef0f502fa25522c57c",
+      "screenSha256": "5e51ebb5906b81c5de26392d65c3db69bde58a10d2f08ed739d863531711c1a3",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/message-log.png",
+      "placementFile": "art-delivery/records/resource-placements/message-log.json",
+      "sha256": "1a0afc93b53eb626465e19fa8246db16c3ac7a52367e6a7e4d8e5d9c35bbdf8c",
+      "screenSha256": "2254d9552d858b558ba79550c2c88ff3d07730b8e8c06f9449741e84d353b7e6",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/message-log--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/message-log--states-1.json",
+      "sha256": "39abf841a75e47036cce01a5e2eed8dd870bebeb40599f26b4ab9a8ac5145313",
+      "screenSha256": "0af9697fe81e94999813fd10d7b7596ede85114bbdc252534b6060a2e68548bc",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/body-health.png",
+      "placementFile": "art-delivery/records/resource-placements/body-health.json",
+      "sha256": "3737ccea65f0e739594266db147fa6f8c62f1202228554fcc482c899c60b9e12",
+      "screenSha256": "c4db1e3fad87d5efa8610560cac808176fd210aa1a82d9b994922a33dcf0e2c1",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/body-health--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/body-health--states-1.json",
+      "sha256": "b331fe41ce97e536f98d643bd4f1e3b82b1ce48c7bff8087448d83cf66ec8e58",
+      "screenSha256": "bb6f9aed1480e626a95563221036dc61a4977fe5aaaf5a9ab59ee2c5f515ac9d",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/medical-treatment.png",
+      "placementFile": "art-delivery/records/resource-placements/medical-treatment.json",
+      "sha256": "8b67c4b5d2e4ca68d2e9cf62c30ba1a8f2bc01227f2e635083e8a9e21bb09d89",
+      "screenSha256": "098357a5574d2516d18341e68c03eaf778d3f9bb511c33fdd8e8ed1bb8f918bd",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/medical-treatment--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/medical-treatment--states-1.json",
+      "sha256": "a619dc44473d571ec4f6fc85a792d3b575c67447cf29a3cadf75a57c49b47929",
+      "screenSha256": "a3b524bf52dd1a4a011d7cea6ca3b014b0d889bb1299b2412ccadfc2ac9bfaa7",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/status-effects.png",
+      "placementFile": "art-delivery/records/resource-placements/status-effects.json",
+      "sha256": "a80d457c4ca0fbf8323b69b8c5e611929331a4071d6920c8086784c957c0d89d",
+      "screenSha256": "a6c50451bd41d8c7af4b689bd7a85a7cde1f1c9d17f5f504cc1e77352e3d0bec",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/status-effects--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/status-effects--states-1.json",
+      "sha256": "7861a60b5b9335da4f73897058147ee0f53c6e6e5b63c79f86ccbc80caec883d",
+      "screenSha256": "70c08b13aaacb7337c8193a2651c93cfb3caee7dfac3a59d7c1812e6dfd65153",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/morale.png",
+      "placementFile": "art-delivery/records/resource-placements/morale.json",
+      "sha256": "5cd7180fd89b90d7192242b7983d6996dbeba70430fa31bc8e79e5d942261c52",
+      "screenSha256": "ead7497906774e397589ee1d68b3c58ec8da19d39d77fe70be4c137e7b719ed3",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/morale--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/morale--states-1.json",
+      "sha256": "ceb908bf50aecef7453295f78516d7c96fd9e9e9c5c5d304c58517f88f6358bf",
+      "screenSha256": "7dd173e9a131f99d5a1f97b636f23f26c475f13533af4c1b91770bae10b4b983",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/overmap.png",
+      "placementFile": "art-delivery/records/resource-placements/overmap.json",
+      "sha256": "8a6e5c58d39e05610ed740f98adccd1d06862ca08e1502b534c4640a700817c4",
+      "screenSha256": "d3baa8f14110cabc7b9620d801f0f7e2cad5c8db68133d6002975417f00a5f30",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/overmap--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/overmap--states-1.json",
+      "sha256": "89b9744c9bda1f8245c8ed2843bce0d9b3b1ee77baf0f1b36ed5036da16dbce0",
+      "screenSha256": "7a6c88cff675eb2499596e4f419c300f9102a501abd44432c3298cdee6053c3f",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/map-notes.png",
+      "placementFile": "art-delivery/records/resource-placements/map-notes.json",
+      "sha256": "989b7f9125771bd6faa9bed8223d2e2171c5dc512dedf998e4091b6dc0a60d2d",
+      "screenSha256": "dfb2b5ae15270f1d23055e1526cea06dd6f418b0d417864464692de41a7ee9d9",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/map-notes--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/map-notes--states-1.json",
+      "sha256": "bea6d44310a4597ddd18cfb96256e822fa63bf414a39a8a5a70408bede3a1279",
+      "screenSha256": "ac18ead7aa12f2121dc668051ddfbb8a120ed7eb8396aae96aa763b9fca26ed2",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/route-travel.png",
+      "placementFile": "art-delivery/records/resource-placements/route-travel.json",
+      "sha256": "f5e5f90d6fe7c8156c08d9c703cb8d04da6750059c46e952fd10c82ff658ec0a",
+      "screenSha256": "8fc210cd6e17f09d364f09d9adccd34e1a555bd30caf590e8c81b8fd2af331c1",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/route-travel--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/route-travel--states-1.json",
+      "sha256": "5c8ce573b8d8a54147f11a127f0d445f4d5648014330574b4084e0060cd3c959",
+      "screenSha256": "73396d418a0f61fe084228f3801bb4972e2d819bb6436ebc302234714e296f24",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/route-travel--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/route-travel--states-2.json",
+      "sha256": "6e1cfb8aead50dd653663dfc77d6e0f49a659e6f5e776604f288ddd8b8b6b7e9",
+      "screenSha256": "ab5814c04259526f8ee80da822403f562562f59b48c5f901682df0a4112f9da1",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/zone-manager.png",
+      "placementFile": "art-delivery/records/resource-placements/zone-manager.json",
+      "sha256": "d31212b123b49e25c4b75782177a1d72a6bfe650201c96fec49a082e9c534c52",
+      "screenSha256": "dcf5a3c4776401e1ba493e0ab4c5ac7ab751ec7ee5ec27baa83843dce9fda613",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/zone-manager--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/zone-manager--states-1.json",
+      "sha256": "a9c01805e92f47236572bb5c82097f18dd74f7cf2a5d42aeacc8053dd5d826cc",
+      "screenSha256": "7fcdc6f46c7c7b5e9063284059627a220c7e6842f95599b85ac6166b13bb3d82",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-talk.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-talk.json",
+      "sha256": "468ef29d0a2f2a1c3f06a01e7ae07d2f69da0c98b90a7786ef912f036e578533",
+      "screenSha256": "3556c32b8dcd6e45fb2c0f1745cf1e63190b624dbd0ebc5e4b872c2b9031d19f",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/npc-talk--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-talk--states-1.json",
+      "sha256": "1153d5acca79267f2367c966675ff22fbabf2eebbb5d034c73bdc76d95c485af",
+      "screenSha256": "a33faf3f738aeaf636d8dbd7601cd6205827c0ce8d21247b24f14f65e0b610ce",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-trade.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-trade.json",
+      "sha256": "0644ebd88d6ba51cfb5dff97401693fb48410c860af2b03727ac702a91f0dbd8",
+      "screenSha256": "dcd9cee3937a93299874305b18ca1f392be104183a5887684a215887dd74ce82",
+      "imageAreaCount": 32
+    },
+    {
+      "file": "art-delivery/designs/states/npc-trade--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-trade--states-1.json",
+      "sha256": "0d3b0178d6e90527a10babbc0781f690f7809d1c5c1b9722d6ad9b05e382a37a",
+      "screenSha256": "5a4090eb832b9f3cded1ee948531141d01d40d7a6c6cafc96bb09e19e953d3ca",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/npc-trade--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-trade--states-2.json",
+      "sha256": "15ccd6a386d6c5cbe8df2845d41a17a35a2acc81e6621da46abb84612660f7f3",
+      "screenSha256": "d639dc0aef96625644cbba47465da474f74c1f857de9c06f468ab50abeb231d7",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/missions.png",
+      "placementFile": "art-delivery/records/resource-placements/missions.json",
+      "sha256": "1b96cd5e90f0e47326e9557f1fd13048f27c7462deaaa57131193a2eecd63119",
+      "screenSha256": "205f87464e83be208fcaa1cf927e7ddacddcfc141b92bd269e6f8a49e53f3c53",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/missions--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/missions--states-1.json",
+      "sha256": "5468187b2eef180009b4293c03e4a67c8239e5d325ed842436024216a3add609",
+      "screenSha256": "9be0f0382d6fce7ae6f666993673f91ca489fd7e4cd2417baa66e8ffa74a6663",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/factions.png",
+      "placementFile": "art-delivery/records/resource-placements/factions.json",
+      "sha256": "af54aa0e587b9c1b9d5d0bc1ecb3018bd8508467e4710630b1f9681b20f798f4",
+      "screenSha256": "298da72196d7524c7d36fcccb69d57018aadd1978989614bbacb4bf0d205e340",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/factions--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/factions--states-1.json",
+      "sha256": "fb9ffa9bc11bf77a47cea58c30f24744ef41fcb7d8fad205241653321482d24e",
+      "screenSha256": "db332a8d1a5a16624262b083d579b67a95bc56944652ee74a204059fa6d4f1b9",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/followers.png",
+      "placementFile": "art-delivery/records/resource-placements/followers.json",
+      "sha256": "493e70b810a7f383af6ffbcf561c234300e611413642d745463efc5067aa6c61",
+      "screenSha256": "08a926732c631e3728f9ad2cdb67921a3d6a6dafba83ed8184c06dd20f7203a2",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/followers--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/followers--states-1.json",
+      "sha256": "2fa47770181b9018027650bf03eae344d761a748ad421a7ea27589f32629fa24",
+      "screenSha256": "b9d605476aff6078f39ba8baa24402c4800c11de539a031e3ac017c1a9e2c88e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creature-codex.png",
+      "placementFile": "art-delivery/records/resource-placements/creature-codex.json",
+      "sha256": "71706740098f3ce35d6e47f1e4337a3797fce366ee3153a2261b85090a824ec6",
+      "screenSha256": "2fd370dd79cdab39f42906f65cf5d5a8e84f48aafc8c3383752e0449b0b0aa20",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creature-codex--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/creature-codex--states-1.json",
+      "sha256": "41e237326a8b941138ce09715631c988eee87dd6dbe1a38c52c516fae7950a38",
+      "screenSha256": "6fa92b2645c1d8d4fbf131b3761071d4e80a1adba441d6de76093c6791f28228",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/camp-overview.png",
+      "placementFile": "art-delivery/records/resource-placements/camp-overview.json",
+      "sha256": "2f6a8b0d8cee6cc4ef02d3d56e6dfced22a00b9c6b62366ee0a0f9b16e8b7029",
+      "screenSha256": "264479a6ea0c46e4a4954319fae4156809e3f5b7edebaec6c1c0078b42e48bfe",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/camp-overview--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/camp-overview--states-1.json",
+      "sha256": "d2c2048019552bda971a25c86cb53e2c2c8d46b75e62922dc59e139b2c2799f1",
+      "screenSha256": "873b6445acf8ba9ddcadc1eef64a9437fa22841eef478f6133d5412f11a2f242",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/companion-assignment.png",
+      "placementFile": "art-delivery/records/resource-placements/companion-assignment.json",
+      "sha256": "d41267af060957d7ed2e7e6e694f7842a3afaafce23eff87aeb3005aad784327",
+      "screenSha256": "7c3e2218659b6498ff92df995120cfab2029fc7ece507c5c4ace512570482bfb",
+      "imageAreaCount": 27
+    },
+    {
+      "file": "art-delivery/designs/states/companion-assignment--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/companion-assignment--states-1.json",
+      "sha256": "be1fb9a2766e5d4ebd467ed5ab451bacbe9f058e15bd68e8111226693cf0cd65",
+      "screenSha256": "4533b29f26a95f7acd7579917b1e02dda086257c4e4de942f57d6f9ebe0159aa",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/companion-assignment--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/companion-assignment--states-2.json",
+      "sha256": "44faf7a1bdafc392affc53c7a8db8d74e70976c75cdb6d4289a9208afce5e08b",
+      "screenSha256": "97c837d31465bbb2b3c079115b77bfe51b48e05b5bfee211e80a860f6b787db5",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/camp-upgrade.png",
+      "placementFile": "art-delivery/records/resource-placements/camp-upgrade.json",
+      "sha256": "be138ff12311a6ddae78ebccdd7a550ad7191aad206e8ac9c01b74255e14f653",
+      "screenSha256": "844fa5e396b1729c13674f254d7ba35896a1e7f10fc0410196cdd74de0d15de1",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/camp-upgrade--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/camp-upgrade--states-1.json",
+      "sha256": "4523162d8e6e09bf3c907b76460fa8777afd6dee398a64abb4fcef0852793772",
+      "screenSha256": "9d7afae196ebb0d66d6963424fcdc2ddc1335cfa6de8536e2915a4cc1a5f51cd",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/camp-upgrade--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/camp-upgrade--states-2.json",
+      "sha256": "aa4b5e6fcf4b048ad26c937b4b7904922d143ad393a27a7d85f5751bcc5b0c8f",
+      "screenSha256": "7caf3bf877bf3393595e1e648de0572298313c7da0ac73ff45ec1a8750939afa",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-dashboard.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-dashboard.json",
+      "sha256": "0884f067e0f1e5ea22edb3fa9cc6bf233784d987f7a9a3fffd57fabda25f6cd1",
+      "screenSha256": "5428645952b513219eb1051b3e2b6303ef6149d69a9c7220e2478bb6eea3bb87",
+      "imageAreaCount": 13
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-dashboard--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-dashboard--states-1.json",
+      "sha256": "edc8329c2a3a46d19f1321fbc560b4ef74164ad5411c22d0a2f8fdbda30b1190",
+      "screenSha256": "b582cee75cf8a7f690148f4ab3150c8dd84543de64015f82f2a2334689eb8396",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-dashboard--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-dashboard--states-2.json",
+      "sha256": "ad11d65f0d4c01e87319327b169b28e2932040092e1a4f93b353a29dfaccec96",
+      "screenSha256": "348fee88646637da25041a614e93c77e67e392c952b668b3c56b0d0ec1c58a5f",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-parts.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-parts.json",
+      "sha256": "6c76d0f7fc1f0158b6d65b631ff2a1d524c083d0dacc13b4336e69cc009aa2ef",
+      "screenSha256": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e",
+      "imageAreaCount": 34
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-parts--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-parts--states-1.json",
+      "sha256": "b521bda5615f3dd824b44a5ccafbf72e6dd1f2686d8e78d7968a7d84c2361024",
+      "screenSha256": "43e3bb7e3edfc732e9e49cd4c986ec98ffce028321c4e2709208ddc5cbe6e5f0",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-parts--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-parts--states-2.json",
+      "sha256": "c2fd545050afad550256a00d1b35039bf4666ed8d38e69cf7ba386ae8231c1a2",
+      "screenSha256": "0b955bfa67dc5c894b88fb0e618f53b0588d3236f63f785072a866aa0a2d8738",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-refill.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-refill.json",
+      "sha256": "5172ace7ff23b7747bb4aa1a5886dd39b4c4aed8e8c4f151e6632573907b0390",
+      "screenSha256": "ae62af1d6877e38a2ff3f171149ed02f9092382c4279ce585fe7976d1edcbb11",
+      "imageAreaCount": 27
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-refill--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-refill--states-1.json",
+      "sha256": "8a03d7fc2468d5966afd2b64b915ddea9a7c94203a17ad779b92c727b28dfec0",
+      "screenSha256": "8410160725880c3c9a0c9a048417920aa56fc4929fbe73de3aab0544ec452a13",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/bionics.png",
+      "placementFile": "art-delivery/records/resource-placements/bionics.json",
+      "sha256": "ec315008736a89cfeaac7adbee461d876b48a4ce1fc7b0d5f0c3e5eb56e8a04a",
+      "screenSha256": "c83981af72d47e6cb4b89ce78c6f848b50e5196df7b82c1233d549e574018909",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/bionics--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/bionics--states-1.json",
+      "sha256": "8dcafed7c1d3bdecbd4b18e0f6f2a8ed12bd9b4188db17505e7bc0aca8065a47",
+      "screenSha256": "f85f1c72b4dd04d6ac48d036da56d123bf2f07b87f7845318d3304e993db12b9",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/bionics--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/bionics--states-2.json",
+      "sha256": "eaa919585e67c9d82f65dacb6e1243fec266661c208b35725110d7ed394e862e",
+      "screenSha256": "d8193c47d4fcd9ec9def4b9c9f5bc786a80c16187563ab892cf21e8e4095e711",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/bionic-surgery.png",
+      "placementFile": "art-delivery/records/resource-placements/bionic-surgery.json",
+      "sha256": "1b883c0fe3e71ff46af66c515e7f5d9e89a40a47337aabb06f7e683f00bf0014",
+      "screenSha256": "2b191a9e971d8ad74dc1803ae502c81e73ecc30b087330d76bffc295c0468db1",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/bionic-surgery--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/bionic-surgery--states-1.json",
+      "sha256": "316df18dc55b9977ee864ecda2b7847481aadfa1302c67b27c4dec9e3582f4eb",
+      "screenSha256": "16fc172e35f8b21972cc606f45dcce55d399377966e981d2984276177c8ba295",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/bionic-surgery--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/bionic-surgery--states-2.json",
+      "sha256": "2de3c935a3188a984900317a3e2fdafd060829f1b2404297ff944c21ee8680f2",
+      "screenSha256": "f2634c245d590013e1aefabfc7f519e711743fe599e03a3d54178adc4e33003d",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/mutations.png",
+      "placementFile": "art-delivery/records/resource-placements/mutations.json",
+      "sha256": "e73cf72c6a95b1179d06cf0b960b2216362f3cf1e8efc0eb0e6a27b50caaa1d0",
+      "screenSha256": "4713ad4537b5eb8e460a98458eaf5477d310961c83ceead4eaa1f82b1bfa141b",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/mutations--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/mutations--states-1.json",
+      "sha256": "fbb5a7afa0348480f6ec363fc6bae92a21ab49c4836d32512244a96bb61f1275",
+      "screenSha256": "9dfe2413a7c3fee7c20b6177b50922dee4fa0d04399dce0833b5828ea0e2a760",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/martial-arts.png",
+      "placementFile": "art-delivery/records/resource-placements/martial-arts.json",
+      "sha256": "6d44185139ad33b8a3906dfe3eeb4d42db58933599756703e6c0a236797331ec",
+      "screenSha256": "2cf54dd6351ed4063ab474b603a227e929aff54be74060305f3bfb655306a1f5",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/martial-arts--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/martial-arts--states-1.json",
+      "sha256": "aaf4b46a4c0616920345d58077b3ec63ebfd6e7b05d7be0b7c336ccb0f6e39a4",
+      "screenSha256": "0f7c11d4c2aaa63458585763eadc553609a568e5d3b4b833218ffabc98b57c1a",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/spellbook.png",
+      "placementFile": "art-delivery/records/resource-placements/spellbook.json",
+      "sha256": "af89e16003b3dc3dfcaacac61b0f145b5edadab28d65fd3f593d8c300c8e0319",
+      "screenSha256": "12c4f5006ce7965be4d10c8d4c7f07ba077bb8d42112a7886fac58e8c8d8feda",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/spellbook--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/spellbook--states-1.json",
+      "sha256": "2e458f5e154a2ff45bfe1b7506f89735a0660090043bf5a48f26b3b410cb6fec",
+      "screenSha256": "69b45cfff063307dc234c86fc564e9cec62a76ab79574d4f3845f75ed2e6e3a1",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/spell-target.png",
+      "placementFile": "art-delivery/records/resource-placements/spell-target.json",
+      "sha256": "6a461a3c7bbd6c4da99ecd98b926f1bd5467a4d9877630c02ee69b1770e399f8",
+      "screenSha256": "c1e296aef3bfb483c19dd0e1390a4b97b124d2b0be8bba11af0c802964b43a0a",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/spell-target--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/spell-target--states-1.json",
+      "sha256": "f15878023d8a1b5045f103078ffb39a94c163ab4131d0a637b72b6a2576fd156",
+      "screenSha256": "c9f12282145369c65c7a2dade528689d827969a925622f8a585ad9a59b11b2b0",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/achievements.png",
+      "placementFile": "art-delivery/records/resource-placements/achievements.json",
+      "sha256": "c8bda2bd00efe3fed622810e479464c1760c8d87af2956dfe43d530a6cf4b6ea",
+      "screenSha256": "a728fdfbe866b40dc322c9bf936e8fc34b880f4dbe3ba923d080d66bbe97240a",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/achievements--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/achievements--states-1.json",
+      "sha256": "b9184f055b8094e24c9f7946d61a0ac6b971929b5612da006b6c3b30fff2fdb3",
+      "screenSha256": "daad7b9d5c4f9cfb75ba06b36f62aa2d4f417e669010ed8ae40afea5f93e71c0",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/memorial.png",
+      "placementFile": "art-delivery/records/resource-placements/memorial.json",
+      "sha256": "0a486ac64800772509d2f747cd2d8ee69392f8e14757c837a7c8ee72237e5bc8",
+      "screenSha256": "fb167442467eb7f2ed3b9f61a7d45726a7bbdf6151095088631b2e6270f85add",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/memorial--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/memorial--states-1.json",
+      "sha256": "9979056c1a20fd1a9b9b31a4710fd1fc017ee4bb7e27b87e357ed6eb7044dbeb",
+      "screenSha256": "e62a00d40b3ce6c5677e5401017c0bf4c00fedf88dbddea1805bcd6f7c55c03a",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/diary.png",
+      "placementFile": "art-delivery/records/resource-placements/diary.json",
+      "sha256": "524128123426fdfc9644de44654a8c473b7e03da86092a584b27417d0449230a",
+      "screenSha256": "b0269a118b45b2b49fad7667b6b90078348df1fa728c4a8aa8eb8ff2037f3bd8",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/diary--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/diary--states-1.json",
+      "sha256": "3108cb275259e612ea20975d39ecc0a430b005b480d2018061dbcb478c62bd0e",
+      "screenSha256": "08294211309846fb76ed6057a55b23f81f02dbbd5483f8a2f4e852f0664d0c3b",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/terminal.png",
+      "placementFile": "art-delivery/records/resource-placements/terminal.json",
+      "sha256": "273d780768f7dcdda65460a19b30574adbf6d4f8e9983f43a71c3f5d26073c08",
+      "screenSha256": "66508357f328073c17c95200e4994b39bf033f41cad77bfac11853cab3c3afcf",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/terminal--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/terminal--states-1.json",
+      "sha256": "d4f31fb881e8819146b501b415395ae1b6d0b7d01f712bdca3c56d1a2d8013e3",
+      "screenSha256": "df174f067326e44f6840958c77fd7d9b083234deabbee59ac529d78df5429550",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/terminal--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/terminal--states-2.json",
+      "sha256": "9cda760930d4ff72cbd2c79b5cf88479e9f17bba211c1df5e8d1610d8bba7117",
+      "screenSha256": "6bef278b5170985e4ba2fcb674bcdc7ffc02821488f1707d4d445abe61db1430",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/atm-bank.png",
+      "placementFile": "art-delivery/records/resource-placements/atm-bank.json",
+      "sha256": "e462b1c5abc21c0f9aef4043fcf46785e58b43382e335239a851d8ba8279adf8",
+      "screenSha256": "703ac4f40f9251e169dfe8dba873b6c7642eccb27fe83b4799ee35a29173fccc",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/atm-bank--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/atm-bank--states-1.json",
+      "sha256": "6f0e67e280d58204b581e00d5e567d9a4f879257a871272b32091dc564fa5188",
+      "screenSha256": "c1bc6b9313d252abc60518f558cf05eeebffeb109e95ff54e23a17c8f6819f28",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/vending-machine.png",
+      "placementFile": "art-delivery/records/resource-placements/vending-machine.json",
+      "sha256": "536943c66e4ea46dcc6520edcb90fcabad5498fbd1851d1cbf329dc50712510a",
+      "screenSha256": "6391dc033f7b4bb9ed33cf8c966f4382528662e03fea9d16aec7b8918e827fe1",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/vending-machine--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/vending-machine--states-1.json",
+      "sha256": "40daeea6e8e7d82bec037b4c4342d745065e3512c8f75e723247c21f270a1c01",
+      "screenSha256": "5e081cdec840e67273536b41c3c80a494cc161175cc9607e633546ce2a763d86",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/translocator.png",
+      "placementFile": "art-delivery/records/resource-placements/translocator.json",
+      "sha256": "db04d5c2a02828b5df295c764d4367d76f4f679301d35c42ce0cc5cceb543d4f",
+      "screenSha256": "913f02e8b460a7ee7e5f5b5accf5a40a1f19b99a98fc22aa919a892bd7abeedb",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/translocator--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/translocator--states-1.json",
+      "sha256": "51719378249c0a9492f096cb8bdccfe0989cb0066beab2ff0e4ae70bab5160b0",
+      "screenSha256": "7990b0298b409e36b539c48901f1354257f2b37f00ca181bdc339af3fe5d7966",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/safemode-rules.png",
+      "placementFile": "art-delivery/records/resource-placements/safemode-rules.json",
+      "sha256": "cacd21c2af304424aa91cdaefc4d0c82d79f60f33a5dcccf3888b05b27729652",
+      "screenSha256": "d0bd0ec3dd42476605511fdb0dce89b5b139f5f860448b148e70f673d32f574c",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/safemode-rules--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/safemode-rules--states-1.json",
+      "sha256": "b745bcd2d26f0037878f989fa5ba3af6e83b62de4173b7df3c44fb296cd602af",
+      "screenSha256": "38604141e6934a29b693a3667ee6738f8a451e2c1a0de40bf8a6bd80e76dddfe",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/safemode-rules--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/safemode-rules--states-2.json",
+      "sha256": "2cc98bbe17d7f100cd5452b6dbf7333498e58c3e63a931f1990b9e4e82005ba1",
+      "screenSha256": "8b5e9b76f999f308bb6e440e045f621e2c405ff2b9095f18a5e8184eb7e64ff0",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/autopickup-rules.png",
+      "placementFile": "art-delivery/records/resource-placements/autopickup-rules.json",
+      "sha256": "3be4355ed1ce62215206639545100b1dc7372e9657d8743ccae6230bf76a4a9b",
+      "screenSha256": "dbec7c2928ece729c2cf7e163b52c7a0dfad961f0587bf13523f2e9c8c69a0ca",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/autopickup-rules--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/autopickup-rules--states-1.json",
+      "sha256": "58d13cbcad1c0c8104d2d00aea9280c36ac636e4c05f1719c6e0e0f3dd8f3ea1",
+      "screenSha256": "8cf4c76124c345597aa774e9f7318196c4ec94494fb7502e54e6f434da9af462",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/autopickup-rules--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/autopickup-rules--states-2.json",
+      "sha256": "43e588062fe0c274dc0b925a0858646b1a1d8b813c2e4c479b8e6255b41dd91d",
+      "screenSha256": "736121bb333c0c15a78d47e65dae6361116628e66bdd23bfa6938461e59fa00f",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/construction.png",
+      "placementFile": "art-delivery/records/resource-placements/construction.json",
+      "sha256": "8d4011d9f1b4e4b8ea90ace15a6704169948f9424c44cdde2ac20049a123aa0f",
+      "screenSha256": "d4de7dbdbfb9ff9d95c560e819a93e4c157c3341b383aae29dd80176abe19843",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/construction--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/construction--states-1.json",
+      "sha256": "5161f59162d734b403fcf2c17498557d89bbff295840083c910efc27996df967",
+      "screenSha256": "ff073cfe8a1e7f984b12e536133c3c62e044efd5b85f43d1e014e31870817968",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/construction-place.png",
+      "placementFile": "art-delivery/records/resource-placements/construction-place.json",
+      "sha256": "0e9d481a4df15d0e2ec2273a3c226ecb0cbb3fab6ad81937d9a6d616725295b5",
+      "screenSha256": "e366f8cd6bab19eda987b26dfa1e71ee362029c9bb1d53ea0f3a9c5db92e7ce8",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/construction-place--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/construction-place--states-1.json",
+      "sha256": "7d8a2ae937f3e3f962a5d74716e2f183fda3735e416f173d5597d37a9033b608",
+      "screenSha256": "fab008f893fec8d3e1c7263c335468bb4e8d3e5b061f875dd16b1d5a539aaf5e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/wait-sleep.png",
+      "placementFile": "art-delivery/records/resource-placements/wait-sleep.json",
+      "sha256": "50bfa547c8e68d3e223f3b5fb0338c0a1b5e041314019e829748188f590a1333",
+      "screenSha256": "7a8c4d818ceb813306f78e1df2169dd89461efdcafdaeee24a0c8bcceb48bd36",
+      "imageAreaCount": 22
+    },
+    {
+      "file": "art-delivery/designs/states/wait-sleep--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/wait-sleep--states-1.json",
+      "sha256": "ac5b30b1a8ab1130cfacdfbb6c9413d16045c68079580d69b78396093182a681",
+      "screenSha256": "89b67fdd2bd6067a07463a2531dd5fb23179d63852722491a12ac3a463976e1e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/wait-sleep--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/wait-sleep--states-2.json",
+      "sha256": "54d20ed95b714e20e645fdb7818eee84b1caef7b07edef373f817e57f60808a9",
+      "screenSha256": "83f57536dab9d6df4d584e2b244315959c3b63f34478fa228b519ad55fcbbe4e",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/activity-progress.png",
+      "placementFile": "art-delivery/records/resource-placements/activity-progress.json",
+      "sha256": "927b0fee9a7e0f390d21e9fdab06233ffacb4a565b0ca3ff4faead2b6c87d971",
+      "screenSha256": "72e624cbba6cbbd20090aca9ba13cccf1b25319f063143df2a3e2fa5f1cd0ba1",
+      "imageAreaCount": 19
+    },
+    {
+      "file": "art-delivery/designs/states/activity-progress--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/activity-progress--states-1.json",
+      "sha256": "da0296a7a0221f4be2c092f0c3cb320db2e73a8d2b022c8adcd1975fee9971a8",
+      "screenSha256": "fab0120e82b18352238be25b87c3e0c548849f70075528ac4d9d8f4fc5ed357c",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/activity-progress--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/activity-progress--states-2.json",
+      "sha256": "877c542480db334f440cf371efaf74990bf46067328e69c3ef1f77e0722cd5cc",
+      "screenSha256": "638b4cce2f831bffc3940ccdbaa95b81dcd7f0f5a587151d2be68659be795f65",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/butcher-harvest.png",
+      "placementFile": "art-delivery/records/resource-placements/butcher-harvest.json",
+      "sha256": "758930ef26c793f4c36cd2eef7c627195b4d1fdb36cfbbabf9988f0be0d82db4",
+      "screenSha256": "08d08347ef15d113d994f79bbe84ec50dfedf9045df44232e0c58fcf2475cb74",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/butcher-harvest--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/butcher-harvest--states-1.json",
+      "sha256": "cc77019cc41ef8df2153799661682fd8b4e8fc73cf656143622cb69792ba35ec",
+      "screenSha256": "5b22fe208f6709cde6f3438244b861ce77b48202f289bc5239941f1a176a5dc3",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/butcher-harvest--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/butcher-harvest--states-2.json",
+      "sha256": "1ac52946fd8112341bb1742815c22f5a94c9075e683cf8f0e63f8cbd1cfa125b",
+      "screenSha256": "917ed2dff482f4ead9a63e2295868d5e516d477f95b6be460e5a86e0aa83da29",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/zone-activities.png",
+      "placementFile": "art-delivery/records/resource-placements/zone-activities.json",
+      "sha256": "563d9759ab359644c71b23cdc80255584b1238755041b329a0afa88d3ddc2247",
+      "screenSha256": "7b19401079132b66e40487fc172618ba76e7cf4617461acb0ac7f4d81cf43b1b",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/zone-activities--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/zone-activities--states-1.json",
+      "sha256": "766594bd7908de22ff0009b552d738374eceed7910140718a82c26a8f181c476",
+      "screenSha256": "7dcf8ed6c951cc526e0c2fe66acb7e6f749eefa1649ff6533cc99280c18abebe",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-orders.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-orders.json",
+      "sha256": "d018fd727235d6ec50f5f261d5d1c1de2d55b3fd2f3d1b2b593ae8fe67fce6fd",
+      "screenSha256": "99914ed6d7414e3adae48725401660baf3f036bf5a03562f31f4f2db0c2d6a67",
+      "imageAreaCount": 24
+    },
+    {
+      "file": "art-delivery/designs/states/npc-orders--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/npc-orders--states-1.json",
+      "sha256": "1795f9f56a12be5820e2b2b452be18b3e6e61421a093b1526d46948263d3e8f3",
+      "screenSha256": "f66b550115c9bb102d1e84e3dd5d379229452289d85f57fdff4b12d42be61203",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/animal-care.png",
+      "placementFile": "art-delivery/records/resource-placements/animal-care.json",
+      "sha256": "7c8b0b6905512e600c92f65083945b279d3e13bba6176ec19a3e3d53e63cd149",
+      "screenSha256": "6f45df5364ee9bf1d6e55579a81a38140aa7b3d16de4b9502399c23ec36a11e1",
+      "imageAreaCount": 24
+    },
+    {
+      "file": "art-delivery/designs/states/animal-care--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/animal-care--states-1.json",
+      "sha256": "607b531510ad564ebef8eb649d9c09b535cb5656817dbcd91cb5fd1e56d5cc94",
+      "screenSha256": "e3fcd3c9299554162edb9876553ca0127570049e6e25fe2efa2e1dc0f3719941",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/animal-care--states-2.png",
+      "placementFile": "art-delivery/records/resource-placements/animal-care--states-2.json",
+      "sha256": "60d0c5666d9efdd66db1bdda83e4dd79099a2ad0c32443230ba949459ad4e0b1",
+      "screenSha256": "d06ff14cc47dab28a462eb8ad5ef2c66d7412febe37bb7f52636895d2bf6e871",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/common-dialogs.png",
+      "placementFile": "art-delivery/records/resource-placements/common-dialogs.json",
+      "sha256": "0d04dc5e4b62c34cd18665eaf0cb5fd79b12fd97e0a6828b0fb6b48b2522b0d8",
+      "screenSha256": "e50e2ee72c772410b8e24b972601de23df75fac136e9761c0cddfda56b4d2240",
+      "imageAreaCount": 31
+    },
+    {
+      "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+      "placementFile": "art-delivery/records/resource-placements/common-dialogs--states-1.json",
+      "sha256": "ee43b3dcebd8e1b473c95cbfdbe359035b571c0ee81e4e371ac02098b2b91471",
+      "screenSha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "imageAreaCount": 23
+    }
+  ]
+}

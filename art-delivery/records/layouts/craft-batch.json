@@ -1,0 +1,536 @@
+{
+  "id": "craft-batch",
+  "file": "art-delivery/designs/screens/craft-batch.png",
+  "sha256": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-bandage.png",
+      "sha256": "ecdbdd75e3272ec1f330595d879d9a4684343db610e6a13af5a95fc5b5126bed",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-selected.png",
+      "sha256": "841a8bba5c31946986af399ddfe5abf1d2c9879467e8a2cfe98e6cd7babee925",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/icons/survival-bandage.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/row-normal.png",
+    "art-delivery/resources/ui/row-selected.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "批量制作",
+      "displayText": "批量制作",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "craft-batch  ·  设计预览 / 非游戏运行截图",
+      "displayText": "craft-batch  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "简易绷带 · 材料与工具",
+      "displayText": "简易绷带 · 材料与工具",
+      "rect": [
+        420,
+        275,
+        730,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "布条",
+      "displayText": "布条",
+      "rect": [
+        470,
+        380,
+        485,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#fff4d7",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "3 / 3",
+      "displayText": "3 / 3",
+      "rect": [
+        920,
+        385,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#e9e6d2",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "清洁材料",
+      "displayText": "清洁材料",
+      "rect": [
+        470,
+        476,
+        485,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "1 / 1",
+      "displayText": "1 / 1",
+      "rect": [
+        920,
+        481,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "工具",
+      "displayText": "工具",
+      "rect": [
+        470,
+        572,
+        485,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "剪刀",
+      "displayText": "剪刀",
+      "rect": [
+        920,
+        577,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "技艺",
+      "displayText": "技艺",
+      "rect": [
+        470,
+        668,
+        485,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "基础缝纫",
+      "displayText": "基础缝纫",
+      "rect": [
+        920,
+        673,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "制作数量",
+      "displayText": "制作数量",
+      "rect": [
+        1280,
+        445,
+        475,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "−",
+      "displayText": "−",
+      "rect": [
+        1292,
+        522.02,
+        76,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "3",
+      "displayText": "3",
+      "rect": [
+        1415,
+        519,
+        210,
+        50
+      ],
+      "fontSize": 34,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "+",
+      "displayText": "+",
+      "rect": [
+        1672,
+        522.02,
+        76,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "数量范围 1–3（本样例）\n总耗时 18 分钟（游戏时间）",
+      "displayText": "数量范围 1–3（本样例）\n总耗时 18 分钟（游戏时间）",
+      "rect": [
+        1295,
+        615,
+        455,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "材料与工具已备齐。\n调整数量后重新核对总消耗。",
+      "displayText": "材料与工具已备齐。\n调整数量后重新核对总消耗。",
+      "rect": [
+        1295,
+        741,
+        445,
+        66
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "确认批量",
+      "displayText": "确认批量",
+      "rect": [
+        1372,
+        947.02,
+        346,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/crafting_gui.cpp",
+      "symbol": "crafting_ui_impl::draw_category_tabs / batch calculations",
+      "line": 764,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/crafting_gui.cpp#L764"
+    }
+  ]
+}

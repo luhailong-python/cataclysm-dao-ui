@@ -1,0 +1,431 @@
+{
+  "id": "motd",
+  "file": "art-delivery/designs/screens/motd.png",
+  "sha256": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/icon-notes.png",
+      "sha256": "dac54bf8263f566c4f35d837fd02b5d08eb3deb7db7aecb87df31ad337da6232",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-selected.png",
+      "sha256": "841a8bba5c31946986af399ddfe5abf1d2c9879467e8a2cfe98e6cd7babee925",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/icons/icon-notes.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/row-normal.png",
+    "art-delivery/resources/ui/row-selected.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "今日告示",
+      "displayText": "今日告示",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "motd  ·  设计预览 / 非游戏运行截图",
+      "displayText": "motd  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "新的黎明 · 本地告示",
+      "displayText": "新的黎明 · 本地告示",
+      "rect": [
+        640,
+        280,
+        1080,
+        50
+      ],
+      "fontSize": 34,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "今日手记\n避开未知动静，保留清洁饮水。\n出发前，检查照明、衣物与急救物资。",
+      "displayText": "今日手记\n避开未知动静，保留清洁饮水。\n出发前，检查照明、衣物与急救物资。",
+      "rect": [
+        640,
+        355,
+        1065,
+        120
+      ],
+      "fontSize": 27,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "本地告示",
+      "displayText": "本地告示",
+      "rect": [
+        495,
+        587,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#fff4d7",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "已阅读",
+      "displayText": "已阅读",
+      "rect": [
+        1520,
+        592,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#e9e6d2",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "版本说明",
+      "displayText": "版本说明",
+      "rect": [
+        495,
+        655,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "可查看",
+      "displayText": "可查看",
+      "rect": [
+        1520,
+        660,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "作者与许可",
+      "displayText": "作者与许可",
+      "rect": [
+        495,
+        723,
+        1060,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "可查看",
+      "displayText": "可查看",
+      "rect": [
+        1520,
+        728,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "返回首页",
+      "displayText": "返回首页",
+      "rect": [
+        1162,
+        947.02,
+        346,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/main_menu.cpp",
+      "symbol": "main_menu::display_text / main_menu::init_strings",
+      "line": 434,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/main_menu.cpp#L434"
+    }
+  ]
+}

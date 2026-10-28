@@ -1,0 +1,35 @@
+{
+  "operation": "Contact-sheet composition of six delivered full-screen designs; no image-model generation",
+  "file": "art-delivery/previews/preview-overview.jpg",
+  "sha256": "474f12f15b1fb25270194dcce694afa5c9d1a34943505c51f10339765fc84309",
+  "size": [
+    2000,
+    1920
+  ],
+  "sources": [
+    {
+      "file": "art-delivery/designs/screens/main-menu.png",
+      "sha256": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d"
+    },
+    {
+      "file": "art-delivery/designs/screens/inventory.png",
+      "sha256": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e"
+    },
+    {
+      "file": "art-delivery/designs/screens/character-sheet.png",
+      "sha256": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9"
+    },
+    {
+      "file": "art-delivery/designs/screens/game-hud.png",
+      "sha256": "45ffe76dcf6cb3e321ee31275576e11ff436d9c07cd09da949569c8448a30c12"
+    },
+    {
+      "file": "art-delivery/designs/screens/overmap.png",
+      "sha256": "d3baa8f14110cabc7b9620d801f0f7e2cad5c8db68133d6002975417f00a5f30"
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-trade.png",
+      "sha256": "dcd9cee3937a93299874305b18ca1f392be104183a5887684a215887dd74ce82"
+    }
+  ]
+}

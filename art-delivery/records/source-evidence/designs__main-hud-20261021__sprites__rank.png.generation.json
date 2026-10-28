@@ -1,0 +1,44 @@
+{
+  "file": "E:\\work\\image\\designs\\main-hud-20261021\\sprites\\rank.png",
+  "sha256": "10ab3398c8619e68246a5a40ab21132bd1f4591a4579ef1e7adb60bef7aa97ec",
+  "width": 256,
+  "height": 256,
+  "format": "PNG",
+  "mode": "RGBA",
+  "generatedAt": "2026-10-21T02:56:01.356395-04:00",
+  "derivedAt": "2026-10-21T04:08:12.443134-04:00",
+  "derivedFrom": {
+    "file": "source/hud-icons-sheet.png",
+    "sha256": "779b6cb40b22c9b8a1393a1830f3b0cae106c914ea977741bae6bfdcd8a59c7d",
+    "generationRecord": "source/hud-icons-sheet.png.generation.json"
+  },
+  "operation": "Deterministic magenta chroma-key cleanup; split 2 rows x 4 columns; largest component; shared scaling 0.9 fit; centered on transparent 256x256 RGBA canvas. This is not new model-generated detail.",
+  "sourceCellIndex": 5,
+  "sourceGrid": [
+    1,
+    0
+  ],
+  "processor": "C:/Users/luyua/.agents/skills/generate2dsprite/scripts/generate2dsprite.py",
+  "processingReport": "source/processing-report.json",
+  "runtimeFile": "E:\\work\\mmorpg-client\\Assets\\Resources\\UI\\Ugui\\WorldHud20261021\\rank.png",
+  "runtimeSha256": "10ab3398c8619e68246a5a40ab21132bd1f4591a4579ef1e7adb60bef7aa97ec",
+  "actualModel": null,
+  "actualQuality": null,
+  "unverifiedReason": "宿主管理，工具未披露本次实际型号和质量，也未返回 receipt；目标配置不作为实际返回版本证据。",
+  "qa": {
+    "transparentAlpha": true,
+    "canvas": [
+      256,
+      256
+    ],
+    "alphaBbox": [
+      21,
+      14,
+      235,
+      242
+    ],
+    "outputEdgeTouch": false,
+    "runtimeCopyIdentical": true,
+    "sourceEdgeWarning": "Processor reports source-edge contact on four outer-column cells. Visual source and processed-sheet review confirms complete circular rims, no clipped subject, no output edge contact, and no paste clamping. Accepted by coordinating agent."
+  }
+}

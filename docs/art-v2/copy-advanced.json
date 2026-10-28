@@ -1,0 +1,3332 @@
+{
+  "game-hud": {
+    "detail": "工坊外传来一声金属轻响。你停在门前，先确认四周是否安全。背包中还有净水、绷带和一支手电。",
+    "action": "观察周围",
+    "stateFeedback": {
+      "常态": {
+        "message": "周围暂未发现迫近的威胁。可以先观察，再决定下一步行动。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "受伤": {
+        "message": "你有尚未处理的伤口。选择身体状态查看受伤部位。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "饥渴": {
+        "message": "你感到口渴和饥饿。背包里还存有少量食物与净水。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "疲劳": {
+        "message": "长时间活动让你疲倦。先找安全地点，再考虑休息。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "负重": {
+        "message": "携带重量已经影响行动。可整理容器或放下部分物品。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "警戒": {
+        "message": "附近出现危险动静，安全模式已暂停你的移动。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "乘车": {
+        "message": "你已进入车辆，行动前请确认驾驶与乘坐状态。",
+        "primaryLabel": "观察周围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "活动中": {
+        "message": "你正在进行一项长时活动，可查看进度与中断后果。",
+        "primaryLabel": "查看活动进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "aim-ranged": {
+    "detail": "徘徊者距你 6 格，当前弹药 3 / 5。快速射击耗时较少；继续瞄准可提高稳定性。弹道附近有人时，射击前需要再次确认。",
+    "action": "确认射击",
+    "rows": [
+      [
+        "目标",
+        "徘徊者 · 敌对"
+      ],
+      [
+        "距离",
+        "6 格"
+      ],
+      [
+        "弹药",
+        "3 / 5"
+      ],
+      [
+        "瞄准",
+        "稳定"
+      ],
+      [
+        "预计消耗",
+        "100 行动"
+      ]
+    ],
+    "stateFeedback": {
+      "无弹药": {
+        "message": "武器中没有可用弹药。装填后才能射击。",
+        "primaryLabel": "确认射击",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "超范围": {
+        "message": "目标已超出当前武器的有效范围。请靠近或更换目标。",
+        "primaryLabel": "确认射击",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "目标丢失": {
+        "message": "目标离开了视野。重新确定目标后才能射击。",
+        "primaryLabel": "确认射击",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "瞄准中": {
+        "message": "你正在稳定武器。继续瞄准会消耗行动时间。",
+        "primaryLabel": "继续瞄准",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消瞄准",
+        "tone": "normal"
+      },
+      "友方弹道确认": {
+        "message": "白榆处于弹道附近。继续射击可能伤及同伴。",
+        "primaryLabel": "仍然射击",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消射击",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "已收回瞄准，武器与弹药保持原状。",
+        "primaryLabel": "返回场景",
+        "primaryEnabled": true,
+        "secondaryLabel": "重新瞄准",
+        "tone": "normal"
+      }
+    }
+  },
+  "throw-target": {
+    "detail": "你正准备投出一只空瓶，落点距你 4 格。轨迹未穿过阻挡物。确认后将消耗一次投掷行动。",
+    "action": "确认投掷",
+    "rows": [
+      [
+        "投掷物",
+        "空瓶 ×1"
+      ],
+      [
+        "落点",
+        "前方空地"
+      ],
+      [
+        "距离",
+        "4 格"
+      ],
+      [
+        "轨迹",
+        "可达"
+      ]
+    ],
+    "stateFeedback": {
+      "超范围": {
+        "message": "目标超出当前可用范围，请重新选择落点。",
+        "primaryLabel": "确认投掷",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "物品选中": {
+        "message": "空瓶已选中，接下来选择落点。",
+        "primaryLabel": "选择落点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "合法轨迹": {
+        "message": "投掷轨迹可达，路径上未发现阻挡。",
+        "primaryLabel": "确认投掷",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "盲投": {
+        "message": "你看不清落点。盲投存在偏离或误伤风险。",
+        "primaryLabel": "确认盲投",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "本次投掷已取消，物品仍保留在身上。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "look-examine": {
+    "detail": "工具台上散落着钢片与磨损工具。台面旁有一扇关闭的窗，门没有上锁。你可以靠近检查，或先观察室内的动静。",
+    "action": "检查工具台",
+    "rows": [
+      [
+        "废弃工具台",
+        "可检查"
+      ],
+      [
+        "地面物品",
+        "3 件"
+      ],
+      [
+        "窗户",
+        "关闭"
+      ],
+      [
+        "门",
+        "未上锁"
+      ]
+    ],
+    "stateFeedback": {
+      "可见": {
+        "message": "当前对象在视野内，可以阅读其已知信息。",
+        "primaryLabel": "检查工具台",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "视线受阻": {
+        "message": "遮挡物挡住了视线。先换个位置或处理遮挡。",
+        "primaryLabel": "更换观察位置",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "黑暗": {
+        "message": "光线不足，无法确认细节。可以尝试照明。",
+        "primaryLabel": "选择照明",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无物": {
+        "message": "这一格没有发现可观察的物品或生物。",
+        "primaryLabel": "返回观察",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "切换楼层": {
+        "message": "你正在查看另一楼层的已知区域；返回可回到当前层。",
+        "primaryLabel": "切回当前楼层",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "nearby-creatures": {
+    "detail": "一名徘徊者在 6 格外缓慢移动，已注意到这边。附近的流浪犬保持距离；它没有表现出敌意。",
+    "action": "观察目标",
+    "rows": [
+      [
+        "徘徊者",
+        "6 格 · 敌对"
+      ],
+      [
+        "流浪犬",
+        "10 格 · 中立"
+      ],
+      [
+        "远处身影",
+        "视野受限"
+      ]
+    ],
+    "stateFeedback": {
+      "有目标": {
+        "message": "附近发现了可见目标，选择一项查看位置与威胁。",
+        "primaryLabel": "观察目标",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无目标": {
+        "message": "附近暂未发现可列出的目标。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无搜索结果": {
+        "message": "没有目标符合当前筛选条件，可清除筛选后重试。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "选中": {
+        "message": "徘徊者已选中，距离与方向已标出。",
+        "primaryLabel": "观察目标",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "危险": {
+        "message": "该目标具有较高威胁。靠近前请先确认装备与退路。",
+        "primaryLabel": "观察目标",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "message-log": {
+    "detail": "08:40  你停下脚步，观察工坊。\n08:39  附近传来轻微响声。\n08:38  你收好了手电。\n08:35  你饮用了一些净水。",
+    "action": "返回场景",
+    "rows": [
+      [
+        "08:40",
+        "停下脚步观察工坊"
+      ],
+      [
+        "08:39",
+        "附近传来轻微响声"
+      ],
+      [
+        "08:38",
+        "收好手电"
+      ],
+      [
+        "08:35",
+        "饮用净水"
+      ]
+    ],
+    "stateFeedback": {
+      "有记录": {
+        "message": "已有行动与环境消息，可按时间浏览。",
+        "primaryLabel": "返回场景",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无记录": {
+        "message": "当前还没有可查看的消息。继续行动后会产生记录。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "长文": {
+        "message": "这条消息较长，可以上下滚动阅读。",
+        "primaryLabel": "继续阅读",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "错误提示": {
+        "message": "部分日志内容无法读取。已有消息仍然保留。",
+        "primaryLabel": "返回场景",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "body-health": {
+    "detail": "左臂有一处未处理的浅表伤口，活动时有轻微疼痛。头部与右臂状况良好；双腿仍能正常行走。选择部位可查看伤口、防护和活动影响。",
+    "action": "查看左臂伤势",
+    "rows": [
+      [
+        "头部",
+        "80 / 80"
+      ],
+      [
+        "躯干",
+        "94 / 100"
+      ],
+      [
+        "左臂",
+        "68 / 80 · 受伤"
+      ],
+      [
+        "右臂",
+        "80 / 80"
+      ],
+      [
+        "左腿",
+        "80 / 80"
+      ],
+      [
+        "右腿",
+        "80 / 80"
+      ]
+    ],
+    "stateFeedback": {
+      "完整": {
+        "message": "所选部位没有发现伤口，当前功能正常。",
+        "primaryLabel": "查看部位状态",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "受伤": {
+        "message": "左臂有未处理伤口，并伴随轻微疼痛。",
+        "primaryLabel": "查看左臂伤势",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "部位缺失": {
+        "message": "该身体部位已缺失，可查看对行动与穿戴的影响。",
+        "primaryLabel": "查看部位影响",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "选中": {
+        "message": "左臂已选中，对应伤势与防护信息可在详情中查看。",
+        "primaryLabel": "查看左臂伤势",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "治疗后": {
+        "message": "所选伤口已经处理，仍需留意恢复情况。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "medical-treatment": {
+    "detail": "左臂的浅表伤口尚未包扎。可消耗 1 份绷带进行处理，预计需要 10 分钟。开始前请确认周围安全；危险接近时可以中断。",
+    "action": "开始包扎",
+    "rows": [
+      [
+        "治疗部位",
+        "左臂"
+      ],
+      [
+        "伤口",
+        "浅表伤口 · 未处理"
+      ],
+      [
+        "可用用品",
+        "绷带 ×3"
+      ],
+      [
+        "本次消耗",
+        "绷带 ×1"
+      ],
+      [
+        "预计时间",
+        "10 分钟"
+      ],
+      [
+        "条件",
+        "可以处理"
+      ]
+    ],
+    "stateFeedback": {
+      "待处理": {
+        "message": "所选伤口尚未处理，可以核对可用药品与治疗方式。",
+        "primaryLabel": "开始包扎",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无伤势": {
+        "message": "所选部位没有需要当前用品处理的伤势。",
+        "primaryLabel": "返回身体总览",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无药物工具": {
+        "message": "没有适用的药品或工具，暂时无法开始处理。",
+        "primaryLabel": "开始包扎",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "选中治疗": {
+        "message": "绷带已选中，将用于处理左臂的伤口。",
+        "primaryLabel": "开始包扎",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完成": {
+        "message": "本次处理已经完成，请查看部位当前状态。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "中断": {
+        "message": "处理已中断，尚未完成的部分请在安全后重新确认。",
+        "primaryLabel": "开始包扎",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "status-effects": {
+    "detail": "轻度口渴让你难以专注。背包里有一瓶净水；饮用后仍需留意后续活动与天气带来的水分消耗。",
+    "action": "查看解除方式",
+    "rows": [
+      [
+        "轻度口渴",
+        "生存需求"
+      ],
+      [
+        "保暖",
+        "衣物效果"
+      ],
+      [
+        "轻微疼痛",
+        "身体状态"
+      ],
+      [
+        "专注",
+        "精神状态"
+      ]
+    ],
+    "stateFeedback": {
+      "正面": {
+        "message": "所选效果正在带来有利影响，可查看来源与持续条件。",
+        "primaryLabel": "查看解除方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "负面": {
+        "message": "所选效果正在限制行动，可查看具体影响与解除方式。",
+        "primaryLabel": "查看解除方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无效果": {
+        "message": "当前没有需要列出的状态效果。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "长说明": {
+        "message": "这项效果的说明较长，可以滚动查看完整内容。",
+        "primaryLabel": "继续阅读",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "morale": {
+    "detail": "热食让你恢复了一些精神，舒适衣物也带来安稳感。疼痛和潮湿仍在拖累士气。当前合计为 +3。",
+    "action": "查看热食影响",
+    "rows": [
+      [
+        "热食",
+        "+8"
+      ],
+      [
+        "舒适衣物",
+        "+4"
+      ],
+      [
+        "疼痛",
+        "-6"
+      ],
+      [
+        "潮湿衣物",
+        "-3"
+      ]
+    ],
+    "stateFeedback": {
+      "正士气": {
+        "message": "有利事件使士气高于平常，当前可更专注地行动。",
+        "primaryLabel": "查看热食影响",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "负士气": {
+        "message": "负面经历正在压低士气，可查看各项来源与持续时间。",
+        "primaryLabel": "查看热食影响",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无来源": {
+        "message": "目前没有单独列出的士气来源。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "惩罚叠加": {
+        "message": "疼痛、潮湿等不利来源同时存在，合计影响已列在详情中。",
+        "primaryLabel": "查看热食影响",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "overmap": {
+    "detail": "废弃工坊位于河流东岸，周边道路已被你探索。北面仍有未知区域。河湾农场距离此处约 1.2 km，可先查看路线与沿途风险。",
+    "action": "查看地点",
+    "rows": [
+      [
+        "当前地点",
+        "废弃工坊"
+      ],
+      [
+        "探索状态",
+        "已探索"
+      ],
+      [
+        "楼层",
+        "地表 · Z 0"
+      ],
+      [
+        "附近目标",
+        "河湾农场"
+      ],
+      [
+        "天气",
+        "晴朗 · 微风"
+      ]
+    ],
+    "stateFeedback": {
+      "探索过": {
+        "message": "该区域已探索，可查看已知道路与地点。",
+        "primaryLabel": "查看地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "未知": {
+        "message": "这片区域尚未探索，无法确认其中的详细情况。",
+        "primaryLabel": "返回已知区域",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "地点选中": {
+        "message": "废弃工坊已选中，可查看地点说明或规划路线。",
+        "primaryLabel": "查看地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "天气图层": {
+        "message": "天气信息图层已打开，可查看当前可获知的天气。",
+        "primaryLabel": "查看地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "任务目标": {
+        "message": "任务目标位置已标出，可查看相关任务说明。",
+        "primaryLabel": "查看地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "楼层": {
+        "message": "正在查看地表这一层，可切换到已知的其他楼层。",
+        "primaryLabel": "查看地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "map-notes": {
+    "detail": "你在工坊北侧听见了可疑响声。将该处标为警示点，方便下次绕行或再次调查。保存前仍可修改名称和颜色。",
+    "action": "保存标记",
+    "rows": [
+      [
+        "标记名称",
+        "可疑响声"
+      ],
+      [
+        "标记类型",
+        "警示"
+      ],
+      [
+        "显示颜色",
+        "朱砂色"
+      ],
+      [
+        "位置",
+        "工坊北侧"
+      ],
+      [
+        "可见状态",
+        "显示在地图上"
+      ]
+    ],
+    "stateFeedback": {
+      "有标记": {
+        "message": "地图中已有标记，可以选择后查看或修改。",
+        "primaryLabel": "保存标记",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无标记": {
+        "message": "当前区域没有保存的标记，可以新增一条。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无结果": {
+        "message": "没有找到匹配的地点或标记，请调整关键词。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "编辑": {
+        "message": "正在编辑“可疑响声”标记，修改尚未保存。",
+        "primaryLabel": "继续编辑",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "删除确认": {
+        "message": "将删除选定标记“可疑响声”，删除前请再次确认。",
+        "primaryLabel": "删除选定标记",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      }
+    }
+  },
+  "route-travel": {
+    "detail": "这条路线将从废弃工坊步行前往河湾农场，两端均在地表。沿途经过一座旧桥。若发现危险，你会停下并重新评估。",
+    "action": "开始步行旅行",
+    "rows": [
+      [
+        "出发地点",
+        "废弃工坊"
+      ],
+      [
+        "目标地点",
+        "河湾农场"
+      ],
+      [
+        "交通方式",
+        "步行"
+      ],
+      [
+        "预计距离",
+        "1.2 km"
+      ],
+      [
+        "预计耗时",
+        "约 25 分钟"
+      ],
+      [
+        "楼层",
+        "同一层 · Z 0"
+      ]
+    ],
+    "stateFeedback": {
+      "无路径": {
+        "message": "无法找到通往该地点的路线。",
+        "primaryLabel": "开始旅行",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "楼层不一致": {
+        "message": "自动旅行的起点与目的地必须位于同一楼层。",
+        "primaryLabel": "开始旅行",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "负重警告": {
+        "message": "你携带的物品已超过负重能力。继续步行可能引起疼痛。",
+        "primaryLabel": "仍然旅行",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回整理",
+        "tone": "normal"
+      },
+      "车内非驾驶": {
+        "message": "你在车内但没有驾驶。是否离开车辆步行前往目的地？",
+        "primaryLabel": "步行前往",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      },
+      "可达": {
+        "message": "已找到通往河湾农场的步行路线。",
+        "primaryLabel": "开始步行旅行",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "行进": {
+        "message": "你正沿选定路线行进，发现危险时可停止。",
+        "primaryLabel": "开始步行旅行",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "本次旅行计划已取消，当前位置保持不变。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "zone-manager": {
+    "detail": "工具存放区已启用，位于工坊东侧。该区域接收符合分类规则的工具。可调整区域边界、类型与优先顺序。",
+    "action": "保存区域",
+    "rows": [
+      [
+        "工具存放区",
+        "启用 · 工具"
+      ],
+      [
+        "食物储物区",
+        "启用 · 食物"
+      ],
+      [
+        "施工规划区",
+        "禁用 · 蓝图"
+      ],
+      [
+        "种植区域",
+        "待设置 · 农田"
+      ]
+    ],
+    "stateFeedback": {
+      "选中": {
+        "message": "工具存放区已选中，可以修改其名称、类型和范围。",
+        "primaryLabel": "保存区域",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无区域": {
+        "message": "附近没有已设置的区域，可以先新增一个。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "启用": {
+        "message": "该区域已启用，符合条件的区域工作可以使用它。",
+        "primaryLabel": "查看已启用规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "禁用": {
+        "message": "该区域已禁用，区域工作暂时不会使用它。",
+        "primaryLabel": "查看已禁用规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "个人区域": {
+        "message": "个人区域会随人物位置变化，可查看当前覆盖范围。",
+        "primaryLabel": "保存区域",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "车辆区域": {
+        "message": "该区域绑定到车辆，可查看车辆上的当前范围。",
+        "primaryLabel": "保存区域",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "npc-talk": {
+    "detail": "白榆：“我在河湾住过一阵子。附近的旧工坊还留着能用的工具，不过黄昏后最好别一个人过去。”",
+    "action": "选择回应",
+    "rows": [
+      [
+        "你是谁？",
+        "了解对方"
+      ],
+      [
+        "附近有什么？",
+        "询问情报"
+      ],
+      [
+        "我想交易。",
+        "进入交易"
+      ],
+      [
+        "需要帮忙吗？",
+        "任务线索"
+      ]
+    ],
+    "stateFeedback": {
+      "常态": {
+        "message": "白榆正在等待你的回答，可以选择交谈话题。",
+        "primaryLabel": "选择回应",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "多段历史": {
+        "message": "已经积累了多段交谈记录，可向上查看。",
+        "primaryLabel": "查看交谈记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "不可选": {
+        "message": "当前条件不满足，暂时不能选择这项回应。",
+        "primaryLabel": "选择回应",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "说服成功": {
+        "message": "白榆接受了你的说法，交谈将继续。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "说服失败": {
+        "message": "白榆没有被说服。可以选择其他话题或结束交谈。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "结束": {
+        "message": "你与白榆结束了这次交谈。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "npc-trade": {
+    "detail": "白榆愿意用一份绷带换取你的两瓶净水。给出物品估值 8，获得物品估值 6，交易后新增信用 2。确认前仍可调整物品与数量。",
+    "action": "确认交换",
+    "rows": [
+      [
+        "净水 ×2",
+        "价值 8"
+      ],
+      [
+        "布条 ×3",
+        "价值 3"
+      ],
+      [
+        "钢片 ×2",
+        "价值 6"
+      ],
+      [
+        "食品 ×1",
+        "价值 8"
+      ]
+    ],
+    "stateFeedback": {
+      "可成交": {
+        "message": "双方已同意当前物品与价值，可以核对后成交。",
+        "primaryLabel": "确认交换",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "拒收": {
+        "message": "白榆不愿收取选中的物品，请调整交换内容。",
+        "primaryLabel": "确认交换",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "价值不足": {
+        "message": "当前给出的价值不足，需增加给出物品或减少获得物品。",
+        "primaryLabel": "确认交换",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "容量不足": {
+        "message": "一方没有足够空间接收所选物品，请调整数量。",
+        "primaryLabel": "确认交换",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "信用上限": {
+        "message": "本次交易产生的信用超过对方愿意承担的上限。",
+        "primaryLabel": "确认交换",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "确认": {
+        "message": "将按当前列表完成交换，请核对双方物品与信用差额。",
+        "primaryLabel": "确认交换",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "本次交换已取消，双方物品未作这次交换。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "missions": {
+    "detail": "白榆需要一套维修工具。你已找到工具，下一步是回到河湾交给他。任务目标地点已标在地图上。",
+    "action": "查看交付地点",
+    "rows": [
+      [
+        "带回维修工具",
+        "可交付"
+      ],
+      [
+        "寻找补给",
+        "进行中"
+      ],
+      [
+        "安全路线",
+        "已完成"
+      ],
+      [
+        "失联的旅人",
+        "已失败"
+      ]
+    ],
+    "stateFeedback": {
+      "进行中": {
+        "message": "任务仍在进行，可查看下一步目标与已知地点。",
+        "primaryLabel": "查看当前进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已完成": {
+        "message": "任务已经完成，可查看完成记录与相关人物。",
+        "primaryLabel": "查看记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已失败": {
+        "message": "任务已失败，可查看失败原因与后续说明。",
+        "primaryLabel": "查看记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无任务": {
+        "message": "当前没有已接取的任务。可以向遇到的人物询问线索。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "限时": {
+        "message": "该任务有截止条件，请查看剩余时间或已知日期。",
+        "primaryLabel": "查看交付地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "目标选中": {
+        "message": "“带回维修工具”已设为当前关注目标。",
+        "primaryLabel": "查看交付地点",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "factions": {
+    "detail": "河湾互助会由沿河的几处幸存者聚落组成。他们暂时保持中立，愿意交换生活物资，但仍需更多时间建立信任。",
+    "action": "查看阵营详情",
+    "rows": [
+      [
+        "河湾互助会",
+        "中立"
+      ],
+      [
+        "工坊旅人",
+        "友善"
+      ],
+      [
+        "未知势力",
+        "信息有限"
+      ]
+    ],
+    "stateFeedback": {
+      "已知": {
+        "message": "已经获知该阵营的部分情况，可以查看关系与描述。",
+        "primaryLabel": "查看阵营详情",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无记录": {
+        "message": "目前没有可查看的阵营记录。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "友好": {
+        "message": "该阵营对你较为友好，交谈仍需注意具体人物的态度。",
+        "primaryLabel": "查看阵营详情",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "敌对": {
+        "message": "该阵营对你抱有敌意，接近其成员前请评估风险。",
+        "primaryLabel": "查看阵营详情",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "中立": {
+        "message": "你与该阵营目前保持中立关系。",
+        "primaryLabel": "查看阵营详情",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "followers": {
+    "detail": "白榆正在随行，位于你身后约 3 格。他身体状况良好，携带一把工具刀，当前没有执行营地工作。",
+    "action": "查看白榆的指令",
+    "rows": [
+      [
+        "白榆",
+        "随行 · 状况良好"
+      ],
+      [
+        "松砚",
+        "驻守营地"
+      ],
+      [
+        "青竹",
+        "营地工作中"
+      ]
+    ],
+    "stateFeedback": {
+      "随行": {
+        "message": "白榆正在随行，位置与距离可在详情中查看。",
+        "primaryLabel": "查看白榆的指令",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "驻营": {
+        "message": "松砚正在营地驻守，没有在你身边随行。",
+        "primaryLabel": "查看松砚状况",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "工作中": {
+        "message": "这名同伴正在执行工作，查看任务可了解进度。",
+        "primaryLabel": "查看工作进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "未响应": {
+        "message": "暂时没有收到同伴回应，请检查距离与联系条件。",
+        "primaryLabel": "检查联系条件",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无同伴": {
+        "message": "当前没有可联系或下令的同伴。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "受伤": {
+        "message": "这名同伴受伤了，可以查看状况并考虑治疗。",
+        "primaryLabel": "查看同伴伤势",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "creature-codex": {
+    "detail": "这只流浪犬体型中等，听觉与嗅觉敏锐。你曾在河湾附近观察到它。目前记录不完整，保持距离继续观察可能获得更多信息。",
+    "action": "查看观察记录",
+    "rows": [
+      [
+        "流浪犬",
+        "已观察"
+      ],
+      [
+        "徘徊者",
+        "已记录"
+      ],
+      [
+        "林间鸟群",
+        "信息有限"
+      ],
+      [
+        "未知生物",
+        "尚未记录"
+      ]
+    ],
+    "stateFeedback": {
+      "已记录": {
+        "message": "已保存该生物的观察记录，可以阅读已知信息。",
+        "primaryLabel": "查看观察记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无目击照片": {
+        "message": "你还没有记录到该生物的目击或照片信息。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "高危": {
+        "message": "记录表明该生物具有较高危险，接近前请谨慎评估。",
+        "primaryLabel": "查看观察记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "长文": {
+        "message": "生物资料较长，可以滚动阅读完整内容。",
+        "primaryLabel": "继续阅读",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "camp-overview": {
+    "detail": "河湾营地储备了一些食物与饮水。工坊可以使用，住处仍需修缮。白榆可承担短途采集，松砚正在值守。",
+    "action": "安排营地工作",
+    "rows": [
+      [
+        "食物储备",
+        "约可维持 3 日"
+      ],
+      [
+        "工坊",
+        "可用"
+      ],
+      [
+        "住处",
+        "可扩建"
+      ],
+      [
+        "值守同伴",
+        "松砚"
+      ],
+      [
+        "可派遣同伴",
+        "白榆"
+      ]
+    ],
+    "stateFeedback": {
+      "可管理": {
+        "message": "你可以管理这处营地，先选择要查看的工作。",
+        "primaryLabel": "安排营地工作",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无权限": {
+        "message": "这处营地不在你的控制下，不能安排其工作。",
+        "primaryLabel": "安排营地工作",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无人": {
+        "message": "营地暂时没有可用人员，需要先安排同伴。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "食物不足": {
+        "message": "食物储备不足以支持所选工作，请先补充。",
+        "primaryLabel": "安排营地工作",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "任务可用": {
+        "message": "当前条件满足，可以选择这项营地工作。",
+        "primaryLabel": "安排营地工作",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "任务中": {
+        "message": "营地任务正在进行，可查看参与者与剩余工作。",
+        "primaryLabel": "查看任务进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "companion-assignment": {
+    "detail": "采集范围位于营地附近。已选同伴白榆目前空闲，具备所需生存知识；补给足够。预计 2 小时后返回，也可提前召回。",
+    "action": "派遣白榆",
+    "rows": [
+      [
+        "当前工作",
+        "采集物资"
+      ],
+      [
+        "已选同伴",
+        "白榆 · 可用"
+      ],
+      [
+        "技能条件",
+        "生存知识 · 满足"
+      ],
+      [
+        "补给",
+        "足够"
+      ],
+      [
+        "预计耗时",
+        "约 2 小时"
+      ],
+      [
+        "返回方式",
+        "营地领取报告"
+      ]
+    ],
+    "stateFeedback": {
+      "无人": {
+        "message": "没有可指派的空闲同伴。",
+        "primaryLabel": "派遣白榆",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "技能不符": {
+        "message": "该同伴未达到这项工作的技能条件。",
+        "primaryLabel": "派遣白榆",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "未到时间": {
+        "message": "同伴仍在途中，暂时没有可回收的报告。",
+        "primaryLabel": "领取任务报告",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "可指派": {
+        "message": "白榆目前可用，符合所选工作的要求。",
+        "primaryLabel": "派遣白榆",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "工作中": {
+        "message": "同伴正在执行该项工作，可查看当前进度。",
+        "primaryLabel": "查看工作进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "可回收": {
+        "message": "同伴已经返回，可以查看报告与带回物资。",
+        "primaryLabel": "查看任务报告",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "召回": {
+        "message": "提前召回会结束本次工作，请先确认未完成部分的影响。",
+        "primaryLabel": "确认召回同伴",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      }
+    }
+  },
+  "camp-upgrade": {
+    "detail": "扩建工坊需要 20 份木材，目前只有 12 份。工具、建筑知识和食物储备均已满足。还差 8 份木材，暂时无法开工。",
+    "action": "查看缺少材料",
+    "rows": [
+      [
+        "木材",
+        "12 / 20 · 缺 8"
+      ],
+      [
+        "工具",
+        "齐备"
+      ],
+      [
+        "建筑知识",
+        "满足"
+      ],
+      [
+        "食物储备",
+        "足够"
+      ],
+      [
+        "前置设施",
+        "基础工坊"
+      ]
+    ],
+    "stateFeedback": {
+      "缺材料": {
+        "message": "材料尚未备齐，请补齐标出的缺项。",
+        "primaryLabel": "开始扩建",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "缺食物": {
+        "message": "可用食物不足以支持本次工作。",
+        "primaryLabel": "开始扩建",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "前置不足": {
+        "message": "前置设施尚未完成。",
+        "primaryLabel": "开始扩建",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "可建": {
+        "message": "扩建条件已经满足，可以核对工人与耗时。",
+        "primaryLabel": "开始扩建",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "施工": {
+        "message": "工人正在扩建工坊，可查看施工进度。",
+        "primaryLabel": "查看施工进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完工": {
+        "message": "工坊扩建已经完成，可以查看新增设施。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "撤销": {
+        "message": "本次扩建安排已撤销，剩余条件可重新核对。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "vehicle-dashboard": {
+    "detail": "旧旅行车停在工坊旁。引擎已熄火，燃料剩余 62%，蓄电量 74%。起步前可检查部件、车灯与周围道路。",
+    "action": "检查车辆",
+    "rows": [
+      [
+        "速度",
+        "0 km/h"
+      ],
+      [
+        "引擎",
+        "已熄火"
+      ],
+      [
+        "燃料",
+        "62%"
+      ],
+      [
+        "蓄电量",
+        "74%"
+      ],
+      [
+        "车灯",
+        "关闭"
+      ],
+      [
+        "控制状态",
+        "驾驶位"
+      ]
+    ],
+    "stateFeedback": {
+      "关闭": {
+        "message": "引擎已熄火，车辆仍停在当前位置。",
+        "primaryLabel": "检查车辆",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "启动": {
+        "message": "引擎正在启动，请留意燃料、供电与故障提示。",
+        "primaryLabel": "查看引擎状态",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无燃料": {
+        "message": "缺少可用燃料，当前无法启动该引擎。",
+        "primaryLabel": "启动引擎",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "移动": {
+        "message": "车辆正在移动，进行修理和补给前请先停车。",
+        "primaryLabel": "检查车辆",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "停车": {
+        "message": "车辆已经停稳，可以检查部件与补给。",
+        "primaryLabel": "检查车辆",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "自动驾驶": {
+        "message": "自动驾驶正在按当前路线或巡逻设置运行，可随时接管。",
+        "primaryLabel": "查看自动驾驶设置",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "故障": {
+        "message": "车辆出现故障，请查看受影响部件与可用处理方式。",
+        "primaryLabel": "查看故障",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "vehicle-parts": {
+    "detail": "左前车架轻度受损，但仍能支撑车辆。维修需要相应工具与材料；先停车，再选择维修、拆卸或安装部件。",
+    "action": "维修选中部件",
+    "rows": [
+      [
+        "左前车架",
+        "轻度受损"
+      ],
+      [
+        "右前车轮",
+        "完好"
+      ],
+      [
+        "引擎",
+        "可启动"
+      ],
+      [
+        "蓄电池",
+        "74%"
+      ],
+      [
+        "储物空间",
+        "可查看"
+      ]
+    ],
+    "stateFeedback": {
+      "材料技能不足": {
+        "message": "维修所需工具、材料或技能尚未满足。",
+        "primaryLabel": "维修选中部件",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "驾驶中禁止": {
+        "message": "请先停车并结束驾驶操作。",
+        "primaryLabel": "维修选中部件",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "不可修": {
+        "message": "该部件当前无法修理，请检查是否需要更换。",
+        "primaryLabel": "维修选中部件",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "正常": {
+        "message": "选中的部件状态正常，可以查看规格与适用操作。",
+        "primaryLabel": "查看部件规格",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "损坏": {
+        "message": "左前车架受损，维修前请核对所需工具材料。",
+        "primaryLabel": "查看维修条件",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "部件选中": {
+        "message": "左前车架已选中，可查看相邻部件和作业条件。",
+        "primaryLabel": "维修选中部件",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完成": {
+        "message": "本次部件作业已完成，请核对新的状态。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "vehicle-refill": {
+    "detail": "安全油桶中的燃料与目标油箱兼容。油箱尚有 18 L 空间，本次最多可补充 12 L。车辆移动时不能进行补给。",
+    "action": "补充 12 L 燃料",
+    "rows": [
+      [
+        "目标部件",
+        "燃油箱"
+      ],
+      [
+        "来源容器",
+        "安全油桶"
+      ],
+      [
+        "可补充量",
+        "12 L"
+      ],
+      [
+        "剩余容量",
+        "18 L"
+      ],
+      [
+        "兼容检查",
+        "通过"
+      ],
+      [
+        "车辆状态",
+        "已停稳"
+      ]
+    ],
+    "stateFeedback": {
+      "无兼容物": {
+        "message": "没有可用于该部件的兼容补给物品。",
+        "primaryLabel": "补充 12 L 燃料",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "已满": {
+        "message": "目标容器已满，无法继续补给。",
+        "primaryLabel": "补充 12 L 燃料",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "移动中禁止": {
+        "message": "车辆尚在移动，请停稳后再补给。",
+        "primaryLabel": "补充 12 L 燃料",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "可补给": {
+        "message": "来源燃料与油箱兼容，可以继续核对数量。",
+        "primaryLabel": "补充 12 L 燃料",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "目标选中": {
+        "message": "燃油箱已选中，当前剩余容量为 18 L。",
+        "primaryLabel": "补充 12 L 燃料",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完成": {
+        "message": "本次补给已完成，请核对油箱的当前容量。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "bionics": {
+    "detail": "照明义体可以照亮近处环境。当前储能为 120 / 300 kJ。启动与持续运作都会消耗能量，关闭后可节省储备。",
+    "action": "启动照明义体",
+    "rows": [
+      [
+        "照明义体",
+        "关闭 · 可启动"
+      ],
+      [
+        "能量储备",
+        "120 / 300 kJ"
+      ],
+      [
+        "工具义体",
+        "关闭"
+      ],
+      [
+        "被动增强",
+        "已安装"
+      ]
+    ],
+    "stateFeedback": {
+      "能量不足": {
+        "message": "储能不足，无法启动选中的义体。",
+        "primaryLabel": "启动义体",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无燃料": {
+        "message": "没有可供该义体使用的燃料。",
+        "primaryLabel": "启动义体",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无义体": {
+        "message": "你尚未安装可管理的义体。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "启动": {
+        "message": "选中的义体已启动，将按其规则消耗能量或燃料。",
+        "primaryLabel": "查看义体状态",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "关闭": {
+        "message": "选中的主动义体已关闭。",
+        "primaryLabel": "查看启动条件",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "节能阈值": {
+        "message": "可设置供能设备的节能阈值，改变前请核对当前储能。",
+        "primaryLabel": "调整节能阈值",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "故障": {
+        "message": "这项义体出现故障，可查看具体影响与处理条件。",
+        "primaryLabel": "查看故障",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "bionic-surgery": {
+    "detail": "工具义体尚未安装。目前未准备好麻醉用品，也未选定执行者。请先补齐条件，再查看成功率并决定是否进行手术。",
+    "action": "选择执行者",
+    "rows": [
+      [
+        "目标义体",
+        "工具义体"
+      ],
+      [
+        "手术设备",
+        "需确认"
+      ],
+      [
+        "麻醉用品",
+        "未满足"
+      ],
+      [
+        "成功率",
+        "待选择执行者"
+      ],
+      [
+        "执行者",
+        "尚未选择"
+      ]
+    ],
+    "stateFeedback": {
+      "已装": {
+        "message": "该义体已经安装，不能重复进行同一安装。",
+        "primaryLabel": "开始手术",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "槽位不足": {
+        "message": "目标部位没有足够安装空间，请先调整义体配置。",
+        "primaryLabel": "开始手术",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "污染": {
+        "message": "义体受到污染。请先完成无菌处理。",
+        "primaryLabel": "开始手术",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "缺麻醉": {
+        "message": "麻醉用品不足，当前不能开始手术。",
+        "primaryLabel": "开始手术",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "确认": {
+        "message": "将安装工具义体。请核对执行者、成功率、耗材与失败后果。",
+        "primaryLabel": "开始手术",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消手术",
+        "tone": "normal"
+      },
+      "可装": {
+        "message": "设备、麻醉与安装空间均已满足，可继续核对风险。",
+        "primaryLabel": "复核手术",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "成功": {
+        "message": "工具义体已安装。术后请继续留意身体状况。",
+        "primaryLabel": "查看义体",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "失败": {
+        "message": "本次手术失败。请检查伤势与义体状态后再决定下一步。",
+        "primaryLabel": "检查伤势",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "mutations": {
+    "detail": "夜间视觉是一项被动特征，不需要主动开启。它帮助你在微弱光线下辨认周围，但完全黑暗仍会限制观察。",
+    "action": "查看特征影响",
+    "rows": [
+      [
+        "夜间视觉",
+        "被动特征"
+      ],
+      [
+        "敏捷变化",
+        "已生效"
+      ],
+      [
+        "适应特征",
+        "可查看"
+      ],
+      [
+        "激活能力",
+        "有消耗"
+      ]
+    ],
+    "stateFeedback": {
+      "被动不可激活": {
+        "message": "这项特征为被动特征，无需主动开启。",
+        "primaryLabel": "激活特征",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "资源不足": {
+        "message": "当前资源不足以支付这项能力的消耗。",
+        "primaryLabel": "激活特征",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无变异": {
+        "message": "当前没有可列出的变异特征。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "关闭": {
+        "message": "所选主动特征当前未激活。",
+        "primaryLabel": "查看激活条件",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "生效": {
+        "message": "所选特征正在生效，可查看具体影响。",
+        "primaryLabel": "查看特征影响",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "永久特征": {
+        "message": "这项特征已经成为身体的永久部分，普通净化方式不能移除。",
+        "primaryLabel": "查看特征说明",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "martial-arts": {
+    "detail": "徒手基本式已经掌握，当前可在空手时采用。换用武器后，请先检查流派的兼容武器与招式条件。",
+    "action": "采用基本式",
+    "rows": [
+      [
+        "徒手基本式",
+        "已掌握"
+      ],
+      [
+        "防御姿态",
+        "可选择"
+      ],
+      [
+        "武器要求",
+        "徒手"
+      ],
+      [
+        "当前流派",
+        "基本式"
+      ]
+    ],
+    "stateFeedback": {
+      "已学": {
+        "message": "你已经掌握这门流派，可以查看招式与适用武器。",
+        "primaryLabel": "采用基本式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "未选择": {
+        "message": "当前未选用特殊流派，可以从已知流派中选择。",
+        "primaryLabel": "选择已知流派",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "当前选用": {
+        "message": "这门流派正在使用，对应招式按其条件触发。",
+        "primaryLabel": "查看当前流派",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "武器兼容说明": {
+        "message": "所选流派对武器有要求，换装前可查看兼容列表。",
+        "primaryLabel": "查看兼容武器",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "义体提供": {
+        "message": "当前激活的义体提供这门流派，义体状态变化后可用性可能改变。",
+        "primaryLabel": "查看提供来源",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "spellbook": {
+    "detail": "照明术已掌握，可用于照亮近处。当前可用法力 18 / 30，预计消耗 4。施展前仍需检查目标与环境。",
+    "action": "选择照明术",
+    "rows": [
+      [
+        "照明术",
+        "已掌握 · 1 级"
+      ],
+      [
+        "短程护盾",
+        "已掌握 · 1 级"
+      ],
+      [
+        "感知术",
+        "已掌握 · 2 级"
+      ]
+    ],
+    "stateFeedback": {
+      "未启用": {
+        "message": "当前世界未启用这组可选内容。启用相应模组后才能使用。",
+        "primaryLabel": "施展能力",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无能力": {
+        "message": "你尚未掌握可施展的能力。",
+        "primaryLabel": "施展能力",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "能量不足": {
+        "message": "当前法力不足，请调整选择或恢复能量。",
+        "primaryLabel": "施展能力",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "已学": {
+        "message": "这项能力已经掌握，可查看消耗、范围和条件。",
+        "primaryLabel": "选择照明术",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "失败率": {
+        "message": "这里是本次施展的预计失败概率，并非已经施展失败。",
+        "primaryLabel": "查看概率说明",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "收藏": {
+        "message": "这项能力已加入收藏，可从收藏列表更快找到。",
+        "primaryLabel": "查看收藏",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "spell-target": {
+    "detail": "照明术将作用于选定地面。当前目标位于范围内，预计消耗 4 点法力。若目标不可见或法力不足，请重新选择。",
+    "action": "确认施放",
+    "rows": [
+      [
+        "能力",
+        "照明术"
+      ],
+      [
+        "目标",
+        "选定地面"
+      ],
+      [
+        "范围",
+        "合法"
+      ],
+      [
+        "消耗",
+        "4 点法力"
+      ],
+      [
+        "可用法力",
+        "18 / 30"
+      ]
+    ],
+    "stateFeedback": {
+      "超范围": {
+        "message": "目标超出当前可用范围，请重新选择落点。",
+        "primaryLabel": "确认施放",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无合法目标": {
+        "message": "当前目标不符合能力的作用条件，请选择合法目标。",
+        "primaryLabel": "确认施放",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "能量不足": {
+        "message": "可用能量不足以承担本次消耗。",
+        "primaryLabel": "确认施放",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "可施展": {
+        "message": "所选目标和可用资源符合施展条件。",
+        "primaryLabel": "确认施放",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "范围预览": {
+        "message": "作用范围已经标出，请留意范围内的友方与其他对象。",
+        "primaryLabel": "核对作用范围",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "本次施展已取消，尚未释放这项能力。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "achievements": {
+    "detail": "你第一次完成了简易用品制作。新的旅程还在继续：可以查看其他目标的条件，或切换到行为准则、分数和击杀记录。",
+    "action": "查看达成条件",
+    "rows": [
+      [
+        "初次制作",
+        "已完成"
+      ],
+      [
+        "旅行足迹",
+        "进行中"
+      ],
+      [
+        "生存挑战",
+        "未达成"
+      ],
+      [
+        "行为准则",
+        "可查看"
+      ]
+    ],
+    "stateFeedback": {
+      "未完成": {
+        "message": "这项目标尚未达成，可以查看剩余条件。",
+        "primaryLabel": "查看剩余条件",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已完成": {
+        "message": "这项目标已经达成，记录已保存在本局战绩中。",
+        "primaryLabel": "查看记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "违背准则": {
+        "message": "你已经违背这项行为准则，可查看相关记录。",
+        "primaryLabel": "查看相关记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "空记录": {
+        "message": "当前没有可列出的这类战绩记录。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "调试人物禁用": {
+        "message": "调试人物不会记录这些成就和行为准则。",
+        "primaryLabel": "查看达成条件",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      }
+    }
+  },
+  "memorial": {
+    "detail": "你在第 12 日的黄昏结束了这段旅程。河湾营地的灯还亮着，随身日记记下了工坊、旧桥与同行的人。愿后来者能走得更远。",
+    "action": "返回主菜单",
+    "rows": [
+      [
+        "生存时长",
+        "12 日 7 小时"
+      ],
+      [
+        "探索地点",
+        "16"
+      ],
+      [
+        "制作次数",
+        "37"
+      ],
+      [
+        "人物状态",
+        "旅程结束"
+      ]
+    ],
+    "stateFeedback": {
+      "死亡": {
+        "message": "这段人物旅程已经结束，可以阅读死亡记录。",
+        "primaryLabel": "返回主菜单",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "临终观察": {
+        "message": "你正在旁观人物的最后片刻，不能继续操控人物行动。",
+        "primaryLabel": "结束旁观",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "成绩": {
+        "message": "可以查看这段旅程的生存、探索与战斗记录。",
+        "primaryLabel": "查看记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无击杀": {
+        "message": "这段旅程没有记录到击杀。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "后记": {
+        "message": "后记记录了同行人物与阵营在旅程结束后的情况。",
+        "primaryLabel": "查看记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "纪念": {
+        "message": "人物的日记与历程已经留下，可作为这段旅程的纪念。",
+        "primaryLabel": "查看记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "diary": {
+    "detail": "春 · 第 2 日\n今晚在河湾露营。桥头风很大，白榆生起了一小堆火。明天去旧工坊看看，希望能找到修车用的工具。",
+    "action": "保存记录",
+    "rows": [
+      [
+        "春 · 第 2 日",
+        "河湾记事"
+      ],
+      [
+        "春 · 第 3 日",
+        "工坊的新发现"
+      ],
+      [
+        "春 · 第 1 日",
+        "离开避难所"
+      ]
+    ],
+    "stateFeedback": {
+      "无日记": {
+        "message": "还没有写下日记，可以新建一页开始记录。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已记录": {
+        "message": "这页日记已经保存，可继续阅读或编辑。",
+        "primaryLabel": "保存记录",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "长文": {
+        "message": "这页记录较长，可以滚动阅读。",
+        "primaryLabel": "继续阅读",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "编辑": {
+        "message": "正在编辑日记，修改尚未保存。",
+        "primaryLabel": "继续编辑",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "保存": {
+        "message": "日记修改已保存。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "本次编辑已取消，未执行新的保存。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "terminal": {
+    "detail": "终端仍在供电，档案检索可用。设备控制需要更高权限；绕过安全限制可能触发警报。你可以先读取日志。",
+    "action": "检索选定档案",
+    "rows": [
+      [
+        "检索档案",
+        "可尝试"
+      ],
+      [
+        "打开设备",
+        "需要权限"
+      ],
+      [
+        "查看日志",
+        "可阅读"
+      ],
+      [
+        "断开连接",
+        "退出"
+      ]
+    ],
+    "stateFeedback": {
+      "接入": {
+        "message": "终端已连接，可查看当前开放的功能。",
+        "primaryLabel": "检索选定档案",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "锁定": {
+        "message": "终端因安全限制暂时锁定，当前不能执行功能。",
+        "primaryLabel": "检索选定档案",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "破解确认": {
+        "message": "绕过安全限制可能触发警报，是否继续尝试？",
+        "primaryLabel": "尝试破解",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "danger"
+      },
+      "破解失败": {
+        "message": "本次破解失败，终端可能触发安全响应。",
+        "primaryLabel": "查看安全提示",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无权限": {
+        "message": "当前权限不足，不能执行这个功能。",
+        "primaryLabel": "检索选定档案",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "成功": {
+        "message": "所选终端功能已执行，可以阅读返回信息。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "关闭": {
+        "message": "你已断开终端连接。",
+        "primaryLabel": "重新连接",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "atm-bank": {
+    "detail": "将现金卡上的 100 存入银行账户。存入后，现金卡余额为 240，银行账户余额为 600。核对金额后再确认。",
+    "action": "存入 100",
+    "rows": [
+      [
+        "银行账户",
+        "500"
+      ],
+      [
+        "现金卡余额",
+        "340"
+      ],
+      [
+        "本次存款",
+        "100"
+      ],
+      [
+        "卡片操作后",
+        "240"
+      ],
+      [
+        "账户操作后",
+        "600"
+      ]
+    ],
+    "stateFeedback": {
+      "无卡": {
+        "message": "当前没有可用现金卡。可先查看购卡条件。",
+        "primaryLabel": "确认存取",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "余额不足": {
+        "message": "本次金额超过可用余额，请重新输入。",
+        "primaryLabel": "确认交易",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "正常": {
+        "message": "终端可以使用，请先选择存取或兑换操作。",
+        "primaryLabel": "存入 100",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "数量输入": {
+        "message": "正在输入本次交易金额，确认前仍可修改。",
+        "primaryLabel": "确认金额",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "手续费确认": {
+        "message": "现金兑换将收取提示中的费用，请核对到手金额。",
+        "primaryLabel": "确认兑换",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      },
+      "成功": {
+        "message": "交易已完成，账户与现金卡余额已更新。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "vending-machine": {
+    "detail": "饮用水每瓶价格 4，货格还剩 6 瓶。现金卡余额 340。本次购买 1 瓶，确认后扣款并取出商品。",
+    "action": "购买饮用水",
+    "rows": [
+      [
+        "饮用水",
+        "价格 4 · 余 6"
+      ],
+      [
+        "罐装食品",
+        "价格 8 · 余 3"
+      ],
+      [
+        "能量食品",
+        "价格 6 · 余 4"
+      ],
+      [
+        "空货格",
+        "已售罄"
+      ]
+    ],
+    "stateFeedback": {
+      "售罄": {
+        "message": "该货格已经售罄，请选择其他商品。",
+        "primaryLabel": "购买",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "余额不足": {
+        "message": "可用余额不足，请调整商品或数量。",
+        "primaryLabel": "购买",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "无卡": {
+        "message": "没有可用的现金卡，无法支付本次购买。",
+        "primaryLabel": "购买",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "有货": {
+        "message": "这个货格有库存，可以查看价格与数量。",
+        "primaryLabel": "购买饮用水",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "商品选中": {
+        "message": "饮用水已经选中，请核对价格与购买数量。",
+        "primaryLabel": "购买饮用水",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "购买结果": {
+        "message": "购买已经完成，商品已取出，货格库存与余额已更新。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "translocator": {
+    "detail": "你已记录两处传送装置。当前装置已激活，可选择另一处已知装置作为目的地；未记录的位置不能到达。",
+    "action": "选择已知目的地",
+    "rows": [
+      [
+        "当前装置",
+        "工坊装置 · 已激活"
+      ],
+      [
+        "已知目的地",
+        "河湾装置"
+      ],
+      [
+        "目的地状态",
+        "已记录"
+      ],
+      [
+        "未知位置",
+        "不可选择"
+      ]
+    ],
+    "stateFeedback": {
+      "无目的地": {
+        "message": "还没有其他已知装置可作为目的地。",
+        "primaryLabel": "传送",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "停用确认": {
+        "message": "停用后，该装置将不再作为可用传送点。",
+        "primaryLabel": "停用装置",
+        "primaryEnabled": true,
+        "secondaryLabel": "保持激活",
+        "tone": "normal"
+      },
+      "未激活": {
+        "message": "当前装置尚未激活。激活后才能记录或使用。",
+        "primaryLabel": "激活装置",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已激活": {
+        "message": "当前装置已经激活，可以查看已知目的地。",
+        "primaryLabel": "查看已知目的地",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "目的地选择": {
+        "message": "河湾装置已选中，可核对目的地后继续。",
+        "primaryLabel": "选择已知目的地",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "safemode-rules": {
+    "detail": "当前规则：发现 6 格内的敌对目标时停止移动。中立对象不触发该规则。测试匹配后再保存到当前人物。",
+    "action": "测试并保存规则",
+    "rows": [
+      [
+        "规则对象",
+        "敌对目标"
+      ],
+      [
+        "警戒距离",
+        "6 格"
+      ],
+      [
+        "中立对象",
+        "不匹配"
+      ],
+      [
+        "规则范围",
+        "当前人物"
+      ],
+      [
+        "规则状态",
+        "启用"
+      ]
+    ],
+    "stateFeedback": {
+      "无规则": {
+        "message": "当前没有自定义安全规则，可以新增或载入默认规则。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "启用": {
+        "message": "这条规则已启用，将按条件参与判断。",
+        "primaryLabel": "查看已启用规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "禁用": {
+        "message": "这条规则已禁用，暂时不会影响行动。",
+        "primaryLabel": "查看已禁用规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "距离态度类别": {
+        "message": "规则将按对象、态度、距离与类别等条件判断。",
+        "primaryLabel": "测试并保存规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "匹配": {
+        "message": "测试对象符合这条规则，相关保护会按设置触发。",
+        "primaryLabel": "查看匹配结果",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无匹配": {
+        "message": "测试对象不符合这条规则，相关保护不会由它触发。",
+        "primaryLabel": "调整规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "未保存": {
+        "message": "规则修改尚未保存，返回前可以保存或放弃。",
+        "primaryLabel": "保存修改",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "autopickup-rules": {
+    "detail": "当前人物会拾取匹配“布条”的物品，并排除名称中带有“污损”的物品。同一物品匹配多条规则时，后匹配的规则会覆盖前面的结果。",
+    "action": "测试并保存规则",
+    "rows": [
+      [
+        "包含规则",
+        "布条"
+      ],
+      [
+        "排除规则",
+        "*污损*"
+      ],
+      [
+        "作用范围",
+        "当前人物"
+      ],
+      [
+        "容量",
+        "遵循容器限制"
+      ],
+      [
+        "自动拾取",
+        "启用"
+      ],
+      [
+        "匹配覆盖",
+        "后匹配覆盖"
+      ]
+    ],
+    "stateFeedback": {
+      "无规则": {
+        "message": "当前没有自动拾取规则，可以先添加一条。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "启用": {
+        "message": "这条规则已启用，将参与拾取判断。",
+        "primaryLabel": "查看已启用规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "禁用": {
+        "message": "这条规则已禁用，不参与拾取判断。",
+        "primaryLabel": "查看已禁用规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "包含": {
+        "message": "匹配这条包含规则的物品可以进入拾取候选。",
+        "primaryLabel": "测试并保存规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "排除": {
+        "message": "匹配这条排除规则的物品会被排除。",
+        "primaryLabel": "测试并保存规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "匹配": {
+        "message": "测试物品匹配当前规则，最终结果还会受后续规则影响。",
+        "primaryLabel": "查看匹配结果",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无匹配": {
+        "message": "测试物品不匹配这条规则。",
+        "primaryLabel": "调整规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "未保存": {
+        "message": "拾取规则修改尚未保存，返回前可以保存或放弃。",
+        "primaryLabel": "保存修改",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "construction": {
+    "detail": "简易储物架的材料与工具已经备齐。还需在附近选择一处合适的施工格。请避开被占用的位置，并确认光照足够。",
+    "action": "选择施工位置",
+    "rows": [
+      [
+        "木材",
+        "12 / 12"
+      ],
+      [
+        "钉子",
+        "20 / 20"
+      ],
+      [
+        "工具",
+        "锤子"
+      ],
+      [
+        "建造知识",
+        "满足"
+      ],
+      [
+        "施工地点",
+        "尚未选择"
+      ]
+    ],
+    "stateFeedback": {
+      "缺材料": {
+        "message": "材料尚未备齐，请补齐标出的缺项。",
+        "primaryLabel": "选择施工位置",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "缺技能": {
+        "message": "当前知识或技艺未满足要求。",
+        "primaryLabel": "选择施工位置",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "太暗": {
+        "message": "光照不足，无法安全开工。",
+        "primaryLabel": "选择施工位置",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "全部": {
+        "message": "正在浏览所有建造方案，包括暂时条件不足的方案。",
+        "primaryLabel": "选择施工位置",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "材料就绪但地点缺失": {
+        "message": "材料与技能已经满足，但还没有合适的施工位置。",
+        "primaryLabel": "选择施工位置",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "此处可建": {
+        "message": "当前位置满足所选工程的施工条件。",
+        "primaryLabel": "选择施工位置",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "construction-place": {
+    "detail": "工坊北侧的这处空地可放置简易储物架，相邻空间足够。确认位置后开始施工；返回可重新选择工程。",
+    "action": "在此处施工",
+    "rows": [
+      [
+        "工程",
+        "简易储物架"
+      ],
+      [
+        "位置",
+        "工坊北侧"
+      ],
+      [
+        "地形条件",
+        "可施工"
+      ],
+      [
+        "相邻空间",
+        "足够"
+      ]
+    ],
+    "stateFeedback": {
+      "有效": {
+        "message": "这一格满足当前工程的放置条件。",
+        "primaryLabel": "在此处施工",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无效": {
+        "message": "这一格不满足工程的地形或空间要求。",
+        "primaryLabel": "在此处施工",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "占用": {
+        "message": "这一格被占用，请选择其他位置。",
+        "primaryLabel": "在此处施工",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "多阶段": {
+        "message": "工程需要分阶段完成，当前预览为即将开始的阶段。",
+        "primaryLabel": "在此处施工",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "确认": {
+        "message": "将把简易储物架放在选定位置，是否开始？",
+        "primaryLabel": "开始施工",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      },
+      "返回": {
+        "message": "已退出位置选择，可以重新查看工程方案。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "wait-sleep": {
+    "detail": "你可以等待一段时间，也可以休息到呼吸平稳。睡眠前请确认周围没有威胁；若有闹钟，可提前设定唤醒时间。",
+    "action": "选择休息方式",
+    "rows": [
+      [
+        "等待一段时间",
+        "选择时长"
+      ],
+      [
+        "等到指定时刻",
+        "晨昏时间"
+      ],
+      [
+        "恢复体力",
+        "等到呼吸平稳"
+      ],
+      [
+        "睡眠",
+        "检查周围环境"
+      ],
+      [
+        "取消",
+        "返回当前回合"
+      ]
+    ],
+    "stateFeedback": {
+      "驾驶禁止": {
+        "message": "你正在控制移动中的车辆，不能在此时等待或睡眠。",
+        "primaryLabel": "开始休息",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "定时": {
+        "message": "请选择等待时长；确认后会推进游戏时间。",
+        "primaryLabel": "选择休息方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "等天亮天气": {
+        "message": "可以等到指定的自然时刻，或等天气发生变化。",
+        "primaryLabel": "选择休息方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "恢复体力": {
+        "message": "你将休息到呼吸平稳；危险或其他变化可能打断休息。",
+        "primaryLabel": "选择休息方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "等同伴": {
+        "message": "你将等待落后的同伴赶上。",
+        "primaryLabel": "选择休息方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "无表近似": {
+        "message": "你没有可靠的计时工具，只能估计经过的时间。",
+        "primaryLabel": "查看可用时长",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "本次等待或休息安排已经取消。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "activity-progress": {
+    "detail": "你正在制作简易绷带，已用去 27 分钟。手边材料仍然够用。现在中断可保留部分工作进度，稍后再继续。",
+    "action": "中断活动",
+    "rows": [
+      [
+        "当前活动",
+        "制作简易绷带"
+      ],
+      [
+        "已用游戏时间",
+        "27 分钟"
+      ],
+      [
+        "材料",
+        "已预留"
+      ],
+      [
+        "中断后果",
+        "保留部分进度"
+      ]
+    ],
+    "stateFeedback": {
+      "进行中": {
+        "message": "当前活动仍在进行，可以查看已用时间与剩余工作。",
+        "primaryLabel": "查看当前进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "可中断": {
+        "message": "这项活动允许中断，结束前可查看进度是否保留。",
+        "primaryLabel": "中断活动",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "危险打断": {
+        "message": "危险接近使活动暂停，请先处理周围威胁。",
+        "primaryLabel": "返回场景",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "可恢复": {
+        "message": "这项未完成工作可以从保存的进度继续。",
+        "primaryLabel": "继续未完成工作",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "不可恢复": {
+        "message": "这项活动不能从原进度恢复，需要重新确认下一次操作。",
+        "primaryLabel": "查看恢复说明",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完成": {
+        "message": "当前活动已经完成，可以查看结果。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "取消": {
+        "message": "你已取消这项活动，未完成部分按活动规则处理。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "butcher-harvest": {
+    "detail": "选中的遗骸仍有可用材料。快速处理耗时较短，完整处理需要更多工具与时间。解剖前请检查所需工具和知识。",
+    "action": "选择处理方式",
+    "rows": [
+      [
+        "快速处理",
+        "耗时较短"
+      ],
+      [
+        "完整处理",
+        "需要工具"
+      ],
+      [
+        "解剖",
+        "检查工具与知识"
+      ],
+      [
+        "返回",
+        "暂不处理"
+      ]
+    ],
+    "stateFeedback": {
+      "无目标": {
+        "message": "附近没有适合当前处理方式的遗骸。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "缺工具": {
+        "message": "缺少所选处理方式需要的工具。",
+        "primaryLabel": "选择处理方式",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "快速": {
+        "message": "快速处理耗时较短，但可回收内容有限。",
+        "primaryLabel": "选择处理方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完整处理": {
+        "message": "完整处理需要更多时间与工具，可先查看要求。",
+        "primaryLabel": "选择处理方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "解剖": {
+        "message": "解剖可能带来材料或知识，开始前请检查工具与条件。",
+        "primaryLabel": "选择处理方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "知识要求": {
+        "message": "当前处理方式有知识或技艺要求，请先核对。",
+        "primaryLabel": "选择处理方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完成失败": {
+        "message": "本次处理已经结束，具体产物与失败影响见结果。",
+        "primaryLabel": "查看处理结果",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "zone-activities": {
+    "detail": "工具存放区和待分拣区均已设置。选择分拣后，会将符合规则的物品搬到相应区域。请先留出携带空间。",
+    "action": "开始分拣工作",
+    "rows": [
+      [
+        "整理储物",
+        "按区域搬运"
+      ],
+      [
+        "分拣物品",
+        "检查来源与容量"
+      ],
+      [
+        "处理耕作",
+        "按地块条件"
+      ],
+      [
+        "取消活动",
+        "返回当前回合"
+      ]
+    ],
+    "stateFeedback": {
+      "无兼容区域": {
+        "message": "附近没有与所选工作兼容的区域。",
+        "primaryLabel": "开始分拣工作",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "就绪": {
+        "message": "区域和当前条件已经就绪，可以开始工作。",
+        "primaryLabel": "开始分拣工作",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "缺工具": {
+        "message": "缺少当前工作需要的工具。",
+        "primaryLabel": "开始分拣工作",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "工作中": {
+        "message": "区域工作正在进行，可查看当前处理对象。",
+        "primaryLabel": "查看工作进度",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "完成": {
+        "message": "本轮区域工作已完成，可查看整理或生产结果。",
+        "primaryLabel": "返回",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "中断": {
+        "message": "区域工作已中断，请先处理当前阻碍。",
+        "primaryLabel": "开始分拣工作",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  },
+  "npc-orders": {
+    "detail": "已选白榆。你可以让他靠近跟随、暂时避免交战或停止使用枪械。恢复默认会清除当前临时命令。",
+    "action": "下达给白榆",
+    "rows": [
+      [
+        "靠近跟随",
+        "保持较近距离"
+      ],
+      [
+        "守候当前位置",
+        "停止跟随"
+      ],
+      [
+        "交战规则",
+        "避免主动交战"
+      ],
+      [
+        "枪械规则",
+        "暂不使用"
+      ],
+      [
+        "休息规则",
+        "允许休息"
+      ],
+      [
+        "恢复默认",
+        "清除临时命令"
+      ]
+    ],
+    "stateFeedback": {
+      "无同伴": {
+        "message": "没有可下达这项命令的同伴。",
+        "primaryLabel": "返回列表",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "一人/多人选中": {
+        "message": "已选中要接收命令的同伴，可以核对名单。",
+        "primaryLabel": "核对同伴名单",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "默认行为": {
+        "message": "同伴正在遵循各自的默认行为规则。",
+        "primaryLabel": "查看默认规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "临时覆盖": {
+        "message": "临时命令将覆盖相关默认行为，直到恢复。",
+        "primaryLabel": "查看临时命令",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已启用": {
+        "message": "所选临时命令已经生效。",
+        "primaryLabel": "查看当前命令",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "恢复默认": {
+        "message": "将清除当前临时命令，使同伴恢复原有行为习惯。",
+        "primaryLabel": "恢复默认规则",
+        "primaryEnabled": true,
+        "secondaryLabel": "取消",
+        "tone": "normal"
+      }
+    }
+  },
+  "animal-care": {
+    "detail": "这只友善的犬愿意靠近你。可以为它命名、检查伤势，或在有合适器具时牵引它。它不适合骑乘。",
+    "action": "选择照料方式",
+    "rows": [
+      [
+        "为动物命名",
+        "当前名称：小白"
+      ],
+      [
+        "牵引与解开",
+        "需要绳索"
+      ],
+      [
+        "装卸背包",
+        "需器具与适配"
+      ],
+      [
+        "穿戴护具",
+        "需合适护具"
+      ],
+      [
+        "处理伤势",
+        "检查用品"
+      ],
+      [
+        "骑乘",
+        "该动物不可骑乘"
+      ]
+    ],
+    "stateFeedback": {
+      "不可骑乘": {
+        "message": "这只动物不满足骑乘条件，请选择其他照料方式。",
+        "primaryLabel": "骑乘",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "负载过重": {
+        "message": "所选物品超出动物可携带的负载。",
+        "primaryLabel": "放入背包",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "缺绳索/器具": {
+        "message": "没有适用的绳索或器具，请先准备。",
+        "primaryLabel": "执行照料",
+        "primaryEnabled": false,
+        "secondaryLabel": "返回",
+        "tone": "warning"
+      },
+      "友善": {
+        "message": "这只动物对你友善，可以查看适用的照料方式。",
+        "primaryLabel": "查看照料方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "已牵引/已拴住": {
+        "message": "动物已被牵引或拴住，可选择解开或调整牵引。",
+        "primaryLabel": "调整牵引",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "可骑乘": {
+        "message": "这只动物满足当前骑乘条件，可以进一步确认。",
+        "primaryLabel": "确认骑乘",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      },
+      "受伤": {
+        "message": "这只动物受伤了，可以先检查伤势与可用治疗用品。",
+        "primaryLabel": "选择照料方式",
+        "primaryEnabled": true,
+        "secondaryLabel": "返回",
+        "tone": "normal"
+      }
+    }
+  }
+}

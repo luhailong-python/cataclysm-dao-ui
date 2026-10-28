@@ -1,0 +1,314 @@
+{
+  "method": "Six actual screen thumbnails per sheet; review aid only, not automatic approval",
+  "sheets": [
+    {
+      "file": "art-delivery/previews/review-core/core-01.jpg",
+      "sha256": "a865151be68678f9a2cf26109da4556cb75b93389a8663b7a056a2807e47caa9",
+      "sourceImages": [
+        {
+          "id": "main-menu",
+          "file": "art-delivery/designs/screens/main-menu.png",
+          "sha256": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d"
+        },
+        {
+          "id": "motd",
+          "file": "art-delivery/designs/screens/motd.png",
+          "sha256": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f"
+        },
+        {
+          "id": "credits",
+          "file": "art-delivery/designs/screens/credits.png",
+          "sha256": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b"
+        },
+        {
+          "id": "world-list",
+          "file": "art-delivery/designs/screens/world-list.png",
+          "sha256": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0"
+        },
+        {
+          "id": "world-create",
+          "file": "art-delivery/designs/screens/world-create.png",
+          "sha256": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1"
+        },
+        {
+          "id": "world-mods",
+          "file": "art-delivery/designs/screens/world-mods.png",
+          "sha256": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-02.jpg",
+      "sha256": "2348a9cc062426b7f524ffc82270ba5ac38a6f4690b0b8120f4baee208cd1a2c",
+      "sourceImages": [
+        {
+          "id": "world-options",
+          "file": "art-delivery/designs/screens/world-options.png",
+          "sha256": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c"
+        },
+        {
+          "id": "load-character",
+          "file": "art-delivery/designs/screens/load-character.png",
+          "sha256": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807"
+        },
+        {
+          "id": "creation-mode",
+          "file": "art-delivery/designs/screens/creation-mode.png",
+          "sha256": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68"
+        },
+        {
+          "id": "creation-scenario",
+          "file": "art-delivery/designs/screens/creation-scenario.png",
+          "sha256": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746"
+        },
+        {
+          "id": "creation-profession",
+          "file": "art-delivery/designs/screens/creation-profession.png",
+          "sha256": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577"
+        },
+        {
+          "id": "creation-background",
+          "file": "art-delivery/designs/screens/creation-background.png",
+          "sha256": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-03.jpg",
+      "sha256": "7ce28b7afce94372e74d070a3274bf159bc6141cc045ef30cc203dea32798056",
+      "sourceImages": [
+        {
+          "id": "creation-stats",
+          "file": "art-delivery/designs/screens/creation-stats.png",
+          "sha256": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274"
+        },
+        {
+          "id": "creation-traits",
+          "file": "art-delivery/designs/screens/creation-traits.png",
+          "sha256": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f"
+        },
+        {
+          "id": "creation-skills",
+          "file": "art-delivery/designs/screens/creation-skills.png",
+          "sha256": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276"
+        },
+        {
+          "id": "creation-summary",
+          "file": "art-delivery/designs/screens/creation-summary.png",
+          "sha256": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966"
+        },
+        {
+          "id": "character-templates",
+          "file": "art-delivery/designs/screens/character-templates.png",
+          "sha256": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa"
+        },
+        {
+          "id": "character-sheet",
+          "file": "art-delivery/designs/screens/character-sheet.png",
+          "sha256": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-04.jpg",
+      "sha256": "65238edc0560105ca6b267fff8ef2da053ff27bd8efd39b65f9a160322856469",
+      "sourceImages": [
+        {
+          "id": "character-encumbrance",
+          "file": "art-delivery/designs/screens/character-encumbrance.png",
+          "sha256": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757"
+        },
+        {
+          "id": "character-skills",
+          "file": "art-delivery/designs/screens/character-skills.png",
+          "sha256": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d"
+        },
+        {
+          "id": "character-proficiencies",
+          "file": "art-delivery/designs/screens/character-proficiencies.png",
+          "sha256": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814"
+        },
+        {
+          "id": "inventory",
+          "file": "art-delivery/designs/screens/inventory.png",
+          "sha256": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e"
+        },
+        {
+          "id": "item-detail",
+          "file": "art-delivery/designs/screens/item-detail.png",
+          "sha256": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da"
+        },
+        {
+          "id": "item-compare",
+          "file": "art-delivery/designs/screens/item-compare.png",
+          "sha256": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-05.jpg",
+      "sha256": "0d03bccb5053304e50e2a5b15065b1d28bd585333734737f655eb0b18382990c",
+      "sourceImages": [
+        {
+          "id": "item-containers",
+          "file": "art-delivery/designs/screens/item-containers.png",
+          "sha256": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6"
+        },
+        {
+          "id": "advanced-inventory",
+          "file": "art-delivery/designs/screens/advanced-inventory.png",
+          "sha256": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4"
+        },
+        {
+          "id": "worn-layers",
+          "file": "art-delivery/designs/screens/worn-layers.png",
+          "sha256": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd"
+        },
+        {
+          "id": "wield",
+          "file": "art-delivery/designs/screens/wield.png",
+          "sha256": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f"
+        },
+        {
+          "id": "pickup",
+          "file": "art-delivery/designs/screens/pickup.png",
+          "sha256": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d"
+        },
+        {
+          "id": "multidrop",
+          "file": "art-delivery/designs/screens/multidrop.png",
+          "sha256": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-06.jpg",
+      "sha256": "ef2968775188324c8da412ccc52959a022d7c501a68a7d893706c8aa1ef5374d",
+      "sourceImages": [
+        {
+          "id": "consume",
+          "file": "art-delivery/designs/screens/consume.png",
+          "sha256": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab"
+        },
+        {
+          "id": "read",
+          "file": "art-delivery/designs/screens/read.png",
+          "sha256": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3"
+        },
+        {
+          "id": "reload",
+          "file": "art-delivery/designs/screens/reload.png",
+          "sha256": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7"
+        },
+        {
+          "id": "item-unload",
+          "file": "art-delivery/designs/screens/item-unload.png",
+          "sha256": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49"
+        },
+        {
+          "id": "liquid-transfer",
+          "file": "art-delivery/designs/screens/liquid-transfer.png",
+          "sha256": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc"
+        },
+        {
+          "id": "item-use",
+          "file": "art-delivery/designs/screens/item-use.png",
+          "sha256": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-07.jpg",
+      "sha256": "25770312a4d545168742775638b6294ecba51568a4fd5178288d4bc85d4fc3d1",
+      "sourceImages": [
+        {
+          "id": "electronic-files",
+          "file": "art-delivery/designs/screens/electronic-files.png",
+          "sha256": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b"
+        },
+        {
+          "id": "repair",
+          "file": "art-delivery/designs/screens/repair.png",
+          "sha256": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657"
+        },
+        {
+          "id": "gunmods",
+          "file": "art-delivery/designs/screens/gunmods.png",
+          "sha256": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782"
+        },
+        {
+          "id": "craft-recipes",
+          "file": "art-delivery/designs/screens/craft-recipes.png",
+          "sha256": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec"
+        },
+        {
+          "id": "craft-batch",
+          "file": "art-delivery/designs/screens/craft-batch.png",
+          "sha256": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a"
+        },
+        {
+          "id": "disassemble",
+          "file": "art-delivery/designs/screens/disassemble.png",
+          "sha256": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-08.jpg",
+      "sha256": "17d6d63fd8bbd002921b447163ba42f8ea0f172e5449c0fb722834191c169e97",
+      "sourceImages": [
+        {
+          "id": "settings-general",
+          "file": "art-delivery/designs/screens/settings-general.png",
+          "sha256": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43"
+        },
+        {
+          "id": "settings-interface",
+          "file": "art-delivery/designs/screens/settings-interface.png",
+          "sha256": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb"
+        },
+        {
+          "id": "settings-graphics",
+          "file": "art-delivery/designs/screens/settings-graphics.png",
+          "sha256": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb"
+        },
+        {
+          "id": "settings-audio",
+          "file": "art-delivery/designs/screens/settings-audio.png",
+          "sha256": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb"
+        },
+        {
+          "id": "keybindings",
+          "file": "art-delivery/designs/screens/keybindings.png",
+          "sha256": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44"
+        },
+        {
+          "id": "help",
+          "file": "art-delivery/designs/screens/help.png",
+          "sha256": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938"
+        }
+      ]
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-09.jpg",
+      "sha256": "128eea7275896781eb8141d957a0eee9d22d46be56ad410755a2b82f4dcff886",
+      "sourceImages": [
+        {
+          "id": "colors-theme",
+          "file": "art-delivery/designs/screens/colors-theme.png",
+          "sha256": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932"
+        },
+        {
+          "id": "loading",
+          "file": "art-delivery/designs/screens/loading.png",
+          "sha256": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4"
+        },
+        {
+          "id": "tutorial",
+          "file": "art-delivery/designs/screens/tutorial.png",
+          "sha256": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989"
+        }
+      ]
+    }
+  ]
+}

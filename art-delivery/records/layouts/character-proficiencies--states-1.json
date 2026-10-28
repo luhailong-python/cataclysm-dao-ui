@@ -1,0 +1,508 @@
+{
+  "id": "character-proficiencies",
+  "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+  "sha256": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-disabled.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "熟练技艺 · 状态",
+      "displayText": "熟练技艺 · 状态",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "character-proficiencies  ·  设计预览 / 非游戏运行截图",
+      "displayText": "character-proficiencies  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "尚未掌握",
+      "displayText": "尚未掌握",
+      "rect": [
+        165,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "尚未掌握这项技艺。相关配方可能需要更多时间。",
+      "displayText": "尚未掌握这项技艺。相关配方可能需要更多时\n间。",
+      "rect": [
+        134,
+        343,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "查看关联工作",
+      "displayText": "查看关联工作",
+      "rect": [
+        146,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "学习中",
+      "displayText": "学习中",
+      "rect": [
+        737,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "正在通过相关活动积累这项技艺的学习进度。",
+      "displayText": "正在通过相关活动积累这项技艺的学习进度。",
+      "rect": [
+        706,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "查看学习进度",
+      "displayText": "查看学习进度",
+      "rect": [
+        718,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        973,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "已掌握",
+      "displayText": "已掌握",
+      "rect": [
+        1309,
+        267,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "已经掌握这项技艺，可查看它影响的工作。",
+      "displayText": "已经掌握这项技艺，可查看它影响的工作。",
+      "rect": [
+        1278,
+        343,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "查看关联工作",
+      "displayText": "查看关联工作",
+      "rect": [
+        1290,
+        476.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        1545,
+        476.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "进度条",
+      "displayText": "进度条",
+      "rect": [
+        165,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "学习进度用于表示基础缝纫的掌握程度，尚未完成部分仍需练习。",
+      "displayText": "学习进度用于表示基础缝纫的掌握程度，尚未\n完成部分仍需练习。",
+      "rect": [
+        134,
+        683,
+        482,
+        68
+      ],
+      "fontSize": 23,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "查看技艺进度",
+      "displayText": "查看技艺进度",
+      "rect": [
+        146,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        401,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "空列表",
+      "displayText": "空列表",
+      "rect": [
+        737,
+        607,
+        424,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "暂时没有可显示的熟练技艺记录。",
+      "displayText": "暂时没有可显示的熟练技艺记录。",
+      "rect": [
+        706,
+        683,
+        482,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#a34f3f",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "条件未满足",
+      "displayText": "条件未满足",
+      "rect": [
+        718,
+        816.52,
+        214,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#68776a",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "返回人物",
+      "displayText": "返回人物",
+      "rect": [
+        973,
+        816.52,
+        207,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "状态与反馈合同 · 不执行游戏业务",
+      "displayText": "状态与反馈合同 · 不执行游戏业务",
+      "rect": [
+        365,
+        935,
+        1050,
+        30
+      ],
+      "fontSize": 20,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [
+    {
+      "label": "尚未掌握",
+      "message": "尚未掌握这项技艺。相关配方可能需要更多时间。",
+      "primaryLabel": "查看关联工作",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "学习中",
+      "message": "正在通过相关活动积累这项技艺的学习进度。",
+      "primaryLabel": "查看学习进度",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "已掌握",
+      "message": "已经掌握这项技艺，可查看它影响的工作。",
+      "primaryLabel": "查看关联工作",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "进度条",
+      "message": "学习进度用于表示基础缝纫的掌握程度，尚未完成部分仍需练习。",
+      "primaryLabel": "查看技艺进度",
+      "primaryEnabled": true,
+      "secondaryLabel": "返回",
+      "tone": "normal"
+    },
+    {
+      "label": "空列表",
+      "message": "暂时没有可显示的熟练技艺记录。",
+      "primaryLabel": "条件未满足",
+      "primaryEnabled": false,
+      "secondaryLabel": "返回人物",
+      "tone": "warning"
+    }
+  ],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/player_display.cpp",
+      "symbol": "draw_proficiencies_tab / draw_proficiencies_info",
+      "line": 318,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/player_display.cpp#L318"
+    }
+  ]
+}

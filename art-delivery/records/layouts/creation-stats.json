@@ -1,0 +1,491 @@
+{
+  "id": "creation-stats",
+  "file": "art-delivery/designs/screens/creation-stats.png",
+  "sha256": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/characters/hero-survivor.png",
+      "sha256": "89402f654adbe05a1d1e93a1b0ec8c2f9bb2ca512a5d19d12d5ebd2cf526f471",
+      "record": "art-delivery/resources/characters/hero-survivor.png.generation.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-selected.png",
+      "sha256": "841a8bba5c31946986af399ddfe5abf1d2c9879467e8a2cfe98e6cd7babee925",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/characters/hero-survivor.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/row-normal.png",
+    "art-delivery/resources/ui/row-selected.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "初始属性",
+      "displayText": "初始属性",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "creation-stats  ·  设计预览 / 非游戏运行截图",
+      "displayText": "creation-stats  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "分配初始属性",
+      "displayText": "分配初始属性",
+      "rect": [
+        985,
+        265,
+        790,
+        49
+      ],
+      "fontSize": 33,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "力量",
+      "displayText": "力量",
+      "rect": [
+        1041,
+        340,
+        542,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#fff4d7",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "8",
+      "displayText": "8",
+      "rect": [
+        1548,
+        345,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#e9e6d2",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "敏捷",
+      "displayText": "敏捷",
+      "rect": [
+        1041,
+        410,
+        542,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "8",
+      "displayText": "8",
+      "rect": [
+        1548,
+        415,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "智力",
+      "displayText": "智力",
+      "rect": [
+        1041,
+        480,
+        542,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "8",
+      "displayText": "8",
+      "rect": [
+        1548,
+        485,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "感知",
+      "displayText": "感知",
+      "rect": [
+        1041,
+        550,
+        542,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "8",
+      "displayText": "8",
+      "rect": [
+        1548,
+        555,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "剩余点数",
+      "displayText": "剩余点数",
+      "rect": [
+        1041,
+        620,
+        542,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "4",
+      "displayText": "4",
+      "rect": [
+        1548,
+        625,
+        195,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "力量 8 · 敏捷 8\n智力 8 · 感知 8\n选中属性，可查看它对行动与生存能力的影响。",
+      "displayText": "力量 8 · 敏捷 8\n智力 8 · 感知 8…",
+      "rect": [
+        1005,
+        760,
+        750,
+        62
+      ],
+      "fontSize": 21,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "确认属性",
+      "displayText": "确认属性",
+      "rect": [
+        1182,
+        943.52,
+        321,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/newcharacter.cpp",
+      "symbol": "character_creator_ui_impl::draw_stats / CHARCREATOR_STATS",
+      "line": 2812,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/newcharacter.cpp#L2812"
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "generatedAt": "2026-10-26T09:52:44.135695+00:00",
+  "projectRoot": "E:\\work\\image\\cataclysm-dao-ui",
+  "environment": {
+    "python": "3.14.3",
+    "tk": 8.6,
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "captureMethod": "Win32 PrintWindow actual live Tk client area; no image composition",
+  "fixturePolicy": "Only .local/qa-fixtures disposable settings and save markers; no user settings or saves changed.",
+  "checks": [
+    {
+      "name": "Live client 1280x720",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: home at 1280",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: home at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: home at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: home at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: home-1280.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: continue at 1280",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: continue at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: continue at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: continue at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screen opens: worlds at 1280",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: worlds at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: worlds at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: worlds at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screen opens: settings at 1280",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: settings at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: settings at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: settings at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: settings-1280.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: help at 1280",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: help at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: help at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: help at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No Tk callback errors at 1280",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Live client 1600x900",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: home at 1600",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: home at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: home at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: home at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: home-1600.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: continue at 1600",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: continue at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: continue at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: continue at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: continue-1600.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: worlds at 1600",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: worlds at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: worlds at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: worlds at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: worlds-1600.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: settings at 1600",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: settings at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: settings at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: settings at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: settings-1600.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: help at 1600",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: help at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: help at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: help at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: help-1600.png",
+      "passed": true
+    },
+    {
+      "name": "No Tk callback errors at 1600",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Live client 1920x1080",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: home at 1920",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: home at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: home at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: home at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screenshot pixels match live client: home-1920.png",
+      "passed": true
+    },
+    {
+      "name": "Screen opens: continue at 1920",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: continue at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: continue at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: continue at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screen opens: worlds at 1920",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: worlds at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: worlds at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: worlds at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screen opens: settings at 1920",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: settings at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: settings at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: settings at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Screen opens: help at 1920",
+      "passed": true
+    },
+    {
+      "name": "Buttons stay in client: help at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Native fields stay in client: help at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Text stays in client: help at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "No Tk callback errors at 1920",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Tab focuses an enabled home action",
+      "passed": true
+    },
+    {
+      "name": "Enter activates the focused world button",
+      "passed": true
+    },
+    {
+      "name": "Escape returns to home",
+      "passed": true
+    },
+    {
+      "name": "Canvas click opens settings",
+      "passed": true
+    },
+    {
+      "name": "Tab traverses all four native settings fields",
+      "passed": true,
+      "details": [
+        "game_executable",
+        "text_scale",
+        "user_directory",
+        "window_mode"
+      ]
+    },
+    {
+      "name": "Tab reaches Canvas save action from fields",
+      "passed": true,
+      "details": [
+        "世界存档",
+        "保存设置",
+        "旅程入口",
+        "浏览…",
+        "游戏设置",
+        "继续旅程",
+        "行前手记"
+      ]
+    },
+    {
+      "name": "Shift-Tab remains in the unified focus chain",
+      "passed": true
+    },
+    {
+      "name": "Save action persists native field preferences",
+      "passed": true
+    },
+    {
+      "name": "Screenshot pixels match live client: settings-large-1600.png",
+      "passed": true
+    },
+    {
+      "name": "Invalid program path shows an error without overwriting saved settings",
+      "passed": true
+    },
+    {
+      "name": "Screenshot pixels match live client: settings-error-1600.png",
+      "passed": true
+    },
+    {
+      "name": "Missing executable disables start and continue",
+      "passed": true
+    },
+    {
+      "name": "Start hotkey with no executable opens settings error",
+      "passed": true
+    },
+    {
+      "name": "Live continue page reads six fixture worlds",
+      "passed": true
+    },
+    {
+      "name": "Screenshot pixels match live client: fixture-worlds-1600.png",
+      "passed": true
+    },
+    {
+      "name": "World pagination moves to a valid final page",
+      "passed": true
+    },
+    {
+      "name": "World with no character disables continue action",
+      "passed": true
+    },
+    {
+      "name": "New SettingsStore reloads the saved preference",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "qa/home-1280.png",
+      "width": 1280,
+      "height": 720,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "1dcf688aa94f93ca906ed7b38fdd67c3d7e619b9e5fb29074d53d275b05b0e87"
+    },
+    {
+      "file": "qa/settings-1280.png",
+      "width": 1280,
+      "height": 720,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "25dbc448554b56377dbb249b10afabf76d0dc4cb56ffa21d73fa6ff0a03073ef"
+    },
+    {
+      "file": "qa/home-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "4e57331a085ebfca2a3af4fcc2b08437c753e2d097c7ff71e781f37983e79871"
+    },
+    {
+      "file": "qa/continue-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "9769ee14ff5399c3e5b21e976a0bbf2a0a03ce79694d05f9fbfb8d99820df8dd"
+    },
+    {
+      "file": "qa/worlds-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "c8b8f7a4eefe0d8ff6e1ef4c20558e49112c6e2524d039809cad8ebc55820624"
+    },
+    {
+      "file": "qa/settings-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "7cc471feead0b14c2e383e32466840f5bde4dd5304744c0e0a3cb39c3bf917bc"
+    },
+    {
+      "file": "qa/help-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "c05c067cf845c7b014cad5647983671ab536a7a6ca547784a2134452992fef85"
+    },
+    {
+      "file": "qa/home-1920.png",
+      "width": 1920,
+      "height": 1080,
+      "note": "Empty save directory; actual UI and isolated settings.",
+      "sha256": "f3812d5e5971584a500077ee7cd9b722cbabe72ce78049c49b25e0939705617c"
+    },
+    {
+      "file": "qa/settings-large-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Large-text preference saved to disposable isolated store.",
+      "sha256": "6ad61e7051653b81c38c76516fa0d1d287dbd2036af9194769d2ec88e049c298"
+    },
+    {
+      "file": "qa/settings-error-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Deliberately nonexistent fixture executable; actual validation error state.",
+      "sha256": "860364c5381843cd38677637653b592c30e68b3deea3b440b656dc441af2e980"
+    },
+    {
+      "file": "qa/fixture-worlds-1600.png",
+      "width": 1600,
+      "height": 900,
+      "note": "Six explicitly named QA fixture worlds, not user save data.",
+      "sha256": "b29d063b59e1ada62f570d0bc4f1d43abffc69d3ae663f0c29031efe842f144a"
+    }
+  ],
+  "callbackErrors": [],
+  "unitTests": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "output": "test_discovery_finds_real_nested_runtime_executable (test_domain.DomainBehaviorTests.test_discovery_finds_real_nested_runtime_executable) ... ok\ntest_invalid_save_does_not_destroy_previous_valid_settings (test_domain.DomainBehaviorTests.test_invalid_save_does_not_destroy_previous_valid_settings) ... ok\ntest_latest_character_save_controls_world_sorting (test_domain.DomainBehaviorTests.test_latest_character_save_controls_world_sorting) ... ok\ntest_launch_argument_list_preserves_world_and_paths_as_single_values (test_domain.DomainBehaviorTests.test_launch_argument_list_preserves_world_and_paths_as_single_values) ... ok\ntest_launch_without_world_opens_the_actual_game_main_menu (test_domain.DomainBehaviorTests.test_launch_without_world_opens_the_actual_game_main_menu) ... ok\ntest_launcher_uses_no_shell_and_blocks_duplicate_running_game (test_domain.DomainBehaviorTests.test_launcher_uses_no_shell_and_blocks_duplicate_running_game) ... ok\ntest_missing_empty_or_traversal_world_cannot_be_launched (test_domain.DomainBehaviorTests.test_missing_empty_or_traversal_world_cannot_be_launched) ... ok\ntest_missing_executable_and_user_directory_file_block_launch (test_domain.DomainBehaviorTests.test_missing_executable_and_user_directory_file_block_launch) ... ok\ntest_missing_or_corrupt_settings_restore_safe_project_local_defaults (test_domain.DomainBehaviorTests.test_missing_or_corrupt_settings_restore_safe_project_local_defaults) ... ok\ntest_missing_save_root_and_malformed_metadata_do_not_crash (test_domain.DomainBehaviorTests.test_missing_save_root_and_malformed_metadata_do_not_crash) ... ok\ntest_save_discovery_reports_real_worlds_and_not_backups_or_map_files (test_domain.DomainBehaviorTests.test_save_discovery_reports_real_worlds_and_not_backups_or_map_files) ... ok\ntest_settings_round_trip_unicode_and_user_preferences_without_temp_residue (test_domain.DomainBehaviorTests.test_settings_round_trip_unicode_and_user_preferences_without_temp_residue) ... ok\ntest_unknown_setting_options_and_nul_paths_do_not_reach_ui (test_domain.DomainBehaviorTests.test_unknown_setting_options_and_nul_paths_do_not_reach_ui) ... ok\ntest_valid_json_with_wrong_option_value_types_recovers_without_crashing (test_domain.DomainBehaviorTests.test_valid_json_with_wrong_option_value_types_recovers_without_crashing) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.106s\n\nOK\n"
+  },
+  "sourceSha256": {
+    "app/__init__.py": "6a5681954bb0eff3761ee72370541d092d83cd8fe9cf8386b5771ed1c1ef515b",
+    "app/__main__.py": "485e63a7b6f22fdb93a735d735411d465e5c3183475eb522f3487057dcd7f27f",
+    "app/capture.py": "4a5cbd94fc238144cf1a92388e007dff37cded6e08f003cae914c5168da32be2",
+    "app/domain.py": "6756737c92b9d8cf38717747ae476a76bc709e743aac07989153d502082666a1",
+    "app/gui.py": "07f99926293977a39abefb76f9ff1307509a7e28dbb51ecba69d25480cac59d4"
+  },
+  "checksPassed": 92,
+  "checksTotal": 92,
+  "passed": true
+}

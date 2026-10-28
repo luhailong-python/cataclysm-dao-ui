@@ -1,0 +1,2514 @@
+{
+  "schemaVersion": 2,
+  "reviewedAt": "2026-10-26T15:25:35.143654+00:00",
+  "reviewer": "/root/core_states_b",
+  "reviewScope": "Frozen final core state boards in core-states-10.jpg through core-states-17.jpg only. Read-only visual inspection; no image generation, rebuilding, renderer/copy/layout changes, Git operations, or F-drive writes.",
+  "overallStatus": "passed",
+  "stateCopyAndControlStatus": "passed",
+  "method": "Before repair, all assigned eight contact sheets (32 boards, 150 state entries) were actually visually inspected and six critical originals displayed full-size. After the final freeze, only craft-recipes--states-1.png and common-dialogs--states-1.png were actually displayed again at original size, confirming the ghost was removed. For all 32 assigned sources, an independent SHA256 check linked old sheet source hashes to repair-before hashes and current PNGs to repair-after hashes; independent Pillow RGB pixel differences against the preserved baseline were exactly [93,923,207,935], entirely below all state cards (bottom y=897). Thus the complete previous content/control review is reused for bit-identical card pixels. This is bounded-repair verification, not a claim that all current images or new contact sheets were re-viewed.",
+  "summary": {
+    "contactSheetsActuallyViewed": 8,
+    "stateBoardFilesActuallyViewed": 32,
+    "familiesReviewed": 24,
+    "stateEntriesReviewed": 150,
+    "fullSizeCriticalFilesViewed": 6,
+    "hashMismatches": 0,
+    "stateContractMismatches": 0,
+    "openBlockingFindings": 0,
+    "openMinorFindings": 0,
+    "reviewInvalidatedByConcurrentRegeneration": false,
+    "beforeRepairFullSizeCriticalFilesViewed": 6,
+    "afterRepairFullSizeFilesActuallyViewed": 2,
+    "assignedSourceHashTransitionsIndependentlyVerified": 32,
+    "assignedSourcePixelDiffsIndependentlyVerified": 32,
+    "stateContentReviewReusedForBitIdenticalPixels": true
+  },
+  "readInputs": [
+    {
+      "file": "F:\\work\\image\\AGENTS.md",
+      "sha256": "434bcc5c195648c482531a6418389d500c25e76dca708e92ed4fe12241071e30",
+      "usage": "read-only project instructions; no generation or editing performed"
+    },
+    {
+      "file": "art-delivery/README.md",
+      "sha256": "e855f7605b07bd5a37f386b5228733f4fefbe2bca43de60e406a55bb2989a6de",
+      "usage": "art-only delivery scope and preview labels"
+    },
+    {
+      "file": "art-delivery/records/CORE_STATE_CONTACT_SHEETS.json",
+      "sha256": "474127f13018a5e655181618c00be672edd78146d65a6342976e5b4d3771a1c8",
+      "usage": "assigned sheet/source paths and frozen hashes"
+    },
+    {
+      "file": "docs/art-v2/copy-core.json",
+      "sha256": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+      "usage": "all assigned core state messages/actions/blocked flags"
+    },
+    {
+      "file": "tools/art_screen_data.py",
+      "sha256": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+      "usage": "six common-dialogs state feedback entries, lines 97-104"
+    },
+    {
+      "file": "art-delivery/records/state-ghost-repair.json",
+      "sha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5",
+      "usage": "Frozen bounded-repair proof independently checked for all 32 assigned sources and against actual baseline/current pixels"
+    }
+  ],
+  "positiveObservations": [
+    "拾取、丢弃、食用、阅读、装填/卸出、液体、电子设备、修理、配件、制作/批量/拆解及设置状态正文均为具体玩家反馈；未见原先通用制作要求占位正文。",
+    "条件不满足的原操作使用灰色禁用控件，保留查看要求、调整数量、选择其他目标或安全返回。",
+    "腐败食物、收藏物丢弃、配件安装风险、收藏材料消耗、设置放弃、配色还原、教学退出和通用危险删除均可辨认后果与取消/继续编辑关系。",
+    "common-dialogs六条原尺寸核对一致：离开/继续编辑、删除世界/取消、确认数量/取消、查看地点/关闭、查看物品/返回、禁用条件不足/查看材料。",
+    "长标题熟练技艺不足导致时间惩罚、最长替代按钮和原尺寸三行区域未发现遮挡或超出卡片边界。",
+    "暂定名、设计预览、状态合同等画面外预览标记与README约定一致，不作为玩家状态正文。"
+  ],
+  "findings": [
+    {
+      "code": "CORE-STATES-B-01",
+      "severity": "low",
+      "priority": 3,
+      "status": "resolved",
+      "blocking": false,
+      "title": "状态网格下缘露出被遮盖基础脚注的少量字形",
+      "observation": "六张原尺寸抽查图的状态网格外、左下边缘约x128–205/y930–935可见基础脚注“仅为美术排版”的字形下缘，呈不完整的灰绿文字。正文、按钮及状态合同脚注均未被其遮挡。",
+      "evidenceFiles": [
+        "art-delivery/designs/states/common-dialogs--states-1.png",
+        "art-delivery/designs/states/craft-recipes--states-1.png",
+        "art-delivery/designs/states/keybindings--states-1.png",
+        "art-delivery/designs/states/loading--states-1.png",
+        "art-delivery/designs/states/repair--states-1.png",
+        "art-delivery/designs/states/settings-graphics--states-1.png"
+      ],
+      "approximatePixelRect": [
+        93,
+        925,
+        220,
+        14
+      ],
+      "sourceEvidence": "craft-recipes--states-1 layout text-10 retains 样例数据\\n仅为美术排版 at [93,882,220,56]; the displayed native PNG shows its lower glyph pixels beneath the overlaid state panel.",
+      "suggestedFollowUp": "后续允许解冻时，在状态板组合前移除基础脚注或完整遮住其区域，再对变更哈希复核。当前按冻结约定未修改任何PNG/renderer/copy/layout。",
+      "impact": "仅影响成图抛光，不改变状态文案、控件可读性、禁用与确认取消语义。",
+      "resolution": "The two newly displayed final originals show no partial old footnote below the grid. For every assigned source, independently recomputed pixel differences are limited to [93,923,207,935], below all cards; the artifact removal does not change any state content/control pixel.",
+      "resolvedAt": "2026-10-26T15:40:41.623025+00:00"
+    },
+    {
+      "code": "CORE-STATES-B-02",
+      "severity": "blocking-review-validity",
+      "status": "resolved",
+      "blocking": false,
+      "title": "审图期间源PNG发生顺序重绘，旧联系表不能代表当前图片",
+      "observation": "初次写报告时15张源PNG已不同于联系表记录；随后核对看见pickup至keybindings连续更新且help文件被其他进程占用。当前再核对已有31张源PNG与所看联系表来源SHA不同。联系表本身仍为原哈希。",
+      "evidenceFiles": [
+        "art-delivery/designs/states/pickup--states-1.png",
+        "art-delivery/designs/states/multidrop--states-1.png",
+        "art-delivery/designs/states/consume--states-1.png",
+        "art-delivery/designs/states/read--states-1.png",
+        "art-delivery/designs/states/read--states-2.png",
+        "art-delivery/designs/states/reload--states-1.png",
+        "art-delivery/designs/states/item-unload--states-1.png",
+        "art-delivery/designs/states/liquid-transfer--states-1.png",
+        "art-delivery/designs/states/item-use--states-1.png",
+        "art-delivery/designs/states/electronic-files--states-1.png",
+        "art-delivery/designs/states/electronic-files--states-2.png",
+        "art-delivery/designs/states/repair--states-1.png",
+        "art-delivery/designs/states/repair--states-2.png",
+        "art-delivery/designs/states/gunmods--states-1.png",
+        "art-delivery/designs/states/gunmods--states-2.png",
+        "art-delivery/designs/states/craft-recipes--states-1.png",
+        "art-delivery/designs/states/craft-recipes--states-2.png",
+        "art-delivery/designs/states/craft-batch--states-1.png",
+        "art-delivery/designs/states/craft-batch--states-2.png",
+        "art-delivery/designs/states/disassemble--states-1.png",
+        "art-delivery/designs/states/disassemble--states-2.png",
+        "art-delivery/designs/states/settings-general--states-1.png",
+        "art-delivery/designs/states/settings-interface--states-1.png",
+        "art-delivery/designs/states/settings-graphics--states-1.png",
+        "art-delivery/designs/states/settings-audio--states-1.png",
+        "art-delivery/designs/states/keybindings--states-1.png",
+        "art-delivery/designs/states/keybindings--states-2.png",
+        "art-delivery/designs/states/help--states-1.png",
+        "art-delivery/designs/states/colors-theme--states-1.png",
+        "art-delivery/designs/states/loading--states-1.png",
+        "art-delivery/designs/states/tutorial--states-1.png"
+      ],
+      "suggestedFollowUp": "协调者完成重绘并冻结后更新联系表与来源SHA，重新实际查看更新联系表/关键原图，再给出最终通过状态。",
+      "impact": "审图证据版本失配；不表示新PNG有同样外观或语义问题。",
+      "resolution": "Final batch frozen; all 32 proof-before hashes match old sheet source hashes, all 32 proof-after hashes match current PNG bytes, and actual preserved baseline/current pixel comparisons independently reproduce the same below-card delta bounds. Prior review validity is restored for unchanged state-card content, with two current originals actually re-viewed.",
+      "resolvedAt": "2026-10-26T15:40:41.623025+00:00"
+    }
+  ],
+  "stateContractChecks": {
+    "exactStateCount": 150,
+    "missingOrMismatched": [],
+    "hashMismatches": [],
+    "result": "passed",
+    "copySourcesUnchangedSinceCompleteContentReview": true,
+    "completeContentReviewTransferredByPixelIdentity": true,
+    "stateCardPixelsChanged": false,
+    "independentHashTransitionErrors": []
+  },
+  "contactSheetsViewed": [
+    {
+      "file": "art-delivery/previews/review-core/core-states-10.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-10.jpg",
+      "sha256": "363acbb49184bb844c69a11aa37cf7fc45b8c41b34fb35c58fda2075819e226b",
+      "manifestSha256": "363acbb49184bb844c69a11aa37cf7fc45b8c41b34fb35c58fda2075819e226b",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-11.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-11.jpg",
+      "sha256": "044810be6ba04d3fa05bb696793ac4b55c2fe530b11ff5a058021abb31b7ae00",
+      "manifestSha256": "044810be6ba04d3fa05bb696793ac4b55c2fe530b11ff5a058021abb31b7ae00",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-12.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-12.jpg",
+      "sha256": "e76f391894ed52164efe2be779b3b979f4ae28df03476991d4a9fad1a90fab04",
+      "manifestSha256": "e76f391894ed52164efe2be779b3b979f4ae28df03476991d4a9fad1a90fab04",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-13.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-13.jpg",
+      "sha256": "55cbb316b2353580c95367def1ed1149b3b8ec453a9aa1fab3dda2861a8cd992",
+      "manifestSha256": "55cbb316b2353580c95367def1ed1149b3b8ec453a9aa1fab3dda2861a8cd992",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-14.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-14.jpg",
+      "sha256": "2715ace9f0e226f70d8d18c4884a00418cc00d37900ab4901d08f5e311560153",
+      "manifestSha256": "2715ace9f0e226f70d8d18c4884a00418cc00d37900ab4901d08f5e311560153",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-15.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-15.jpg",
+      "sha256": "ecc6b6d0e413598ba53c773bc9b4058a0b35e3e141656a48da06160a90667713",
+      "manifestSha256": "ecc6b6d0e413598ba53c773bc9b4058a0b35e3e141656a48da06160a90667713",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-16.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-16.jpg",
+      "sha256": "50367e5a7d27f293d4f7fca89694daea314a94ef9de454434317ff10f10350e4",
+      "manifestSha256": "50367e5a7d27f293d4f7fca89694daea314a94ef9de454434317ff10f10350e4",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    },
+    {
+      "file": "art-delivery/previews/review-core/core-states-17.jpg",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\previews\\review-core\\core-states-17.jpg",
+      "sha256": "fb825797071d299fe33c8fb192bd239a59fd41ab7c5da811786512818c9c0978",
+      "manifestSha256": "fb825797071d299fe33c8fb192bd239a59fd41ab7c5da811786512818c9c0978",
+      "hashMatchesManifest": true,
+      "actualView": true,
+      "viewMethod": "functions tools.view_image; contact sheet displayed and visually inspected",
+      "sourceImageCount": 4,
+      "version": "before bounded ghost repair; actual viewed sheet retained as historical content-review evidence",
+      "newContactSheetViewedAfterRepair": false
+    }
+  ],
+  "sourceImagesViewed": [
+    {
+      "id": "pickup",
+      "file": "art-delivery/designs/states/pickup--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\pickup--states-1.png",
+      "sha256": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "manifestSha256": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-10.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "有可拾取物",
+        "空地面",
+        "选中多件",
+        "数量输入",
+        "重量体积不足",
+        "容器选择"
+      ],
+      "layoutFile": "art-delivery/records/layouts/pickup--states-1.json",
+      "layoutSha256": "ccc53c415b667b480aee2fc3f70018859f576d8bfa0f177c17c96d08e583424c",
+      "sourceSha256RecordedByViewedContactSheet": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+      "currentSha256AtInitialAudit": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "currentSha256AtFinalAudit": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+      "afterRepairSha256": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "multidrop",
+      "file": "art-delivery/designs/states/multidrop--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\multidrop--states-1.png",
+      "sha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "manifestSha256": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-10.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "未选择",
+        "选中一件",
+        "选中多件",
+        "数量边界",
+        "收藏物提醒",
+        "取消"
+      ],
+      "layoutFile": "art-delivery/records/layouts/multidrop--states-1.json",
+      "layoutSha256": "953b6771082521da80e0460fdef18919adb1cdeb7fc5030ed135302dee90c9ec",
+      "sourceSha256RecordedByViewedContactSheet": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+      "currentSha256AtInitialAudit": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "currentSha256AtFinalAudit": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+      "afterRepairSha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "consume",
+      "file": "art-delivery/designs/states/consume--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\consume--states-1.png",
+      "sha256": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "manifestSha256": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-10.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "可食用",
+        "缺少开罐或食用工具",
+        "腐败警告",
+        "无法食用",
+        "无可用物品",
+        "确认消耗"
+      ],
+      "layoutFile": "art-delivery/records/layouts/consume--states-1.json",
+      "layoutSha256": "517ee324816d7ce3bb9aa895252f9a0a1bd8cf4c67bd8206ec665f6af663be62",
+      "sourceSha256RecordedByViewedContactSheet": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+      "currentSha256AtInitialAudit": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "currentSha256AtFinalAudit": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+      "afterRepairSha256": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "read",
+      "file": "art-delivery/designs/states/read--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\read--states-1.png",
+      "sha256": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "manifestSha256": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-10.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "可阅读",
+        "尚未辨识",
+        "无法阅读",
+        "知识条件不足",
+        "黑暗或其他条件限制",
+        "已无可学内容"
+      ],
+      "layoutFile": "art-delivery/records/layouts/read--states-1.json",
+      "layoutSha256": "bb4fef6c45b68aec2c9844f93bf481ca73c74ac78b03bc05541578f405d89c56",
+      "sourceSha256RecordedByViewedContactSheet": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+      "currentSha256AtInitialAudit": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "currentSha256AtFinalAudit": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+      "afterRepairSha256": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "read",
+      "file": "art-delivery/designs/states/read--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\read--states-2.png",
+      "sha256": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "manifestSha256": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-11.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "无书籍"
+      ],
+      "layoutFile": "art-delivery/records/layouts/read--states-2.json",
+      "layoutSha256": "1d8f3fa47b7e91e5838cffb1f24fc9c4df32f1b862109883f3aa62ad42c22015",
+      "sourceSha256RecordedByViewedContactSheet": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+      "currentSha256AtInitialAudit": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "currentSha256AtFinalAudit": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+      "afterRepairSha256": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "reload",
+      "file": "art-delivery/designs/states/reload--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\reload--states-1.png",
+      "sha256": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "manifestSha256": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-11.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "弹药兼容",
+        "没有兼容弹药",
+        "已满",
+        "多目标弹仓",
+        "数量不足",
+        "取消"
+      ],
+      "layoutFile": "art-delivery/records/layouts/reload--states-1.json",
+      "layoutSha256": "0eae9020068f996b8a43da37ad980a9934a5b610e547d504874d7081df62a900",
+      "sourceSha256RecordedByViewedContactSheet": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+      "currentSha256AtInitialAudit": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "currentSha256AtFinalAudit": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+      "afterRepairSha256": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "item-unload",
+      "file": "art-delivery/designs/states/item-unload--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\item-unload--states-1.png",
+      "sha256": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "manifestSha256": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-11.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "有可卸内容物",
+        "空容器",
+        "内容物锁定",
+        "选择多个容器",
+        "液体需兼容容器"
+      ],
+      "layoutFile": "art-delivery/records/layouts/item-unload--states-1.json",
+      "layoutSha256": "1e6a4a470bf55a93a33f49d239617953c9995d50ead41971d3a952ffe2d1eed8",
+      "sourceSha256RecordedByViewedContactSheet": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+      "currentSha256AtInitialAudit": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "currentSha256AtFinalAudit": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+      "afterRepairSha256": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "liquid-transfer",
+      "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\liquid-transfer--states-1.png",
+      "sha256": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "manifestSha256": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-11.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "可盛装",
+        "容量不足",
+        "容器不防水",
+        "内容物不兼容",
+        "无可用容器",
+        "取消"
+      ],
+      "layoutFile": "art-delivery/records/layouts/liquid-transfer--states-1.json",
+      "layoutSha256": "00b2b126aa936706c5dfcc2b434f8327b4488c4f1d445ad8772d3dbce1397ebe",
+      "sourceSha256RecordedByViewedContactSheet": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+      "currentSha256AtInitialAudit": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "currentSha256AtFinalAudit": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+      "afterRepairSha256": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "item-use",
+      "file": "art-delivery/designs/states/item-use--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\item-use--states-1.png",
+      "sha256": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "manifestSha256": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-12.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "功能可用",
+        "缺少消耗品",
+        "工具电量不足",
+        "没有注册用途",
+        "操作失败",
+        "操作完成"
+      ],
+      "layoutFile": "art-delivery/records/layouts/item-use--states-1.json",
+      "layoutSha256": "08d32e7b93eaef9461b36b88fdb2d0d4c62816f35e5700b7b89642e2c331d4f8",
+      "sourceSha256RecordedByViewedContactSheet": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+      "currentSha256AtInitialAudit": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "currentSha256AtFinalAudit": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+      "afterRepairSha256": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "electronic-files",
+      "file": "art-delivery/designs/states/electronic-files--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\electronic-files--states-1.png",
+      "sha256": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "manifestSha256": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-12.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "设备可用",
+        "无资料",
+        "空存储",
+        "容量不足",
+        "电量不足",
+        "选中多个文件"
+      ],
+      "layoutFile": "art-delivery/records/layouts/electronic-files--states-1.json",
+      "layoutSha256": "ce49f9b41fef4cf28045702d67256c46b6f7eaa38e43ab50f1d66f11664cdbff",
+      "sourceSha256RecordedByViewedContactSheet": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+      "currentSha256AtInitialAudit": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "currentSha256AtFinalAudit": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+      "afterRepairSha256": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "electronic-files",
+      "file": "art-delivery/designs/states/electronic-files--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\electronic-files--states-2.png",
+      "sha256": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "manifestSha256": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-12.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "传输耗时"
+      ],
+      "layoutFile": "art-delivery/records/layouts/electronic-files--states-2.json",
+      "layoutSha256": "62479d2201e2419491009852a985d733ae47add7e5e999c61606cc05ecc0e7d3",
+      "sourceSha256RecordedByViewedContactSheet": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+      "currentSha256AtInitialAudit": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "currentSha256AtFinalAudit": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+      "afterRepairSha256": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "repair",
+      "file": "art-delivery/designs/states/repair--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\repair--states-1.png",
+      "sha256": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "manifestSha256": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-12.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet and 1920x1080 original (detail=original); after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "可修理",
+        "材料不足",
+        "电量不足",
+        "技能不满足",
+        "无可修物",
+        "修理成功"
+      ],
+      "layoutFile": "art-delivery/records/layouts/repair--states-1.json",
+      "layoutSha256": "89cc15045657985942222ca90ba4ab059c8f94f1bc9afc20519ee95f21a69bad",
+      "sourceSha256RecordedByViewedContactSheet": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+      "currentSha256AtInitialAudit": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "currentSha256AtFinalAudit": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+      "afterRepairSha256": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": true,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "repair",
+      "file": "art-delivery/designs/states/repair--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\repair--states-2.png",
+      "sha256": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "manifestSha256": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-13.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "修理失败"
+      ],
+      "layoutFile": "art-delivery/records/layouts/repair--states-2.json",
+      "layoutSha256": "b0a183c3912433fcf8177d8080f693f1b89afd5f710462cca80b4e22e16e3ac7",
+      "sourceSha256RecordedByViewedContactSheet": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+      "currentSha256AtInitialAudit": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "currentSha256AtFinalAudit": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+      "afterRepairSha256": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "gunmods",
+      "file": "art-delivery/designs/states/gunmods--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\gunmods--states-1.png",
+      "sha256": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "manifestSha256": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-13.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "兼容",
+        "配件槽满",
+        "不兼容",
+        "技能不足",
+        "安装风险提示",
+        "已安装"
+      ],
+      "layoutFile": "art-delivery/records/layouts/gunmods--states-1.json",
+      "layoutSha256": "febc1048d1b1e4476861e7142af15977ee8221d856419413dd76014c62b066cd",
+      "sourceSha256RecordedByViewedContactSheet": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+      "currentSha256AtInitialAudit": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "currentSha256AtFinalAudit": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+      "afterRepairSha256": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "gunmods",
+      "file": "art-delivery/designs/states/gunmods--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\gunmods--states-2.png",
+      "sha256": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "manifestSha256": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-13.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "拆下确认"
+      ],
+      "layoutFile": "art-delivery/records/layouts/gunmods--states-2.json",
+      "layoutSha256": "a7dc3cdfdd1c8da5bcc2a23dca9ff47e4296f03677f58b08c4c264a38b72aaaa",
+      "sourceSha256RecordedByViewedContactSheet": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+      "currentSha256AtInitialAudit": "918bd69d100949d7f9e9093302c4efd5de5928e69f3f48ca675c196f22f18428",
+      "currentSha256AtFinalAudit": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+      "afterRepairSha256": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "craft-recipes",
+      "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\craft-recipes--states-1.png",
+      "sha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "manifestSha256": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-13.jpg",
+      "fullSizeView": true,
+      "viewMethod": "Before repair: contact sheet and 1920x1080 original (detail=original); after repair: current 1920x1080 original actually displayed with detail=original and ghost area visually verified",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "可制作",
+        "缺少材料",
+        "缺少工具",
+        "理论知识不足",
+        "熟练技艺不足导致时间惩罚",
+        "配方隐藏"
+      ],
+      "layoutFile": "art-delivery/records/layouts/craft-recipes--states-1.json",
+      "layoutSha256": "b57624ab1e8b64f8ef2be2ba689a6b0e0732fc80da4a7057840ab8f937c28ca8",
+      "sourceSha256RecordedByViewedContactSheet": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+      "currentSha256AtInitialAudit": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+      "currentSha256AtFinalAudit": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+      "afterRepairSha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": true,
+      "fullSizeViewAfterRepair": true,
+      "currentPngFullVisualReinspection": true
+    },
+    {
+      "id": "craft-recipes",
+      "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\craft-recipes--states-2.png",
+      "sha256": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "manifestSha256": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-14.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "收藏",
+        "搜索无结果"
+      ],
+      "layoutFile": "art-delivery/records/layouts/craft-recipes--states-2.json",
+      "layoutSha256": "d1433e32793eec801a2918ce736c6e8585ab41f87fccbb3da419991c88b820dc",
+      "sourceSha256RecordedByViewedContactSheet": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+      "currentSha256AtInitialAudit": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+      "currentSha256AtFinalAudit": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+      "afterRepairSha256": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "craft-batch",
+      "file": "art-delivery/designs/states/craft-batch--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\craft-batch--states-1.png",
+      "sha256": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "manifestSha256": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-14.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "数量1",
+        "数量已调整",
+        "材料不足",
+        "最大可制数量",
+        "批量节时",
+        "收藏材料警告"
+      ],
+      "layoutFile": "art-delivery/records/layouts/craft-batch--states-1.json",
+      "layoutSha256": "93140b4ffec0cc4c4525606a4e5cfd4c5e7f173e11f353e7d065eb00f3466efd",
+      "sourceSha256RecordedByViewedContactSheet": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+      "currentSha256AtInitialAudit": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+      "currentSha256AtFinalAudit": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+      "afterRepairSha256": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "craft-batch",
+      "file": "art-delivery/designs/states/craft-batch--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\craft-batch--states-2.png",
+      "sha256": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "manifestSha256": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-14.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "取消"
+      ],
+      "layoutFile": "art-delivery/records/layouts/craft-batch--states-2.json",
+      "layoutSha256": "72c2eb4ca0a435f21e23033827c8fcd1f324d2d1172d44e129cab950484d905c",
+      "sourceSha256RecordedByViewedContactSheet": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+      "currentSha256AtInitialAudit": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+      "currentSha256AtFinalAudit": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+      "afterRepairSha256": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "disassemble",
+      "file": "art-delivery/designs/states/disassemble--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\disassemble--states-1.png",
+      "sha256": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "manifestSha256": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-14.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "可拆解",
+        "没有可拆物",
+        "工具不足",
+        "其他条件不足",
+        "预计产出",
+        "操作中断"
+      ],
+      "layoutFile": "art-delivery/records/layouts/disassemble--states-1.json",
+      "layoutSha256": "3ee215bb796e650e0ee15cc35a45c9f781c9c111412abb61b54aed32be47369e",
+      "sourceSha256RecordedByViewedContactSheet": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+      "currentSha256AtInitialAudit": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+      "currentSha256AtFinalAudit": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+      "afterRepairSha256": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "disassemble",
+      "file": "art-delivery/designs/states/disassemble--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\disassemble--states-2.png",
+      "sha256": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "manifestSha256": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-15.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "完成"
+      ],
+      "layoutFile": "art-delivery/records/layouts/disassemble--states-2.json",
+      "layoutSha256": "fb3c2ae2418c30ec2046bef5bb2c52a89c6f776650dd81c930ab5224af02736f",
+      "sourceSha256RecordedByViewedContactSheet": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+      "currentSha256AtInitialAudit": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+      "currentSha256AtFinalAudit": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+      "afterRepairSha256": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "settings-general",
+      "file": "art-delivery/designs/states/settings-general--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\settings-general--states-1.png",
+      "sha256": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "manifestSha256": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-15.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "默认",
+        "已修改",
+        "保存确认",
+        "放弃确认",
+        "无效值",
+        "重启后生效"
+      ],
+      "layoutFile": "art-delivery/records/layouts/settings-general--states-1.json",
+      "layoutSha256": "e1c04b5d457e2c47b163c63cece8a708f9431f554ae9c1d1b65d2251bd6020d6",
+      "sourceSha256RecordedByViewedContactSheet": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+      "currentSha256AtInitialAudit": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+      "currentSha256AtFinalAudit": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+      "afterRepairSha256": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "settings-interface",
+      "file": "art-delivery/designs/states/settings-interface--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\settings-interface--states-1.png",
+      "sha256": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "manifestSha256": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-15.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "默认",
+        "已修改",
+        "依赖选项禁用",
+        "需重启",
+        "读屏辅助",
+        "保存确认"
+      ],
+      "layoutFile": "art-delivery/records/layouts/settings-interface--states-1.json",
+      "layoutSha256": "dd089156761b4ccacaf2c03f869277927c74cbaef4b05a44f2712cae2f0f09d3",
+      "sourceSha256RecordedByViewedContactSheet": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+      "currentSha256AtInitialAudit": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+      "currentSha256AtFinalAudit": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+      "afterRepairSha256": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "settings-graphics",
+      "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\settings-graphics--states-1.png",
+      "sha256": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "manifestSha256": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-15.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet and 1920x1080 original (detail=original); after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "默认",
+        "已修改",
+        "字体不可用",
+        "图块集不可用",
+        "需重启",
+        "窗口尺寸变化"
+      ],
+      "layoutFile": "art-delivery/records/layouts/settings-graphics--states-1.json",
+      "layoutSha256": "c14e1ae5ba5e66b779c385fc332360f9a104388d34691c5ca1d5c19bb9bf4855",
+      "sourceSha256RecordedByViewedContactSheet": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+      "currentSha256AtInitialAudit": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+      "currentSha256AtFinalAudit": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+      "afterRepairSha256": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": true,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "settings-audio",
+      "file": "art-delivery/designs/states/settings-audio--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\settings-audio--states-1.png",
+      "sha256": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "manifestSha256": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-16.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "声音开启",
+        "声音关闭子项禁用",
+        "无音效构建",
+        "音效包缺失",
+        "更换需重启",
+        "已修改"
+      ],
+      "layoutFile": "art-delivery/records/layouts/settings-audio--states-1.json",
+      "layoutSha256": "7537f93fdbf57abe0d5476cd92c092633421388d3c233cb8e3f077e35ba72cb8",
+      "sourceSha256RecordedByViewedContactSheet": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+      "currentSha256AtInitialAudit": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+      "currentSha256AtFinalAudit": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+      "afterRepairSha256": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "keybindings",
+      "file": "art-delivery/designs/states/keybindings--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\keybindings--states-1.png",
+      "sha256": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "manifestSha256": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-16.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet and 1920x1080 original (detail=original); after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "全局映射",
+        "当前界面映射",
+        "未绑定",
+        "冲突",
+        "等待输入",
+        "恢复默认确认"
+      ],
+      "layoutFile": "art-delivery/records/layouts/keybindings--states-1.json",
+      "layoutSha256": "2bbe2d66b1ba004f43ba2c0896c99ee22d5d2bf3f6e38224c86b071251ca9db8",
+      "sourceSha256RecordedByViewedContactSheet": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+      "currentSha256AtInitialAudit": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+      "currentSha256AtFinalAudit": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+      "afterRepairSha256": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": true,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "keybindings",
+      "file": "art-delivery/designs/states/keybindings--states-2.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\keybindings--states-2.png",
+      "sha256": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "manifestSha256": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-16.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "搜索无结果"
+      ],
+      "layoutFile": "art-delivery/records/layouts/keybindings--states-2.json",
+      "layoutSha256": "fd67d588929fd4d90a93f6927315dc999599bf0d5a25b395cf3fa0ceee041a6a",
+      "sourceSha256RecordedByViewedContactSheet": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+      "currentSha256AtInitialAudit": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+      "currentSha256AtFinalAudit": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+      "afterRepairSha256": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "help",
+      "file": "art-delivery/designs/states/help--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\help--states-1.png",
+      "sha256": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "manifestSha256": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-16.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "主题列表",
+        "内容已打开",
+        "长文滚动",
+        "按键帮助",
+        "返回分类",
+        "教学入口"
+      ],
+      "layoutFile": "art-delivery/records/layouts/help--states-1.json",
+      "layoutSha256": "e0017214131878fce3031e0f8e5858a6ed9ab17dbbc8f7867dfe6ce08d0a3128",
+      "sourceSha256RecordedByViewedContactSheet": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+      "currentSha256AtInitialAudit": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+      "currentSha256AtFinalAudit": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+      "afterRepairSha256": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "colors-theme",
+      "file": "art-delivery/designs/states/colors-theme--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\colors-theme--states-1.png",
+      "sha256": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "manifestSha256": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-17.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "默认配色",
+        "自定义配色",
+        "正常与高亮预览",
+        "修改未保存",
+        "还原确认",
+        "保存失败"
+      ],
+      "layoutFile": "art-delivery/records/layouts/colors-theme--states-1.json",
+      "layoutSha256": "8507cde8ca9da42aa510f86ee78d8a056903b924254ea82efe09cd47e6148208",
+      "sourceSha256RecordedByViewedContactSheet": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+      "currentSha256AtInitialAudit": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+      "currentSha256AtFinalAudit": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+      "afterRepairSha256": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "loading",
+      "file": "art-delivery/designs/states/loading--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\loading--states-1.png",
+      "sha256": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "manifestSha256": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-17.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet and 1920x1080 original (detail=original); after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "正在加载",
+        "模块步骤切换",
+        "生存提示",
+        "加载完成",
+        "加载失败说明"
+      ],
+      "layoutFile": "art-delivery/records/layouts/loading--states-1.json",
+      "layoutSha256": "06dc69f8b5068129a140c4d967197a60af86e8ff7c352e4e1bc4b2d2a2094569",
+      "sourceSha256RecordedByViewedContactSheet": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+      "currentSha256AtInitialAudit": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+      "currentSha256AtFinalAudit": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+      "afterRepairSha256": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": true,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "tutorial",
+      "file": "art-delivery/designs/states/tutorial--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\tutorial--states-1.png",
+      "sha256": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "manifestSha256": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-17.jpg",
+      "fullSizeView": false,
+      "viewMethod": "Before repair: contact sheet; actual board pixels visually inspected; after repair: prior content review transferred using independent before/after SHA256 and bounded pixel diff; not re-viewed in full after repair",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "教学提示",
+        "操作已完成",
+        "下一步骤",
+        "退出确认",
+        "共享地图不适用"
+      ],
+      "layoutFile": "art-delivery/records/layouts/tutorial--states-1.json",
+      "layoutSha256": "7296e3474d28f533f5ee1334d5cbffaa946452c6eb1fa7743304c3fd7420cdb5",
+      "sourceSha256RecordedByViewedContactSheet": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+      "currentSha256AtInitialAudit": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+      "currentSha256AtFinalAudit": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+      "afterRepairSha256": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": false,
+      "fullSizeViewAfterRepair": false,
+      "currentPngFullVisualReinspection": false
+    },
+    {
+      "id": "common-dialogs",
+      "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+      "absoluteFile": "E:\\work\\image\\cataclysm-dao-ui\\art-delivery\\designs\\states\\common-dialogs--states-1.png",
+      "sha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "manifestSha256": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+      "hashMatchesManifest": false,
+      "actualView": true,
+      "contactSheet": "art-delivery/previews/review-core/core-states-17.jpg",
+      "fullSizeView": true,
+      "viewMethod": "Before repair: contact sheet and 1920x1080 original (detail=original); after repair: current 1920x1080 original actually displayed with detail=original and ghost area visually verified",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "stateLabelsReviewed": [
+        "确认取消",
+        "危险确认",
+        "数量选择",
+        "提示通知",
+        "操作成功",
+        "操作失败"
+      ],
+      "layoutFile": "art-delivery/records/layouts/common-dialogs--states-1.json",
+      "layoutSha256": "f54269db6321197d2d34bb03a393c6cd0bc0178fdf12071da3702dbb04305fd9",
+      "sourceSha256RecordedByViewedContactSheet": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+      "currentSha256AtInitialAudit": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+      "currentSha256AtFinalAudit": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "currentPngVisuallyAccepted": true,
+      "visualEvidenceAppliesTo": "Current state-card content is accepted by reusing the complete prior visual review after independently proving every changed pixel lies below all cards. The two explicitly named originals were additionally viewed after repair.",
+      "beforeRepairSha256": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+      "afterRepairSha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "oldContactSheetSourceHashMatchesRepairBefore": true,
+      "currentHashMatchesRepairAfter": true,
+      "fullSizeViewBeforeRepair": true,
+      "fullSizeViewAfterRepair": true,
+      "currentPngFullVisualReinspection": true
+    }
+  ],
+  "limitations": [
+    "Picture/art-only acceptance; no Unity, gameplay runtime or interactive behavior validation.",
+    "Only eight originally viewed contact sheets / 32 assigned boards / 150 states are covered. This report does not claim an independent global 133-board diff audit.",
+    "All previous state content was visually reviewed. After the repair, exactly two final originals were visually displayed again; the other 30 state-content reviews are reused because independently verified changed pixels lie entirely below the cards. No claim is made that the full current batch or new contact sheets were re-viewed."
+  ],
+  "reviewedAtFinalHashAudit": "2026-10-26T15:40:41.623025+00:00",
+  "previousReviewRounds": [
+    {
+      "overallStatus": "invalidated_by_parallel_image_changes",
+      "reportSha256BeforeThisUpdate": "1768331173f170b8bdb6a65e10ba3732fe65bff66b0c5bf02b520990286a63e4",
+      "reviewedAt": "2026-10-26T15:25:35.143654+00:00",
+      "hashAuditAt": "2026-10-26T15:28:33.335234+00:00",
+      "notes": "Complete content review was finished before a narrow ghost cleanup; initial acceptance was invalidated because a concurrent repair changed PNG hashes. Original sheet hashes and interrupted-audit source hashes are retained here and per source.",
+      "hashAudit": [
+        {
+          "file": "art-delivery/designs/states/pickup--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+          "currentSha256AtInitialAudit": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+          "currentSha256AtInterruptedFinalAudit": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e"
+        },
+        {
+          "file": "art-delivery/designs/states/multidrop--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+          "currentSha256AtInitialAudit": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+          "currentSha256AtInterruptedFinalAudit": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120"
+        },
+        {
+          "file": "art-delivery/designs/states/consume--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+          "currentSha256AtInitialAudit": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+          "currentSha256AtInterruptedFinalAudit": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a"
+        },
+        {
+          "file": "art-delivery/designs/states/read--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+          "currentSha256AtInitialAudit": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+          "currentSha256AtInterruptedFinalAudit": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb"
+        },
+        {
+          "file": "art-delivery/designs/states/read--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+          "currentSha256AtInitialAudit": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+          "currentSha256AtInterruptedFinalAudit": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896"
+        },
+        {
+          "file": "art-delivery/designs/states/reload--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+          "currentSha256AtInitialAudit": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+          "currentSha256AtInterruptedFinalAudit": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398"
+        },
+        {
+          "file": "art-delivery/designs/states/item-unload--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+          "currentSha256AtInitialAudit": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+          "currentSha256AtInterruptedFinalAudit": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428"
+        },
+        {
+          "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+          "currentSha256AtInitialAudit": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+          "currentSha256AtInterruptedFinalAudit": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1"
+        },
+        {
+          "file": "art-delivery/designs/states/item-use--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+          "currentSha256AtInitialAudit": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+          "currentSha256AtInterruptedFinalAudit": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85"
+        },
+        {
+          "file": "art-delivery/designs/states/electronic-files--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+          "currentSha256AtInitialAudit": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+          "currentSha256AtInterruptedFinalAudit": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03"
+        },
+        {
+          "file": "art-delivery/designs/states/electronic-files--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+          "currentSha256AtInitialAudit": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+          "currentSha256AtInterruptedFinalAudit": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8"
+        },
+        {
+          "file": "art-delivery/designs/states/repair--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+          "currentSha256AtInitialAudit": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+          "currentSha256AtInterruptedFinalAudit": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519"
+        },
+        {
+          "file": "art-delivery/designs/states/repair--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+          "currentSha256AtInitialAudit": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+          "currentSha256AtInterruptedFinalAudit": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc"
+        },
+        {
+          "file": "art-delivery/designs/states/gunmods--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+          "currentSha256AtInitialAudit": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+          "currentSha256AtInterruptedFinalAudit": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93"
+        },
+        {
+          "file": "art-delivery/designs/states/gunmods--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+          "currentSha256AtInitialAudit": "918bd69d100949d7f9e9093302c4efd5de5928e69f3f48ca675c196f22f18428",
+          "currentSha256AtInterruptedFinalAudit": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534"
+        },
+        {
+          "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+          "currentSha256AtInitialAudit": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+          "currentSha256AtInterruptedFinalAudit": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2"
+        },
+        {
+          "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+          "currentSha256AtInitialAudit": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+          "currentSha256AtInterruptedFinalAudit": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94"
+        },
+        {
+          "file": "art-delivery/designs/states/craft-batch--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+          "currentSha256AtInitialAudit": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+          "currentSha256AtInterruptedFinalAudit": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf"
+        },
+        {
+          "file": "art-delivery/designs/states/craft-batch--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+          "currentSha256AtInitialAudit": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+          "currentSha256AtInterruptedFinalAudit": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b"
+        },
+        {
+          "file": "art-delivery/designs/states/disassemble--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+          "currentSha256AtInitialAudit": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+          "currentSha256AtInterruptedFinalAudit": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794"
+        },
+        {
+          "file": "art-delivery/designs/states/disassemble--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+          "currentSha256AtInitialAudit": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+          "currentSha256AtInterruptedFinalAudit": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0"
+        },
+        {
+          "file": "art-delivery/designs/states/settings-general--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+          "currentSha256AtInitialAudit": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+          "currentSha256AtInterruptedFinalAudit": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd"
+        },
+        {
+          "file": "art-delivery/designs/states/settings-interface--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+          "currentSha256AtInitialAudit": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+          "currentSha256AtInterruptedFinalAudit": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0"
+        },
+        {
+          "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+          "currentSha256AtInitialAudit": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+          "currentSha256AtInterruptedFinalAudit": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc"
+        },
+        {
+          "file": "art-delivery/designs/states/settings-audio--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+          "currentSha256AtInitialAudit": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+          "currentSha256AtInterruptedFinalAudit": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113"
+        },
+        {
+          "file": "art-delivery/designs/states/keybindings--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+          "currentSha256AtInitialAudit": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+          "currentSha256AtInterruptedFinalAudit": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364"
+        },
+        {
+          "file": "art-delivery/designs/states/keybindings--states-2.png",
+          "sourceSha256RecordedByViewedContactSheet": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+          "currentSha256AtInitialAudit": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+          "currentSha256AtInterruptedFinalAudit": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5"
+        },
+        {
+          "file": "art-delivery/designs/states/help--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+          "currentSha256AtInitialAudit": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+          "currentSha256AtInterruptedFinalAudit": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f"
+        },
+        {
+          "file": "art-delivery/designs/states/colors-theme--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+          "currentSha256AtInitialAudit": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+          "currentSha256AtInterruptedFinalAudit": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb"
+        },
+        {
+          "file": "art-delivery/designs/states/loading--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+          "currentSha256AtInitialAudit": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+          "currentSha256AtInterruptedFinalAudit": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274"
+        },
+        {
+          "file": "art-delivery/designs/states/tutorial--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+          "currentSha256AtInitialAudit": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+          "currentSha256AtInterruptedFinalAudit": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d"
+        },
+        {
+          "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+          "sourceSha256RecordedByViewedContactSheet": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+          "currentSha256AtInitialAudit": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+          "currentSha256AtInterruptedFinalAudit": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36"
+        }
+      ]
+    }
+  ],
+  "reviewedAtAfterBoundedRepair": "2026-10-26T15:40:41.623025+00:00",
+  "boundedRepairVerification": {
+    "proofFile": "art-delivery/records/state-ghost-repair.json",
+    "proofSha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5",
+    "afterFreeze": true,
+    "method": "Independently hash the actual preserved baseline and current PNG files for each of the 32 assigned boards; compare old actually-viewed contact-sheet source SHA to proof before; compare current actual SHA to proof after; independently recompute Pillow ImageChops.difference in RGB and require exact delta bounding box [93,923,207,935]. Confirm all differences start below state-card bottom 897. Only two specified final originals are re-viewed; previous complete visual content review is reused for unchanged pixels.",
+    "assignedSourcesVerified": 32,
+    "observedUniqueDeltaBounds": [
+      [
+        93,
+        923,
+        207,
+        935
+      ]
+    ],
+    "allAssignedChangesBelowStateCards": true,
+    "stateCardBottomY": 897,
+    "errors": [],
+    "result": "passed",
+    "checks": [
+      {
+        "file": "art-delivery/designs/states/pickup--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+        "proofBeforeSha256": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+        "baselineActualSha256": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+        "afterSha256CurrentPng": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+        "proofAfterSha256": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/multidrop--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+        "proofBeforeSha256": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+        "baselineActualSha256": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+        "afterSha256CurrentPng": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+        "proofAfterSha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/consume--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+        "proofBeforeSha256": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+        "baselineActualSha256": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+        "afterSha256CurrentPng": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+        "proofAfterSha256": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/read--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+        "proofBeforeSha256": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+        "baselineActualSha256": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+        "afterSha256CurrentPng": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+        "proofAfterSha256": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/read--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+        "proofBeforeSha256": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+        "baselineActualSha256": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+        "afterSha256CurrentPng": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+        "proofAfterSha256": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/reload--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+        "proofBeforeSha256": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+        "baselineActualSha256": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+        "afterSha256CurrentPng": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+        "proofAfterSha256": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/item-unload--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+        "proofBeforeSha256": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+        "baselineActualSha256": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+        "afterSha256CurrentPng": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+        "proofAfterSha256": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+        "proofBeforeSha256": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+        "baselineActualSha256": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+        "afterSha256CurrentPng": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+        "proofAfterSha256": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/item-use--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+        "proofBeforeSha256": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+        "baselineActualSha256": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+        "afterSha256CurrentPng": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+        "proofAfterSha256": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/electronic-files--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+        "proofBeforeSha256": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+        "baselineActualSha256": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+        "afterSha256CurrentPng": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+        "proofAfterSha256": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/electronic-files--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+        "proofBeforeSha256": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+        "baselineActualSha256": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+        "afterSha256CurrentPng": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+        "proofAfterSha256": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/repair--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+        "proofBeforeSha256": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+        "baselineActualSha256": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+        "afterSha256CurrentPng": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+        "proofAfterSha256": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/repair--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+        "proofBeforeSha256": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+        "baselineActualSha256": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+        "afterSha256CurrentPng": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+        "proofAfterSha256": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/gunmods--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+        "proofBeforeSha256": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+        "baselineActualSha256": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+        "afterSha256CurrentPng": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+        "proofAfterSha256": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/gunmods--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+        "proofBeforeSha256": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+        "baselineActualSha256": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+        "afterSha256CurrentPng": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+        "proofAfterSha256": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+        "proofBeforeSha256": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+        "baselineActualSha256": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+        "afterSha256CurrentPng": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+        "proofAfterSha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": true,
+        "hashUnchangedBeforeAndAfterOriginalView": true
+      },
+      {
+        "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+        "proofBeforeSha256": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+        "baselineActualSha256": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+        "afterSha256CurrentPng": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+        "proofAfterSha256": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/craft-batch--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+        "proofBeforeSha256": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+        "baselineActualSha256": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+        "afterSha256CurrentPng": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+        "proofAfterSha256": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/craft-batch--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+        "proofBeforeSha256": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+        "baselineActualSha256": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+        "afterSha256CurrentPng": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+        "proofAfterSha256": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/disassemble--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+        "proofBeforeSha256": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+        "baselineActualSha256": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+        "afterSha256CurrentPng": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+        "proofAfterSha256": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/disassemble--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+        "proofBeforeSha256": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+        "baselineActualSha256": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+        "afterSha256CurrentPng": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+        "proofAfterSha256": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/settings-general--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+        "proofBeforeSha256": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+        "baselineActualSha256": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+        "afterSha256CurrentPng": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+        "proofAfterSha256": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/settings-interface--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+        "proofBeforeSha256": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+        "baselineActualSha256": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+        "afterSha256CurrentPng": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+        "proofAfterSha256": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+        "proofBeforeSha256": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+        "baselineActualSha256": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+        "afterSha256CurrentPng": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+        "proofAfterSha256": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/settings-audio--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+        "proofBeforeSha256": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+        "baselineActualSha256": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+        "afterSha256CurrentPng": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+        "proofAfterSha256": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/keybindings--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+        "proofBeforeSha256": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+        "baselineActualSha256": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+        "afterSha256CurrentPng": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+        "proofAfterSha256": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/keybindings--states-2.png",
+        "beforeSha256FromActuallyViewedContactSheet": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+        "proofBeforeSha256": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+        "baselineActualSha256": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+        "afterSha256CurrentPng": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+        "proofAfterSha256": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/help--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+        "proofBeforeSha256": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+        "baselineActualSha256": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+        "afterSha256CurrentPng": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+        "proofAfterSha256": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/colors-theme--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+        "proofBeforeSha256": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+        "baselineActualSha256": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+        "afterSha256CurrentPng": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+        "proofAfterSha256": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/loading--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+        "proofBeforeSha256": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+        "baselineActualSha256": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+        "afterSha256CurrentPng": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+        "proofAfterSha256": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/tutorial--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+        "proofBeforeSha256": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+        "baselineActualSha256": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+        "afterSha256CurrentPng": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+        "proofAfterSha256": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": false
+      },
+      {
+        "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+        "beforeSha256FromActuallyViewedContactSheet": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+        "proofBeforeSha256": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+        "baselineActualSha256": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+        "afterSha256CurrentPng": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+        "proofAfterSha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+        "beforeHashMatchesOldSheetSourceSha": true,
+        "baselineHashMatchesProofBefore": true,
+        "afterHashMatchesCurrentPng": true,
+        "independentlyComputedChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "proofChangedPixelBoundingBox": [
+          93,
+          923,
+          207,
+          935
+        ],
+        "boundedDiffMatchesProof": true,
+        "allChangesBelowStateCards": true,
+        "currentOriginalActuallyViewedAfterRepair": true,
+        "hashUnchangedBeforeAndAfterOriginalView": true
+      }
+    ]
+  },
+  "postRepairOriginalsActuallyViewed": [
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+      "sha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "viewMethod": "functions tools.view_image detail=original; actual rendered image visually inspected",
+      "sha256MatchedBeforeAndAfterView": true,
+      "observation": "No clipped old sample-footnote glyphs under the state grid. Existing state text, buttons and confirmation/cancel relationships retain the reviewed appearance."
+    },
+    {
+      "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+      "sha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "viewMethod": "functions tools.view_image detail=original; actual rendered image visually inspected",
+      "sha256MatchedBeforeAndAfterView": true,
+      "observation": "No clipped old sample-footnote glyphs under the state grid. Existing state text, buttons and confirmation/cancel relationships retain the reviewed appearance."
+    }
+  ]
+}

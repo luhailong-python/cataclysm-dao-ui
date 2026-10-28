@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-26T09:48:50.948490+00:00",
+  "userFacingTimezone": "America/New_York",
+  "localProjectRoot": "E:\\work\\image\\cataclysm-dao-ui",
+  "officialProject": {
+    "name": "Cataclysm: Dark Days Ahead",
+    "repository": "https://github.com/CleverRaven/Cataclysm-DDA"
+  },
+  "scope": "Official runtime and CLI verification for a separate native themed launcher. The official executable and internal C++ game UI were not modified.",
+  "sourceInspection": {
+    "pinnedCommit": "eb86dffd20072d6fde54af568cf229f3cd4d751f",
+    "commitUrl": "https://github.com/CleverRaven/Cataclysm-DDA/commit/eb86dffd20072d6fde54af568cf229f3cd4d751f",
+    "rootAgentsMd": {
+      "result": "HTTP 404; no root AGENTS.md obtained",
+      "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/master/AGENTS.md"
+    },
+    "files": [
+      {
+        "file": ".local/upstream/README.md",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/README.md",
+        "sha256": "9d11be4ff964c9b86b661df1a1e73d3d4808f597276fb02a657060c69108daf3"
+      },
+      {
+        "file": ".local/upstream/CONTRIBUTING.md",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/CONTRIBUTING.md",
+        "sha256": "6c11e0782c6277cc175f67a93c5a2bbab8a508a40896a9c32b9df4908533b619"
+      },
+      {
+        "file": ".local/upstream/src/main.cpp",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/main.cpp",
+        "sha256": "02bdbaea3a958fff0ce33c85d0a457029f7f3b274b7f9b5ce7b7c11003c13d95"
+      },
+      {
+        "file": ".local/upstream/src/path_info.cpp",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/path_info.cpp",
+        "sha256": "3b5909d535ef5c9f6198a77dfa89483c018f3087387f9c11d848d50b3e6e2ae7"
+      },
+      {
+        "file": ".local/upstream/src/main_menu.cpp",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/main_menu.cpp",
+        "sha256": "e1070a5aaa4ff55f42c031742cb49c2a94c424593aa33c8a0e621a0d6ddd821a"
+      },
+      {
+        "file": ".local/upstream/doc/c++/COMPILING-VS-VCPKG.md",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/doc/c++/COMPILING-VS-VCPKG.md",
+        "sha256": "86e9dbccbc7e4e9393753d4b8f2416c9c22f6e4e61993501a7ccc6729af7b59a"
+      },
+      {
+        "file": ".local/upstream/doc/c++/COMPILING-MSYS.md",
+        "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/eb86dffd20072d6fde54af568cf229f3cd4d751f/doc/c++/COMPILING-MSYS.md",
+        "sha256": "f7bfded40e50b9046234510e07f220394c84b80eafc3b2f43d3e171a5d698f27"
+      }
+    ],
+    "stableCliSource": {
+      "file": ".local/upstream/stable-0.I-1/main.cpp",
+      "url": "https://raw.githubusercontent.com/CleverRaven/Cataclysm-DDA/0.I-1/src/main.cpp",
+      "sha256": "c7d35485c7c6a7b42d552485c7f82e66064e9b3014685711380a648c3c0f9454"
+    },
+    "upstreamContributionConstraint": "CONTRIBUTING.md Licensing and Authorship disallows LLM-sourced upstream contributions. This delivery is local standalone work and was not submitted upstream.",
+    "windowsBuildNotes": "Official Windows build docs describe Visual Studio/vcpkg and MSYS2 UCRT64 paths. This runtime was downloaded from the official binary release, not built locally."
+  },
+  "runtime": {
+    "releaseTag": "0.I-1",
+    "releasePublishedAt": "2026-09-20T10:46:58Z",
+    "releaseUrl": "https://github.com/CleverRaven/Cataclysm-DDA/releases/tag/0.I-1",
+    "releaseApi": "https://api.github.com/repos/CleverRaven/Cataclysm-DDA/releases/latest",
+    "releaseApiSnapshot": ".local/upstream/release-latest.json",
+    "assetName": "cdda-windows-with-graphics-x64-2026-09-19-2324.zip",
+    "downloadUrl": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.I-1/cdda-windows-with-graphics-x64-2026-09-19-2324.zip",
+    "archiveBytes": 197868233,
+    "expectedSha256": "c0a90bfc78e5319733abea1c10ea0c0bd7e7e05a842566e9d6da90c5486e01da",
+    "actualSha256": "c0a90bfc78e5319733abea1c10ea0c0bd7e7e05a842566e9d6da90c5486e01da",
+    "archiveRetained": false,
+    "archiveCleanup": "Removed after official digest verification, safe extraction, CLI verification and successful real-window startup. Extracted runtime retained.",
+    "extractedEntries": 8177,
+    "directory": ".local/runtime/0.I-1",
+    "executable": ".local/runtime/0.I-1/cataclysm-tiles.exe",
+    "executableSha256": "24077f68082189d3930d10280575df2996be189fbd707887cafd5bd4fa6f804b",
+    "licenses": [
+      ".local/runtime/0.I-1/LICENSE.txt",
+      ".local/runtime/0.I-1/LICENSE-OFL-Terminus-Font.txt"
+    ],
+    "version": "Cataclysm Dark Days Ahead: cdda-0.I-2026-09-19-2324\r\n\r\n+tiles, -sound\r\n\r\ndata dir: data/\r\nuser dir: ./",
+    "tiles": true,
+    "soundPackIncluded": false,
+    "systemInstallationPerformed": false
+  },
+  "cliContract": {
+    "executable": "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1\\cataclysm-tiles.exe",
+    "workingDirectory": "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1",
+    "baseArgs": [
+      "--basepath",
+      "<runtime directory>",
+      "--userdir",
+      "<isolated user directory>"
+    ],
+    "continueWorldArgs": [
+      "--world",
+      "<world folder name>"
+    ],
+    "continueWorldSemantics": "The stable CLI loads the first save in the chosen world; it does not select an exact character.",
+    "savedGamesDirectory": "<userdir>/save/<world>/",
+    "shell": false,
+    "defaultLauncherUserdir": ".local/game-user",
+    "qaUserdir": ".local/runtime-qa-user"
+  },
+  "validation": {
+    "cli": [
+      {
+        "flag": "version",
+        "returncode": 0,
+        "stdout": "Cataclysm Dark Days Ahead: cdda-0.I-2026-09-19-2324\r\n\r\n+tiles, -sound\r\n\r\ndata dir: data/\r\nuser dir: ./\r\n",
+        "stderr": ""
+      },
+      {
+        "flag": "help",
+        "returncode": 0,
+        "stdout": "Command line parameters:\r\n--seed <string of letters and or numbers>\r\n    Sets the random number generator's seed value\r\n--jsonverify \r\n    Checks the CDDA json files and exits\r\n--check-mods [mod…]\r\n    Checks the json files belonging to given CDDA mod and exits\r\n--noverify \r\n    Skips JSON verification\r\n--world <name>\r\n    Load world\r\n--basepath <path>\r\n    Base path for all game data subdirectories\r\n--datadir <directory name>\r\n    Sub directory from which game data is loaded\r\n--autopickupfile <filename>\r\n    Name of the autopickup options file within the configdir\r\n--motdfile <filename>\r\n    Name of the message of the day file within the motd directory\r\n\r\nAccessibility\r\n--disable-ascii-art \r\n    Disable aesthetic ascii art in menus and descriptions.\r\n\r\nMap sharing\r\n--shared \r\n    Activates the map-sharing mode\r\n--username <name>\r\n    Instructs map-sharing code to use this name for your character.\r\n--addadmin <username>\r\n    Instructs map-sharing code to use this name for your character and give you access to the cheat functions.\r\n--adddebugger <username>\r\n    Informs map-sharing code that you're running inside a debugger\r\n--competitive \r\n    Instructs map-sharing code to disable access to the in-game cheat functions\r\n--worldmenu \r\n    Enables the world menu in the map-sharing code\r\n\r\nUser directories\r\n--userdir <path>\r\n    Base path for user-overrides to files from the ./data directory and named below\r\n--savedir <directory name>\r\n    Subdirectory for game saves\r\n--configdir <directory name>\r\n    Subdirectory for game configuration\r\n--memorialdir <directory name>\r\n    Subdirectory for memorials\r\n--optionfile <filename>\r\n    Name of the options file within the configdir\r\n--keymapfile <filename>\r\n    Name of the keymap file within the configdir\r\n\r\n",
+        "stderr": ""
+      }
+    ],
+    "realWindowStartup": {
+      "verifiedAt": "2026-10-26T09:47:47.680555+00:00",
+      "command": [
+        "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1\\cataclysm-tiles.exe",
+        "--basepath",
+        "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1/",
+        "--userdir",
+        "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime-qa-user/"
+      ],
+      "cwd": "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1",
+      "pid": 50988,
+      "runningAfterStartup": true,
+      "visibleWindows": [
+        {
+          "hwnd": 4327544,
+          "title": "大灾变 - 浩劫余生 - cdda-0.I-2026-09-19-2324",
+          "rect": [
+            -8,
+            -8,
+            1928,
+            1040
+          ]
+        },
+        {
+          "hwnd": 4394670,
+          "title": "",
+          "rect": [
+            1690,
+            650,
+            1925,
+            694
+          ]
+        }
+      ],
+      "userDir": "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime-qa-user",
+      "screenshot": ".local\\upstream\\runtime-main-menu.png",
+      "screenshotMethod": "Win32 PrintWindow client-only, excludes unrelated desktop overlays",
+      "exitCode": 0,
+      "shutdown": "WM_CLOSE",
+      "screenshotRetained": false
+    },
+    "scopeLimit": "Verified startup into the real main menu and clean shutdown. No character was created or saved; no world continuation or gameplay acceptance was claimed.",
+    "launcherIntegration": {
+      "verifiedAt": "2026-10-26T09:49:36.962070+00:00",
+      "launchVia": "app.domain.GameLauncher.start(Settings(...))",
+      "command": [
+        "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1\\cataclysm-tiles.exe",
+        "--basepath",
+        "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1\\",
+        "--userdir",
+        "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime-qa-user\\"
+      ],
+      "cwd": "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime\\0.I-1",
+      "pid": 55016,
+      "runningAfterStartup": true,
+      "visibleWindows": [
+        {
+          "hwnd": 12784152,
+          "title": "大灾变 - 浩劫余生 - cdda-0.I-2026-09-19-2324",
+          "rect": [
+            -8,
+            -8,
+            1928,
+            1040
+          ]
+        },
+        {
+          "hwnd": 2490704,
+          "title": "",
+          "rect": [
+            1690,
+            650,
+            1925,
+            694
+          ]
+        }
+      ],
+      "userDir": "E:\\work\\image\\cataclysm-dao-ui\\.local\\runtime-qa-user",
+      "screenshot": "qa\\game-runtime.png",
+      "screenshotMethod": "Win32 PrintWindow client-only, excludes unrelated desktop overlays",
+      "exitCode": 0,
+      "shutdown": "WM_CLOSE"
+    },
+    "launcherIntegrationScreenshot": {
+      "file": "qa/game-runtime.png",
+      "sha256": "6281f1f3a94953df83e5eaf6bd8df385ad8e59f422a4e252137595a51a68fe96",
+      "kind": "Actual official game started through app.domain.GameLauncher.start",
+      "operation": "Win32 PrintWindow client-only capture; no AI editing; unrelated desktop overlays excluded"
+    },
+    "screenshotCleanup": {
+      "removed": {
+        "file": ".local/upstream/runtime-main-menu.png",
+        "sha256": "2f9774ad0d0397ff281f9918b4b88b8c30dd92f7be5ae5b104921f02fbd2cc08",
+        "kind": "Actual unmodified official game window screenshot",
+        "operation": "Win32 PrintWindow client-only capture; no image generation or AI edit; unrelated desktop overlays excluded"
+      },
+      "reason": "Superseded by final clean screenshot from app.domain.GameLauncher.start; text/hash evidence retained"
+    },
+    "screenshot": {
+      "file": "qa/game-runtime.png",
+      "sha256": "6281f1f3a94953df83e5eaf6bd8df385ad8e59f422a4e252137595a51a68fe96",
+      "kind": "Actual official game started through app.domain.GameLauncher.start",
+      "operation": "Win32 PrintWindow client-only capture; no AI editing; unrelated desktop overlays excluded"
+    }
+  }
+}

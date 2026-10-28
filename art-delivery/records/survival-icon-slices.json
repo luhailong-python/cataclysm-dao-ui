@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-26T10:24:04.015380+00:00",
+  "master": "art-delivery/resources/icons/survival-icons-master.png",
+  "masterSha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+  "method": "nonuniform connected-component object extraction; not equal-grid cropping",
+  "gridReadingOrder": [
+    6,
+    4
+  ],
+  "assets": [
+    {
+      "id": "survival-battery",
+      "file": "art-delivery/resources/icons/survival-battery.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8dfc32b2e42d8d0d878d1ecb94727c82b15d42839110f6e09307267c56de7c3e",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        31,
+        240,
+        225
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        31,
+        16,
+        31
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "battery",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        33,
+        62,
+        258,
+        257
+      ],
+      "nativeCropPixelSize": [
+        225,
+        195
+      ],
+      "placedPixelSize": [
+        224,
+        194
+      ],
+      "positionTopLeft": [
+        16,
+        31
+      ],
+      "scaleFactor": 0.9955555555555555,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-flashlight",
+      "file": "art-delivery/resources/icons/survival-flashlight.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "c430a1fe0db76480220d7e60e8d50b62732732dbb051670f5bc156cbf891eaf9",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        39,
+        240,
+        216
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        39,
+        16,
+        40
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "flashlight",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        280,
+        51,
+        529,
+        248
+      ],
+      "nativeCropPixelSize": [
+        249,
+        197
+      ],
+      "placedPixelSize": [
+        224,
+        177
+      ],
+      "positionTopLeft": [
+        16,
+        39
+      ],
+      "scaleFactor": 0.8995983935742972,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-bandage",
+      "file": "art-delivery/resources/icons/survival-bandage.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ecdbdd75e3272ec1f330595d879d9a4684343db610e6a13af5a95fc5b5126bed",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaContentBox": [
+        20,
+        30,
+        236,
+        226
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        20,
+        30,
+        20,
+        30
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "bandage",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        550,
+        59,
+        766,
+        255
+      ],
+      "nativeCropPixelSize": [
+        216,
+        196
+      ],
+      "placedPixelSize": [
+        216,
+        196
+      ],
+      "positionTopLeft": [
+        20,
+        30
+      ],
+      "scaleFactor": 1.0,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-water",
+      "file": "art-delivery/resources/icons/survival-water.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "34ed04b7cd4bcd83ec699cfe55a375d5b60d0029f557def05f2f7133a650131f",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        46,
+        16,
+        210,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        46,
+        16,
+        46,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "water",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        825,
+        19,
+        1003,
+        262
+      ],
+      "nativeCropPixelSize": [
+        178,
+        243
+      ],
+      "placedPixelSize": [
+        164,
+        224
+      ],
+      "positionTopLeft": [
+        46,
+        16
+      ],
+      "scaleFactor": 0.9218106995884774,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-food",
+      "file": "art-delivery/resources/icons/survival-food.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "4db3f71fac44e1779fc99a2b2490ff017aa8b0a2c12111166dd6abedc587bdce",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaContentBox": [
+        26,
+        44,
+        230,
+        211
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        26,
+        44,
+        26,
+        45
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "food",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1052,
+        72,
+        1256,
+        239
+      ],
+      "nativeCropPixelSize": [
+        204,
+        167
+      ],
+      "placedPixelSize": [
+        204,
+        167
+      ],
+      "positionTopLeft": [
+        26,
+        44
+      ],
+      "scaleFactor": 1.0,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-wrench",
+      "file": "art-delivery/resources/icons/survival-wrench.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "4e910926258c9abb2693968727335ac885105f7560a522fd600ab4fdf5980185",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        26,
+        16,
+        229,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        26,
+        16,
+        27,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "wrench",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1296,
+        40,
+        1504,
+        269
+      ],
+      "nativeCropPixelSize": [
+        208,
+        229
+      ],
+      "placedPixelSize": [
+        203,
+        224
+      ],
+      "positionTopLeft": [
+        26,
+        16
+      ],
+      "scaleFactor": 0.9781659388646288,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-wheel",
+      "file": "art-delivery/resources/icons/survival-wheel.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "940360f573f30e02e68ff9fe79f41ad51c83eb6340830cde6ff02107652ed5ee",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        22,
+        16,
+        234,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        22,
+        16,
+        22,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "wheel",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        27,
+        267,
+        251,
+        504
+      ],
+      "nativeCropPixelSize": [
+        224,
+        237
+      ],
+      "placedPixelSize": [
+        212,
+        224
+      ],
+      "positionTopLeft": [
+        22,
+        16
+      ],
+      "scaleFactor": 0.9451476793248945,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-scrap",
+      "file": "art-delivery/resources/icons/survival-scrap.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "9b94a80039dc8473df283358d4b88c44d058237fb2b178158893a0a2c0e243ac",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        46,
+        240,
+        209
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        46,
+        16,
+        47
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "scrap",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        272,
+        303,
+        528,
+        489
+      ],
+      "nativeCropPixelSize": [
+        256,
+        186
+      ],
+      "placedPixelSize": [
+        224,
+        163
+      ],
+      "positionTopLeft": [
+        16,
+        46
+      ],
+      "scaleFactor": 0.875,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-bottle",
+      "file": "art-delivery/resources/icons/survival-bottle.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "45c69bfc80974c47829b3cedfa66bb4c4f7e496450d08002200b02fcbd6a9388",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        42,
+        16,
+        213,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        42,
+        16,
+        43,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "bottle",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        577,
+        264,
+        753,
+        495
+      ],
+      "nativeCropPixelSize": [
+        176,
+        231
+      ],
+      "placedPixelSize": [
+        171,
+        224
+      ],
+      "positionTopLeft": [
+        42,
+        16
+      ],
+      "scaleFactor": 0.9696969696969697,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-rifle",
+      "file": "art-delivery/resources/icons/survival-rifle.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "30b49766de051cdea630ec124bd10c6d9b4bc4a475f0dde75b6b43f704ebc385",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        24,
+        240,
+        231
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        24,
+        16,
+        25
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "rifle",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        769,
+        266,
+        1024,
+        502
+      ],
+      "nativeCropPixelSize": [
+        255,
+        236
+      ],
+      "placedPixelSize": [
+        224,
+        207
+      ],
+      "positionTopLeft": [
+        16,
+        24
+      ],
+      "scaleFactor": 0.8784313725490196,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-ammo",
+      "file": "art-delivery/resources/icons/survival-ammo.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "e3d5583b68a2496cc425faa121493de2ea7599617e8c800b0a7931cc2cf3a8c0",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        23,
+        16,
+        233,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        23,
+        16,
+        23,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "ammo",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1069,
+        266,
+        1281,
+        492
+      ],
+      "nativeCropPixelSize": [
+        212,
+        226
+      ],
+      "placedPixelSize": [
+        210,
+        224
+      ],
+      "positionTopLeft": [
+        23,
+        16
+      ],
+      "scaleFactor": 0.9911504424778761,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-magnifier",
+      "file": "art-delivery/resources/icons/survival-magnifier.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "81d4c1b6b7f5d9c49fbc597fd97c2a7bbbf09b3a1b3f668f55e9c51f5e7df41b",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        22,
+        16,
+        234,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        22,
+        16,
+        22,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "magnifier",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1296,
+        271,
+        1512,
+        499
+      ],
+      "nativeCropPixelSize": [
+        216,
+        228
+      ],
+      "placedPixelSize": [
+        212,
+        224
+      ],
+      "positionTopLeft": [
+        22,
+        16
+      ],
+      "scaleFactor": 0.9824561403508771,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-map",
+      "file": "art-delivery/resources/icons/survival-map.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "96943faf480e26228d7f0f0cf3884edcaa809daca0aa2fa5d10568e53398c077",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        37,
+        240,
+        219
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        37,
+        16,
+        37
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "map",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        17,
+        517,
+        288,
+        737
+      ],
+      "nativeCropPixelSize": [
+        271,
+        220
+      ],
+      "placedPixelSize": [
+        224,
+        182
+      ],
+      "positionTopLeft": [
+        16,
+        37
+      ],
+      "scaleFactor": 0.8265682656826568,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-compass",
+      "file": "art-delivery/resources/icons/survival-compass.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8c000b46688a3bba9f3686e9bb855fc1c724fb39053346bcbd67f793ececc01a",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        17,
+        240,
+        239
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        17,
+        16,
+        17
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "compass",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        291,
+        506,
+        520,
+        733
+      ],
+      "nativeCropPixelSize": [
+        229,
+        227
+      ],
+      "placedPixelSize": [
+        224,
+        222
+      ],
+      "positionTopLeft": [
+        16,
+        17
+      ],
+      "scaleFactor": 0.9781659388646288,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-campfire",
+      "file": "art-delivery/resources/icons/survival-campfire.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "7af38c2e75291fce08da4a438beac4985c8e91dc08d8f33580bbc8bd74208140",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        19,
+        240,
+        236
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        19,
+        16,
+        20
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "campfire",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        530,
+        506,
+        769,
+        738
+      ],
+      "nativeCropPixelSize": [
+        239,
+        232
+      ],
+      "placedPixelSize": [
+        224,
+        217
+      ],
+      "positionTopLeft": [
+        16,
+        19
+      ],
+      "scaleFactor": 0.9372384937238494,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-terminal",
+      "file": "art-delivery/resources/icons/survival-terminal.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "10c180735ed204210e2bf9e2a17aaac19f8dd37fc1ebda28efc36fd77c3436cc",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        16,
+        239,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        16,
+        17,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "terminal",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        792,
+        497,
+        1036,
+        742
+      ],
+      "nativeCropPixelSize": [
+        244,
+        245
+      ],
+      "placedPixelSize": [
+        223,
+        224
+      ],
+      "positionTopLeft": [
+        16,
+        16
+      ],
+      "scaleFactor": 0.9142857142857143,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-circuit",
+      "file": "art-delivery/resources/icons/survival-circuit.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "4e77d33be02d17b4c4c3e446049455cb1d0653bb448f5c246e742a32569d6601",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        37,
+        240,
+        218
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        37,
+        16,
+        38
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "circuit",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1037,
+        530,
+        1281,
+        727
+      ],
+      "nativeCropPixelSize": [
+        244,
+        197
+      ],
+      "placedPixelSize": [
+        224,
+        181
+      ],
+      "positionTopLeft": [
+        16,
+        37
+      ],
+      "scaleFactor": 0.9180327868852459,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-book",
+      "file": "art-delivery/resources/icons/survival-book.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "797e947ef96371e9b0f390e3149df30c2b0acfcd9c8b46942e4cb87434d9df40",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        16,
+        239,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        16,
+        17,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "book",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1297,
+        508,
+        1529,
+        741
+      ],
+      "nativeCropPixelSize": [
+        232,
+        233
+      ],
+      "placedPixelSize": [
+        223,
+        224
+      ],
+      "positionTopLeft": [
+        16,
+        16
+      ],
+      "scaleFactor": 0.9613733905579399,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-backpack",
+      "file": "art-delivery/resources/icons/survival-backpack.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "12dd18d60efdaefbabefc2e980ea82ae9f76d07dbdfa904abf7750095bdd35fc",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        17,
+        16,
+        238,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        17,
+        16,
+        18,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "backpack",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        19,
+        738,
+        272,
+        994
+      ],
+      "nativeCropPixelSize": [
+        253,
+        256
+      ],
+      "placedPixelSize": [
+        221,
+        224
+      ],
+      "positionTopLeft": [
+        17,
+        16
+      ],
+      "scaleFactor": 0.875,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-radio",
+      "file": "art-delivery/resources/icons/survival-radio.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "226336cffa478798014cb09a9f38e0479f053c5eb794e675e33fce63ab72202f",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        56,
+        16,
+        199,
+        240
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        56,
+        16,
+        57,
+        16
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "radio",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        317,
+        739,
+        477,
+        990
+      ],
+      "nativeCropPixelSize": [
+        160,
+        251
+      ],
+      "placedPixelSize": [
+        143,
+        224
+      ],
+      "positionTopLeft": [
+        56,
+        16
+      ],
+      "scaleFactor": 0.8924302788844621,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-helmet",
+      "file": "art-delivery/resources/icons/survival-helmet.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "040a671055e4ec5a0c25429c6e4bd799bf7b9f8dbb1db2453b142d20277fad53",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        23,
+        240,
+        232
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        23,
+        16,
+        24
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "helmet",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        535,
+        754,
+        776,
+        979
+      ],
+      "nativeCropPixelSize": [
+        241,
+        225
+      ],
+      "placedPixelSize": [
+        224,
+        209
+      ],
+      "positionTopLeft": [
+        16,
+        23
+      ],
+      "scaleFactor": 0.9294605809128631,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-seeds",
+      "file": "art-delivery/resources/icons/survival-seeds.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0fe4aefcde5a8bf0a7208edb630b80d489644cb2ed9a95558db4ed2f39f7682c",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaContentBox": [
+        25,
+        17,
+        231,
+        238
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        25,
+        17,
+        25,
+        18
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "seeds",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        797,
+        753,
+        1003,
+        974
+      ],
+      "nativeCropPixelSize": [
+        206,
+        221
+      ],
+      "placedPixelSize": [
+        206,
+        221
+      ],
+      "positionTopLeft": [
+        25,
+        17
+      ],
+      "scaleFactor": 1.0,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-meat",
+      "file": "art-delivery/resources/icons/survival-meat.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "71235215c1c9e588b1a0b77541df89912a24363b6f20592a643cb06bfa2de040",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        29,
+        240,
+        226
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        29,
+        16,
+        30
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "meat",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1034,
+        768,
+        1261,
+        968
+      ],
+      "nativeCropPixelSize": [
+        227,
+        200
+      ],
+      "placedPixelSize": [
+        224,
+        197
+      ],
+      "positionTopLeft": [
+        16,
+        29
+      ],
+      "scaleFactor": 0.986784140969163,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    },
+    {
+      "id": "survival-pot",
+      "file": "art-delivery/resources/icons/survival-pot.png",
+      "category": "icons",
+      "size": [
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "7940e41d4e8ee7ef7aeb55e384534ba66b05549f64ab7f596868d9c1c30ee2a5",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaContentBox": [
+        16,
+        33,
+        240,
+        222
+      ],
+      "transparentMarginsLeftTopRightBottom": [
+        16,
+        33,
+        16,
+        34
+      ],
+      "state": "normal",
+      "stateFamily": null,
+      "borderLeftBottomRightTop": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "resizeAxes": "none",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "pixelsPerUnit": 100,
+      "spriteType": "Simple",
+      "spriteImportMode": "Single",
+      "meshType": "FullRect",
+      "filterMode": "Bilinear",
+      "wrapMode": "Clamp",
+      "mipmaps": false,
+      "sRGB": true,
+      "alphaIsTransparency": true,
+      "dynamicTextBaked": false,
+      "containsFixedArtSymbol": true,
+      "meaning": "pot",
+      "operation": "Isolate actual alpha-connected painted object and nearby fragments, preserve four-pixel soft-edge fringe, remove alpha<4 noise; tight crop, downsample only if needed, center with >=14px transparent padding on 256 canvas. No new image generation or repaint.",
+      "cropBoxNativeXYXY": [
+        1281,
+        768,
+        1525,
+        974
+      ],
+      "nativeCropPixelSize": [
+        244,
+        206
+      ],
+      "placedPixelSize": [
+        224,
+        189
+      ],
+      "positionTopLeft": [
+        16,
+        33
+      ],
+      "scaleFactor": 0.9180327868852459,
+      "relationship": "adapted-use",
+      "newModelGeneration": false,
+      "derivedFrom": [
+        {
+          "file": "art-delivery/resources/icons/survival-icons-master.png",
+          "sha256": "00a632708b989c27b740243dcc349191fd5824c89befa6fa4d540686a5b43a53",
+          "generationRecord": "art-delivery/resources/icons/survival-icons-master.png.generation.json",
+          "sourcePixelSize": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "actualModel": null,
+      "actualQuality": null,
+      "modelQualityEvidence": "Refer to parent master generation record; actual model/quality unconfirmed by host. Cropping is not a model call.",
+      "unityValidation": "Import recommendation only; pending next Unity stage"
+    }
+  ],
+  "checks": {
+    "icons": 24,
+    "equalCanvas": true,
+    "noUpscaling": true,
+    "minimumTransparentPadding": 16,
+    "noSourceEdgeTouch": true
+  }
+}

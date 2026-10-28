@@ -1,0 +1,10 @@
+{
+  "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+  "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+  "derivedFrom": {
+    "file": "assets/art/survivor-keyart.png",
+    "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+    "generationRecord": "assets/art/survivor-keyart.png.generation.json"
+  },
+  "operation": "Byte-for-byte reuse of approved entry illustration"
+}

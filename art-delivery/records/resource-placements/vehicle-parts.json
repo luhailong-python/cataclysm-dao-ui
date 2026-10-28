@@ -1,0 +1,973 @@
+{
+  "file": "art-delivery/designs/screens/vehicle-parts.png",
+  "screenSha256": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "rectOrder": "x,y,width,height",
+  "operation": "Geometry trace of the exact frozen composition recipe; no PNG pixels were regenerated or modified",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "traceTool": {
+    "file": "tools/export_resource_placements.py",
+    "sha256": "36f5db005c8b50c4e853f2542157584e249b45055be3e4ef0051f706fb713310"
+  },
+  "imageAreas": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "render": "Pillow ImageOps.fit, Lanczos, centering=(0.5,0.5)",
+      "layer": "background",
+      "drawOrder": 0,
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae"
+    },
+    {
+      "id": "panel-main",
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "rect": [
+        38,
+        62,
+        1844,
+        972
+      ],
+      "sourceSize": [
+        1440,
+        840
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        148,
+        125,
+        148,
+        112
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        115,
+        98,
+        115,
+        87
+      ],
+      "layer": "skin",
+      "drawOrder": 1,
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e"
+    },
+    {
+      "id": "title",
+      "file": "art-delivery/resources/ui/title.png",
+      "rect": [
+        645,
+        24,
+        630,
+        131
+      ],
+      "sourceSize": [
+        716,
+        145
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        180,
+        34,
+        170,
+        31
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        140,
+        27,
+        133,
+        24
+      ],
+      "layer": "skin",
+      "drawOrder": 2,
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        235,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 3,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        324,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 4,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        413,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 5,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        502,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 6,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        591,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 7,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-selected",
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "rect": [
+        86,
+        680,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 8,
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        769,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 9,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        95,
+        956,
+        220,
+        62
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 10,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        359,
+        230,
+        1050,
+        692
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 11,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        1422,
+        230,
+        410,
+        692
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 12,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "slot-selected",
+      "file": "art-delivery/resources/ui/slot-selected.png",
+      "rect": [
+        550,
+        340,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 13,
+      "sha256": "ad1c9953d0fe0b5783a5f8f2a03fb9f3746b8366e15702661e2c0b9dcbac24e9"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-scrap.png",
+      "rect": [
+        560,
+        349,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        560,
+        349,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 14,
+      "sha256": "9b94a80039dc8473df283358d4b88c44d058237fb2b178158893a0a2c0e243ac"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        760,
+        340,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 15,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wrench.png",
+      "rect": [
+        770,
+        349,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        770,
+        349,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 16,
+      "sha256": "4e910926258c9abb2693968727335ac885105f7560a522fd600ab4fdf5980185"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        550,
+        445,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 17,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wheel.png",
+      "rect": [
+        560,
+        454,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        560,
+        454,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 18,
+      "sha256": "940360f573f30e02e68ff9fe79f41ad51c83eb6340830cde6ff02107652ed5ee"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        760,
+        445,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 19,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-battery.png",
+      "rect": [
+        770,
+        454,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        770,
+        454,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 20,
+      "sha256": "8dfc32b2e42d8d0d878d1ecb94727c82b15d42839110f6e09307267c56de7c3e"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        970,
+        445,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 21,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wheel.png",
+      "rect": [
+        980,
+        454,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        980,
+        454,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 22,
+      "sha256": "940360f573f30e02e68ff9fe79f41ad51c83eb6340830cde6ff02107652ed5ee"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        760,
+        550,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 23,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-helmet.png",
+      "rect": [
+        770,
+        559,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        770,
+        559,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 24,
+      "sha256": "040a671055e4ec5a0c25429c6e4bd799bf7b9f8dbb1db2453b142d20277fad53"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        550,
+        655,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 25,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wheel.png",
+      "rect": [
+        560,
+        664,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        560,
+        664,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 26,
+      "sha256": "940360f573f30e02e68ff9fe79f41ad51c83eb6340830cde6ff02107652ed5ee"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        760,
+        655,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 27,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-backpack.png",
+      "rect": [
+        770,
+        664,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        770,
+        664,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 28,
+      "sha256": "12dd18d60efdaefbabefc2e980ea82ae9f76d07dbdfa904abf7750095bdd35fc"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        970,
+        655,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 29,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wheel.png",
+      "rect": [
+        980,
+        664,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        980,
+        664,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 30,
+      "sha256": "940360f573f30e02e68ff9fe79f41ad51c83eb6340830cde6ff02107652ed5ee"
+    },
+    {
+      "id": "slot-normal",
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "rect": [
+        760,
+        760,
+        182,
+        95
+      ],
+      "sourceSize": [
+        160,
+        160
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "layer": "skin",
+      "drawOrder": 31,
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-scrap.png",
+      "rect": [
+        770,
+        769,
+        69,
+        69
+      ],
+      "resolvedRect": [
+        770,
+        769,
+        69,
+        69
+      ],
+      "sourceSize": [
+        256,
+        256
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 32,
+      "sha256": "9b94a80039dc8473df283358d4b88c44d058237fb2b178158893a0a2c0e243ac"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        1130,
+        932,
+        398,
+        70
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 33,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    }
+  ],
+  "vectorUI": [
+    {
+      "shape": "full-canvas-dim",
+      "colorRGBA": [
+        23,
+        49,
+        39,
+        55
+      ]
+    }
+  ],
+  "textLayout": "art-delivery/records/layouts/vehicle-parts.json",
+  "unityStatus": "Placement advice, not imported or verified in Unity"
+}

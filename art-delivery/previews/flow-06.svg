@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<style>@font-face{font-family:NotoCJK;src:url(../resources/fonts/NotoSansCJKsc-Regular.otf)}text{font-family:NotoCJK,"Noto Sans CJK SC",sans-serif}</style>
+<rect width="1920" height="1080" fill="#f8f1df"/>
+<defs><pattern id="paper" x="0" y="0" width="375" height="57" patternUnits="userSpaceOnUse"><image href="../resources/ui/paper-tile.png" width="375" height="57" opacity="0.35"/></pattern></defs>
+<rect width="1920" height="1080" fill="url(#paper)"/>
+<rect x="54" y="38" width="1812" height="118" rx="24" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="92.0" y="104.0" font-size="44" fill="#fff2d0">流程 06  ·  NPC、交易、营地与载具</text>
+<text x="92.0" y="194.0" font-size="24" fill="#69776a">青岚余生（暂定名） · 功能关系美术说明 · 入口、条件、确认、反馈与返回</text>
+<line x1="80" y1="216" x2="1840" y2="216" stroke="#b38e4c" stroke-width="2"/>
+<text x="88.0" y="269.0" font-size="27" fill="#235347">人物交谈</text>
+<rect x="88.0" y="289" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="160.0" y="328.5" font-size="24" fill="#fff5d9">接近 / 联系</text>
+<line x1="352.0" y1="326.5" x2="378.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,326.5 L369.0,320.5 L369.0,332.5 Z" fill="#235347"/>
+<rect x="385.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="454.5" y="328.5" font-size="24" fill="#29463c">对话与命令</text>
+<line x1="649.0" y1="326.5" x2="675.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,326.5 L666.0,320.5 L666.0,332.5 Z" fill="#235347"/>
+<rect x="682.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="751.5" y="328.5" font-size="24" fill="#29463c">要求与信息</text>
+<line x1="946.0" y1="326.5" x2="972.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,326.5 L963.0,320.5 L963.0,332.5 Z" fill="#235347"/>
+<rect x="979.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="328.5" font-size="24" fill="#29463c">选择回应</text>
+<line x1="1243.0" y1="326.5" x2="1269.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,326.5 L1260.0,320.5 L1260.0,332.5 Z" fill="#235347"/>
+<rect x="1276.0" y="289" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1333.5" y="328.5" font-size="24" fill="#29463c">关系任务变化</text>
+<line x1="1540.0" y1="326.5" x2="1566.0" y2="326.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,326.5 L1557.0,320.5 L1557.0,332.5 Z" fill="#235347"/>
+<rect x="1573.0" y="289" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="328.5" font-size="24" fill="#fff5d9">返回世界</text>
+<text x="88.0" y="422.0" font-size="27" fill="#235347">交易与交换</text>
+<rect x="88.0" y="442" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="169.5" y="481.5" font-size="24" fill="#fff5d9">交易入口</text>
+<line x1="352.0" y1="479.5" x2="378.0" y2="479.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,479.5 L369.0,473.5 L369.0,485.5 Z" fill="#235347"/>
+<rect x="385.0" y="442" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="466.5" y="481.5" font-size="24" fill="#29463c">双方物品</text>
+<line x1="649.0" y1="479.5" x2="675.0" y2="479.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,479.5 L666.0,473.5 L666.0,485.5 Z" fill="#235347"/>
+<rect x="682.0" y="442" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="751.5" y="481.5" font-size="24" fill="#29463c">数量与价值</text>
+<line x1="946.0" y1="479.5" x2="972.0" y2="479.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,479.5 L963.0,473.5 L963.0,485.5 Z" fill="#235347"/>
+<rect x="979.0" y="442" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="481.5" font-size="24" fill="#29463c">成交确认</text>
+<line x1="1243.0" y1="479.5" x2="1269.0" y2="479.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,479.5 L1260.0,473.5 L1260.0,485.5 Z" fill="#235347"/>
+<rect x="1276.0" y="442" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1333.5" y="481.5" font-size="24" fill="#29463c">余额库存变化</text>
+<line x1="1540.0" y1="479.5" x2="1566.0" y2="479.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,479.5 L1557.0,473.5 L1557.0,485.5 Z" fill="#235347"/>
+<rect x="1573.0" y="442" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="481.5" font-size="24" fill="#fff5d9">返回对话</text>
+<text x="88.0" y="575.0" font-size="27" fill="#235347">营地派遣</text>
+<rect x="88.0" y="595" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="157.5" y="634.5" font-size="24" fill="#fff5d9">营地负责人</text>
+<line x1="352.0" y1="632.5" x2="378.0" y2="632.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,632.5 L369.0,626.5 L369.0,638.5 Z" fill="#235347"/>
+<rect x="385.0" y="595" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="454.5" y="634.5" font-size="24" fill="#29463c">任务与工人</text>
+<line x1="649.0" y1="632.5" x2="675.0" y2="632.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,632.5 L666.0,626.5 L666.0,638.5 Z" fill="#235347"/>
+<rect x="682.0" y="595" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="739.5" y="634.5" font-size="24" fill="#29463c">技能资源时间</text>
+<line x1="946.0" y1="632.5" x2="972.0" y2="632.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,632.5 L963.0,626.5 L963.0,638.5 Z" fill="#235347"/>
+<rect x="979.0" y="595" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1060.5" y="634.5" font-size="24" fill="#29463c">派遣确认</text>
+<line x1="1243.0" y1="632.5" x2="1269.0" y2="632.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,632.5 L1260.0,626.5 L1260.0,638.5 Z" fill="#235347"/>
+<rect x="1276.0" y="595" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1348.0" y="634.5" font-size="24" fill="#29463c">工作 / 回收</text>
+<line x1="1540.0" y1="632.5" x2="1566.0" y2="632.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,632.5 L1557.0,626.5 L1557.0,638.5 Z" fill="#235347"/>
+<rect x="1573.0" y="595" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="634.5" font-size="24" fill="#fff5d9">返回营地</text>
+<text x="88.0" y="728.0" font-size="27" fill="#235347">载具维护</text>
+<rect x="88.0" y="748" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="169.5" y="787.5" font-size="24" fill="#fff5d9">检查车辆</text>
+<line x1="352.0" y1="785.5" x2="378.0" y2="785.5" stroke="#235347" stroke-width="3"/>
+<path d="M378.0,785.5 L369.0,779.5 L369.0,791.5 Z" fill="#235347"/>
+<rect x="385.0" y="748" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="466.5" y="787.5" font-size="24" fill="#29463c">结构部件</text>
+<line x1="649.0" y1="785.5" x2="675.0" y2="785.5" stroke="#235347" stroke-width="3"/>
+<path d="M675.0,785.5 L666.0,779.5 L666.0,791.5 Z" fill="#235347"/>
+<rect x="682.0" y="748" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="739.5" y="787.5" font-size="24" fill="#29463c">材料工具条件</text>
+<line x1="946.0" y1="785.5" x2="972.0" y2="785.5" stroke="#235347" stroke-width="3"/>
+<path d="M972.0,785.5 L963.0,779.5 L963.0,791.5 Z" fill="#235347"/>
+<rect x="979.0" y="748" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1036.5" y="787.5" font-size="24" fill="#29463c">安装修理确认</text>
+<line x1="1243.0" y1="785.5" x2="1269.0" y2="785.5" stroke="#235347" stroke-width="3"/>
+<path d="M1269.0,785.5 L1260.0,779.5 L1260.0,791.5 Z" fill="#235347"/>
+<rect x="1276.0" y="748" width="259.0" height="75" rx="12" fill="#fcf7e9" stroke="#b38e4c" stroke-width="2"/>
+<text x="1345.5" y="787.5" font-size="24" fill="#29463c">耗时与结果</text>
+<line x1="1540.0" y1="785.5" x2="1566.0" y2="785.5" stroke="#235347" stroke-width="3"/>
+<path d="M1566.0,785.5 L1557.0,779.5 L1557.0,791.5 Z" fill="#235347"/>
+<rect x="1573.0" y="748" width="259.0" height="75" rx="12" fill="#235347" stroke="#235347" stroke-width="2"/>
+<text x="1654.5" y="787.5" font-size="24" fill="#fff5d9">返回载具</text>
+<rect x="70" y="885" width="1780" height="167" rx="12" fill="#eee7d4" stroke="#d0b578" stroke-width="2"/>
+<text x="96.0" y="923.0" font-size="24" fill="#29463c">钱卡终端与自动售货机按实际金额 / 库存表达；不是充值商城。</text>
+<text x="96.0" y="963.0" font-size="24" fill="#29463c">同伴命令、驯养与骑乘依赖可用对象和条件，不能混成玩家好友系统。</text>
+<text x="96.0" y="1003.0" font-size="22" fill="#69776a">营地扩建、同伴工作和载具维修为实际生存系统，不加入无依据公会或坐骑养成。</text>
+</svg>

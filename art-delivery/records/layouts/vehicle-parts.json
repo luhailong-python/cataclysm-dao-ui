@@ -1,0 +1,670 @@
+{
+  "id": "vehicle-parts",
+  "file": "art-delivery/designs/screens/vehicle-parts.png",
+  "sha256": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-backpack.png",
+      "sha256": "12dd18d60efdaefbabefc2e980ea82ae9f76d07dbdfa904abf7750095bdd35fc",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-battery.png",
+      "sha256": "8dfc32b2e42d8d0d878d1ecb94727c82b15d42839110f6e09307267c56de7c3e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-helmet.png",
+      "sha256": "040a671055e4ec5a0c25429c6e4bd799bf7b9f8dbb1db2453b142d20277fad53",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-scrap.png",
+      "sha256": "9b94a80039dc8473df283358d4b88c44d058237fb2b178158893a0a2c0e243ac",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wheel.png",
+      "sha256": "940360f573f30e02e68ff9fe79f41ad51c83eb6340830cde6ff02107652ed5ee",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wrench.png",
+      "sha256": "4e910926258c9abb2693968727335ac885105f7560a522fd600ab4fdf5980185",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/slot-selected.png",
+      "sha256": "ad1c9953d0fe0b5783a5f8f2a03fb9f3746b8366e15702661e2c0b9dcbac24e9",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/icons/survival-backpack.png",
+    "art-delivery/resources/icons/survival-battery.png",
+    "art-delivery/resources/icons/survival-helmet.png",
+    "art-delivery/resources/icons/survival-scrap.png",
+    "art-delivery/resources/icons/survival-wheel.png",
+    "art-delivery/resources/icons/survival-wrench.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/slot-normal.png",
+    "art-delivery/resources/ui/slot-selected.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "车辆部件与改装",
+      "displayText": "车辆部件与改装",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "vehicle-parts  ·  设计预览 / 非游戏运行截图",
+      "displayText": "vehicle-parts  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "部件位置示意 · 旧旅行车",
+      "displayText": "部件位置示意 · 旧旅行车",
+      "rect": [
+        410,
+        266,
+        930,
+        44
+      ],
+      "fontSize": 30,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "左前车架",
+      "displayText": "左前车架",
+      "rect": [
+        631,
+        365,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "引擎",
+      "displayText": "引擎",
+      "rect": [
+        841,
+        365,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "左前轮",
+      "displayText": "左前轮",
+      "rect": [
+        631,
+        470,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "蓄电池",
+      "displayText": "蓄电池",
+      "rect": [
+        841,
+        470,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "右前轮",
+      "displayText": "右前轮",
+      "rect": [
+        1051,
+        470,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "驾驶座",
+      "displayText": "驾驶座",
+      "rect": [
+        841,
+        575,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "左后轮",
+      "displayText": "左后轮",
+      "rect": [
+        631,
+        680,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "储物箱",
+      "displayText": "储物箱",
+      "rect": [
+        841,
+        680,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "右后轮",
+      "displayText": "右后轮",
+      "rect": [
+        1051,
+        680,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "车架",
+      "displayText": "车架",
+      "rect": [
+        841,
+        785,
+        93,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "左前车架 · 受损",
+      "displayText": "左前车架 · 受损",
+      "rect": [
+        1460,
+        270,
+        330,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "耐久",
+      "displayText": "耐久",
+      "rect": [
+        1460,
+        355,
+        330,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "60 / 100",
+      "displayText": "60 / 100",
+      "rect": [
+        1460,
+        385,
+        330,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "所需材料",
+      "displayText": "所需材料",
+      "rect": [
+        1460,
+        435,
+        330,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "钢片 ×2",
+      "displayText": "钢片 ×2",
+      "rect": [
+        1460,
+        465,
+        330,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-29",
+      "text": "维修工具",
+      "displayText": "维修工具",
+      "rect": [
+        1460,
+        515,
+        330,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-30",
+      "text": "焊接工具",
+      "displayText": "焊接工具",
+      "rect": [
+        1460,
+        545,
+        330,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-31",
+      "text": "预计耗时",
+      "displayText": "预计耗时",
+      "rect": [
+        1460,
+        595,
+        330,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-32",
+      "text": "约 25 分钟",
+      "displayText": "约 25 分钟",
+      "rect": [
+        1460,
+        625,
+        330,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-33",
+      "text": "状态",
+      "displayText": "状态",
+      "rect": [
+        1460,
+        675,
+        330,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-34",
+      "text": "可检查维修条件",
+      "displayText": "可检查维修条件",
+      "rect": [
+        1460,
+        705,
+        330,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-35",
+      "text": "维修选中部件",
+      "displayText": "维修选中部件",
+      "rect": [
+        1142,
+        944.02,
+        374,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/veh_interact.cpp",
+      "symbol": "void veh_interact::do_main_loop",
+      "line": 518
+    }
+  ]
+}

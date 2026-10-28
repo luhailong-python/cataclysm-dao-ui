@@ -1,0 +1,616 @@
+{
+  "file": "art-delivery/designs/screens/character-sheet.png",
+  "screenSha256": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "rectOrder": "x,y,width,height",
+  "operation": "Geometry trace of the exact frozen composition recipe; no PNG pixels were regenerated or modified",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "traceTool": {
+    "file": "tools/export_resource_placements.py",
+    "sha256": "36f5db005c8b50c4e853f2542157584e249b45055be3e4ef0051f706fb713310"
+  },
+  "imageAreas": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "render": "Pillow ImageOps.fit, Lanczos, centering=(0.5,0.5)",
+      "layer": "background",
+      "drawOrder": 0,
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae"
+    },
+    {
+      "id": "panel-main",
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "rect": [
+        38,
+        62,
+        1844,
+        972
+      ],
+      "sourceSize": [
+        1440,
+        840
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        148,
+        125,
+        148,
+        112
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        115,
+        98,
+        115,
+        87
+      ],
+      "layer": "skin",
+      "drawOrder": 1,
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e"
+    },
+    {
+      "id": "title",
+      "file": "art-delivery/resources/ui/title.png",
+      "rect": [
+        645,
+        24,
+        630,
+        131
+      ],
+      "sourceSize": [
+        716,
+        145
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        180,
+        34,
+        170,
+        31
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        140,
+        27,
+        133,
+        24
+      ],
+      "layer": "skin",
+      "drawOrder": 2,
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        235,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 3,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-selected",
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "rect": [
+        86,
+        324,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 4,
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        413,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 5,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        502,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 6,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        591,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 7,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        680,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 8,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "tab-normal",
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "rect": [
+        86,
+        769,
+        242,
+        72
+      ],
+      "sourceSize": [
+        360,
+        114
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 9,
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        95,
+        956,
+        220,
+        62
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 10,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        359,
+        225,
+        560,
+        698
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 11,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "file": "art-delivery/resources/characters/hero-survivor.png",
+      "rect": [
+        392,
+        265,
+        485,
+        605
+      ],
+      "resolvedRect": [
+        433,
+        265,
+        403,
+        605
+      ],
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "render": "contain-centered",
+      "layer": "art",
+      "drawOrder": 12,
+      "sha256": "89402f654adbe05a1d1e93a1b0ec8c2f9bb2ca512a5d19d12d5ebd2cf526f471"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        935,
+        225,
+        897,
+        698
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 13,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "row-selected",
+      "file": "art-delivery/resources/ui/row-selected.png",
+      "rect": [
+        981,
+        325,
+        802,
+        66
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 14,
+      "sha256": "841a8bba5c31946986af399ddfe5abf1d2c9879467e8a2cfe98e6cd7babee925"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        981,
+        395,
+        802,
+        66
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 15,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        981,
+        465,
+        802,
+        66
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 16,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        981,
+        535,
+        802,
+        66
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 17,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "row-normal",
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "rect": [
+        981,
+        605,
+        802,
+        66
+      ],
+      "sourceSize": [
+        360,
+        96
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        31,
+        82,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        24,
+        64,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 18,
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        1170,
+        930,
+        345,
+        73
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 19,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    }
+  ],
+  "vectorUI": [
+    {
+      "shape": "full-canvas-dim",
+      "colorRGBA": [
+        23,
+        49,
+        39,
+        55
+      ]
+    }
+  ],
+  "textLayout": "art-delivery/records/layouts/character-sheet.json",
+  "unityStatus": "Placement advice, not imported or verified in Unity"
+}

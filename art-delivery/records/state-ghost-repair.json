@@ -1,0 +1,2372 @@
+{
+  "baselineDirectory": "E:\\work\\image\\cataclysm-dao-ui\\.local\\state-review-baseline-20261026",
+  "operation": "Temporary comparison baseline for removal of hidden navigation/sample-text ghost; remove baseline images after verified repair",
+  "beforeStateHashes": {
+    "achievements--states-1.png": "3fe49af26a9cef5098b09f285a6caf6d11e76c4de70dc101ea5062613aecd6d8",
+    "activity-progress--states-1.png": "098e3fd0edbdf14f5a0c6edb86740eb544da2652284639322d1e77ed77b7b30c",
+    "activity-progress--states-2.png": "d2be0b939f5673db87fde183a084480b5601ea5e267d600ff512fd95a0a11811",
+    "advanced-inventory--states-1.png": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+    "advanced-inventory--states-2.png": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+    "aim-ranged--states-1.png": "1a39dd9cf1089659399572b51167262bcb0f07bf95b29c1764aeef3d87d52078",
+    "animal-care--states-1.png": "b0acda4b9cbd961efee27a0b10a8873b0e68b2bf18793e10a14bd937167cfc9f",
+    "animal-care--states-2.png": "6f352527114f9c0b55a2a615488e257815259f057fcb6d7a341f47b8aead8dcc",
+    "atm-bank--states-1.png": "2b6b71cc25605126eaadda1eb6d03946d36ce84fcf213d0684cbc33aa13e6b58",
+    "autopickup-rules--states-1.png": "efbcc8ad6f3ba1dc82cc1f47ca692d714e2fe17a88a5e44875d7e65a691e86bc",
+    "autopickup-rules--states-2.png": "55e9d4bfae4cb9269936d82c44f8d878866cce8be568e8c6a7789dcac1066c95",
+    "bionic-surgery--states-1.png": "c1bda36a5584702fa324f5316bb6a96dd6f703b12f776087217290dc61290d69",
+    "bionic-surgery--states-2.png": "d46e328d60c808b461640b3068e0725d2638fe10fc7ecb012c14b674dc8a788d",
+    "bionics--states-1.png": "a01c7f95d372808f3ab3a44fea59676edc2569fda3b35e41aee19cba6857179a",
+    "bionics--states-2.png": "b64d91205b632555b300926283ccd3c7a01d326152018fe2ba28891608d48444",
+    "body-health--states-1.png": "97139a54d6546fa299ed411fb9d525a4a12a18746b15506eb5a9b1744149e2e2",
+    "butcher-harvest--states-1.png": "f4071f172b03186a3c6375e64f1ae7168d3124ebcc29e00fcf82e1026cf81e89",
+    "butcher-harvest--states-2.png": "22e57ae2e6c026712e0220c4e2786634c0dce76d6de4b23947efd59178d04d05",
+    "camp-overview--states-1.png": "e3785fc585e0459ce35c25474ff9090f12bec47dff0d62f9df09cd2050486e77",
+    "camp-upgrade--states-1.png": "58031557bd2529316d483819b2f2e268a587addda5f0423366a389b51574b87e",
+    "camp-upgrade--states-2.png": "ee8e9367604a1ad4f9992494dcafe6514fc2e1f9dc7fd4fe45e0875c9f4df462",
+    "character-encumbrance--states-1.png": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+    "character-proficiencies--states-1.png": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+    "character-sheet--states-1.png": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+    "character-skills--states-1.png": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+    "character-templates--states-1.png": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+    "colors-theme--states-1.png": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+    "common-dialogs--states-1.png": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+    "companion-assignment--states-1.png": "01f46f8b0cfd822cec0ccc4c6ad87dd894dd87e85cbb69956bb51a88a41372d5",
+    "companion-assignment--states-2.png": "940657b9e32ec2d7bd7ed26754adee877af7eb759119685de8e040b573c4e3a5",
+    "construction--states-1.png": "b2b4d961e63df802b720a8390aedd432cacfa75307f11a8a73f2b715d608fd14",
+    "construction-place--states-1.png": "9382dc0ce53fdcd863b15889bd29a4d9094e7178ee7c218a3b4d50d06fc0794b",
+    "consume--states-1.png": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+    "craft-batch--states-1.png": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+    "craft-batch--states-2.png": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+    "craft-recipes--states-1.png": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+    "craft-recipes--states-2.png": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+    "creation-background--states-1.png": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+    "creation-mode--states-1.png": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+    "creation-profession--states-1.png": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+    "creation-scenario--states-1.png": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+    "creation-skills--states-1.png": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+    "creation-stats--states-1.png": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+    "creation-summary--states-1.png": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+    "creation-summary--states-2.png": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+    "creation-traits--states-1.png": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+    "creation-traits--states-2.png": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+    "creature-codex--states-1.png": "bab52e54d78c2c34b4b3c6de153c2b1384ee4ec8d3b89c6530433742f3b0bc49",
+    "credits--states-1.png": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+    "diary--states-1.png": "9b2d73501bfe447d56460046c239d5fccb713f33d94fed81e41e78020ef677a1",
+    "disassemble--states-1.png": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+    "disassemble--states-2.png": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+    "electronic-files--states-1.png": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+    "electronic-files--states-2.png": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+    "factions--states-1.png": "38c42ec2e3c6fb81586af3e8654ea9e35283eeeb14928b7f7e74a44a575d6312",
+    "followers--states-1.png": "8606bd5293a82aa6899854cd3854b54ff2c93f14d8db257b4aa8aa0ca55824af",
+    "game-hud--states-1.png": "8823e7efbb5796220b6313906a33f7e392073396bcb8c8c3baf455642a79e072",
+    "game-hud--states-2.png": "ea47769a6b9ff0bd055f0459c4880c38dea2d9b2f56e5a9ae8517a55c791d1a9",
+    "gunmods--states-1.png": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+    "gunmods--states-2.png": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+    "help--states-1.png": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+    "inventory--states-1.png": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+    "inventory--states-2.png": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+    "item-compare--states-1.png": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+    "item-containers--states-1.png": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+    "item-containers--states-2.png": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+    "item-detail--states-1.png": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+    "item-unload--states-1.png": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+    "item-use--states-1.png": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+    "keybindings--states-1.png": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+    "keybindings--states-2.png": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+    "liquid-transfer--states-1.png": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+    "load-character--states-1.png": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+    "loading--states-1.png": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+    "look-examine--states-1.png": "7a07f8602185dd4cf2eeb9c7efbf94a8f15532f5cb2045ca3ca3c119ab7a3275",
+    "main-menu--states-1.png": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+    "map-notes--states-1.png": "d6ba044afa2ff0d54ce0401c960acea7e449e0671d78561b7a6b9a2d225e05d0",
+    "martial-arts--states-1.png": "128b1088a471c4b32f613d79be529fb1dddcc4d7e16c3aee10806f8d2fc635a9",
+    "medical-treatment--states-1.png": "d367e5aebbaa051852100737ba6daf8d97bc08c085aba21f877aaf64b59da43e",
+    "memorial--states-1.png": "aa81beef24419b57d5527cc229f453221c662b8b3a383262172822ded30decce",
+    "message-log--states-1.png": "b8bf94458118ab10b7f62c177fff4fe530c59e2b699c2819a05c227d70d7abaf",
+    "missions--states-1.png": "e400d9fee6060069cee747afbf9790eff520442606d1735827a6f0be39957590",
+    "morale--states-1.png": "ef5ac4167190741f4e31c2ef0e7217883f8e8e813a58d5a2095d2cb82075bbb0",
+    "motd--states-1.png": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+    "multidrop--states-1.png": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+    "mutations--states-1.png": "7854074b096139896a81c859aa9e739fed4c6a03e5b56235e19c37758ac3ef61",
+    "nearby-creatures--states-1.png": "cc0638bfe9c22160f8e58284b2dc2949562c9d1fc67fae5e0cbafeaca13bf8c2",
+    "npc-orders--states-1.png": "3fed1ab35f9251fd6693984fe00d8959e98a7af3275f67c71ad2000f21e6eaab",
+    "npc-talk--states-1.png": "5a46da77c85eb5fbbc7029a65e5ef7dedb3103498506277a96817bee8e3bf9b9",
+    "npc-trade--states-1.png": "4a336d4540584df641b062a7781268f1c11f5e4562da2aea5878a8ee9a91b9cf",
+    "npc-trade--states-2.png": "3f43114445cb7ee20e2ba6b5543fcfaccbd3350a40ed39713d5c780dd1f3adb8",
+    "overmap--states-1.png": "15d1e50e3f7faf0aa9a206e395ffe197dacfc779c46395def4f14de91c19cf84",
+    "pickup--states-1.png": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+    "read--states-1.png": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+    "read--states-2.png": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+    "reload--states-1.png": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+    "repair--states-1.png": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+    "repair--states-2.png": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+    "route-travel--states-1.png": "82f9dfe8dc0850d3968d8131c2488b4ecff4d9d6764ddc25b9601c4f8e2266c1",
+    "route-travel--states-2.png": "01030a0a4ac9d1cd16871fbcd874cc151f9db67a0866e70af8212b8dc82875b3",
+    "safemode-rules--states-1.png": "291b4826ddcf22f3bbc7ca7839c86bbff25dfe203169fbf02f7c242488e1446f",
+    "safemode-rules--states-2.png": "d1dcb0ca76770f82b9a6d8305e59978b740ee7dcb6a944a45ae36d7baa7bd878",
+    "settings-audio--states-1.png": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+    "settings-general--states-1.png": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+    "settings-graphics--states-1.png": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+    "settings-interface--states-1.png": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+    "spell-target--states-1.png": "86dbb5f7e5b721a6d0247e93c895083673e198edef05cd84524b100534f6e66a",
+    "spellbook--states-1.png": "f8d6d39920409b22fc301a4d0b88e7d8ea12fb20c62a55bb012bbe1ec021b645",
+    "status-effects--states-1.png": "aecf0a9f5f73580dedf93ccb6369a48ebb71fdd2f64e3272ac80188993f4f5fb",
+    "terminal--states-1.png": "eaeb668d7faaf81a8b8fce0fe25afaab0a4e8503057c14629d90e5de2d5af0ff",
+    "terminal--states-2.png": "caff13110da9947c6695fa28c21dea1918a5f372f40726620696bb607995074f",
+    "throw-target--states-1.png": "91374632ca4691e955fc4d59d0c2d04f53f91f5ecd9c97974471e7846418b154",
+    "translocator--states-1.png": "812ff25f7db9ac2b04fe71cd0a999080f1a508d3d35453b5b3eb1a1aca2a84d7",
+    "tutorial--states-1.png": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+    "vehicle-dashboard--states-1.png": "8d2f54c70c36c4420c663c431ea966138544a3c9a990efde604037c85b06d17f",
+    "vehicle-dashboard--states-2.png": "1179535db7cd8bc96e5f4337ec3851d91829ba5a89be5900d01cd993a8f47894",
+    "vehicle-parts--states-1.png": "a95c489d77e99e4b9269d28ce0c6d3074de03d51434768e2ceb17e59d99ad1c8",
+    "vehicle-parts--states-2.png": "e9de4712808f7e42032631ff812d1e0b83278631d3526ea9e342c6835a471560",
+    "vehicle-refill--states-1.png": "6ac47f443fae8c19ac8ce7bec3be1209b2bc7026e26c145f7b3b287fe463e4f4",
+    "vending-machine--states-1.png": "43ec9627e7f636ace678fb063f5f2aeafa3996ff8af2343960b35c891788f3c2",
+    "wait-sleep--states-1.png": "713bc24a0692d9e08027ee4e25af9aa895708886f61b3c8dd9aef9222106f434",
+    "wait-sleep--states-2.png": "8820249a4e8564f3268d64df07176b16359bd8df6b47759b89e4e6532d87cc8b",
+    "wield--states-1.png": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+    "world-create--states-1.png": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+    "world-create--states-2.png": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+    "world-list--states-1.png": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+    "world-list--states-2.png": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+    "world-mods--states-1.png": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+    "world-mods--states-2.png": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+    "world-options--states-1.png": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+    "worn-layers--states-1.png": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+    "zone-activities--states-1.png": "fd89d44b371c8bdb46374f2b0f8e938e5abc30eaad4587fd1943cbf3c6423547",
+    "zone-manager--states-1.png": "4878d9e17044bba84e0961ff0fe57f45ba12f81b98fb675a8c2d33b2491cfe32"
+  },
+  "beforeMainHashes": {
+    "achievements.png": "a728fdfbe866b40dc322c9bf936e8fc34b880f4dbe3ba923d080d66bbe97240a",
+    "activity-progress.png": "72e624cbba6cbbd20090aca9ba13cccf1b25319f063143df2a3e2fa5f1cd0ba1",
+    "advanced-inventory.png": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4",
+    "aim-ranged.png": "bdca811d6000b0d052a3d2f5bf055cf0bf56d4d68c75dbe177e66fa93342fab4",
+    "animal-care.png": "6f45df5364ee9bf1d6e55579a81a38140aa7b3d16de4b9502399c23ec36a11e1",
+    "atm-bank.png": "703ac4f40f9251e169dfe8dba873b6c7642eccb27fe83b4799ee35a29173fccc",
+    "autopickup-rules.png": "dbec7c2928ece729c2cf7e163b52c7a0dfad961f0587bf13523f2e9c8c69a0ca",
+    "bionic-surgery.png": "2b191a9e971d8ad74dc1803ae502c81e73ecc30b087330d76bffc295c0468db1",
+    "bionics.png": "c83981af72d47e6cb4b89ce78c6f848b50e5196df7b82c1233d549e574018909",
+    "body-health.png": "c4db1e3fad87d5efa8610560cac808176fd210aa1a82d9b994922a33dcf0e2c1",
+    "butcher-harvest.png": "08d08347ef15d113d994f79bbe84ec50dfedf9045df44232e0c58fcf2475cb74",
+    "camp-overview.png": "264479a6ea0c46e4a4954319fae4156809e3f5b7edebaec6c1c0078b42e48bfe",
+    "camp-upgrade.png": "844fa5e396b1729c13674f254d7ba35896a1e7f10fc0410196cdd74de0d15de1",
+    "character-encumbrance.png": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757",
+    "character-proficiencies.png": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814",
+    "character-sheet.png": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9",
+    "character-skills.png": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d",
+    "character-templates.png": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa",
+    "colors-theme.png": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932",
+    "common-dialogs.png": "e50e2ee72c772410b8e24b972601de23df75fac136e9761c0cddfda56b4d2240",
+    "companion-assignment.png": "7c3e2218659b6498ff92df995120cfab2029fc7ece507c5c4ace512570482bfb",
+    "construction-place.png": "e366f8cd6bab19eda987b26dfa1e71ee362029c9bb1d53ea0f3a9c5db92e7ce8",
+    "construction.png": "d4de7dbdbfb9ff9d95c560e819a93e4c157c3341b383aae29dd80176abe19843",
+    "consume.png": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab",
+    "craft-batch.png": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a",
+    "craft-recipes.png": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec",
+    "creation-background.png": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335",
+    "creation-mode.png": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68",
+    "creation-profession.png": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577",
+    "creation-scenario.png": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746",
+    "creation-skills.png": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276",
+    "creation-stats.png": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274",
+    "creation-summary.png": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966",
+    "creation-traits.png": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f",
+    "creature-codex.png": "2fd370dd79cdab39f42906f65cf5d5a8e84f48aafc8c3383752e0449b0b0aa20",
+    "credits.png": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b",
+    "diary.png": "b0269a118b45b2b49fad7667b6b90078348df1fa728c4a8aa8eb8ff2037f3bd8",
+    "disassemble.png": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf",
+    "electronic-files.png": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b",
+    "factions.png": "298da72196d7524c7d36fcccb69d57018aadd1978989614bbacb4bf0d205e340",
+    "followers.png": "08a926732c631e3728f9ad2cdb67921a3d6a6dafba83ed8184c06dd20f7203a2",
+    "game-hud.png": "45ffe76dcf6cb3e321ee31275576e11ff436d9c07cd09da949569c8448a30c12",
+    "gunmods.png": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782",
+    "help.png": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938",
+    "inventory.png": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e",
+    "item-compare.png": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858",
+    "item-containers.png": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6",
+    "item-detail.png": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da",
+    "item-unload.png": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49",
+    "item-use.png": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731",
+    "keybindings.png": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44",
+    "liquid-transfer.png": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc",
+    "load-character.png": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807",
+    "loading.png": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4",
+    "look-examine.png": "62fc9e1cf7cccf45e555e7cd5b3c95243e647f0ae1356416686f22d243378746",
+    "main-menu.png": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d",
+    "map-notes.png": "dfb2b5ae15270f1d23055e1526cea06dd6f418b0d417864464692de41a7ee9d9",
+    "martial-arts.png": "2cf54dd6351ed4063ab474b603a227e929aff54be74060305f3bfb655306a1f5",
+    "medical-treatment.png": "098357a5574d2516d18341e68c03eaf778d3f9bb511c33fdd8e8ed1bb8f918bd",
+    "memorial.png": "fb167442467eb7f2ed3b9f61a7d45726a7bbdf6151095088631b2e6270f85add",
+    "message-log.png": "2254d9552d858b558ba79550c2c88ff3d07730b8e8c06f9449741e84d353b7e6",
+    "missions.png": "205f87464e83be208fcaa1cf927e7ddacddcfc141b92bd269e6f8a49e53f3c53",
+    "morale.png": "ead7497906774e397589ee1d68b3c58ec8da19d39d77fe70be4c137e7b719ed3",
+    "motd.png": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f",
+    "multidrop.png": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892",
+    "mutations.png": "4713ad4537b5eb8e460a98458eaf5477d310961c83ceead4eaa1f82b1bfa141b",
+    "nearby-creatures.png": "47e603552933c47635c8bb237201e7c21bca32e31aa17b06a65a2ce1dc27ec19",
+    "npc-orders.png": "99914ed6d7414e3adae48725401660baf3f036bf5a03562f31f4f2db0c2d6a67",
+    "npc-talk.png": "3556c32b8dcd6e45fb2c0f1745cf1e63190b624dbd0ebc5e4b872c2b9031d19f",
+    "npc-trade.png": "dcd9cee3937a93299874305b18ca1f392be104183a5887684a215887dd74ce82",
+    "overmap.png": "d3baa8f14110cabc7b9620d801f0f7e2cad5c8db68133d6002975417f00a5f30",
+    "pickup.png": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d",
+    "read.png": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3",
+    "reload.png": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7",
+    "repair.png": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657",
+    "route-travel.png": "8fc210cd6e17f09d364f09d9adccd34e1a555bd30caf590e8c81b8fd2af331c1",
+    "safemode-rules.png": "d0bd0ec3dd42476605511fdb0dce89b5b139f5f860448b148e70f673d32f574c",
+    "settings-audio.png": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb",
+    "settings-general.png": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43",
+    "settings-graphics.png": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb",
+    "settings-interface.png": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb",
+    "spell-target.png": "c1e296aef3bfb483c19dd0e1390a4b97b124d2b0be8bba11af0c802964b43a0a",
+    "spellbook.png": "12c4f5006ce7965be4d10c8d4c7f07ba077bb8d42112a7886fac58e8c8d8feda",
+    "status-effects.png": "a6c50451bd41d8c7af4b689bd7a85a7cde1f1c9d17f5f504cc1e77352e3d0bec",
+    "terminal.png": "66508357f328073c17c95200e4994b39bf033f41cad77bfac11853cab3c3afcf",
+    "throw-target.png": "5431e91e75b15a0dcfc734d56b4af20ee25358b285c6835210de48e46ae5799b",
+    "translocator.png": "913f02e8b460a7ee7e5f5b5accf5a40a1f19b99a98fc22aa919a892bd7abeedb",
+    "tutorial.png": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989",
+    "vehicle-dashboard.png": "5428645952b513219eb1051b3e2b6303ef6149d69a9c7220e2478bb6eea3bb87",
+    "vehicle-parts.png": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e",
+    "vehicle-refill.png": "ae62af1d6877e38a2ff3f171149ed02f9092382c4279ce585fe7976d1edcbb11",
+    "vending-machine.png": "6391dc033f7b4bb9ed33cf8c966f4382528662e03fea9d16aec7b8918e827fe1",
+    "wait-sleep.png": "7a8c4d818ceb813306f78e1df2169dd89461efdcafdaeee24a0c8bcceb48bd36",
+    "wield.png": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f",
+    "world-create.png": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1",
+    "world-list.png": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0",
+    "world-mods.png": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb",
+    "world-options.png": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c",
+    "worn-layers.png": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd",
+    "zone-activities.png": "7b19401079132b66e40487fc172618ba76e7cf4617461acb0ac7f4d81cf43b1b",
+    "zone-manager.png": "dcf5a3c4776401e1ba493e0ab4c5ac7ab751ec7ee5ec27baa83843dce9fda613"
+  },
+  "afterFreeze": true,
+  "allowedChangedRegion": [
+    86,
+    235,
+    328,
+    938
+  ],
+  "mainScreensByteIdentical": true,
+  "mainScreens": [
+    {
+      "file": "art-delivery/designs/screens/achievements.png",
+      "before": "a728fdfbe866b40dc322c9bf936e8fc34b880f4dbe3ba923d080d66bbe97240a",
+      "after": "a728fdfbe866b40dc322c9bf936e8fc34b880f4dbe3ba923d080d66bbe97240a"
+    },
+    {
+      "file": "art-delivery/designs/screens/activity-progress.png",
+      "before": "72e624cbba6cbbd20090aca9ba13cccf1b25319f063143df2a3e2fa5f1cd0ba1",
+      "after": "72e624cbba6cbbd20090aca9ba13cccf1b25319f063143df2a3e2fa5f1cd0ba1"
+    },
+    {
+      "file": "art-delivery/designs/screens/advanced-inventory.png",
+      "before": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4",
+      "after": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4"
+    },
+    {
+      "file": "art-delivery/designs/screens/aim-ranged.png",
+      "before": "bdca811d6000b0d052a3d2f5bf055cf0bf56d4d68c75dbe177e66fa93342fab4",
+      "after": "bdca811d6000b0d052a3d2f5bf055cf0bf56d4d68c75dbe177e66fa93342fab4"
+    },
+    {
+      "file": "art-delivery/designs/screens/animal-care.png",
+      "before": "6f45df5364ee9bf1d6e55579a81a38140aa7b3d16de4b9502399c23ec36a11e1",
+      "after": "6f45df5364ee9bf1d6e55579a81a38140aa7b3d16de4b9502399c23ec36a11e1"
+    },
+    {
+      "file": "art-delivery/designs/screens/atm-bank.png",
+      "before": "703ac4f40f9251e169dfe8dba873b6c7642eccb27fe83b4799ee35a29173fccc",
+      "after": "703ac4f40f9251e169dfe8dba873b6c7642eccb27fe83b4799ee35a29173fccc"
+    },
+    {
+      "file": "art-delivery/designs/screens/autopickup-rules.png",
+      "before": "dbec7c2928ece729c2cf7e163b52c7a0dfad961f0587bf13523f2e9c8c69a0ca",
+      "after": "dbec7c2928ece729c2cf7e163b52c7a0dfad961f0587bf13523f2e9c8c69a0ca"
+    },
+    {
+      "file": "art-delivery/designs/screens/bionic-surgery.png",
+      "before": "2b191a9e971d8ad74dc1803ae502c81e73ecc30b087330d76bffc295c0468db1",
+      "after": "2b191a9e971d8ad74dc1803ae502c81e73ecc30b087330d76bffc295c0468db1"
+    },
+    {
+      "file": "art-delivery/designs/screens/bionics.png",
+      "before": "c83981af72d47e6cb4b89ce78c6f848b50e5196df7b82c1233d549e574018909",
+      "after": "c83981af72d47e6cb4b89ce78c6f848b50e5196df7b82c1233d549e574018909"
+    },
+    {
+      "file": "art-delivery/designs/screens/body-health.png",
+      "before": "c4db1e3fad87d5efa8610560cac808176fd210aa1a82d9b994922a33dcf0e2c1",
+      "after": "c4db1e3fad87d5efa8610560cac808176fd210aa1a82d9b994922a33dcf0e2c1"
+    },
+    {
+      "file": "art-delivery/designs/screens/butcher-harvest.png",
+      "before": "08d08347ef15d113d994f79bbe84ec50dfedf9045df44232e0c58fcf2475cb74",
+      "after": "08d08347ef15d113d994f79bbe84ec50dfedf9045df44232e0c58fcf2475cb74"
+    },
+    {
+      "file": "art-delivery/designs/screens/camp-overview.png",
+      "before": "264479a6ea0c46e4a4954319fae4156809e3f5b7edebaec6c1c0078b42e48bfe",
+      "after": "264479a6ea0c46e4a4954319fae4156809e3f5b7edebaec6c1c0078b42e48bfe"
+    },
+    {
+      "file": "art-delivery/designs/screens/camp-upgrade.png",
+      "before": "844fa5e396b1729c13674f254d7ba35896a1e7f10fc0410196cdd74de0d15de1",
+      "after": "844fa5e396b1729c13674f254d7ba35896a1e7f10fc0410196cdd74de0d15de1"
+    },
+    {
+      "file": "art-delivery/designs/screens/character-encumbrance.png",
+      "before": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757",
+      "after": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757"
+    },
+    {
+      "file": "art-delivery/designs/screens/character-proficiencies.png",
+      "before": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814",
+      "after": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814"
+    },
+    {
+      "file": "art-delivery/designs/screens/character-sheet.png",
+      "before": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9",
+      "after": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9"
+    },
+    {
+      "file": "art-delivery/designs/screens/character-skills.png",
+      "before": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d",
+      "after": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d"
+    },
+    {
+      "file": "art-delivery/designs/screens/character-templates.png",
+      "before": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa",
+      "after": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa"
+    },
+    {
+      "file": "art-delivery/designs/screens/colors-theme.png",
+      "before": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932",
+      "after": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932"
+    },
+    {
+      "file": "art-delivery/designs/screens/common-dialogs.png",
+      "before": "e50e2ee72c772410b8e24b972601de23df75fac136e9761c0cddfda56b4d2240",
+      "after": "e50e2ee72c772410b8e24b972601de23df75fac136e9761c0cddfda56b4d2240"
+    },
+    {
+      "file": "art-delivery/designs/screens/companion-assignment.png",
+      "before": "7c3e2218659b6498ff92df995120cfab2029fc7ece507c5c4ace512570482bfb",
+      "after": "7c3e2218659b6498ff92df995120cfab2029fc7ece507c5c4ace512570482bfb"
+    },
+    {
+      "file": "art-delivery/designs/screens/construction-place.png",
+      "before": "e366f8cd6bab19eda987b26dfa1e71ee362029c9bb1d53ea0f3a9c5db92e7ce8",
+      "after": "e366f8cd6bab19eda987b26dfa1e71ee362029c9bb1d53ea0f3a9c5db92e7ce8"
+    },
+    {
+      "file": "art-delivery/designs/screens/construction.png",
+      "before": "d4de7dbdbfb9ff9d95c560e819a93e4c157c3341b383aae29dd80176abe19843",
+      "after": "d4de7dbdbfb9ff9d95c560e819a93e4c157c3341b383aae29dd80176abe19843"
+    },
+    {
+      "file": "art-delivery/designs/screens/consume.png",
+      "before": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab",
+      "after": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab"
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-batch.png",
+      "before": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a",
+      "after": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a"
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-recipes.png",
+      "before": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec",
+      "after": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-background.png",
+      "before": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335",
+      "after": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-mode.png",
+      "before": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68",
+      "after": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-profession.png",
+      "before": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577",
+      "after": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-scenario.png",
+      "before": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746",
+      "after": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-skills.png",
+      "before": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276",
+      "after": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-stats.png",
+      "before": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274",
+      "after": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-summary.png",
+      "before": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966",
+      "after": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966"
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-traits.png",
+      "before": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f",
+      "after": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f"
+    },
+    {
+      "file": "art-delivery/designs/screens/creature-codex.png",
+      "before": "2fd370dd79cdab39f42906f65cf5d5a8e84f48aafc8c3383752e0449b0b0aa20",
+      "after": "2fd370dd79cdab39f42906f65cf5d5a8e84f48aafc8c3383752e0449b0b0aa20"
+    },
+    {
+      "file": "art-delivery/designs/screens/credits.png",
+      "before": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b",
+      "after": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b"
+    },
+    {
+      "file": "art-delivery/designs/screens/diary.png",
+      "before": "b0269a118b45b2b49fad7667b6b90078348df1fa728c4a8aa8eb8ff2037f3bd8",
+      "after": "b0269a118b45b2b49fad7667b6b90078348df1fa728c4a8aa8eb8ff2037f3bd8"
+    },
+    {
+      "file": "art-delivery/designs/screens/disassemble.png",
+      "before": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf",
+      "after": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf"
+    },
+    {
+      "file": "art-delivery/designs/screens/electronic-files.png",
+      "before": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b",
+      "after": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b"
+    },
+    {
+      "file": "art-delivery/designs/screens/factions.png",
+      "before": "298da72196d7524c7d36fcccb69d57018aadd1978989614bbacb4bf0d205e340",
+      "after": "298da72196d7524c7d36fcccb69d57018aadd1978989614bbacb4bf0d205e340"
+    },
+    {
+      "file": "art-delivery/designs/screens/followers.png",
+      "before": "08a926732c631e3728f9ad2cdb67921a3d6a6dafba83ed8184c06dd20f7203a2",
+      "after": "08a926732c631e3728f9ad2cdb67921a3d6a6dafba83ed8184c06dd20f7203a2"
+    },
+    {
+      "file": "art-delivery/designs/screens/game-hud.png",
+      "before": "45ffe76dcf6cb3e321ee31275576e11ff436d9c07cd09da949569c8448a30c12",
+      "after": "45ffe76dcf6cb3e321ee31275576e11ff436d9c07cd09da949569c8448a30c12"
+    },
+    {
+      "file": "art-delivery/designs/screens/gunmods.png",
+      "before": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782",
+      "after": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782"
+    },
+    {
+      "file": "art-delivery/designs/screens/help.png",
+      "before": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938",
+      "after": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938"
+    },
+    {
+      "file": "art-delivery/designs/screens/inventory.png",
+      "before": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e",
+      "after": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e"
+    },
+    {
+      "file": "art-delivery/designs/screens/item-compare.png",
+      "before": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858",
+      "after": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858"
+    },
+    {
+      "file": "art-delivery/designs/screens/item-containers.png",
+      "before": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6",
+      "after": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6"
+    },
+    {
+      "file": "art-delivery/designs/screens/item-detail.png",
+      "before": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da",
+      "after": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da"
+    },
+    {
+      "file": "art-delivery/designs/screens/item-unload.png",
+      "before": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49",
+      "after": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49"
+    },
+    {
+      "file": "art-delivery/designs/screens/item-use.png",
+      "before": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731",
+      "after": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731"
+    },
+    {
+      "file": "art-delivery/designs/screens/keybindings.png",
+      "before": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44",
+      "after": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44"
+    },
+    {
+      "file": "art-delivery/designs/screens/liquid-transfer.png",
+      "before": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc",
+      "after": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc"
+    },
+    {
+      "file": "art-delivery/designs/screens/load-character.png",
+      "before": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807",
+      "after": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807"
+    },
+    {
+      "file": "art-delivery/designs/screens/loading.png",
+      "before": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4",
+      "after": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4"
+    },
+    {
+      "file": "art-delivery/designs/screens/look-examine.png",
+      "before": "62fc9e1cf7cccf45e555e7cd5b3c95243e647f0ae1356416686f22d243378746",
+      "after": "62fc9e1cf7cccf45e555e7cd5b3c95243e647f0ae1356416686f22d243378746"
+    },
+    {
+      "file": "art-delivery/designs/screens/main-menu.png",
+      "before": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d",
+      "after": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d"
+    },
+    {
+      "file": "art-delivery/designs/screens/map-notes.png",
+      "before": "dfb2b5ae15270f1d23055e1526cea06dd6f418b0d417864464692de41a7ee9d9",
+      "after": "dfb2b5ae15270f1d23055e1526cea06dd6f418b0d417864464692de41a7ee9d9"
+    },
+    {
+      "file": "art-delivery/designs/screens/martial-arts.png",
+      "before": "2cf54dd6351ed4063ab474b603a227e929aff54be74060305f3bfb655306a1f5",
+      "after": "2cf54dd6351ed4063ab474b603a227e929aff54be74060305f3bfb655306a1f5"
+    },
+    {
+      "file": "art-delivery/designs/screens/medical-treatment.png",
+      "before": "098357a5574d2516d18341e68c03eaf778d3f9bb511c33fdd8e8ed1bb8f918bd",
+      "after": "098357a5574d2516d18341e68c03eaf778d3f9bb511c33fdd8e8ed1bb8f918bd"
+    },
+    {
+      "file": "art-delivery/designs/screens/memorial.png",
+      "before": "fb167442467eb7f2ed3b9f61a7d45726a7bbdf6151095088631b2e6270f85add",
+      "after": "fb167442467eb7f2ed3b9f61a7d45726a7bbdf6151095088631b2e6270f85add"
+    },
+    {
+      "file": "art-delivery/designs/screens/message-log.png",
+      "before": "2254d9552d858b558ba79550c2c88ff3d07730b8e8c06f9449741e84d353b7e6",
+      "after": "2254d9552d858b558ba79550c2c88ff3d07730b8e8c06f9449741e84d353b7e6"
+    },
+    {
+      "file": "art-delivery/designs/screens/missions.png",
+      "before": "205f87464e83be208fcaa1cf927e7ddacddcfc141b92bd269e6f8a49e53f3c53",
+      "after": "205f87464e83be208fcaa1cf927e7ddacddcfc141b92bd269e6f8a49e53f3c53"
+    },
+    {
+      "file": "art-delivery/designs/screens/morale.png",
+      "before": "ead7497906774e397589ee1d68b3c58ec8da19d39d77fe70be4c137e7b719ed3",
+      "after": "ead7497906774e397589ee1d68b3c58ec8da19d39d77fe70be4c137e7b719ed3"
+    },
+    {
+      "file": "art-delivery/designs/screens/motd.png",
+      "before": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f",
+      "after": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f"
+    },
+    {
+      "file": "art-delivery/designs/screens/multidrop.png",
+      "before": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892",
+      "after": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892"
+    },
+    {
+      "file": "art-delivery/designs/screens/mutations.png",
+      "before": "4713ad4537b5eb8e460a98458eaf5477d310961c83ceead4eaa1f82b1bfa141b",
+      "after": "4713ad4537b5eb8e460a98458eaf5477d310961c83ceead4eaa1f82b1bfa141b"
+    },
+    {
+      "file": "art-delivery/designs/screens/nearby-creatures.png",
+      "before": "47e603552933c47635c8bb237201e7c21bca32e31aa17b06a65a2ce1dc27ec19",
+      "after": "47e603552933c47635c8bb237201e7c21bca32e31aa17b06a65a2ce1dc27ec19"
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-orders.png",
+      "before": "99914ed6d7414e3adae48725401660baf3f036bf5a03562f31f4f2db0c2d6a67",
+      "after": "99914ed6d7414e3adae48725401660baf3f036bf5a03562f31f4f2db0c2d6a67"
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-talk.png",
+      "before": "3556c32b8dcd6e45fb2c0f1745cf1e63190b624dbd0ebc5e4b872c2b9031d19f",
+      "after": "3556c32b8dcd6e45fb2c0f1745cf1e63190b624dbd0ebc5e4b872c2b9031d19f"
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-trade.png",
+      "before": "dcd9cee3937a93299874305b18ca1f392be104183a5887684a215887dd74ce82",
+      "after": "dcd9cee3937a93299874305b18ca1f392be104183a5887684a215887dd74ce82"
+    },
+    {
+      "file": "art-delivery/designs/screens/overmap.png",
+      "before": "d3baa8f14110cabc7b9620d801f0f7e2cad5c8db68133d6002975417f00a5f30",
+      "after": "d3baa8f14110cabc7b9620d801f0f7e2cad5c8db68133d6002975417f00a5f30"
+    },
+    {
+      "file": "art-delivery/designs/screens/pickup.png",
+      "before": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d",
+      "after": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d"
+    },
+    {
+      "file": "art-delivery/designs/screens/read.png",
+      "before": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3",
+      "after": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3"
+    },
+    {
+      "file": "art-delivery/designs/screens/reload.png",
+      "before": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7",
+      "after": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7"
+    },
+    {
+      "file": "art-delivery/designs/screens/repair.png",
+      "before": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657",
+      "after": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657"
+    },
+    {
+      "file": "art-delivery/designs/screens/route-travel.png",
+      "before": "8fc210cd6e17f09d364f09d9adccd34e1a555bd30caf590e8c81b8fd2af331c1",
+      "after": "8fc210cd6e17f09d364f09d9adccd34e1a555bd30caf590e8c81b8fd2af331c1"
+    },
+    {
+      "file": "art-delivery/designs/screens/safemode-rules.png",
+      "before": "d0bd0ec3dd42476605511fdb0dce89b5b139f5f860448b148e70f673d32f574c",
+      "after": "d0bd0ec3dd42476605511fdb0dce89b5b139f5f860448b148e70f673d32f574c"
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-audio.png",
+      "before": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb",
+      "after": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb"
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-general.png",
+      "before": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43",
+      "after": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43"
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-graphics.png",
+      "before": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb",
+      "after": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb"
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-interface.png",
+      "before": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb",
+      "after": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb"
+    },
+    {
+      "file": "art-delivery/designs/screens/spell-target.png",
+      "before": "c1e296aef3bfb483c19dd0e1390a4b97b124d2b0be8bba11af0c802964b43a0a",
+      "after": "c1e296aef3bfb483c19dd0e1390a4b97b124d2b0be8bba11af0c802964b43a0a"
+    },
+    {
+      "file": "art-delivery/designs/screens/spellbook.png",
+      "before": "12c4f5006ce7965be4d10c8d4c7f07ba077bb8d42112a7886fac58e8c8d8feda",
+      "after": "12c4f5006ce7965be4d10c8d4c7f07ba077bb8d42112a7886fac58e8c8d8feda"
+    },
+    {
+      "file": "art-delivery/designs/screens/status-effects.png",
+      "before": "a6c50451bd41d8c7af4b689bd7a85a7cde1f1c9d17f5f504cc1e77352e3d0bec",
+      "after": "a6c50451bd41d8c7af4b689bd7a85a7cde1f1c9d17f5f504cc1e77352e3d0bec"
+    },
+    {
+      "file": "art-delivery/designs/screens/terminal.png",
+      "before": "66508357f328073c17c95200e4994b39bf033f41cad77bfac11853cab3c3afcf",
+      "after": "66508357f328073c17c95200e4994b39bf033f41cad77bfac11853cab3c3afcf"
+    },
+    {
+      "file": "art-delivery/designs/screens/throw-target.png",
+      "before": "5431e91e75b15a0dcfc734d56b4af20ee25358b285c6835210de48e46ae5799b",
+      "after": "5431e91e75b15a0dcfc734d56b4af20ee25358b285c6835210de48e46ae5799b"
+    },
+    {
+      "file": "art-delivery/designs/screens/translocator.png",
+      "before": "913f02e8b460a7ee7e5f5b5accf5a40a1f19b99a98fc22aa919a892bd7abeedb",
+      "after": "913f02e8b460a7ee7e5f5b5accf5a40a1f19b99a98fc22aa919a892bd7abeedb"
+    },
+    {
+      "file": "art-delivery/designs/screens/tutorial.png",
+      "before": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989",
+      "after": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989"
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-dashboard.png",
+      "before": "5428645952b513219eb1051b3e2b6303ef6149d69a9c7220e2478bb6eea3bb87",
+      "after": "5428645952b513219eb1051b3e2b6303ef6149d69a9c7220e2478bb6eea3bb87"
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-parts.png",
+      "before": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e",
+      "after": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e"
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-refill.png",
+      "before": "ae62af1d6877e38a2ff3f171149ed02f9092382c4279ce585fe7976d1edcbb11",
+      "after": "ae62af1d6877e38a2ff3f171149ed02f9092382c4279ce585fe7976d1edcbb11"
+    },
+    {
+      "file": "art-delivery/designs/screens/vending-machine.png",
+      "before": "6391dc033f7b4bb9ed33cf8c966f4382528662e03fea9d16aec7b8918e827fe1",
+      "after": "6391dc033f7b4bb9ed33cf8c966f4382528662e03fea9d16aec7b8918e827fe1"
+    },
+    {
+      "file": "art-delivery/designs/screens/wait-sleep.png",
+      "before": "7a8c4d818ceb813306f78e1df2169dd89461efdcafdaeee24a0c8bcceb48bd36",
+      "after": "7a8c4d818ceb813306f78e1df2169dd89461efdcafdaeee24a0c8bcceb48bd36"
+    },
+    {
+      "file": "art-delivery/designs/screens/wield.png",
+      "before": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f",
+      "after": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f"
+    },
+    {
+      "file": "art-delivery/designs/screens/world-create.png",
+      "before": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1",
+      "after": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1"
+    },
+    {
+      "file": "art-delivery/designs/screens/world-list.png",
+      "before": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0",
+      "after": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0"
+    },
+    {
+      "file": "art-delivery/designs/screens/world-mods.png",
+      "before": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb",
+      "after": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb"
+    },
+    {
+      "file": "art-delivery/designs/screens/world-options.png",
+      "before": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c",
+      "after": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c"
+    },
+    {
+      "file": "art-delivery/designs/screens/worn-layers.png",
+      "before": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd",
+      "after": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd"
+    },
+    {
+      "file": "art-delivery/designs/screens/zone-activities.png",
+      "before": "7b19401079132b66e40487fc172618ba76e7cf4617461acb0ac7f4d81cf43b1b",
+      "after": "7b19401079132b66e40487fc172618ba76e7cf4617461acb0ac7f4d81cf43b1b"
+    },
+    {
+      "file": "art-delivery/designs/screens/zone-manager.png",
+      "before": "dcf5a3c4776401e1ba493e0ab4c5ac7ab751ec7ee5ec27baa83843dce9fda613",
+      "after": "dcf5a3c4776401e1ba493e0ab4c5ac7ab751ec7ee5ec27baa83843dce9fda613"
+    }
+  ],
+  "stateBoards": [
+    {
+      "file": "art-delivery/designs/states/achievements--states-1.png",
+      "before": "3fe49af26a9cef5098b09f285a6caf6d11e76c4de70dc101ea5062613aecd6d8",
+      "after": "daad7b9d5c4f9cfb75ba06b36f62aa2d4f417e669010ed8ae40afea5f93e71c0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/activity-progress--states-1.png",
+      "before": "098e3fd0edbdf14f5a0c6edb86740eb544da2652284639322d1e77ed77b7b30c",
+      "after": "fab0120e82b18352238be25b87c3e0c548849f70075528ac4d9d8f4fc5ed357c",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/activity-progress--states-2.png",
+      "before": "d2be0b939f5673db87fde183a084480b5601ea5e267d600ff512fd95a0a11811",
+      "after": "638b4cce2f831bffc3940ccdbaa95b81dcd7f0f5a587151d2be68659be795f65",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+      "before": "cce72eb6675bd2092fc3fbe5c96e964e107d52e37364d840f58c9c14ef4893fd",
+      "after": "752fdb24a50e6bc75451cc055f4239e01cf81b1c6e095437cf8d2a879dea1ef2",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+      "before": "c001b0ad11a08526af3e526e4843b4b5d9065ff6c6dbb30b83b7e9e8decc2e81",
+      "after": "89e7e5af717ca7202b773fde33563e2fee7274ed68f03379d04953cf49791f9e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/aim-ranged--states-1.png",
+      "before": "1a39dd9cf1089659399572b51167262bcb0f07bf95b29c1764aeef3d87d52078",
+      "after": "c461e7b5df1c7ae978a759e02e40c84860040b73e8f890fc3d1550ae82cf4371",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/animal-care--states-1.png",
+      "before": "b0acda4b9cbd961efee27a0b10a8873b0e68b2bf18793e10a14bd937167cfc9f",
+      "after": "e3fcd3c9299554162edb9876553ca0127570049e6e25fe2efa2e1dc0f3719941",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/animal-care--states-2.png",
+      "before": "6f352527114f9c0b55a2a615488e257815259f057fcb6d7a341f47b8aead8dcc",
+      "after": "d06ff14cc47dab28a462eb8ad5ef2c66d7412febe37bb7f52636895d2bf6e871",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/atm-bank--states-1.png",
+      "before": "2b6b71cc25605126eaadda1eb6d03946d36ce84fcf213d0684cbc33aa13e6b58",
+      "after": "c1bc6b9313d252abc60518f558cf05eeebffeb109e95ff54e23a17c8f6819f28",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/autopickup-rules--states-1.png",
+      "before": "efbcc8ad6f3ba1dc82cc1f47ca692d714e2fe17a88a5e44875d7e65a691e86bc",
+      "after": "8cf4c76124c345597aa774e9f7318196c4ec94494fb7502e54e6f434da9af462",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/autopickup-rules--states-2.png",
+      "before": "55e9d4bfae4cb9269936d82c44f8d878866cce8be568e8c6a7789dcac1066c95",
+      "after": "736121bb333c0c15a78d47e65dae6361116628e66bdd23bfa6938461e59fa00f",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/bionic-surgery--states-1.png",
+      "before": "c1bda36a5584702fa324f5316bb6a96dd6f703b12f776087217290dc61290d69",
+      "after": "16fc172e35f8b21972cc606f45dcce55d399377966e981d2984276177c8ba295",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/bionic-surgery--states-2.png",
+      "before": "d46e328d60c808b461640b3068e0725d2638fe10fc7ecb012c14b674dc8a788d",
+      "after": "f2634c245d590013e1aefabfc7f519e711743fe599e03a3d54178adc4e33003d",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/bionics--states-1.png",
+      "before": "a01c7f95d372808f3ab3a44fea59676edc2569fda3b35e41aee19cba6857179a",
+      "after": "f85f1c72b4dd04d6ac48d036da56d123bf2f07b87f7845318d3304e993db12b9",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/bionics--states-2.png",
+      "before": "b64d91205b632555b300926283ccd3c7a01d326152018fe2ba28891608d48444",
+      "after": "d8193c47d4fcd9ec9def4b9c9f5bc786a80c16187563ab892cf21e8e4095e711",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/body-health--states-1.png",
+      "before": "97139a54d6546fa299ed411fb9d525a4a12a18746b15506eb5a9b1744149e2e2",
+      "after": "bb6f9aed1480e626a95563221036dc61a4977fe5aaaf5a9ab59ee2c5f515ac9d",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/butcher-harvest--states-1.png",
+      "before": "f4071f172b03186a3c6375e64f1ae7168d3124ebcc29e00fcf82e1026cf81e89",
+      "after": "5b22fe208f6709cde6f3438244b861ce77b48202f289bc5239941f1a176a5dc3",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/butcher-harvest--states-2.png",
+      "before": "22e57ae2e6c026712e0220c4e2786634c0dce76d6de4b23947efd59178d04d05",
+      "after": "917ed2dff482f4ead9a63e2295868d5e516d477f95b6be460e5a86e0aa83da29",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/camp-overview--states-1.png",
+      "before": "e3785fc585e0459ce35c25474ff9090f12bec47dff0d62f9df09cd2050486e77",
+      "after": "873b6445acf8ba9ddcadc1eef64a9437fa22841eef478f6133d5412f11a2f242",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/camp-upgrade--states-1.png",
+      "before": "58031557bd2529316d483819b2f2e268a587addda5f0423366a389b51574b87e",
+      "after": "9d7afae196ebb0d66d6963424fcdc2ddc1335cfa6de8536e2915a4cc1a5f51cd",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/camp-upgrade--states-2.png",
+      "before": "ee8e9367604a1ad4f9992494dcafe6514fc2e1f9dc7fd4fe45e0875c9f4df462",
+      "after": "7caf3bf877bf3393595e1e648de0572298313c7da0ac73ff45ec1a8750939afa",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+      "before": "258a82c21ec4099abec93769ddd11225805b2507ef3373a518a1bd68d7a57572",
+      "after": "d4b4f4f7c284fd9b55c87b77e1fa3b730b72c26c709667ebf5c61986b3653f3b",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+      "before": "db009c8834f553db011753c9811c21458960cd497f6805a4333d13779063c8d0",
+      "after": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/character-sheet--states-1.png",
+      "before": "7242c27088f9d97a0d8f2a5f6a8c1dba9a7ef2433cd06f3b7bc115e3d1e21155",
+      "after": "270a08aef2b3de1ef8ad40e96fd4a96602bf10d460554373159132ce2bae914e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/character-skills--states-1.png",
+      "before": "54eb71bb1ee2842d3e728e1f706accdfd6267c97bac19c0414f64dbb3fc5e359",
+      "after": "0df332f62c5361454ba0e9217b21de349806713f30e5da39a525385bc5b90b0f",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/character-templates--states-1.png",
+      "before": "98a55db9ee09d24a11dd769e18f7060635abf316b6d084f358c2d4804e51fbe5",
+      "after": "23fad223e7a11f886058f7651430f252b568a7a0b4c5200a20a9a00835b4ebbc",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/colors-theme--states-1.png",
+      "before": "34303f7c444486e7996b805458893d2797400cd519d7a0df1b244dcd4ed70d60",
+      "after": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+      "before": "8f430507dfaa1d3dc83695f27dd6aa97900256b0cc26ec64edaf953bf1398e36",
+      "after": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/companion-assignment--states-1.png",
+      "before": "01f46f8b0cfd822cec0ccc4c6ad87dd894dd87e85cbb69956bb51a88a41372d5",
+      "after": "4533b29f26a95f7acd7579917b1e02dda086257c4e4de942f57d6f9ebe0159aa",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/companion-assignment--states-2.png",
+      "before": "940657b9e32ec2d7bd7ed26754adee877af7eb759119685de8e040b573c4e3a5",
+      "after": "97c837d31465bbb2b3c079115b77bfe51b48e05b5bfee211e80a860f6b787db5",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/construction--states-1.png",
+      "before": "b2b4d961e63df802b720a8390aedd432cacfa75307f11a8a73f2b715d608fd14",
+      "after": "ff073cfe8a1e7f984b12e536133c3c62e044efd5b85f43d1e014e31870817968",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/construction-place--states-1.png",
+      "before": "9382dc0ce53fdcd863b15889bd29a4d9094e7178ee7c218a3b4d50d06fc0794b",
+      "after": "fab008f893fec8d3e1c7263c335468bb4e8d3e5b061f875dd16b1d5a539aaf5e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/consume--states-1.png",
+      "before": "5b13645dcd32bce721823658f3267cd2d3a802aa2caf229012ca2e4cc774f5c1",
+      "after": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-1.png",
+      "before": "6e56bb536c140e08bcf2571fc17089d19e8f73ced362bce70fcba34c91ba4b4f",
+      "after": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-2.png",
+      "before": "63efb29b2c1b1a07b9b154b4c205466595eac6475762829c9dc549a76864c812",
+      "after": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+      "before": "fe20242540eabb0de5794dc2443243c99874ffaf0a36f3aaca59184fb2f1ef78",
+      "after": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+      "before": "cd6184fa6157227d2cfe0202fc2a01b831c2143aa7d246ff0874a1f1656568ae",
+      "after": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-background--states-1.png",
+      "before": "7bd7a66c08784258c089e7c0e09cce5cd6c81829690080d9c25ccb6677fd51f7",
+      "after": "723723f6cc9eacedc7dc28fd340ca446333740a645a8ba9847f104bb01dae416",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-mode--states-1.png",
+      "before": "6679f23611042d33af2e425222fbbc2007068020b66c0a1fdad6e7d3066db154",
+      "after": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-profession--states-1.png",
+      "before": "ef6dba5ca4c3d2c09d71a8316a9a62b89d3d04bed864e79e5d6551e207a18a19",
+      "after": "6441ae0f4f5cf314f28a62647d0fde677c57bbeaea73423b680e50b02f9bd821",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+      "before": "afcda7b208bffb3636ba3b3df9483189d1316c6b83d6da948f2f6c2bf1a66b13",
+      "after": "a653cf6b28ef1266f6862399df362a7bc2a86747daa378d9a54d9a0a74eec7d0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-skills--states-1.png",
+      "before": "cce9baad02825e76eac8382f6ce7909ee20e2a7db9011b4b7aba8ecc524c6b20",
+      "after": "32a999d4bd2879b4fe3c613bbc59b9153ab11d298e160b534075dcc7ace46dbd",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-stats--states-1.png",
+      "before": "2d48d7e406a94cbf2b0b6fc47f088f998f13c183a78ba70cef51f7d64e4caff3",
+      "after": "f148c85b876f49474ce88acf612c914330a735033d4ca9f2f65c000b05437ad8",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-1.png",
+      "before": "2e489378e9f34d2080297b2e27b2a5aa7a61b62da708d82dc51b9e301ed6ae48",
+      "after": "7cb81f2e2541a4a94af76976a61372455bbc8fb605f355219046548227313261",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-2.png",
+      "before": "d2a3163af6bd9f151f754a70a3feedd7ce77a34c4f3f05e100fa964004a0b21d",
+      "after": "9bb5185a3826469bb86c3bd46dc86b952125e179dd7b07462f2a1fb4cd15c4c8",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-1.png",
+      "before": "27e9a8d71d025780f1a1ca3e2a34e7d5bdd1ed3c520b78cd1d55e2f4e197b44b",
+      "after": "6e0711d8b79bf96358f21dd83a609fef59e72082c5378a095577f84d1df375d5",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-2.png",
+      "before": "4659be7daf98450c47884d4ab8358a29a44555d0ebde2902eefbb8a1090febc8",
+      "after": "292d51c29f6b4fd6ea7bf7cf2309343b824dfc34026f529e52c39245855af99c",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/creature-codex--states-1.png",
+      "before": "bab52e54d78c2c34b4b3c6de153c2b1384ee4ec8d3b89c6530433742f3b0bc49",
+      "after": "6fa92b2645c1d8d4fbf131b3761071d4e80a1adba441d6de76093c6791f28228",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/credits--states-1.png",
+      "before": "6415d534b4eb1b08a072780732360e5466f2cdb49d1151aa0a1c0522d28a7581",
+      "after": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/diary--states-1.png",
+      "before": "9b2d73501bfe447d56460046c239d5fccb713f33d94fed81e41e78020ef677a1",
+      "after": "08294211309846fb76ed6057a55b23f81f02dbbd5483f8a2f4e852f0664d0c3b",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-1.png",
+      "before": "0dbb66108f4470d0603c1379e7265130b411e7f8fcbd0975bd269aa3d723a5dc",
+      "after": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-2.png",
+      "before": "e030735d1cb4a6d61da16b9b6241d6308deb9a67087694d99b441e4ae3c75597",
+      "after": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-1.png",
+      "before": "512b2041ec0073d5cc758326268cbf7a0918142d3984eb2802369666ba926306",
+      "after": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-2.png",
+      "before": "667b76b62b4f36fde0705ad68d680e96324b675f3cb9d71e3ff49a133eeff91c",
+      "after": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/factions--states-1.png",
+      "before": "38c42ec2e3c6fb81586af3e8654ea9e35283eeeb14928b7f7e74a44a575d6312",
+      "after": "db332a8d1a5a16624262b083d579b67a95bc56944652ee74a204059fa6d4f1b9",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/followers--states-1.png",
+      "before": "8606bd5293a82aa6899854cd3854b54ff2c93f14d8db257b4aa8aa0ca55824af",
+      "after": "b9d605476aff6078f39ba8baa24402c4800c11de539a031e3ac017c1a9e2c88e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/game-hud--states-1.png",
+      "before": "8823e7efbb5796220b6313906a33f7e392073396bcb8c8c3baf455642a79e072",
+      "after": "e4c633754c1613a1453d66d3c657ecd95c7542665a98f26b5b081106a3ec1d15",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/game-hud--states-2.png",
+      "before": "ea47769a6b9ff0bd055f0459c4880c38dea2d9b2f56e5a9ae8517a55c791d1a9",
+      "after": "349ab184045ec9170f256effba16eab1729a27cdbab7a710ceb6bb37b9740235",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-1.png",
+      "before": "8722d78f3cd8c9da42e70a0859be4f3237a602754bd9d2620ce43b0922b7dc6b",
+      "after": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-2.png",
+      "before": "b104c5e649a6de6ffce8ac3f7261ef3f0baf9bc4f8008b7435c20c880f6416e9",
+      "after": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/help--states-1.png",
+      "before": "9df14f98a9fb5ff7c5a2488c9bcd0ea4adc742132e074fe3e84bf29f26cded77",
+      "after": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-1.png",
+      "before": "0a50687e918d866db3f13e034b4967a04e504dc6a055305a1e779b00df355736",
+      "after": "3b95f8c737591c4c962711f6af3714ceef375dcd844ece09f669a28eeb9bae3d",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-2.png",
+      "before": "2bc0fe50a1a21265a78bf402db199c6599c86ef774e84908b0166561f34fb8c3",
+      "after": "119c8809dde6484f0d19592a95bb9118e4eaa44a7cbeff2eece1cced7b3bda82",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-compare--states-1.png",
+      "before": "894f4a46b9f71d161f2827da063680d8ab4094d1e1b36d6f9e9f8cf4278ca130",
+      "after": "065b2ba1f1bc646dbe253b89bfb5ceeb243e8a563d74b93eb3a4db9f81b30530",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-1.png",
+      "before": "ceecd0833fcae4d453ce3277e22269979477e63e15352b4be96dc93d10d83b2c",
+      "after": "6d3e3bc9e0073e0fc28c12d571300ca7ec36611e46328d54d72edb5f25f5395b",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-2.png",
+      "before": "ec0a730deae4e444139ceb5d12ec111e509d5322108a2aa3a713735af40818ee",
+      "after": "8b3bedb258bac82d41571fdf1194fd477d2f491941cb72795608434ae1881c83",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-detail--states-1.png",
+      "before": "afb9f0abda7d17275f3a7930bc3b0c6e382e7ba2776cbff1fdd583ac0b8558d3",
+      "after": "c2d830ef8725e63b719dc58a67ef7dacd55728d5ffd2b45e8fbc9bf0d3640ebb",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-unload--states-1.png",
+      "before": "77044dc991e98be4db9c20ddbc287721759b44be3b113c6cb7e7cfaa472064d3",
+      "after": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/item-use--states-1.png",
+      "before": "b79d344b1d48ad3a2b24ad274f09235e41e07aade28703b8d6672e6bb1f80cad",
+      "after": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-1.png",
+      "before": "4e04029cec1cff116a181395f766b92196ab81d615409314cff773cc63eb3d2c",
+      "after": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-2.png",
+      "before": "c300571943cb72561b9d37f44b023840a4a947aa447f4d0969b38fa9ad380150",
+      "after": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+      "before": "15d0c120fccc3831f8a0160853d7b3d1ae3b30edd743619261045ba8ad53f0cc",
+      "after": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/load-character--states-1.png",
+      "before": "0eee7bf4f57c93a11264eb6253d911e8b28cb107086a27c007f49a499015a90a",
+      "after": "400e4de21f8e9c8c30a3c91ed988c8140bcac82f34565f306da7a643ef5efb12",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/loading--states-1.png",
+      "before": "c0588e175f2913dae831ff4e6d5ff5513bed0be6601fa31e2dc9a7b62d808d82",
+      "after": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/look-examine--states-1.png",
+      "before": "7a07f8602185dd4cf2eeb9c7efbf94a8f15532f5cb2045ca3ca3c119ab7a3275",
+      "after": "a341ddae6f2303a0a3d58ea859dd9f880be0390f4dea277b5bd8161892aadd50",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/main-menu--states-1.png",
+      "before": "7ddfd96677df34188a931e30458918c431cd894c1bf817cd84662b519257ef7b",
+      "after": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/map-notes--states-1.png",
+      "before": "d6ba044afa2ff0d54ce0401c960acea7e449e0671d78561b7a6b9a2d225e05d0",
+      "after": "ac18ead7aa12f2121dc668051ddfbb8a120ed7eb8396aae96aa763b9fca26ed2",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/martial-arts--states-1.png",
+      "before": "128b1088a471c4b32f613d79be529fb1dddcc4d7e16c3aee10806f8d2fc635a9",
+      "after": "0f7c11d4c2aaa63458585763eadc553609a568e5d3b4b833218ffabc98b57c1a",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/medical-treatment--states-1.png",
+      "before": "d367e5aebbaa051852100737ba6daf8d97bc08c085aba21f877aaf64b59da43e",
+      "after": "a3b524bf52dd1a4a011d7cea6ca3b014b0d889bb1299b2412ccadfc2ac9bfaa7",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/memorial--states-1.png",
+      "before": "aa81beef24419b57d5527cc229f453221c662b8b3a383262172822ded30decce",
+      "after": "e62a00d40b3ce6c5677e5401017c0bf4c00fedf88dbddea1805bcd6f7c55c03a",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/message-log--states-1.png",
+      "before": "b8bf94458118ab10b7f62c177fff4fe530c59e2b699c2819a05c227d70d7abaf",
+      "after": "0af9697fe81e94999813fd10d7b7596ede85114bbdc252534b6060a2e68548bc",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/missions--states-1.png",
+      "before": "e400d9fee6060069cee747afbf9790eff520442606d1735827a6f0be39957590",
+      "after": "9be0f0382d6fce7ae6f666993673f91ca489fd7e4cd2417baa66e8ffa74a6663",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/morale--states-1.png",
+      "before": "ef5ac4167190741f4e31c2ef0e7217883f8e8e813a58d5a2095d2cb82075bbb0",
+      "after": "7dd173e9a131f99d5a1f97b636f23f26c475f13533af4c1b91770bae10b4b983",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/motd--states-1.png",
+      "before": "787d9814218e50a9defe6f42533ac9fb9d7eb3b1ddb745d72926af15b443ddbb",
+      "after": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/multidrop--states-1.png",
+      "before": "66a8dcde2b76d176fae7d67eaacc321b531fc72556836bdf3985d87476875da7",
+      "after": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/mutations--states-1.png",
+      "before": "7854074b096139896a81c859aa9e739fed4c6a03e5b56235e19c37758ac3ef61",
+      "after": "9dfe2413a7c3fee7c20b6177b50922dee4fa0d04399dce0833b5828ea0e2a760",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/nearby-creatures--states-1.png",
+      "before": "cc0638bfe9c22160f8e58284b2dc2949562c9d1fc67fae5e0cbafeaca13bf8c2",
+      "after": "5e51ebb5906b81c5de26392d65c3db69bde58a10d2f08ed739d863531711c1a3",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/npc-orders--states-1.png",
+      "before": "3fed1ab35f9251fd6693984fe00d8959e98a7af3275f67c71ad2000f21e6eaab",
+      "after": "f66b550115c9bb102d1e84e3dd5d379229452289d85f57fdff4b12d42be61203",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/npc-talk--states-1.png",
+      "before": "5a46da77c85eb5fbbc7029a65e5ef7dedb3103498506277a96817bee8e3bf9b9",
+      "after": "a33faf3f738aeaf636d8dbd7601cd6205827c0ce8d21247b24f14f65e0b610ce",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/npc-trade--states-1.png",
+      "before": "4a336d4540584df641b062a7781268f1c11f5e4562da2aea5878a8ee9a91b9cf",
+      "after": "5a4090eb832b9f3cded1ee948531141d01d40d7a6c6cafc96bb09e19e953d3ca",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/npc-trade--states-2.png",
+      "before": "3f43114445cb7ee20e2ba6b5543fcfaccbd3350a40ed39713d5c780dd1f3adb8",
+      "after": "d639dc0aef96625644cbba47465da474f74c1f857de9c06f468ab50abeb231d7",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/overmap--states-1.png",
+      "before": "15d1e50e3f7faf0aa9a206e395ffe197dacfc779c46395def4f14de91c19cf84",
+      "after": "7a6c88cff675eb2499596e4f419c300f9102a501abd44432c3298cdee6053c3f",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/pickup--states-1.png",
+      "before": "668f6a887b661568c75b34df6c5e76e2cc03c97e15c4bff2f0439d329359efc0",
+      "after": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-1.png",
+      "before": "dfe5fb1c044c08893f810e4618e5380e1c46c4407f69c1f6e9746d3be7c11eb4",
+      "after": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-2.png",
+      "before": "19734cbb09c147f7c517e42fa51d4b2bec8a1fd9c550ebc940300ddd7bd4f36d",
+      "after": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/reload--states-1.png",
+      "before": "031a487b476966f6f7d95fc85f61284fdbe2c75c4f235ceb0c64dd0eea80368a",
+      "after": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-1.png",
+      "before": "2a15de1115f048af75aa5992c1827c5e59ae4f55bd601a9f08afe4fae870a780",
+      "after": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-2.png",
+      "before": "938a9dce9d7e29a3a2543ac8cd0cb6767b3a19fb6643be1946e189dad89c3492",
+      "after": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/route-travel--states-1.png",
+      "before": "82f9dfe8dc0850d3968d8131c2488b4ecff4d9d6764ddc25b9601c4f8e2266c1",
+      "after": "73396d418a0f61fe084228f3801bb4972e2d819bb6436ebc302234714e296f24",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/route-travel--states-2.png",
+      "before": "01030a0a4ac9d1cd16871fbcd874cc151f9db67a0866e70af8212b8dc82875b3",
+      "after": "ab5814c04259526f8ee80da822403f562562f59b48c5f901682df0a4112f9da1",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/safemode-rules--states-1.png",
+      "before": "291b4826ddcf22f3bbc7ca7839c86bbff25dfe203169fbf02f7c242488e1446f",
+      "after": "38604141e6934a29b693a3667ee6738f8a451e2c1a0de40bf8a6bd80e76dddfe",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/safemode-rules--states-2.png",
+      "before": "d1dcb0ca76770f82b9a6d8305e59978b740ee7dcb6a944a45ae36d7baa7bd878",
+      "after": "8b5e9b76f999f308bb6e440e045f621e2c405ff2b9095f18a5e8184eb7e64ff0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/settings-audio--states-1.png",
+      "before": "c1f241b8028a34b4c23beaf18265f2224ddcea7d7313ddb09faec0b32a957d7d",
+      "after": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/settings-general--states-1.png",
+      "before": "609537e00c59de49738d36baa40e43278c80ddfab0a9c4d3883a9ec4b77f298c",
+      "after": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+      "before": "0eae6fab7be0781143983490436ded08bea0ad79c971821415722ba72355ce02",
+      "after": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/settings-interface--states-1.png",
+      "before": "01c174d7fa096730beedd9574c14ef1b7067bf4d13a591565de438eb779b24b2",
+      "after": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/spell-target--states-1.png",
+      "before": "86dbb5f7e5b721a6d0247e93c895083673e198edef05cd84524b100534f6e66a",
+      "after": "c9f12282145369c65c7a2dade528689d827969a925622f8a585ad9a59b11b2b0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/spellbook--states-1.png",
+      "before": "f8d6d39920409b22fc301a4d0b88e7d8ea12fb20c62a55bb012bbe1ec021b645",
+      "after": "69b45cfff063307dc234c86fc564e9cec62a76ab79574d4f3845f75ed2e6e3a1",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/status-effects--states-1.png",
+      "before": "aecf0a9f5f73580dedf93ccb6369a48ebb71fdd2f64e3272ac80188993f4f5fb",
+      "after": "70c08b13aaacb7337c8193a2651c93cfb3caee7dfac3a59d7c1812e6dfd65153",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/terminal--states-1.png",
+      "before": "eaeb668d7faaf81a8b8fce0fe25afaab0a4e8503057c14629d90e5de2d5af0ff",
+      "after": "df174f067326e44f6840958c77fd7d9b083234deabbee59ac529d78df5429550",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/terminal--states-2.png",
+      "before": "caff13110da9947c6695fa28c21dea1918a5f372f40726620696bb607995074f",
+      "after": "6bef278b5170985e4ba2fcb674bcdc7ffc02821488f1707d4d445abe61db1430",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/throw-target--states-1.png",
+      "before": "91374632ca4691e955fc4d59d0c2d04f53f91f5ecd9c97974471e7846418b154",
+      "after": "80a3b28fc613b32ab163ade8da1714c7a93ff6180603e02fccf695282c4ca734",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/translocator--states-1.png",
+      "before": "812ff25f7db9ac2b04fe71cd0a999080f1a508d3d35453b5b3eb1a1aca2a84d7",
+      "after": "7990b0298b409e36b539c48901f1354257f2b37f00ca181bdc339af3fe5d7966",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/tutorial--states-1.png",
+      "before": "56d32de012b59c5d6dcd80d79269a2837600bbd1cf1e4db219e2cea364243727",
+      "after": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-dashboard--states-1.png",
+      "before": "8d2f54c70c36c4420c663c431ea966138544a3c9a990efde604037c85b06d17f",
+      "after": "b582cee75cf8a7f690148f4ab3150c8dd84543de64015f82f2a2334689eb8396",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-dashboard--states-2.png",
+      "before": "1179535db7cd8bc96e5f4337ec3851d91829ba5a89be5900d01cd993a8f47894",
+      "after": "348fee88646637da25041a614e93c77e67e392c952b668b3c56b0d0ec1c58a5f",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-parts--states-1.png",
+      "before": "a95c489d77e99e4b9269d28ce0c6d3074de03d51434768e2ceb17e59d99ad1c8",
+      "after": "43e3bb7e3edfc732e9e49cd4c986ec98ffce028321c4e2709208ddc5cbe6e5f0",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-parts--states-2.png",
+      "before": "e9de4712808f7e42032631ff812d1e0b83278631d3526ea9e342c6835a471560",
+      "after": "0b955bfa67dc5c894b88fb0e618f53b0588d3236f63f785072a866aa0a2d8738",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-refill--states-1.png",
+      "before": "6ac47f443fae8c19ac8ce7bec3be1209b2bc7026e26c145f7b3b287fe463e4f4",
+      "after": "8410160725880c3c9a0c9a048417920aa56fc4929fbe73de3aab0544ec452a13",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/vending-machine--states-1.png",
+      "before": "43ec9627e7f636ace678fb063f5f2aeafa3996ff8af2343960b35c891788f3c2",
+      "after": "5e081cdec840e67273536b41c3c80a494cc161175cc9607e633546ce2a763d86",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/wait-sleep--states-1.png",
+      "before": "713bc24a0692d9e08027ee4e25af9aa895708886f61b3c8dd9aef9222106f434",
+      "after": "89b67fdd2bd6067a07463a2531dd5fb23179d63852722491a12ac3a463976e1e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/wait-sleep--states-2.png",
+      "before": "8820249a4e8564f3268d64df07176b16359bd8df6b47759b89e4e6532d87cc8b",
+      "after": "83f57536dab9d6df4d584e2b244315959c3b63f34478fa228b519ad55fcbbe4e",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/wield--states-1.png",
+      "before": "5a2b187bdb5e90efc729665f8ea1c482dfeb07874aeaf395636ce34315a3d05e",
+      "after": "9f2d5c0ec223f1e5bbbfc3f68f6ca49de9cb85ec4a27a241b07c9e083bdb1a4a",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-1.png",
+      "before": "b1d098af28b52e49258449797327769781fd41de6f2115753221db848a5a322e",
+      "after": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-2.png",
+      "before": "2fba72b222767f75d8b673e1e35048bab06cd04acc4e9fc8d38e8e9ec49477a4",
+      "after": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-1.png",
+      "before": "387fb50ba38676e4691809fe5f15ce33b923c974e2dabb760cb96ea0b9aa45ba",
+      "after": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-2.png",
+      "before": "e800ce2a86016a9c0d58a5ac549c9cc5b76c89f8edd5f781144abc27e823fce3",
+      "after": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-1.png",
+      "before": "7b2ed82455f601f5ede5842c3baf0e6f12547cf32da632b43ee8373ab934c886",
+      "after": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-2.png",
+      "before": "c719c58de5d39c1101dd779cf7cc918d196476bd596b538f738a1a440af5b1e8",
+      "after": "e249fbf2f2eb0f48be7543e9bda0ee6f4cd585d263014ae3ba03452560bbae1b",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/world-options--states-1.png",
+      "before": "741d74bb14bf2b5938c00bc8f56f6348c220967a09ab96f6bd56ab503c2481bd",
+      "after": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/worn-layers--states-1.png",
+      "before": "9f4613424dd72b8f780fb9734514648e1c8657faac8350afd48ccf52b33fefbb",
+      "after": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/zone-activities--states-1.png",
+      "before": "fd89d44b371c8bdb46374f2b0f8e938e5abc30eaad4587fd1943cbf3c6423547",
+      "after": "7dcf8ed6c951cc526e0c2fe66acb7e6f749eefa1649ff6533cc99280c18abebe",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    },
+    {
+      "file": "art-delivery/designs/states/zone-manager--states-1.png",
+      "before": "4878d9e17044bba84e0961ff0fe57f45ba12f81b98fb675a8c2d33b2491cfe32",
+      "after": "7fcdc6f46c7c7b5e9063284059627a220c7e6842f95599b85ac6166b13bb3d82",
+      "changedPixelBoundingBox": [
+        93,
+        923,
+        207,
+        935
+      ],
+      "withinAllowedHiddenLayerRegion": true
+    }
+  ],
+  "allStateDifferencesBounded": true,
+  "method": "Pillow RGB pixel difference and SHA256; only hidden navigation/sample-footnote region may change. Content, labels and action coordinates were not edited.",
+  "baselineRetainedTemporarily": true,
+  "overallStatus": "passed",
+  "observedUniqueDeltaBounds": [
+    [
+      93,
+      923,
+      207,
+      935
+    ]
+  ],
+  "allChangesBelowStateCards": true,
+  "verifier": {
+    "file": "tools/check_state_ghost_repair.py",
+    "sha256": "9722fa81732349091e53b2d8b813f5db582aeecbffd324fe14f7c5568b111900"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "task": "青岚余生（暂定名）全游戏道家Q版UI美术",
+  "recordedAt": "2026-10-26T12:56:57.676242+00:00",
+  "policy": "F reference read-only; all future associations stay in project-local docs/image-reference-associations.md",
+  "localAssociationDocument": "docs/image-reference-associations.md",
+  "localAction": "added-one-consolidated-current-stage-section",
+  "localDocumentSha256": "3be48d1bfabe42f7c0206e36bfefe86281912dc6d700893b6569f9b3de9b32f7",
+  "fCleanupStatus": "complete-exact-self-only-cleanup; F read-only from now on",
+  "items": [
+    {
+      "file": "qdao_ui_redesign_v5/components/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "2f8b299d832ef3509ee368573192c8182fe67dcf8f92557ace8968b6c2acc18a",
+      "ownBlockSha256": "b0e32720a1932350f6ceaf287262f8d35635f1cfa4d7796910746e6fe474e918",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\n\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\n\n#### 本目录实际使用关系\n\n- 关联类型：**直接复用与派生使用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\n\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\n|---|---|\n| `qdao_ui_redesign_v5/components/png/check.png` | `art-delivery/resources/ui/button-secondary-selected.png`、`art-delivery/resources/ui/check.png`、`art-delivery/resources/ui/slot-selected.png` |\n| `qdao_ui_redesign_v5/components/png/cloud_corner.png` | `art-delivery/resources/ui/cloud-corner.png` |\n| `qdao_ui_redesign_v5/components/png/content_panel.png` | `art-delivery/resources/ui/panel-content.png` |\n| `qdao_ui_redesign_v5/components/png/gold_flower.png` | `art-delivery/resources/ui/gold-flower.png` |\n| `qdao_ui_redesign_v5/components/png/list_row_disabled.png` | `art-delivery/resources/ui/row-disabled.png` |\n| `qdao_ui_redesign_v5/components/png/list_row_normal.png` | `art-delivery/resources/ui/row-locked.png`、`art-delivery/resources/ui/row-normal.png`、`art-delivery/resources/ui/row-pressed.png` |\n| `qdao_ui_redesign_v5/components/png/list_row_selected.png` | `art-delivery/resources/ui/row-selected.png` |\n| `qdao_ui_redesign_v5/components/png/lock.png` | `art-delivery/resources/ui/button-primary-locked.png`、`art-delivery/resources/ui/button-secondary-locked.png`、`art-delivery/resources/ui/lock.png`、`art-delivery/resources/ui/row-locked.png`、`art-delivery/resources/ui/slot-locked.png`、`art-delivery/resources/ui/tab-locked.png` |\n| `qdao_ui_redesign_v5/components/png/main_frame.png` | `art-delivery/resources/ui/panel-main.png` |\n| `qdao_ui_redesign_v5/components/png/primary_button_disabled.png` | `art-delivery/resources/ui/button-primary-disabled.png` |\n| `qdao_ui_redesign_v5/components/png/primary_button_normal.png` | `art-delivery/resources/ui/button-primary-locked.png`、`art-delivery/resources/ui/button-primary-normal.png`、`art-delivery/resources/ui/button-primary-pressed.png` |\n| `qdao_ui_redesign_v5/components/png/primary_button_selected.png` | `art-delivery/resources/ui/button-primary-selected.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_compass.png` | `art-delivery/resources/icons/icon-compass.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_flame.png` | `art-delivery/resources/icons/icon-fire.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_furnace.png` | `art-delivery/resources/icons/icon-crafting.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_lotus.png` | `art-delivery/resources/icons/icon-morale.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_mountain.png` | `art-delivery/resources/icons/icon-map.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_pagoda.png` | `art-delivery/resources/icons/icon-settlement.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_peach_spirit.png` | `art-delivery/resources/icons/icon-herbs.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_sword.png` | `art-delivery/resources/icons/icon-sword.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_taiji.png` | `art-delivery/resources/icons/icon-martial.png` |\n| `qdao_ui_redesign_v5/components/png/round_badge_water.png` | `art-delivery/resources/icons/icon-water.png` |\n| `qdao_ui_redesign_v5/components/png/search_disabled.png` | `art-delivery/resources/ui/search-disabled.png` |\n| `qdao_ui_redesign_v5/components/png/search_normal.png` | `art-delivery/resources/ui/search-normal.png` |\n| `qdao_ui_redesign_v5/components/png/search_selected.png` | `art-delivery/resources/ui/search-selected.png` |\n| `qdao_ui_redesign_v5/components/png/status_dot_gray.png` | `art-delivery/resources/ui/status-gray.png` |\n| `qdao_ui_redesign_v5/components/png/status_dot_green.png` | `art-delivery/resources/ui/status-green.png` |\n| `qdao_ui_redesign_v5/components/png/status_dot_orange.png` | `art-delivery/resources/ui/status-orange.png` |\n| `qdao_ui_redesign_v5/components/png/tab_disabled.png` | `art-delivery/resources/ui/tab-disabled.png` |\n| `qdao_ui_redesign_v5/components/png/tab_normal.png` | `art-delivery/resources/ui/tab-locked.png`、`art-delivery/resources/ui/tab-normal.png`、`art-delivery/resources/ui/tab-pressed.png` |\n| `qdao_ui_redesign_v5/components/png/tab_selected.png` | `art-delivery/resources/ui/tab-selected.png` |\n\n- 通用控件保持各状态画布一致、真实透明外缘和记录中的许可伸缩方向；本项目当前标题牌来自新增无字原画，未将原扁平组队标题当成通用牌。圆徽标只作类别美术示意，不作为上游世界/角色的业务真值。\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\n",
+      "ownBlockBytes": 6196,
+      "ownedSectionPrefixUtf8": "\n\n## 项目关联\n\n",
+      "expectedRemainingBodySha256": "b048039b57ae1d78ea6694c2030611b2ea5f99ad0df0b63f9494b452abea4e1c",
+      "expectedRemainingBodyBytes": 6090,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "b048039b57ae1d78ea6694c2030611b2ea5f99ad0df0b63f9494b452abea4e1c",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.188387+00:00"
+    },
+    {
+      "file": "designs/attribute-panels/v2-painted/unity-slices/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "d6c22b0604eba9b377c76921e0fc51bf9ebd39340dbc125ad7136b14fc048fd6",
+      "ownBlockSha256": "7be1a803a5a647fea37e3a4681cbd478883d95ba1cefd9c7f860cd390d580cab",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\r\n\r\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\r\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\r\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\r\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\r\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\r\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\r\n\r\n#### 本目录实际使用关系\r\n\r\n- 关联类型：**直接复用与派生使用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\r\n\r\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\r\n|---|---|\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/button_secondary.png` | `art-delivery/resources/ui/button-secondary-disabled.png`、`art-delivery/resources/ui/button-secondary-locked.png`、`art-delivery/resources/ui/button-secondary-normal.png`、`art-delivery/resources/ui/button-secondary-pressed.png`、`art-delivery/resources/ui/button-secondary-selected.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/dropdown_arrow.png` | `art-delivery/resources/ui/dropdown.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/paper_tile.png` | `art-delivery/resources/ui/paper-tile.png`、`art-delivery/resources/ui/slot-disabled.png`、`art-delivery/resources/ui/slot-locked.png`、`art-delivery/resources/ui/slot-normal.png`、`art-delivery/resources/ui/slot-pressed.png`、`art-delivery/resources/ui/slot-selected.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/portrait_frame.png` | `art-delivery/resources/ui/slot-disabled.png`、`art-delivery/resources/ui/slot-locked.png`、`art-delivery/resources/ui/slot-normal.png`、`art-delivery/resources/ui/slot-pressed.png`、`art-delivery/resources/ui/slot-selected.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/slider_fill.png` | `art-delivery/resources/ui/progress-fill.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/slider_thumb.png` | `art-delivery/resources/ui/scrollbar-thumb.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/slider_track.png` | `art-delivery/resources/ui/progress-track.png`、`art-delivery/resources/ui/scrollbar-track.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/stat_field.png` | `art-delivery/resources/ui/stat-field.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/step_minus.png` | `art-delivery/resources/ui/step-minus.png` |\r\n| `designs/attribute-panels/v2-painted/unity-slices/png/step_plus.png` | `art-delivery/resources/ui/step-plus.png` |\r\n\r\n- 固定符号与干净纸面分离；五态次按钮、滚动条旋转派生和物品槽九宫格组合保持来源。未复制原人物/宝宝等级、相性或旧业务状态；本次 Unity 导入参数仅为建议，不借用原项目 Unity 报告宣称新包验证通过。\r\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n",
+      "ownBlockBytes": 4115,
+      "ownedSectionPrefixUtf8": "\r\n\r\n## 项目关联\r\n\r\n",
+      "expectedRemainingBodySha256": "d1087fe65814b5672627352633426006da582ccdaaf7750d2f6700cea1ec492e",
+      "expectedRemainingBodyBytes": 6119,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "d1087fe65814b5672627352633426006da582ccdaaf7750d2f6700cea1ec492e",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.190988+00:00"
+    },
+    {
+      "file": "designs/team-ui-v2/unity-slices/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "a78124df952c5987487d376e4985759b2087f0e0440ad6f9d44a7d13c20f57ef",
+      "ownBlockSha256": "51668be3ae39903d70578258f0b3e4926f2dcb62cf14171649a12091f8f9ee84",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\n\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\n\n#### 本目录实际使用关系\n\n- 关联类型：**直接复用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\n\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\n|---|---|\n| `designs/team-ui-v2/unity-slices/png/close.png` | `art-delivery/resources/ui/close.png` |\n\n- 本阶段本目录只直接使用 `png/close.png`。`title_plate.png`、`section_plate.png` 已因原文字/天空/抹字污染被拒用于正式新美术包；现行 title/section 来自本项目新生成干净原画。原组队人数、申请状态和玩家示例数据未移入。\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\n",
+      "ownBlockBytes": 2228,
+      "ownedSectionPrefixUtf8": "\n\n## 项目关联\n\n",
+      "expectedRemainingBodySha256": "d5288d50941bd26d47e8438a419c3f8d29f78fa7ed07c4efb8ba144ef436ff96",
+      "expectedRemainingBodyBytes": 2672,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "d5288d50941bd26d47e8438a419c3f8d29f78fa7ed07c4efb8ba144ef436ff96",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.193370+00:00"
+    },
+    {
+      "file": "designs/team-ui-v2/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "84e75e2735d78dc1f3abd72690949cea08cc2b7d277c90ee1fcca26254d38158",
+      "ownBlockSha256": "5a772d427c3e40e2f59ab76ec83ef07f6ce08e53ab1bf8aeed735e711f497ccf",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\r\n\r\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\r\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\r\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\r\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\r\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\r\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\r\n\r\n#### 本目录实际使用关系\r\n\r\n- 关联类型：**风格参考**。已实际查看 `designs/team-ui-v2/team-ui-v2.png`，并以真实图片输入传入内置 `image_gen`；参考副本为新项目 `docs/reference-images/team-style.png`，SHA-256 为 `5fab5229de7030ac48172cfa39bb45f612a545cee0dba6303ae6f2dcfdf38750`。\r\n- 本次实际风格输入对应的新原画包括 `art-delivery/resources/backgrounds/expedition-playfield.png`、`backgrounds/regional-map.png`、`characters/hero-survivor.png`、`icons/survival-icons-master.png` 和 `ui/clean-header-master.png`（后四项同属 `art-delivery/resources/`）。每张新原画的同名 `.generation.json` 分别保存该次实际输入、配置目标与未确认的实际型号/质量；并非只写了参考文件名。\r\n- 新无字玉绿标题原画 `art-delivery/resources/ui/clean-header-master.png` 是本项目新生成结果，随后按真实 Alpha 轮廓等比派生 `ui/title.png`、`ui/section.png`；它不是原组队扁平标题/分栏切片的直接复用。旧污染切片已被新派生图替换，拒用原因与旧来源文字记录见新项目 `art-delivery/records/header-repair-history.json`，未保留污染图片回退副本。\r\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n",
+      "ownBlockBytes": 2732,
+      "ownedSectionPrefixUtf8": "\r\n\r\n## 项目关联\r\n\r\n",
+      "expectedRemainingBodySha256": "63aa3bfee9808a1382cb1d1031ba9056ad750ee98ccf66721fafb722a05cd0df",
+      "expectedRemainingBodyBytes": 5152,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "63aa3bfee9808a1382cb1d1031ba9056ad750ee98ccf66721fafb722a05cd0df",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.196110+00:00"
+    },
+    {
+      "file": "designs/equipment-ui-20261009/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "a8da900d2a42be95d00d683ac0dd1d0fd046c594def3ab31a48a9c6e89d77cfb",
+      "ownBlockSha256": "b98c90a34bdaa8188ea8ed5ff1afd2fd8a563c8dcab14b09d37759c24671de8b",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\r\n\r\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\r\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\r\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\r\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\r\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\r\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\r\n\r\n#### 本目录实际使用关系\r\n\r\n- 关联类型：**直接复用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\r\n\r\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\r\n|---|---|\r\n| `designs/equipment-ui-20261009/sprites/tooltip_panel.png` | `art-delivery/resources/ui/panel-tooltip.png` |\r\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n",
+      "ownBlockBytes": 1977,
+      "ownedSectionPrefixUtf8": "\r\n\r\n## 项目关联\r\n\r\n",
+      "expectedRemainingBodySha256": "57c202e6a67f438aa38065e01e78c0cb4d224e6d6d7e30c34ce3d5caf51e62f6",
+      "expectedRemainingBodyBytes": 7606,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "57c202e6a67f438aa38065e01e78c0cb4d224e6d6d7e30c34ce3d5caf51e62f6",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.198573+00:00"
+    },
+    {
+      "file": "designs/equipment-ui-20261008/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "7e9da7565c8c25e5260bc2310172d95ccfa4195d0610f211d47d7141dfcb2e94",
+      "ownBlockSha256": "e5cedb6dcd6863762deda2af56ce2f6a4addd3445931e9f399e135b220755c5f",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\n\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\n\n#### 本目录实际使用关系\n\n- 关联类型：**直接复用与派生使用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\n\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\n|---|---|\n| `designs/equipment-ui-20261008/sprites/checkbox_off.png` | `art-delivery/resources/ui/checkbox-disabled.png`、`art-delivery/resources/ui/checkbox-normal.png` |\n| `designs/equipment-ui-20261008/sprites/checkbox_on.png` | `art-delivery/resources/ui/checkbox-selected.png` |\n| `designs/equipment-ui-20261008/sprites/icon_boots.png` | `art-delivery/resources/icons/icon-boots.png` |\n| `designs/equipment-ui-20261008/sprites/icon_sword.png` | `art-delivery/resources/icons/icon-blade.png` |\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\n",
+      "ownBlockBytes": 2353,
+      "ownedSectionPrefixUtf8": "\n\n## 项目关联\n\n",
+      "expectedRemainingBodySha256": "9cefd1a12e682c93b138346becad1d3079967ab0f3c56f8054ad62c6e94daa3f",
+      "expectedRemainingBodyBytes": 5207,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "9cefd1a12e682c93b138346becad1d3079967ab0f3c56f8054ad62c6e94daa3f",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.200918+00:00"
+    },
+    {
+      "file": "designs/mail-ui-v1/README.md",
+      "status": "verified-own-block-ready",
+      "action": "remove-exact-own-appended-section",
+      "expectedBeforeSha256": "29dce1002f0812c0710608fc211145833b24e45adc57294693c6c4c7c186f463",
+      "ownBlockSha256": "be2ce2af3fb1d2b059478204b6e32bd13199d009f9d78c3c16167a362b6d2d4f",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\r\n\r\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\r\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\r\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\r\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\r\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\r\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\r\n\r\n#### 本目录实际使用关系\r\n\r\n- 关联类型：**风格参考**。已实际查看 `designs/mail-ui-v1/01-mail-event.png`，并以真实图片输入传入内置 `image_gen`；参考副本为新项目 `docs/reference-images/mail-style.png`，SHA-256 为 `3cf0b7d7b3bae337d51e947719588419a01ae21bdce9bccedd6258ce1feef0a2`。\r\n- 本次实际风格输入对应的新原画包括 `art-delivery/resources/backgrounds/expedition-playfield.png`、`backgrounds/regional-map.png`、`characters/hero-survivor.png`、`icons/survival-icons-master.png` 和 `ui/clean-header-master.png`（后四项同属 `art-delivery/resources/`）。每张新原画的同名 `.generation.json` 分别保存该次实际输入、配置目标与未确认的实际型号/质量；并非只写了参考文件名。\r\n- 新无字玉绿标题原画 `art-delivery/resources/ui/clean-header-master.png` 是本项目新生成结果，随后按真实 Alpha 轮廓等比派生 `ui/title.png`、`ui/section.png`；它不是原组队扁平标题/分栏切片的直接复用。旧污染切片已被新派生图替换，拒用原因与旧来源文字记录见新项目 `art-delivery/records/header-repair-history.json`，未保留污染图片回退副本。\r\n- 关联类型：**直接复用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\r\n\r\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\r\n|---|---|\r\n| `designs/mail-ui-v1/assets/icon-chest.png` | `art-delivery/resources/icons/icon-cache-building.png` |\r\n| `designs/mail-ui-v1/assets/icon-pill.png` | `art-delivery/resources/icons/icon-medication.png` |\r\n| `designs/mail-ui-v1/assets/icon-scroll.png` | `art-delivery/resources/icons/icon-notes.png` |\r\n| `designs/mail-ui-v1/assets/icon-talisman.png` | `art-delivery/resources/icons/icon-talisman-optional.png` |\r\n| `designs/mail-ui-v1/assets/lantern.png` | `art-delivery/resources/ui/lantern.png` |\r\n\r\n- 原 `assets/icon-chest.png` 实物为阁楼/建筑徽标，按实际外观导出 `icon-cache-building`，不冒充物理箱子；药葫芦图标仅为主题类别标。原邮件业务、活动、数值和奖励未作为参考游戏业务移入。\r\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\r\n",
+      "ownBlockBytes": 3800,
+      "ownedSectionPrefixUtf8": "\r\n\r\n## 项目关联\r\n\r\n",
+      "expectedRemainingBodySha256": "fd448bc8aa93b4b32e5948beaf4aaf76b0898c08d881cbb252962238d560b6ca",
+      "expectedRemainingBodyBytes": 12869,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": "fd448bc8aa93b4b32e5948beaf4aaf76b0898c08d881cbb252962238d560b6ca",
+      "originalBodyBytesPreserved": true,
+      "cleanupResult": "removed-only-own-exact-appended-section",
+      "cleanupAt": "2026-10-26T12:59:26.203406+00:00"
+    },
+    {
+      "file": "designs/main-hud-20261021/README.md",
+      "status": "verified-own-block-ready",
+      "action": "delete-own-new-readme",
+      "expectedBeforeSha256": "8c4ba89955d7f7243569d318077817f59935a6fe96a5f083741ab518cc0a35bf",
+      "ownBlockSha256": "f78b1a0702b3060504e9fbd59d88c771870d8fb869506dfe3597e052c171f7e3",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\n\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\n\n#### 本目录实际使用关系\n\n- 关联类型：**直接复用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\n\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\n|---|---|\n| `designs/main-hud-20261021/sprites/bag.png` | `art-delivery/resources/icons/icon-bag.png` |\n| `designs/main-hud-20261021/sprites/channel.png` | `art-delivery/resources/icons/icon-chat.png` |\n| `designs/main-hud-20261021/sprites/pet.png` | `art-delivery/resources/icons/icon-companion.png` |\n| `designs/main-hud-20261021/sprites/rank.png` | `art-delivery/resources/icons/icon-achievement.png` |\n| `designs/main-hud-20261021/sprites/social.png` | `art-delivery/resources/icons/icon-dialogue.png` |\n| `designs/main-hud-20261021/sprites/spectate.png` | `art-delivery/resources/icons/icon-observe.png` |\n| `designs/main-hud-20261021/sprites/team.png` | `art-delivery/resources/icons/icon-party-command.png` |\n| `designs/main-hud-20261021/sprites/trade.png` | `art-delivery/resources/icons/icon-trade.png` |\n\n- 徽标只作为背包、观察、NPC 交互、物资交换等美术类别示意，不据 `pet`、`team`、`rank` 等旧文件名叠加 MMO 宠物养成、多人组队或排行榜系统。源图实际生成和切片证据以本目录 `sprite-manifest.json` 及 Sprite 同名记录为准。\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\n",
+      "ownBlockBytes": 2945,
+      "ownedSectionPrefixUtf8": "\n\n## 项目关联\n\n",
+      "expectedRemainingBodySha256": "045bd17615204e6c8b6c905d3c655c826093f2476e19e4e6cf8b96015919e9c7",
+      "expectedRemainingBodyBytes": 112,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": null,
+      "cleanupResult": "deleted-only-own-new-readme",
+      "cleanupAt": "2026-10-26T12:59:26.205748+00:00"
+    },
+    {
+      "file": "designs/class-skills-20260928/README.md",
+      "status": "verified-own-block-ready",
+      "action": "delete-own-new-readme",
+      "expectedBeforeSha256": "7ff88e3fc0b2a6800e2dad2c6eed09d88547fb51cc181e45bf1da6e06460af50",
+      "ownBlockSha256": "3a7dadac44f30eb65065f4474117740139f29ede5cd856602d2ae58a7de02243",
+      "ownBlockUtf8": "<!-- project-association: qinglan-cataclysm-ui-art-20261026 -->\n### 青岚余生（暂定名）全游戏道家Q版UI美术（2026-10-26）\n\n- 功能参考 GitHub：<https://github.com/CleverRaven/Cataclysm-DDA>；固定研究提交 `eb86dffd20072d6fde54af568cf229f3cd4d751f`，仅用于研究功能、系统与流程，不是成果保存仓库，也不向其提交或推送。\n- 成果 GitHub：**待用户后续提供**。本阶段未执行成果 Git 提交、推送或发布。\n- 本对话制作目录：`E:\\work\\image\\cataclysm-dao-ui`；本阶段正式美术位于 `art-delivery/`，后续资源使用目标为 Unity。\n- 美术参考仓库：`F:\\work\\image`；已核实 origin 为 `https://luyuacpp.visualstudio.com/image/_git/image`（Azure DevOps），美术仓库自身的 GitHub 地址待确认，与功能参考及成果地址分别管理。\n- 核实日期：2026-10-26。精确来源、原图/导出尺寸、SHA-256、处理步骤、Alpha、状态与九宫格边距见新项目 `art-delivery/records/asset-manifest.json`；现代生存图标切片另见 `art-delivery/records/survival-icon-slices.json`。\n- 本条只记录当前整款游戏 UI 美术阶段的实际来源；旧 `app/` 启动器、其运行截图及历史测试不计作本次美术完成或 Unity 接入验收。当前不制作 Unity 工程、C#、Prefab 或业务接入，不代表官方上游采用本素材，不改写其他项目及历史阶段的关联。\n\n#### 本目录实际使用关系\n\n- 关联类型：**直接复用与派生使用**。下表源路径相对 F 盘美术仓库根；目标路径相对本对话制作目录。字节复制与裁切、缩放、调色/固定符号合成分别记录，均未冒称为新模型生成。\n\n| 参考仓库内实际素材路径 | 新项目实际资源路径 |\n|---|---|\n| `designs/class-skills-20260928/icons/1101.png` | `art-delivery/resources/icons/art-martial-1101.png` |\n| `designs/class-skills-20260928/icons/1103.png` | `art-delivery/resources/icons/art-martial-1103.png` |\n| `designs/class-skills-20260928/icons/1106.png` | `art-delivery/resources/icons/art-martial-1106.png` |\n| `designs/class-skills-20260928/icons/1107.png` | `art-delivery/resources/icons/art-martial-1107.png` |\n| `designs/class-skills-20260928/icons/1301.png` | `art-delivery/resources/icons/art-martial-1301.png` |\n| `designs/class-skills-20260928/icons/1303.png` | `art-delivery/resources/icons/art-martial-1303.png` |\n\n- 采用 1101、1103、1106、1107、1301、1303 六张现存技能卡作为主题/可选系统美术示意，原职业技能名、伤害、相性和规则未成为参考游戏功能依据。每张从原生 1254 方图缩小导出 256 方图，不声称新生成或新增原生细节。现存最新采用说明为 `icons-style-20261021/README.md`；此前根 README 不存在，本文件仅为本次必要来源关联新建，不恢复旧文档。\n<!-- /project-association: qinglan-cataclysm-ui-art-20261026 -->\n",
+      "ownBlockBytes": 2943,
+      "ownedSectionPrefixUtf8": "\n\n## 项目关联\n\n",
+      "expectedRemainingBodySha256": "045bd17615204e6c8b6c905d3c655c826093f2476e19e4e6cf8b96015919e9c7",
+      "expectedRemainingBodyBytes": 112,
+      "trailingContent": "Only the original terminating newline; no added text after own block",
+      "afterSha256": null,
+      "cleanupResult": "deleted-only-own-new-readme",
+      "cleanupAt": "2026-10-26T12:59:26.207989+00:00"
+    }
+  ],
+  "toolWriteTargetAudit": {
+    "tools/art_resources.py": "SOURCE is read-only F source. All image, font, CSV, manifest and evidence outputs resolve under this project ROOT/art-delivery. No F write target.",
+    "tools/slice_survival_icons.py": "All input/output paths resolve under project ROOT/art-delivery. No F write target.",
+    "temporaryAssociationWriter": "Prior F association code ran inline and ended. No saved F append/update script, watcher, scheduled task or persistent writer was created by this subtask.",
+    "policy": "No further F association additions. Only the narrowly authorized exact self-content cleanup may run once after E record verification."
+  },
+  "gitAccessed": false,
+  "cleanupResults": [
+    {
+      "file": "qdao_ui_redesign_v5/components/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/attribute-panels/v2-painted/unity-slices/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/team-ui-v2/unity-slices/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/team-ui-v2/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/equipment-ui-20261009/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/equipment-ui-20261008/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/mail-ui-v1/README.md",
+      "result": "removed-only-own-exact-appended-section",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": true
+    },
+    {
+      "file": "designs/main-hud-20261021/README.md",
+      "result": "deleted-only-own-new-readme",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": null
+    },
+    {
+      "file": "designs/class-skills-20260928/README.md",
+      "result": "deleted-only-own-new-readme",
+      "fWrite": true,
+      "remainingOriginalBodyBytesPreserved": null
+    }
+  ],
+  "remainingOwnMarkers": [],
+  "cleanupCompletedAt": "2026-10-26T12:59:26.210598+00:00",
+  "finalChecks": {
+    "originalSevenReadmeBodiesMatchExpectedBytes": true,
+    "onlyTwoOwnNewReadmesDeleted": true,
+    "allNineSourcesRecordedLocally": true,
+    "all66UniqueFSourcePathsPresent": true,
+    "remainingOwnFMarkers": 0,
+    "persistentFWriteEntrypointsCreated": false,
+    "artResourcesRendererAndScreensChangedByMigration": false
+  }
+}

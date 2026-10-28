@@ -1,0 +1,455 @@
+{
+  "id": "vehicle-dashboard",
+  "file": "art-delivery/designs/screens/vehicle-dashboard.png",
+  "sha256": "5428645952b513219eb1051b3e2b6303ef6149d69a9c7220e2478bb6eea3bb87",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/expedition-playfield.png",
+      "sha256": "514ec6c3e037d13ec5e4857cfa0ec9f8994a3cd9636205e239e435ca8a4e12ff",
+      "record": "art-delivery/resources/backgrounds/expedition-playfield.png.generation.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-tooltip.png",
+      "sha256": "2318ef2fbc029a38d062660923c98631cd7a4965116e94e97c8a72d63784f7cd",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/progress-track.png",
+      "sha256": "f35d337bd76d4481db6636aba64172c0d86621fbddc043f3af1c6f7e1ae9697f",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/row-normal.png",
+      "sha256": "cd8415446563f7b0b2f7583fc77f6467c0e04b3b4cd68856adb8d0d1f6500892",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/expedition-playfield.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-tooltip.png",
+    "art-delivery/resources/ui/progress-track.png",
+    "art-delivery/resources/ui/row-normal.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "青岚 · 幸存者（样例）",
+      "displayText": "青岚 · 幸存者（样例）",
+      "rect": [
+        105,
+        62.0,
+        460,
+        41
+      ],
+      "fontSize": 28,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "体力  82 / 100",
+      "displayText": "体力  82 / 100",
+      "rect": [
+        85,
+        118,
+        260,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "驾驶与车辆",
+      "displayText": "驾驶与车辆",
+      "rect": [
+        1420,
+        62.5,
+        410,
+        43
+      ],
+      "fontSize": 29,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "速度",
+      "displayText": "速度",
+      "rect": [
+        1420,
+        154,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "0 km/h",
+      "displayText": "0 km/h",
+      "rect": [
+        1530,
+        154,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "引擎",
+      "displayText": "引擎",
+      "rect": [
+        1420,
+        228,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "已熄火",
+      "displayText": "已熄火",
+      "rect": [
+        1530,
+        228,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "燃料",
+      "displayText": "燃料",
+      "rect": [
+        1420,
+        302,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "62%",
+      "displayText": "62%",
+      "rect": [
+        1530,
+        302,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "蓄电量",
+      "displayText": "蓄电量",
+      "rect": [
+        1420,
+        376,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "74%",
+      "displayText": "74%",
+      "rect": [
+        1530,
+        376,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "车灯",
+      "displayText": "车灯",
+      "rect": [
+        1420,
+        450,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "关闭",
+      "displayText": "关闭",
+      "rect": [
+        1530,
+        450,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "储物",
+      "displayText": "储物",
+      "rect": [
+        1420,
+        524,
+        100,
+        33
+      ],
+      "fontSize": 22,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "可查看",
+      "displayText": "可查看",
+      "rect": [
+        1530,
+        524,
+        295,
+        34
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "旧旅行车停在工坊旁。引擎已熄火，燃料剩余 62%，蓄电量 74%。起步前可检查部件、车灯与周围道路。",
+      "displayText": "旧旅行车停在工坊旁。引擎已熄火，燃\n料剩余 62%，蓄电量 74%。起步前可检\n查部件、车灯与周围道路。",
+      "rect": [
+        1420,
+        650,
+        405,
+        102
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "加速",
+      "displayText": "加速",
+      "rect": [
+        72,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "减速",
+      "displayText": "减速",
+      "rect": [
+        230,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "停车",
+      "displayText": "停车",
+      "rect": [
+        388,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "喇叭",
+      "displayText": "喇叭",
+      "rect": [
+        546,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "车灯",
+      "displayText": "车灯",
+      "rect": [
+        704,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "部件",
+      "displayText": "部件",
+      "rect": [
+        862,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "地图",
+      "displayText": "地图",
+      "rect": [
+        1020,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "离车",
+      "displayText": "离车",
+      "rect": [
+        1178,
+        955.52,
+        122,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "驾驶与载具控制 · UI 美术示意",
+      "displayText": "驾驶与载具控制 · UI 美术示意",
+      "rect": [
+        720,
+        37,
+        560,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/vehicle_use.cpp",
+      "symbol": "void vehicle::control_engines",
+      "line": 405
+    },
+    {
+      "file": "src/vehicle_use.cpp",
+      "symbol": "void vehicle::build_electronics_menu",
+      "line": 310
+    },
+    {
+      "file": "src/smart_controller_ui.cpp",
+      "symbol": "void smart_controller_ui::refresh",
+      "line": 41
+    }
+  ]
+}

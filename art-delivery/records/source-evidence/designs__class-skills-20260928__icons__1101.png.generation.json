@@ -1,0 +1,104 @@
+{
+  "file": "icons/1101.png",
+  "skillId": 1101,
+  "name": "破阵惊锋",
+  "semanticIntent": "对1名敌人造成物理伤害。技能等级越高，伤害越高。",
+  "sha256": "524905c0cd0fc08f26615542a205271fb52d647cd9c1f759d11b4ea07ef74140",
+  "generatedAt": "2026-10-21T03:42:59.510705-04:00",
+  "generatedAtEvidence": "Native output file completion time; tool provides no model timestamp",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "mode": "RGB",
+  "nativeDimensions": [
+    1254,
+    1254
+  ],
+  "exportDimensions": [
+    1254,
+    1254
+  ],
+  "tool": "image_gen.imagegen",
+  "route": "builtin",
+  "configSnapshot": {
+    "schema_version": 1,
+    "model": "gpt-image-2.5-sunburst",
+    "quality": "max",
+    "builtin_product": "ChatGPT Images 2.5",
+    "selection": "latest_verified",
+    "preferred_route": "builtin",
+    "verified_on": "2026-10-22",
+    "sources": {
+      "release": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "model": "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
+      "quality": "https://developers.openai.com/api/reference/resources/images/methods/generate"
+    }
+  },
+  "submittedParameters": {
+    "model": null,
+    "quality": null,
+    "transparent_background": false
+  },
+  "actualModel": null,
+  "actualQuality": null,
+  "unverifiedReason": "Host managed; tool has no model or quality selectors and returns no verified model or quality metadata.",
+  "evidence": [
+    {
+      "file": "icons-style-20261021/records/1101-corners.tool-response.json",
+      "fields": [
+        "output_hint",
+        "sourceFile"
+      ]
+    }
+  ],
+  "prompt": "icons-style-20261021/prompts/1101-corners.txt",
+  "references": [
+    {
+      "file": "E:\\work\\image\\designs\\class-skills-20260928\\icons-style-20261021\\style-anchor.png",
+      "sha256": "69f4c537a9dea5a8f44a5b69f815a516a97e19cc958141cdfa45392a7fed6e27",
+      "submittedPath": "E:\\work\\image\\designs\\class-skills-20260928\\icons-style-20261021\\icons\\1101.png",
+      "role": "edit target before corner correction"
+    },
+    {
+      "file": "E:\\work\\image\\designs\\mail-ui-v1\\01-mail-event.png",
+      "role": "authoritative mail UI style"
+    },
+    {
+      "file": "E:\\work\\image\\designs\\team-ui-v2\\team-ui-v2.png",
+      "role": "authoritative team UI style"
+    }
+  ],
+  "sourceFile": "C:\\Users\\luyua\\.codex\\generated_images\\01a15d1c-4920-76e2-a603-fa3ad4c3ad36\\exec-c1df9a81-6d43-4643-ae2d-56f69b625ae8.png",
+  "operation": "AI edit replaced black outer corners with ivory; native output copied byte-for-byte, no code repaint.",
+  "editedFrom": {
+    "file": "style-anchor.png",
+    "sha256": "69f4c537a9dea5a8f44a5b69f815a516a97e19cc958141cdfa45392a7fed6e27",
+    "generationRecord": "style-anchor.png.generation.json"
+  },
+  "visualReview": {
+    "status": "passed",
+    "notes": "Viewed final output; pale corners, original attack composition preserved."
+  },
+  "semanticLabel": "单体物攻",
+  "pathBase": "icons-style-20261021 directory unless an absolute path is given",
+  "finalVisualReview": {
+    "status": "passed",
+    "reviewedAt": "2026-10-22T02:35:03.141139-04:00",
+    "sizes": [
+      38,
+      45,
+      50,
+      60,
+      74,
+      160,
+      288
+    ],
+    "evidence": "icons-style-20261021/qa/visual-review.json",
+    "reviewedSha256": "524905c0cd0fc08f26615542a205271fb52d647cd9c1f759d11b4ea07ef74140"
+  },
+  "derivedFrom": {
+    "file": "icons-style-20261021/icons/1101.png",
+    "sha256": "524905c0cd0fc08f26615542a205271fb52d647cd9c1f759d11b4ea07ef74140",
+    "generationRecord": "icons-style-20261021/icons/1101.png.generation.json"
+  }
+}

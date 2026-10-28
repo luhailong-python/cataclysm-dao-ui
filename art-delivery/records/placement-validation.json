@@ -1,0 +1,3580 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-10-26T15:42:49.925646+00:00",
+  "validator": "Independent direct metadata/hash verification by art_system; placement exporter was not re-executed.",
+  "scope": "234 current placement JSONs and current four frozen recipe hashes after state-board footer repair; original-layout/current-PNG hash binding, image hashes and source/target borders. No pixel re-review or historical rescan.",
+  "status": "passed-requested-source-and-binding-checks; Unity pending",
+  "revisionContext": {
+    "reason": "Coordinator repaired shared state-board footer ghost and re-exported all placements. Current recipes/PNGs/layouts are the sole validation inputs.",
+    "repairRecord": "art-delivery/records/state-ghost-repair.json",
+    "repairRecordSha256": "ed86bed8530f2d55310351a50fafce0e7ae62253ed08a259bfb1f157b5e984f5",
+    "repairVisualReviewPerformedByThisValidator": false
+  },
+  "index": {
+    "file": "art-delivery/records/resource-placement-index.json",
+    "sha256": "58e725f8e2461c4d060039412449de0cb5d3d657db310bbf896974c2574047d7"
+  },
+  "counts": {
+    "screens": 101,
+    "stateBoards": 133,
+    "placementRecords": 234,
+    "sourceRecipeInputs": 4,
+    "imageAreas": 5066,
+    "uniqueReferencedRuntimeImages": 56,
+    "sourceBordersChecked": 4322,
+    "renderedBordersChecked": 4322,
+    "vectorUIPrimitives": 267,
+    "zeroCenterBandPreviewPlacements": 67
+  },
+  "checks": {
+    "exact101Plus133Coverage": true,
+    "noMissingOrExtraPlacementJson": true,
+    "all234PlacementHashesMatchIndex": true,
+    "all234ScreenHashesMatchOriginalLayoutsAndCurrentPngs": true,
+    "all234TextLayoutsExist": true,
+    "allFourCurrentFrozenRecipeInputHashesMatch": true,
+    "allTraceToolHashesMatch": true,
+    "allImagePathsWithinProjectAndExist": true,
+    "allImageHashesMatchCurrentFilesAndCompleteManifest": true,
+    "allImageSourceSizeMetadataMatchesCompleteManifest": true,
+    "sourceBorderLBRTLegalAndMatchesUnchangedKitManifest": true,
+    "renderedBorderLBRTMatchesCurrentFrozenRecipe": true,
+    "noNegativeRenderedCenterBand": true,
+    "drawOrdersSequential": true,
+    "onlyListedRuntimeResourcesReferenced": true,
+    "source112ManifestAndBase108EntriesUnchanged": true,
+    "unityImportExecuted": false,
+    "validatorModifiedPngsRendererCopyOrLayouts": false,
+    "fReadOrWritePerformed": false
+  },
+  "sourceRecipe": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "records": [
+    {
+      "file": "art-delivery/designs/screens/main-menu.png",
+      "screenSha256": "da2c73e89d6541b80c1cea02e484a3d8b17a7524ca47977722ddf202c3da325d",
+      "placementFile": "art-delivery/records/resource-placements/main-menu.json",
+      "placementSha256": "ddab786a40805daf7c1575650262c48c8297c590d0558504fd8d192a413e0b4c",
+      "textLayout": "art-delivery/records/layouts/main-menu.json",
+      "textLayoutSha256": "b4bc206ce2c9d4e2249c191c9cfab090aa0f87a8d04f5adcb80f33de7b347b00",
+      "imageAreaCount": 7
+    },
+    {
+      "file": "art-delivery/designs/states/main-menu--states-1.png",
+      "screenSha256": "2fe28939cca172da17e19b8a1d2c294a4d659cfa4768319ae696aa7f2076f1f6",
+      "placementFile": "art-delivery/records/resource-placements/main-menu--states-1.json",
+      "placementSha256": "8bd71761e19182cbef878ac9ea176d76578932bb63fea0894b4ea7915570d008",
+      "textLayout": "art-delivery/records/layouts/main-menu--states-1.json",
+      "textLayoutSha256": "fe340c959d323f48fd880f33affdaa206f252fa0beec268be39029237bddbe66",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/motd.png",
+      "screenSha256": "cc383e68c3ae25cff0e8ec8d92a3ff7282e52aa4f9d40d282dc19977a997192f",
+      "placementFile": "art-delivery/records/resource-placements/motd.json",
+      "placementSha256": "421d4ac7f22577cae0a4f9414d0f8f79fc38b3026dfa2c8e68337d3e8ddb798c",
+      "textLayout": "art-delivery/records/layouts/motd.json",
+      "textLayoutSha256": "7886752bdb275454ff842796e0202c58bd3f7acb72745517e5ffd9c662155a8d",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/states/motd--states-1.png",
+      "screenSha256": "77e62242f07cfc10e040aa532d76e0c666b9cc8cada7af9ed0ee1d7dd9899587",
+      "placementFile": "art-delivery/records/resource-placements/motd--states-1.json",
+      "placementSha256": "b223f908566040ca5d82332942954f98cf847e71bc2c9c45fcea38751e983b86",
+      "textLayout": "art-delivery/records/layouts/motd--states-1.json",
+      "textLayoutSha256": "b64b418ca180cfe40ba53e111cc87b1773f869d6e1267232448696380e0e6ca6",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/credits.png",
+      "screenSha256": "da4269424c516626b16d070e939701f6011042ebd6cc47ab8c86a67607f5da1b",
+      "placementFile": "art-delivery/records/resource-placements/credits.json",
+      "placementSha256": "56bc7ac659f3b5f19f22367ed8a35d573c4bfce321b47bcb8b163ab7cad9eeec",
+      "textLayout": "art-delivery/records/layouts/credits.json",
+      "textLayoutSha256": "0a119483c05c7ee7159ec0f2275f7b6258fce4bb1df9664e1aee0bfaf65a6105",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/credits--states-1.png",
+      "screenSha256": "72836b720adddb2f44338d42b5440ab2336a511cfd578f35bf8ec6aab699c2f7",
+      "placementFile": "art-delivery/records/resource-placements/credits--states-1.json",
+      "placementSha256": "0904781a0fc7f6b0720b429e82a0556c664a6c453ea01ede2eb30e1b77e3d2c3",
+      "textLayout": "art-delivery/records/layouts/credits--states-1.json",
+      "textLayoutSha256": "d746cfecdfe159ae65ecf374c8aa5be7b2f57ef5732de7aa685b48180949bf6a",
+      "imageAreaCount": 14
+    },
+    {
+      "file": "art-delivery/designs/screens/world-list.png",
+      "screenSha256": "f9db420ab0666fa7ac3cf12860ed36d824cb46525c077662537ddfb362b907e0",
+      "placementFile": "art-delivery/records/resource-placements/world-list.json",
+      "placementSha256": "97a0515a637f15b6aa68d3fc3b1cee2b00ddaaecab42e9400c15c5fe80cfdbb6",
+      "textLayout": "art-delivery/records/layouts/world-list.json",
+      "textLayoutSha256": "6369be299646cc98110bdebf5205ccc7420d3a2c018f6d4aa42301cf020af9b2",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-1.png",
+      "screenSha256": "ed06269be77a750f76dc47affa0f97d153b0955a8ad91a37f2e75b0099735901",
+      "placementFile": "art-delivery/records/resource-placements/world-list--states-1.json",
+      "placementSha256": "58d0be6b14a2ce5fca0b27c1f3ea8bd54f7aa3c171bad91cee25539622531a16",
+      "textLayout": "art-delivery/records/layouts/world-list--states-1.json",
+      "textLayoutSha256": "8035907ab94791bd4bc65633cc54d1b954826af9511a0438c2d68d7fd050e4e9",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/world-list--states-2.png",
+      "screenSha256": "ce81ebcbb6d61c23ef988a9a5d9cd8df8d46b9afa1665e3694a532024a146724",
+      "placementFile": "art-delivery/records/resource-placements/world-list--states-2.json",
+      "placementSha256": "8411771283fc0656bcfdde426a6918c7e8907d27649e7b3c6a9ca4a546b6f86b",
+      "textLayout": "art-delivery/records/layouts/world-list--states-2.json",
+      "textLayoutSha256": "90fcff0cb2431b2355bb50a78d0398baf749317c817372644569ca70894aaca4",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/world-create.png",
+      "screenSha256": "ef93d73a6cb95b27b184e06b53efc334d398b843e040bb4bca94ede1b89052a1",
+      "placementFile": "art-delivery/records/resource-placements/world-create.json",
+      "placementSha256": "7d3dfc840a0d8b56d5a52525efa2ed5fb57f4b22d5d98ffbe09aa2f152418240",
+      "textLayout": "art-delivery/records/layouts/world-create.json",
+      "textLayoutSha256": "c69afc0de72e144cd31c9dd93691fcf6a60260b6835e8176c85d74058a4a1f0c",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-1.png",
+      "screenSha256": "4f7027296f43353c1bbaebcada084fb9002e228291ece3a170ba7217e70a0fdf",
+      "placementFile": "art-delivery/records/resource-placements/world-create--states-1.json",
+      "placementSha256": "6b7be6af0c5788d686b59906549a07712086eee1456690db469d4711b654f325",
+      "textLayout": "art-delivery/records/layouts/world-create--states-1.json",
+      "textLayoutSha256": "eb5f877afe2012a4260de156b7a14e3d3d9429095acfec1caaa9b826a14b7acb",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/world-create--states-2.png",
+      "screenSha256": "32a6ccec5eadbc97ceace1ab3308f897522bd22d4375623d94bc9fd699dba708",
+      "placementFile": "art-delivery/records/resource-placements/world-create--states-2.json",
+      "placementSha256": "502672b39968cb35b1be1d3dabf2b8792a6db898d5ca7cadb7588d3360aeba06",
+      "textLayout": "art-delivery/records/layouts/world-create--states-2.json",
+      "textLayoutSha256": "1e153addfd285369e7b18d3ed88405292b1d7d5bf64a5bbbf597a268f3e8d06d",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/world-mods.png",
+      "screenSha256": "4cc28c7c15f796423b79887f876c808948f48f4bddfe559b0b666e9f9380aafb",
+      "placementFile": "art-delivery/records/resource-placements/world-mods.json",
+      "placementSha256": "8756d0eba3ded8245a46f2ff87c0981d644f173b31563feecb790f512d6ee6e6",
+      "textLayout": "art-delivery/records/layouts/world-mods.json",
+      "textLayoutSha256": "1521240676cbddc48d2da5b794cedb086cdd1ad17abf0a45a28087ca0ec526e9",
+      "imageAreaCount": 28
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-1.png",
+      "screenSha256": "e0aa4a69329863dd3b2f74f8f9de7c282209edfcf5a4dd93359ba2c8fd4d1819",
+      "placementFile": "art-delivery/records/resource-placements/world-mods--states-1.json",
+      "placementSha256": "79e1972bfdebdb3c185b7ba7d5a04a2c233a95d264d247c975d13a0d5418ec70",
+      "textLayout": "art-delivery/records/layouts/world-mods--states-1.json",
+      "textLayoutSha256": "90f5be7259dedca69e84a48f7f7d40004f706c312669e0829e7ff124d0db345a",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/world-mods--states-2.png",
+      "screenSha256": "e249fbf2f2eb0f48be7543e9bda0ee6f4cd585d263014ae3ba03452560bbae1b",
+      "placementFile": "art-delivery/records/resource-placements/world-mods--states-2.json",
+      "placementSha256": "55261433f779f42520d90c0f29fb654cf0bd0d456876f9bdad7e578a2ee7cb32",
+      "textLayout": "art-delivery/records/layouts/world-mods--states-2.json",
+      "textLayoutSha256": "a0d65db91f175ec5d674e15b289fd525ffc78a5e463d7f66c55500e1159c380f",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/world-options.png",
+      "screenSha256": "45797e12691b3cd94fe8677b43df3f9a79e66e8f406c763a5528127f909c1e7c",
+      "placementFile": "art-delivery/records/resource-placements/world-options.json",
+      "placementSha256": "24cab462e676d097afa8056fbd55ca114e3462275beecdb25d80b4c353715766",
+      "textLayout": "art-delivery/records/layouts/world-options.json",
+      "textLayoutSha256": "a5ddbdcf42820f59e91b280e7e8a9d388bcf6e41d6d95c0de449a23fe8a8e131",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/world-options--states-1.png",
+      "screenSha256": "c778bf0fc935efdece8700d9cbbc8c4660ca8acfbb79920517f765a2dc54653c",
+      "placementFile": "art-delivery/records/resource-placements/world-options--states-1.json",
+      "placementSha256": "8f71fc9dbcd657928338494f4c3ac722a17041b8c43f4059cd6e641edd5d9d79",
+      "textLayout": "art-delivery/records/layouts/world-options--states-1.json",
+      "textLayoutSha256": "b99e258740be5194a44113dfb33c914968566e87d1f951acf73a3c2713e7ff23",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/load-character.png",
+      "screenSha256": "aa871c8534f4bc38e8b1abc2671f9bd3b166cf2a0865e7f189d7cf048f443807",
+      "placementFile": "art-delivery/records/resource-placements/load-character.json",
+      "placementSha256": "1e9829252e1e472e8e5942da83f02c4a7a28f067366b03b5ba4d6e6b3ed3a203",
+      "textLayout": "art-delivery/records/layouts/load-character.json",
+      "textLayoutSha256": "ac1c0777539a843e2b7e768ff9b333b6a45ccfc57ff0af69635757293a26dfd6",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/load-character--states-1.png",
+      "screenSha256": "400e4de21f8e9c8c30a3c91ed988c8140bcac82f34565f306da7a643ef5efb12",
+      "placementFile": "art-delivery/records/resource-placements/load-character--states-1.json",
+      "placementSha256": "a2315b6df47397aec0581541da1e0b141e6e35722de4b4fb376c291517bb3608",
+      "textLayout": "art-delivery/records/layouts/load-character--states-1.json",
+      "textLayoutSha256": "ae1eb241ea773809a2739b05d9170c648eb144a20c399ff0f837460c07c97583",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-mode.png",
+      "screenSha256": "6b8cd3a0947938ae2ea1d9d0bde7e04616f25e4c75a59992f5bd1bc8b441bb68",
+      "placementFile": "art-delivery/records/resource-placements/creation-mode.json",
+      "placementSha256": "a5fe0fcfcbb881e37eb95f33d2894d8f2add08d8454df8f3d417a9122b0954a6",
+      "textLayout": "art-delivery/records/layouts/creation-mode.json",
+      "textLayoutSha256": "9543b56ee0d1af259c2042bf605e92a3cb751bb6c631b07341b705fd42320e29",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/creation-mode--states-1.png",
+      "screenSha256": "1b91460f9c7ef510db567bb0b31d28f089163583c3713d9898c71fe0bd6e8b93",
+      "placementFile": "art-delivery/records/resource-placements/creation-mode--states-1.json",
+      "placementSha256": "cb8787de14082e6556a3cb0c02a27902f09bba5701a8b5a747d7e8d1cee51b99",
+      "textLayout": "art-delivery/records/layouts/creation-mode--states-1.json",
+      "textLayoutSha256": "13192180c058f54517a0747dc54e7809d1cbe9cf9e26c9f30456415474d2de1e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-scenario.png",
+      "screenSha256": "70e2edd0b99fad510b07d9e2f8fc59317711a7dd07df844cd3414b5eb5805746",
+      "placementFile": "art-delivery/records/resource-placements/creation-scenario.json",
+      "placementSha256": "8b16f7102d95ab00700b21ea9a61ddf8177bf49bc9b5ea7f645703e492adaa80",
+      "textLayout": "art-delivery/records/layouts/creation-scenario.json",
+      "textLayoutSha256": "88faf713a44e186c8fc0a834dcc70f9b030f2aa7569dc857764ff57f3a5c6624",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-scenario--states-1.png",
+      "screenSha256": "a653cf6b28ef1266f6862399df362a7bc2a86747daa378d9a54d9a0a74eec7d0",
+      "placementFile": "art-delivery/records/resource-placements/creation-scenario--states-1.json",
+      "placementSha256": "5d5b623801342381d5a0dcc531ad91f7c9f917a828399f7f59d36c22e88688eb",
+      "textLayout": "art-delivery/records/layouts/creation-scenario--states-1.json",
+      "textLayoutSha256": "4b8a02c7419c61f201e024dc287b39eb79040a33fa0128203e3b9cfa5cfe466a",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-profession.png",
+      "screenSha256": "b0f95cf979e91809525cee2084095f06d64a22eacfd3242432dd8f3a7217c577",
+      "placementFile": "art-delivery/records/resource-placements/creation-profession.json",
+      "placementSha256": "32cdd846b837fce59fb154abe3af29c45a27b5fb989a4e0863e35bf64da959f8",
+      "textLayout": "art-delivery/records/layouts/creation-profession.json",
+      "textLayoutSha256": "f841f53a7130205825da3b7563379daee64970d0e54328f8ee77d7b647384f19",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-profession--states-1.png",
+      "screenSha256": "6441ae0f4f5cf314f28a62647d0fde677c57bbeaea73423b680e50b02f9bd821",
+      "placementFile": "art-delivery/records/resource-placements/creation-profession--states-1.json",
+      "placementSha256": "4faca52db54f3a829ca4b451624dcfb68037d45ebddf19d4b5138d0940e664fa",
+      "textLayout": "art-delivery/records/layouts/creation-profession--states-1.json",
+      "textLayoutSha256": "69a132d5b31fb8dd43c016476ed9feb09ecc297776c5fcee8239d86f278d28f4",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-background.png",
+      "screenSha256": "34c391ac4cd5e61fc6bb39d64faf9d08589366bfa09a408b1eab405a756d5335",
+      "placementFile": "art-delivery/records/resource-placements/creation-background.json",
+      "placementSha256": "e52afe83b7116b3a7c0aa45604c339d691ec3003db648974e4ad34b65054eb92",
+      "textLayout": "art-delivery/records/layouts/creation-background.json",
+      "textLayoutSha256": "d65b573cd1e9fa315af7420c41fab92109c5b3cd894c1fe96a2c1dc25ec585af",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-background--states-1.png",
+      "screenSha256": "723723f6cc9eacedc7dc28fd340ca446333740a645a8ba9847f104bb01dae416",
+      "placementFile": "art-delivery/records/resource-placements/creation-background--states-1.json",
+      "placementSha256": "4320925e3e730f1c1de82c0fce3d4eba2e336ea92e9369f553fa188e4a7afabf",
+      "textLayout": "art-delivery/records/layouts/creation-background--states-1.json",
+      "textLayoutSha256": "0813ad651ae5539327685e6ee2fba55d44b577a627ea11c7af49500479d01d6a",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-stats.png",
+      "screenSha256": "16eb63539b1e99021e7592e504b1ce7cd51d986d9c60cd17959924884b9ac274",
+      "placementFile": "art-delivery/records/resource-placements/creation-stats.json",
+      "placementSha256": "be3a1a0c14f67447aa13b41fe16952af83ea379f202d796528072a3f2e442c99",
+      "textLayout": "art-delivery/records/layouts/creation-stats.json",
+      "textLayoutSha256": "8834a28523a4f2abd20a637841a07e682addc94cd8a1b23bb66b9e5c1c047d27",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/creation-stats--states-1.png",
+      "screenSha256": "f148c85b876f49474ce88acf612c914330a735033d4ca9f2f65c000b05437ad8",
+      "placementFile": "art-delivery/records/resource-placements/creation-stats--states-1.json",
+      "placementSha256": "85b072d63e2c74f45780623c180166694c8e5fb75ed8d72eebab6ea07bcf0df7",
+      "textLayout": "art-delivery/records/layouts/creation-stats--states-1.json",
+      "textLayoutSha256": "24530f136613062f444b55fbc66dbb1d69ac1c91df7288afc68f08bf9fe47372",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-traits.png",
+      "screenSha256": "de4529ad9be6986b7932bbab2746b4b676431ffe9a785343e2c7cb9ccd2ebd7f",
+      "placementFile": "art-delivery/records/resource-placements/creation-traits.json",
+      "placementSha256": "923f29bf7c113b0cb8f35e35378418570102b3e84c440d63124fc95f38c7e8ac",
+      "textLayout": "art-delivery/records/layouts/creation-traits.json",
+      "textLayoutSha256": "610d9716bdbaa785fb9060a3b5353944751adcc1357aa79979796485d413abdb",
+      "imageAreaCount": 28
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-1.png",
+      "screenSha256": "6e0711d8b79bf96358f21dd83a609fef59e72082c5378a095577f84d1df375d5",
+      "placementFile": "art-delivery/records/resource-placements/creation-traits--states-1.json",
+      "placementSha256": "e20cc9eb6b72c78aefa9b9579923791cf6180c70bf45e6410d15f694cae709d4",
+      "textLayout": "art-delivery/records/layouts/creation-traits--states-1.json",
+      "textLayoutSha256": "624f17853840fc9d404469e25609eca468b7e74677c68db7e1eaefb42189f9d7",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-traits--states-2.png",
+      "screenSha256": "292d51c29f6b4fd6ea7bf7cf2309343b824dfc34026f529e52c39245855af99c",
+      "placementFile": "art-delivery/records/resource-placements/creation-traits--states-2.json",
+      "placementSha256": "f092dcfa9fbd088ca27be6b78670a3588cfb3d80edcce7a23da937b893eb75f5",
+      "textLayout": "art-delivery/records/layouts/creation-traits--states-2.json",
+      "textLayoutSha256": "00de87cadbdfdb8de55b278067d29177f45875fa75627b5e131bfcbde0bc19fc",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-skills.png",
+      "screenSha256": "2d09a502a6eb0942db5dc5b02082d14f88c3fd6a8f8b91c73c6b73e117804276",
+      "placementFile": "art-delivery/records/resource-placements/creation-skills.json",
+      "placementSha256": "6e2a1e934ed6d65e8ff5ccf28f55c0c983d539af3e9a24d05bb65c3de6370c53",
+      "textLayout": "art-delivery/records/layouts/creation-skills.json",
+      "textLayoutSha256": "405e061e2b551bb88e606642705457c8d921aae070ec4dbccc14d4b00ce4ffde",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/creation-skills--states-1.png",
+      "screenSha256": "32a999d4bd2879b4fe3c613bbc59b9153ab11d298e160b534075dcc7ace46dbd",
+      "placementFile": "art-delivery/records/resource-placements/creation-skills--states-1.json",
+      "placementSha256": "2576ff46b8d90d7a20f1d8a467a0383f75d5c50fcdada159c6a687238ccc3836",
+      "textLayout": "art-delivery/records/layouts/creation-skills--states-1.json",
+      "textLayoutSha256": "22df847c0d86ca683f5d90c5fb8b106f95a6a9ad4255b45811a9745897c188bc",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/creation-summary.png",
+      "screenSha256": "86b1002d1c00b1baca15b1372ab42802f82687e17840dc9c76e011b558d6b966",
+      "placementFile": "art-delivery/records/resource-placements/creation-summary.json",
+      "placementSha256": "8a45e13ab8a2243b2fa01881bef935a6c1a6eb3d6228761ed09f95f71da92654",
+      "textLayout": "art-delivery/records/layouts/creation-summary.json",
+      "textLayoutSha256": "fc5cf0d0b1453e3f8333c90d4163c8cde5a4fda839b361ea234097cef7b98e98",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-1.png",
+      "screenSha256": "7cb81f2e2541a4a94af76976a61372455bbc8fb605f355219046548227313261",
+      "placementFile": "art-delivery/records/resource-placements/creation-summary--states-1.json",
+      "placementSha256": "9422341da118b4065b1c19a62491aa931212569ce4ba2ae872195abc5a12e5f8",
+      "textLayout": "art-delivery/records/layouts/creation-summary--states-1.json",
+      "textLayoutSha256": "7752d9a28dba04abb46bc4619cfaca0de24d6b74728c95d2b59879816e1f0cf9",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creation-summary--states-2.png",
+      "screenSha256": "9bb5185a3826469bb86c3bd46dc86b952125e179dd7b07462f2a1fb4cd15c4c8",
+      "placementFile": "art-delivery/records/resource-placements/creation-summary--states-2.json",
+      "placementSha256": "0349f1ebbeb5947d15ec2f9e984f0067ef92d51dc4b696c39a970ff34cf41377",
+      "textLayout": "art-delivery/records/layouts/creation-summary--states-2.json",
+      "textLayoutSha256": "4cd5713f139e69bcd79cb90aac2180f3921a1a748f8c538084d86f8baa2cf24e",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/character-templates.png",
+      "screenSha256": "0ee760b9f029c2390c2336298ad8def04ccb0b370747ed2a0b432477738027fa",
+      "placementFile": "art-delivery/records/resource-placements/character-templates.json",
+      "placementSha256": "ee6f8c78031b497b8f508a6411ad6dceb852f36aa4b7a57b2d04cb9bafec4aae",
+      "textLayout": "art-delivery/records/layouts/character-templates.json",
+      "textLayoutSha256": "f54b4e039c018b494f215a0ee300e4c9e2d026a897ce4325fa485723c3ee78d6",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/character-templates--states-1.png",
+      "screenSha256": "23fad223e7a11f886058f7651430f252b568a7a0b4c5200a20a9a00835b4ebbc",
+      "placementFile": "art-delivery/records/resource-placements/character-templates--states-1.json",
+      "placementSha256": "420a059417f0a8b1fe058b9060d9baf560ca67ea8622b15f85e5c9e29c22d649",
+      "textLayout": "art-delivery/records/layouts/character-templates--states-1.json",
+      "textLayoutSha256": "2c8a120b8269806c1ec69f43662b68dba10da95de6c4965c8a674fed9165ecb0",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/character-sheet.png",
+      "screenSha256": "b08f81825f1f5228d23c8f0b2e4ac0db6285d7150201195874c4d2e4120c7fa9",
+      "placementFile": "art-delivery/records/resource-placements/character-sheet.json",
+      "placementSha256": "b474fd4ea9116f9e7f145c99ec62f0c71c27882d38f246052590c92c42e43eaf",
+      "textLayout": "art-delivery/records/layouts/character-sheet.json",
+      "textLayoutSha256": "e191a47285699f042bd485f6626d0d4b7145b31d2d18b33229f9e11322f01bb0",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/character-sheet--states-1.png",
+      "screenSha256": "270a08aef2b3de1ef8ad40e96fd4a96602bf10d460554373159132ce2bae914e",
+      "placementFile": "art-delivery/records/resource-placements/character-sheet--states-1.json",
+      "placementSha256": "518e1eb87e52b07161654300db8eb20d30d1e36945ef0d76290d6674c2b54100",
+      "textLayout": "art-delivery/records/layouts/character-sheet--states-1.json",
+      "textLayoutSha256": "67fa98d926009f79622370c61cd581d3b508fdbf4b326e4b939ffac169c86d0c",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/character-encumbrance.png",
+      "screenSha256": "7e10f59873b4c38c6c22eed27fbfe6cb2306ffb3d9c891ddfe6774f19bfd5757",
+      "placementFile": "art-delivery/records/resource-placements/character-encumbrance.json",
+      "placementSha256": "347fed6e75ccf5750503a60525ed61fe6751023c05bcdfba0663f59f0a77191c",
+      "textLayout": "art-delivery/records/layouts/character-encumbrance.json",
+      "textLayoutSha256": "207dcdf728f1b24e87ee7c93cd80ec9ff034b27cee1c587b8edbdaf480b81905",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/character-encumbrance--states-1.png",
+      "screenSha256": "d4b4f4f7c284fd9b55c87b77e1fa3b730b72c26c709667ebf5c61986b3653f3b",
+      "placementFile": "art-delivery/records/resource-placements/character-encumbrance--states-1.json",
+      "placementSha256": "221477fc29e35d860b02d3901225adb66f6cd570aa3790ba9d7b0c8bd20276e2",
+      "textLayout": "art-delivery/records/layouts/character-encumbrance--states-1.json",
+      "textLayoutSha256": "5283849a296b4d52d552f98d071a8c3e2015d9bb75f6b08e20f5ee8ab1a41432",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/character-skills.png",
+      "screenSha256": "30866de7c798c323865a72b1b06ddde29fb16b5b1c9ac3958d71e2ba66a5c06d",
+      "placementFile": "art-delivery/records/resource-placements/character-skills.json",
+      "placementSha256": "d2f04d60d51d85215b278bc87abaf7860eff2194a257c1ebebe46b7f86c06fba",
+      "textLayout": "art-delivery/records/layouts/character-skills.json",
+      "textLayoutSha256": "9802e2a27186d350aded59cd6cb158436614bf54d7a1a369aa844a21a53bf6b1",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/character-skills--states-1.png",
+      "screenSha256": "0df332f62c5361454ba0e9217b21de349806713f30e5da39a525385bc5b90b0f",
+      "placementFile": "art-delivery/records/resource-placements/character-skills--states-1.json",
+      "placementSha256": "c0e1548d9da279270b59c9c143ef3b8d640cbfed54729b57f73a179da858e521",
+      "textLayout": "art-delivery/records/layouts/character-skills--states-1.json",
+      "textLayoutSha256": "be994b6bfe2fca0695a0c66b672b359fb30817c7d0b4fced6e01be8a1afb3126",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/character-proficiencies.png",
+      "screenSha256": "17461af0858b9f2897aeb39b5f1dde05a6b04bb3d5de450d2208fded787f6814",
+      "placementFile": "art-delivery/records/resource-placements/character-proficiencies.json",
+      "placementSha256": "e815b4230950719b6c2fa05d96c7daef9817fa14ff6ae73d61825db30418873b",
+      "textLayout": "art-delivery/records/layouts/character-proficiencies.json",
+      "textLayoutSha256": "a1d52eba04161554f19c507eeb47f2aba0b62f74f8ee43f685de99aa16565549",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/character-proficiencies--states-1.png",
+      "screenSha256": "dea325557991ed8c0c848131fef91d2f6045116ab363d5aef9f44aa48b5ee353",
+      "placementFile": "art-delivery/records/resource-placements/character-proficiencies--states-1.json",
+      "placementSha256": "aa676f7b404b6ee3e537bb910109f507ac2f588508c10ce420e39b05ada57428",
+      "textLayout": "art-delivery/records/layouts/character-proficiencies--states-1.json",
+      "textLayoutSha256": "3597a6d5875c49e9eed66e30b2cde0788c47051900635cdec827ed68211cb623",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/inventory.png",
+      "screenSha256": "f0ae87d614746b18d4eb77e6d097e6a332e0a4d855ba3467898ea4b0541b663e",
+      "placementFile": "art-delivery/records/resource-placements/inventory.json",
+      "placementSha256": "50d62a15f357ee52d48091fb4b3e249f6c6f3049ca905c388571df3d882306b7",
+      "textLayout": "art-delivery/records/layouts/inventory.json",
+      "textLayoutSha256": "b88c8b2b6e029960cb290eda28bec71b255635bb27ee4bf4982a95f81125f767",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-1.png",
+      "screenSha256": "3b95f8c737591c4c962711f6af3714ceef375dcd844ece09f669a28eeb9bae3d",
+      "placementFile": "art-delivery/records/resource-placements/inventory--states-1.json",
+      "placementSha256": "e9c6dbb61b560f08bb4fe29ab0496394313036ee119d182f0843e2eecfe52f39",
+      "textLayout": "art-delivery/records/layouts/inventory--states-1.json",
+      "textLayoutSha256": "2cb046d619dca1410227854b09b209646b2960d6e3d9cf423dae91c89db6c59f",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/inventory--states-2.png",
+      "screenSha256": "119c8809dde6484f0d19592a95bb9118e4eaa44a7cbeff2eece1cced7b3bda82",
+      "placementFile": "art-delivery/records/resource-placements/inventory--states-2.json",
+      "placementSha256": "03ac24d190b214d3cf56e66e82c0b24d171950510ef41d97ef39055b56101263",
+      "textLayout": "art-delivery/records/layouts/inventory--states-2.json",
+      "textLayoutSha256": "ef0f4bb7b3473e4cf92b895c5b2bfd3d86c2ae45063fa93b96a4794fe04a875d",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/item-detail.png",
+      "screenSha256": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da",
+      "placementFile": "art-delivery/records/resource-placements/item-detail.json",
+      "placementSha256": "dda11374495093e8d5f9fd656136e252867191a78052b1b300a830e1e72cbbe1",
+      "textLayout": "art-delivery/records/layouts/item-detail.json",
+      "textLayoutSha256": "30011fb9bfc3b258c94a75f53c610ceb56087a2c69d015902ccd1eed6d7be112",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/item-detail--states-1.png",
+      "screenSha256": "c2d830ef8725e63b719dc58a67ef7dacd55728d5ffd2b45e8fbc9bf0d3640ebb",
+      "placementFile": "art-delivery/records/resource-placements/item-detail--states-1.json",
+      "placementSha256": "aa010c3ccdde165aa413ecd3ebe0c0aec2855378ccb64672d36947a5981b46ff",
+      "textLayout": "art-delivery/records/layouts/item-detail--states-1.json",
+      "textLayoutSha256": "33d8429a14e982cb85dc7b4314db9a9e599c8bab152024ef6795fb1ad03ae545",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/item-compare.png",
+      "screenSha256": "e130bbd408e474b46e6e24b3daac1197ec16ff753deecf38546c5d9b0d648858",
+      "placementFile": "art-delivery/records/resource-placements/item-compare.json",
+      "placementSha256": "5fa37a78d609120ca6875d92c050e4f69db8f6ea077b6f32430cc98e94f3c66e",
+      "textLayout": "art-delivery/records/layouts/item-compare.json",
+      "textLayoutSha256": "f86cc14d5df1a9b5e308e2c855638773492def682054a627d0683a87d719b220",
+      "imageAreaCount": 26
+    },
+    {
+      "file": "art-delivery/designs/states/item-compare--states-1.png",
+      "screenSha256": "065b2ba1f1bc646dbe253b89bfb5ceeb243e8a563d74b93eb3a4db9f81b30530",
+      "placementFile": "art-delivery/records/resource-placements/item-compare--states-1.json",
+      "placementSha256": "bcea862bea52c19123c71621f2c4167f6bdfe7c8188c9133606b8ad0f3476283",
+      "textLayout": "art-delivery/records/layouts/item-compare--states-1.json",
+      "textLayoutSha256": "408a51f41c76f15a34b6eab6bc0931ffd87f7302cd5c95f30528f1c87cd92101",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/item-containers.png",
+      "screenSha256": "3cb4650e7d3e0b4463cc5b5f86580e2072db5a1da8b780e19d66dfe35a5633e6",
+      "placementFile": "art-delivery/records/resource-placements/item-containers.json",
+      "placementSha256": "c1f99f3e9ed4095fbf4a1a504888f7586dd8eec2a3c3bbb1600f6715a8e86cf3",
+      "textLayout": "art-delivery/records/layouts/item-containers.json",
+      "textLayoutSha256": "1a3f25d03768c2fe2929a68ae500131eeb8ee0eaae9e6e54a062da369c15792c",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-1.png",
+      "screenSha256": "6d3e3bc9e0073e0fc28c12d571300ca7ec36611e46328d54d72edb5f25f5395b",
+      "placementFile": "art-delivery/records/resource-placements/item-containers--states-1.json",
+      "placementSha256": "6e9cacbc9f56bd32ca1409dd499aff62d560e87d1b55bca41739928834a396c6",
+      "textLayout": "art-delivery/records/layouts/item-containers--states-1.json",
+      "textLayoutSha256": "946fdc01e5303baffc36099692162788946e3c028ca9c0f728d70ab7e44c6cd6",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/item-containers--states-2.png",
+      "screenSha256": "8b3bedb258bac82d41571fdf1194fd477d2f491941cb72795608434ae1881c83",
+      "placementFile": "art-delivery/records/resource-placements/item-containers--states-2.json",
+      "placementSha256": "e146e0e178633cc2c3c373727169c59b33f217e05f8e845a6e003eea16a06439",
+      "textLayout": "art-delivery/records/layouts/item-containers--states-2.json",
+      "textLayoutSha256": "f339829809995741196a6e1c6cca44fca54a9507314ef2911679de703378fd1f",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/advanced-inventory.png",
+      "screenSha256": "2fa65ee7cabf15c541a8e2d420696c0b9c8bd04e323a7eac2189b337de3239e4",
+      "placementFile": "art-delivery/records/resource-placements/advanced-inventory.json",
+      "placementSha256": "95c69d157467be41556f57b3cae606925920cc1d841af50c259f1bbac849b38a",
+      "textLayout": "art-delivery/records/layouts/advanced-inventory.json",
+      "textLayoutSha256": "88500f9998b2c0d7b79af87f7976d2c15633d886b12df200559e70f553071289",
+      "imageAreaCount": 33
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-1.png",
+      "screenSha256": "752fdb24a50e6bc75451cc055f4239e01cf81b1c6e095437cf8d2a879dea1ef2",
+      "placementFile": "art-delivery/records/resource-placements/advanced-inventory--states-1.json",
+      "placementSha256": "ab9c73ca83178d54715468dd44740237576815d160cc415e904e0c4816ec2251",
+      "textLayout": "art-delivery/records/layouts/advanced-inventory--states-1.json",
+      "textLayoutSha256": "b5908b48ca18736a40584444a5234109556a1e697df75a7ce784b9e5d07fab48",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/advanced-inventory--states-2.png",
+      "screenSha256": "89e7e5af717ca7202b773fde33563e2fee7274ed68f03379d04953cf49791f9e",
+      "placementFile": "art-delivery/records/resource-placements/advanced-inventory--states-2.json",
+      "placementSha256": "01204e215226b054a0c6d001679be0e6738baa4b9c0e63c4db0c6837f82acac5",
+      "textLayout": "art-delivery/records/layouts/advanced-inventory--states-2.json",
+      "textLayoutSha256": "7756bd2339c9f12973e5d4b64b43a3ad49a3048356d522a9adbd68f3c39338d0",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/worn-layers.png",
+      "screenSha256": "d231aa99f5146cb85e2bb28eb3de9edb80ac8fb7b49c0db6dbd3a74e8eefafdd",
+      "placementFile": "art-delivery/records/resource-placements/worn-layers.json",
+      "placementSha256": "b252ce7fb6b183cfd4d749b8395f65f90e413a9197e7fa49a62dcec17527a7f7",
+      "textLayout": "art-delivery/records/layouts/worn-layers.json",
+      "textLayoutSha256": "4a92504ae10833b4a67ee14076517f39eab180e34b911a4bc9c49bcfcbe38258",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/worn-layers--states-1.png",
+      "screenSha256": "90d0d842b3ad0a8a147ed3c7b4274975381412c0763453db50619d3f05b26315",
+      "placementFile": "art-delivery/records/resource-placements/worn-layers--states-1.json",
+      "placementSha256": "18b526bd411e230dce6bce79af50dc94fecfcaa4055a1eb2361d44ffad720ba0",
+      "textLayout": "art-delivery/records/layouts/worn-layers--states-1.json",
+      "textLayoutSha256": "8c8ed7408588bb7efb4437e56afc3ccf1fa4919286bf6fcd3b415c0e6be656dc",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/wield.png",
+      "screenSha256": "76926aeaa5c7b8ad0241c09bb503a4e5a0124c809429b7094f322f76a7bade7f",
+      "placementFile": "art-delivery/records/resource-placements/wield.json",
+      "placementSha256": "3464bb6ccbb7fab9376dbfe7fea915a2699ce494a000868d0eac807aa5de0a89",
+      "textLayout": "art-delivery/records/layouts/wield.json",
+      "textLayoutSha256": "322be5c236bd721b59532827d9d7ff4f8d17fa4d68bf5ee375acdf33a6d82e30",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/wield--states-1.png",
+      "screenSha256": "9f2d5c0ec223f1e5bbbfc3f68f6ca49de9cb85ec4a27a241b07c9e083bdb1a4a",
+      "placementFile": "art-delivery/records/resource-placements/wield--states-1.json",
+      "placementSha256": "bd3dab9349f18e89c591ec162da7568bf053333da025b78ca4d41ffeaf6d948a",
+      "textLayout": "art-delivery/records/layouts/wield--states-1.json",
+      "textLayoutSha256": "3e2f6493a107806631ff2d5da8f162fcd6bfe2e502f0cc5f518ec0921d9137cb",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/pickup.png",
+      "screenSha256": "c6b6545907f8c9ec1917c1f4801795804070e19c656fc153eff91531cc837d2d",
+      "placementFile": "art-delivery/records/resource-placements/pickup.json",
+      "placementSha256": "efc0e53a086ff2359e1427aef294259e6a46f6fedcb57c87b85b5ed08ae16e1a",
+      "textLayout": "art-delivery/records/layouts/pickup.json",
+      "textLayoutSha256": "44ad6f845794311d075c87d97579e63217fd9830c73c491a0b66f2c6eec166aa",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/pickup--states-1.png",
+      "screenSha256": "5abba2800de8ce647a33ca852fdd816d6ef46318c83bafafb175d95e3b6de06e",
+      "placementFile": "art-delivery/records/resource-placements/pickup--states-1.json",
+      "placementSha256": "2ea063f513b4e26b4ad75ee0024d4151b7c8acc49aff55ed9b5d362f3fe9731f",
+      "textLayout": "art-delivery/records/layouts/pickup--states-1.json",
+      "textLayoutSha256": "ccc53c415b667b480aee2fc3f70018859f576d8bfa0f177c17c96d08e583424c",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/multidrop.png",
+      "screenSha256": "845c2e99e467f17a340aa01f600ca3419d56ea935c3acc63a58a8bbf5888b892",
+      "placementFile": "art-delivery/records/resource-placements/multidrop.json",
+      "placementSha256": "b2c8aeea31b41eb02d76d7e7eaf4172e28b8e8796b89ad36bfff3f938e54e56a",
+      "textLayout": "art-delivery/records/layouts/multidrop.json",
+      "textLayoutSha256": "823c013c796b5665cbaaeec0e052a032b3201af4ab9926d6ab31ffb8099a37d8",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/multidrop--states-1.png",
+      "screenSha256": "f31340d750a3dc433fd6668bbf8c21a23cf5bbf0a7dd0259f4988a45ccc5e120",
+      "placementFile": "art-delivery/records/resource-placements/multidrop--states-1.json",
+      "placementSha256": "403fbbb1e6a2be5fecc4cd391932e0dd9a9a855c9f1b3ceb686c213e7f54c2db",
+      "textLayout": "art-delivery/records/layouts/multidrop--states-1.json",
+      "textLayoutSha256": "953b6771082521da80e0460fdef18919adb1cdeb7fc5030ed135302dee90c9ec",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/consume.png",
+      "screenSha256": "6aa9cea0cb58eea953a818e909225599c0ad6de25647a3b62dcc7515354677ab",
+      "placementFile": "art-delivery/records/resource-placements/consume.json",
+      "placementSha256": "320be899d9052c1078d2b285ae4fda4a7a33eb0660f8c44880d03875ea88adef",
+      "textLayout": "art-delivery/records/layouts/consume.json",
+      "textLayoutSha256": "8a8fc0e9e00fff3035f6d592220ddee88757d97281a8dd4c31a4dba1b386421b",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/consume--states-1.png",
+      "screenSha256": "9ccdcdab7118d8cede92c796174e99b834bc5603ac8172d8953a13dd4890976a",
+      "placementFile": "art-delivery/records/resource-placements/consume--states-1.json",
+      "placementSha256": "4f3b2e8e826250e9f7b41b2c1dd5c657f8ca321925c5facd171f88f4f0cdd9b4",
+      "textLayout": "art-delivery/records/layouts/consume--states-1.json",
+      "textLayoutSha256": "517ee324816d7ce3bb9aa895252f9a0a1bd8cf4c67bd8206ec665f6af663be62",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/read.png",
+      "screenSha256": "2cd8ce8a660d6d06eae5881add8072602e0976d08b24fbe2a0afe4fbd82d15e3",
+      "placementFile": "art-delivery/records/resource-placements/read.json",
+      "placementSha256": "e1d413b0538168dc9638c1e37e1717bcb77ae46653c58916569b6332f05530f7",
+      "textLayout": "art-delivery/records/layouts/read.json",
+      "textLayoutSha256": "43959400aab84b5d6e3a4814e3164789c7e9496e57c93ee01f4c8cbc450f82fd",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-1.png",
+      "screenSha256": "b897610dae548b539124fd7e55d8fb14ce94789ce6fab11290055da8fc333aeb",
+      "placementFile": "art-delivery/records/resource-placements/read--states-1.json",
+      "placementSha256": "1815b46771e708d4fd7577a0828ece40679f1806a8e2a9d5b3bdafdc02dcba38",
+      "textLayout": "art-delivery/records/layouts/read--states-1.json",
+      "textLayoutSha256": "bb4fef6c45b68aec2c9844f93bf481ca73c74ac78b03bc05541578f405d89c56",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/read--states-2.png",
+      "screenSha256": "0496ef061dfee801f2a01ce283bdb0404817f1b84e2ae20b0d956f493165c896",
+      "placementFile": "art-delivery/records/resource-placements/read--states-2.json",
+      "placementSha256": "2269cf881d02ded1440d49b52e860c9aaeacdb4523bf77afd3056383d0b34834",
+      "textLayout": "art-delivery/records/layouts/read--states-2.json",
+      "textLayoutSha256": "1d8f3fa47b7e91e5838cffb1f24fc9c4df32f1b862109883f3aa62ad42c22015",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/reload.png",
+      "screenSha256": "f6fb55f028f945ac3d60db4505c57fe489aaa9ce7dd3980bb9630be9b85a1ab7",
+      "placementFile": "art-delivery/records/resource-placements/reload.json",
+      "placementSha256": "3999991af1b14325a9a942747f8339878e7da7ab68da3b3d297b58acbe4dbd52",
+      "textLayout": "art-delivery/records/layouts/reload.json",
+      "textLayoutSha256": "6e49114af25d70a32ea352d79371037dd4f609ef03824178ff13aae24521cd16",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/reload--states-1.png",
+      "screenSha256": "9ec269c603c6cdd05d55422c6c4b5c0e8ffc8417291941ec1208898aed219398",
+      "placementFile": "art-delivery/records/resource-placements/reload--states-1.json",
+      "placementSha256": "ad79626d97561f86e173e4612748d0ef7014bf5e9f88f5e6edf2352c26a3736d",
+      "textLayout": "art-delivery/records/layouts/reload--states-1.json",
+      "textLayoutSha256": "0eae9020068f996b8a43da37ad980a9934a5b610e547d504874d7081df62a900",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/item-unload.png",
+      "screenSha256": "de2fd2ea883dde903ff786888c83854716b45969c8bc7a4ad683e0e596350c49",
+      "placementFile": "art-delivery/records/resource-placements/item-unload.json",
+      "placementSha256": "6be5e9d3646176bddcf9f061184f67e57eb572bdf17ab5ea5b349c9dd0c46f5f",
+      "textLayout": "art-delivery/records/layouts/item-unload.json",
+      "textLayoutSha256": "ab78a5c31f0d0c6509195354e2051ae00bf76ccc2ab6cf0ccfe527fa0b509e6e",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/item-unload--states-1.png",
+      "screenSha256": "fedfde579916dd0d4e51480671c9f43be993713616f73996fa3c12175a10d428",
+      "placementFile": "art-delivery/records/resource-placements/item-unload--states-1.json",
+      "placementSha256": "2c08ef15929089995b591d482102327aced5ea1fbdd34cbaf0254a1079c9637b",
+      "textLayout": "art-delivery/records/layouts/item-unload--states-1.json",
+      "textLayoutSha256": "1e6a4a470bf55a93a33f49d239617953c9995d50ead41971d3a952ffe2d1eed8",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/liquid-transfer.png",
+      "screenSha256": "3fb69891926cd5b63eb1e40e9c323328571628109a3d778521595dbc99732cfc",
+      "placementFile": "art-delivery/records/resource-placements/liquid-transfer.json",
+      "placementSha256": "27b390e6cc93082ac5d1ee9c1c9bc0db0b76ca28e56e71c225e3e3848231c6e8",
+      "textLayout": "art-delivery/records/layouts/liquid-transfer.json",
+      "textLayoutSha256": "39eeafcaab53861567bed82cb8b58ec319b1b96fa05f51b83f6f13d997870250",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/liquid-transfer--states-1.png",
+      "screenSha256": "d72c3e6ab0d0a57f773e3e9801e19b2d056fae4e035f6e38c1e30355a30b05b1",
+      "placementFile": "art-delivery/records/resource-placements/liquid-transfer--states-1.json",
+      "placementSha256": "b7f5ecf84603e3a39f3fc522b3be0ad1793e8eb832ff5b2656bb597e55e7f541",
+      "textLayout": "art-delivery/records/layouts/liquid-transfer--states-1.json",
+      "textLayoutSha256": "00b2b126aa936706c5dfcc2b434f8327b4488c4f1d445ad8772d3dbce1397ebe",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/item-use.png",
+      "screenSha256": "07a1d4e9a6da71182e674039168386fa3e76796cf6f36c63bbf3561bb7414731",
+      "placementFile": "art-delivery/records/resource-placements/item-use.json",
+      "placementSha256": "5bdc5496d1699e3766fc170f5ea60959f736f9a80c2fe5c766768d9afbfcd675",
+      "textLayout": "art-delivery/records/layouts/item-use.json",
+      "textLayoutSha256": "b1459566c2d5739cff7b18fac9ba2140ab63ea4d902d02baa8f3193cefc29998",
+      "imageAreaCount": 24
+    },
+    {
+      "file": "art-delivery/designs/states/item-use--states-1.png",
+      "screenSha256": "be53724f401ed4f97946e4dcd7fed36552e8b52308ad06b6f15b2d507898ef85",
+      "placementFile": "art-delivery/records/resource-placements/item-use--states-1.json",
+      "placementSha256": "81e505143733f3c777f045c3076320f625d873726f5a8e66238643258dbe7d44",
+      "textLayout": "art-delivery/records/layouts/item-use--states-1.json",
+      "textLayoutSha256": "08d32e7b93eaef9461b36b88fdb2d0d4c62816f35e5700b7b89642e2c331d4f8",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/electronic-files.png",
+      "screenSha256": "9bbf10f49bb478da2ffee577e88c02f783816d29fcd1beeccf8ffc8a668ee71b",
+      "placementFile": "art-delivery/records/resource-placements/electronic-files.json",
+      "placementSha256": "71c63cea67f1c9979e6661e1bcca8897ebf4c3098b51537032469cc9282e000d",
+      "textLayout": "art-delivery/records/layouts/electronic-files.json",
+      "textLayoutSha256": "ccf81204afebddf05d63051feb2a21dbde6cb7c3f5150f9524101edddefcaebe",
+      "imageAreaCount": 30
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-1.png",
+      "screenSha256": "1f784ef6202bb42c6f98502f28cd3fab4c5d3440d530a4b20f84dc1796035a03",
+      "placementFile": "art-delivery/records/resource-placements/electronic-files--states-1.json",
+      "placementSha256": "8cf2fc4351f001e2bcf9e7db617c223c4c8c94fe5e8591d7eaec83c1287264ac",
+      "textLayout": "art-delivery/records/layouts/electronic-files--states-1.json",
+      "textLayoutSha256": "ce49f9b41fef4cf28045702d67256c46b6f7eaa38e43ab50f1d66f11664cdbff",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/electronic-files--states-2.png",
+      "screenSha256": "937631e9389e9d9a862333b127f025fe5a9823593955b026bd42c03efaa094c8",
+      "placementFile": "art-delivery/records/resource-placements/electronic-files--states-2.json",
+      "placementSha256": "36316c7f669ce12ce7620a1a8a923d8e1b1f1ccb52e1f6d42210e287684c5514",
+      "textLayout": "art-delivery/records/layouts/electronic-files--states-2.json",
+      "textLayoutSha256": "62479d2201e2419491009852a985d733ae47add7e5e999c61606cc05ecc0e7d3",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/repair.png",
+      "screenSha256": "3339addd635b68bba2dad494dc049adab84e3ea8aec985fd080b1f1349368657",
+      "placementFile": "art-delivery/records/resource-placements/repair.json",
+      "placementSha256": "15200390bf65fb099eca1711302289f92d45bc9f4050584cd404e304cb56f021",
+      "textLayout": "art-delivery/records/layouts/repair.json",
+      "textLayoutSha256": "0753beef6cf0a9ce7f80964f772678a867f6de3d8ff55e53aabca9c5cd252401",
+      "imageAreaCount": 55
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-1.png",
+      "screenSha256": "66bde6e6da0b699be9d82faea8691d1487209973815204ae68aa764342a05519",
+      "placementFile": "art-delivery/records/resource-placements/repair--states-1.json",
+      "placementSha256": "b4a372529b1884bd251566213df7eb70c8e9e2ac2fa4c8b306f9c0ca94d0bd47",
+      "textLayout": "art-delivery/records/layouts/repair--states-1.json",
+      "textLayoutSha256": "89cc15045657985942222ca90ba4ab059c8f94f1bc9afc20519ee95f21a69bad",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/repair--states-2.png",
+      "screenSha256": "a04f35ebfa65ac348649d95386a074a5bb48ef090ae1037faacc1cacdf5f2dbc",
+      "placementFile": "art-delivery/records/resource-placements/repair--states-2.json",
+      "placementSha256": "93acd4a511865c8738f80bfa3b44a67e201187a2f2c883bad760ced5b93f2866",
+      "textLayout": "art-delivery/records/layouts/repair--states-2.json",
+      "textLayoutSha256": "b0a183c3912433fcf8177d8080f693f1b89afd5f710462cca80b4e22e16e3ac7",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/gunmods.png",
+      "screenSha256": "945c3f14040dd80f3607bb4bbc041d7b511d82fe1fab98527735a36ebed26782",
+      "placementFile": "art-delivery/records/resource-placements/gunmods.json",
+      "placementSha256": "e8681d13ddf0daeb0803b532be78a20d7bc734bb4e77d1b0891304b1be2018e5",
+      "textLayout": "art-delivery/records/layouts/gunmods.json",
+      "textLayoutSha256": "48032e94f33e7a17069efd9136baec0406f6fe5125ef01e622bec2507c39188a",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-1.png",
+      "screenSha256": "e32fae4a70b8a704b259215e6e855aae1b5785983c23607c861bd487ed8b0b93",
+      "placementFile": "art-delivery/records/resource-placements/gunmods--states-1.json",
+      "placementSha256": "d7aa293e72d284aa2d996787fc2485dc7a6d9a455ef11b43a432138cce404fb8",
+      "textLayout": "art-delivery/records/layouts/gunmods--states-1.json",
+      "textLayoutSha256": "febc1048d1b1e4476861e7142af15977ee8221d856419413dd76014c62b066cd",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/gunmods--states-2.png",
+      "screenSha256": "456a836b6af318d3c1d34ce4ed82c64f70f187e9b2da2d277aa39ed74ac95534",
+      "placementFile": "art-delivery/records/resource-placements/gunmods--states-2.json",
+      "placementSha256": "62f8038c151444d38a1c7472056043ce3b5319658a4f74089963f3116ccbef84",
+      "textLayout": "art-delivery/records/layouts/gunmods--states-2.json",
+      "textLayoutSha256": "d3c3601757a8bca455bcca9c4ac0caf86df0d87dabf5d7691262520efe20d484",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-recipes.png",
+      "screenSha256": "3e8292f4232fa55c3bf52d10279109b084120d5c0ef39a39d918750f2e76f8ec",
+      "placementFile": "art-delivery/records/resource-placements/craft-recipes.json",
+      "placementSha256": "2b4f0dc08bed73f5ea6aa759407f10654e652d0a065e374f5358f4a15a5947a7",
+      "textLayout": "art-delivery/records/layouts/craft-recipes.json",
+      "textLayoutSha256": "6b7bfddf03681eb371bbb9d48f92f162211d8a937107fa91966a10e59d1da6f7",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-1.png",
+      "screenSha256": "ae5ca524d1e218c1223f252a7d95e325cca27b70e03944933281ccf1aeda82a2",
+      "placementFile": "art-delivery/records/resource-placements/craft-recipes--states-1.json",
+      "placementSha256": "877cea196aebe99678f8b24d2105e98785aa90d9d7df5aebbb3161dbf8116cbd",
+      "textLayout": "art-delivery/records/layouts/craft-recipes--states-1.json",
+      "textLayoutSha256": "b30acaed1db1a30c31cc895e0b5158e774c4a9421c5ae864bd45b72b7fed0fc4",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/craft-recipes--states-2.png",
+      "screenSha256": "9d38a1480898a861566e9b4c411ff0675f85e168b5edc5a7a588e67be45eff94",
+      "placementFile": "art-delivery/records/resource-placements/craft-recipes--states-2.json",
+      "placementSha256": "95411be6c23fe4005d316bac8e44e3d257de819967a8b126ce92e0cf27e02656",
+      "textLayout": "art-delivery/records/layouts/craft-recipes--states-2.json",
+      "textLayoutSha256": "f236104ede23db74888485bc7a4f98b6fdf50c45fb874af74232bf4d14a7504b",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/craft-batch.png",
+      "screenSha256": "45a97b70ed57367a76d21d2aa1106a4cdb41edb3edb853b22cac7a6dfe02c67a",
+      "placementFile": "art-delivery/records/resource-placements/craft-batch.json",
+      "placementSha256": "e63d21db6208f4a87330ea5936c4fafbd236883185638e7e2bf753335162a585",
+      "textLayout": "art-delivery/records/layouts/craft-batch.json",
+      "textLayoutSha256": "1c57efe3beb564c1ba3fe42b425d3962fa980c9fd9db469d55e09f3a99c55158",
+      "imageAreaCount": 22
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-1.png",
+      "screenSha256": "6853af5690c07104084d710eda3ff3d2550e1f13cb08b0f726bbacdff86a1caf",
+      "placementFile": "art-delivery/records/resource-placements/craft-batch--states-1.json",
+      "placementSha256": "c9323425f5b55284bbe68aa81e53dbec33028f58f50fdb2e1c466b570fb52204",
+      "textLayout": "art-delivery/records/layouts/craft-batch--states-1.json",
+      "textLayoutSha256": "fa5a0f94555ecc63492cf96cda01ac1354f0a472bb4793a0a2d908448cd80c7e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/craft-batch--states-2.png",
+      "screenSha256": "b218ae67a627d5159e4e0b0eb9e05774fa3c2b6505d71875ebf8a89738a54f1b",
+      "placementFile": "art-delivery/records/resource-placements/craft-batch--states-2.json",
+      "placementSha256": "c1507bbe0a1ebc8d81d1631ab6f6400809e1a52617bb03a50661e3790aaf9f0c",
+      "textLayout": "art-delivery/records/layouts/craft-batch--states-2.json",
+      "textLayoutSha256": "c19d5462d1c7aa416867faab165eb2f5db62ebfd6cf1f225139358dcdbe6c537",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/disassemble.png",
+      "screenSha256": "0c3c9394d682e4afc3ee86c47e0646cb79e1f902e9d666f45409e1b0094f0acf",
+      "placementFile": "art-delivery/records/resource-placements/disassemble.json",
+      "placementSha256": "94010ed25bbe262ee027e118fecfa14525bc32285701f93a773dd146e2eb412f",
+      "textLayout": "art-delivery/records/layouts/disassemble.json",
+      "textLayoutSha256": "7c5d20f205cb6e924f5997fffaa4d92017fd7ecfe464b61d7192d9ecb6f7a7ba",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-1.png",
+      "screenSha256": "383148c1a97fd2eeab0a28ca85550d1e60e68abffd6286cd3b195b48bab3a794",
+      "placementFile": "art-delivery/records/resource-placements/disassemble--states-1.json",
+      "placementSha256": "d41c62e13c3d02d535191a87a92b9b3a0f9178b3d3fa9a5829df5dca7b5871d6",
+      "textLayout": "art-delivery/records/layouts/disassemble--states-1.json",
+      "textLayoutSha256": "e5db6d2bb8223e45aae80591fb0dcfe854959150f9b4bdd599caffbca7847c07",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/disassemble--states-2.png",
+      "screenSha256": "d615d2da787d51d66677ea08d8a38f1064aa50003edf416b26072d296276d9d0",
+      "placementFile": "art-delivery/records/resource-placements/disassemble--states-2.json",
+      "placementSha256": "b0b2a5c8737d6181957798e25ecc2c3a976889910935acb54d159aa6a6e81d7c",
+      "textLayout": "art-delivery/records/layouts/disassemble--states-2.json",
+      "textLayoutSha256": "dca17b60d52f6e1b16f7a7f011ac053d393e07950336e67182bd540b80745a28",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-general.png",
+      "screenSha256": "24cc9ec3129e0e3aaa468d1cd93c0411b375e0c7973f6a7fdcfd37864aff0d43",
+      "placementFile": "art-delivery/records/resource-placements/settings-general.json",
+      "placementSha256": "55179e3f86040b3dab64bb530093b584610d66176bf62cbd683bf600552b6a12",
+      "textLayout": "art-delivery/records/layouts/settings-general.json",
+      "textLayoutSha256": "287115c22a6efe42655d187186e8463d54ab0503e34718c451ad45ccfbdea12d",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-general--states-1.png",
+      "screenSha256": "164ecf854d1fd2e8743f99b47e2b64ce3914d7eb431237e3bc61907318b918fd",
+      "placementFile": "art-delivery/records/resource-placements/settings-general--states-1.json",
+      "placementSha256": "4bc0ec97f284ca6bfd81c0d570b4a1ec859a1b0e6ea0cb93dd5b8cbf9c9899a6",
+      "textLayout": "art-delivery/records/layouts/settings-general--states-1.json",
+      "textLayoutSha256": "c539ff1cb027faf92242de6b7c75f7c74bf6d02b48a1107163cfcdd250fc294b",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-interface.png",
+      "screenSha256": "4bd9d725829d45aff75e8b7e6926e1b016c95651b61c57bd533f7b17b23715eb",
+      "placementFile": "art-delivery/records/resource-placements/settings-interface.json",
+      "placementSha256": "c92c722737be9525d349a8e7f4228c52e160274f4c1797c832262b5f1c5bb28b",
+      "textLayout": "art-delivery/records/layouts/settings-interface.json",
+      "textLayoutSha256": "9aa4ad8eb7c851db27c1374dd6270cf8501f61ad41eef14138603aa136b4d1c5",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-interface--states-1.png",
+      "screenSha256": "209cc038b560ffda409a6e8b875f6574ae933f17c5eb356296b5a7c378ef67e0",
+      "placementFile": "art-delivery/records/resource-placements/settings-interface--states-1.json",
+      "placementSha256": "acf6d0117b714f1aee45286026f5970be3719a454e31c1dd89f923b498b8980c",
+      "textLayout": "art-delivery/records/layouts/settings-interface--states-1.json",
+      "textLayoutSha256": "2a34285e77c88279245dee5fc28575b1c76b1b9af97cbde13b2242a61d50ac7e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-graphics.png",
+      "screenSha256": "dcde759f35d33d8584b3b0bf6ca111df6444861b5d993ee61cbcceef1e78d0bb",
+      "placementFile": "art-delivery/records/resource-placements/settings-graphics.json",
+      "placementSha256": "d868266ff48d9d69acce9145f3fb68d251b0c4c2b26b5c57014319c6ad1c8f4e",
+      "textLayout": "art-delivery/records/layouts/settings-graphics.json",
+      "textLayoutSha256": "6e578fbf98fa21fa279d9dc89e395ea4d86fabace4463bc04ee3a226f6ae2529",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-graphics--states-1.png",
+      "screenSha256": "911ee86fcea6bbbc3b90a688d03c2e3e41a515dc80376a11bb3c04b5550c4ecc",
+      "placementFile": "art-delivery/records/resource-placements/settings-graphics--states-1.json",
+      "placementSha256": "d458abfef770a7e931be462b68b00008454d7a7b3687a52e2ff1d557f419b7bf",
+      "textLayout": "art-delivery/records/layouts/settings-graphics--states-1.json",
+      "textLayoutSha256": "6355247ed3c7a0de5486f3dbbfa11e0015f8d3c8873e731e35f8a9c4fd29f2df",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/settings-audio.png",
+      "screenSha256": "1bc4fdebd2e4f7b5b8dc0d121cca2eb9c37a673a9bb593abc5a789f0f34b94cb",
+      "placementFile": "art-delivery/records/resource-placements/settings-audio.json",
+      "placementSha256": "be9fc434a959246c0c4296794ccb8333a01e5d527fc4064cce4a13229143c174",
+      "textLayout": "art-delivery/records/layouts/settings-audio.json",
+      "textLayoutSha256": "3dea65dda7e6b32eafaf6c8f0576ed55319a185bcfc857b39443423e0897d3d0",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/settings-audio--states-1.png",
+      "screenSha256": "1c5f329501b933149bdd982831928b00575d900268f76391facef993efdaa113",
+      "placementFile": "art-delivery/records/resource-placements/settings-audio--states-1.json",
+      "placementSha256": "f9c66173d45e7dfcaf4416a0d4bf12c18499ecb10d1357822b1973ae2ff13066",
+      "textLayout": "art-delivery/records/layouts/settings-audio--states-1.json",
+      "textLayoutSha256": "6da6a4d99ccba1f6fc36fa2089eb5cd3c1740686bbbf6a1ba3fa586451b0289d",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/keybindings.png",
+      "screenSha256": "0d14473bc10f567fbc0b7aeadb5b75a0d94dfff441662667bda1a8f71696aa44",
+      "placementFile": "art-delivery/records/resource-placements/keybindings.json",
+      "placementSha256": "6e07e83e190e13a0a17d3ddc8d478568be6d7791f5816a304e2e46d302c63830",
+      "textLayout": "art-delivery/records/layouts/keybindings.json",
+      "textLayoutSha256": "cf578f9cd570ed92d022714c122879d4c74a14c81b33aed2918866a671214304",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-1.png",
+      "screenSha256": "17f9d64fb407e6910ff445fdfd23eb1db5a1bd36608589e1314ee7ca1e5c0364",
+      "placementFile": "art-delivery/records/resource-placements/keybindings--states-1.json",
+      "placementSha256": "1d714a506b84af47538faf9b018abb0afeaa716ac0a5133572cb3830b71ba47d",
+      "textLayout": "art-delivery/records/layouts/keybindings--states-1.json",
+      "textLayoutSha256": "7bd08221709d00925049e799948ac83a53131a88baaada9a971176fa5abfb826",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/keybindings--states-2.png",
+      "screenSha256": "94d95038628f75e58a4740c5f3a35f0f9d48d1de04c124b32372801586ae32d5",
+      "placementFile": "art-delivery/records/resource-placements/keybindings--states-2.json",
+      "placementSha256": "52747a599e54c01214af711806dc24b300d3e6bc07b9ed88c0aa70e15b20d914",
+      "textLayout": "art-delivery/records/layouts/keybindings--states-2.json",
+      "textLayoutSha256": "6a40e720006b31fa76de37a95d54eff28f1094c927a3895ef408b3b742be754f",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/help.png",
+      "screenSha256": "5e016b97663f0c4afb4d688e560682f2d3659ee33da62db5036cbb2703244938",
+      "placementFile": "art-delivery/records/resource-placements/help.json",
+      "placementSha256": "0ed4cd37f5a674e2a4fc906ceea02ceaa1228de1107aa6db00fbaf152e631f4f",
+      "textLayout": "art-delivery/records/layouts/help.json",
+      "textLayoutSha256": "246d3ab7f788a0c4806dde12520c8fe580b3e314cbc491a65e760b6dadd5af1a",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/help--states-1.png",
+      "screenSha256": "0e81e190bae08a04f8853ebd05fe512d0319e180d338a3b77d72983b11ee397f",
+      "placementFile": "art-delivery/records/resource-placements/help--states-1.json",
+      "placementSha256": "60166fa142db27a3eccf4d2e3f275cbdb717d1bdc687103280a91ec048bc11d1",
+      "textLayout": "art-delivery/records/layouts/help--states-1.json",
+      "textLayoutSha256": "b726c7a476ae17ad9f05fb15e2002af2266d5c30fbc14e5b7a1b0039e3b55740",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/colors-theme.png",
+      "screenSha256": "f600a71dc0d616ea01c163469a63db1b5cef30c006eac1228c51a2bb81266932",
+      "placementFile": "art-delivery/records/resource-placements/colors-theme.json",
+      "placementSha256": "3a49450667bac62affdf84a3a5314d18feeb1e6b92e30bf00da855eedbe3f860",
+      "textLayout": "art-delivery/records/layouts/colors-theme.json",
+      "textLayoutSha256": "04eb00d9e90a6d8f14aa09cf9a14448fe5cb3ee3dd39d04beca8041c91b25f08",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/colors-theme--states-1.png",
+      "screenSha256": "2293696af56fbe16d5659e23e434acb22b93b434055fce228d7887b0fdba18bb",
+      "placementFile": "art-delivery/records/resource-placements/colors-theme--states-1.json",
+      "placementSha256": "3647c58683cc5ec2c62b956010d5a1cd6093612931899589f581e2cd974b8059",
+      "textLayout": "art-delivery/records/layouts/colors-theme--states-1.json",
+      "textLayoutSha256": "b7f88cf9de86f1a27f57327282c3d70ed8fa545f4f0a6ce2d233f965215a70ae",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/loading.png",
+      "screenSha256": "92826d6eae8cfe7dd7526de0bf534a7b79a3d02239898d3814340cce43d01dc4",
+      "placementFile": "art-delivery/records/resource-placements/loading.json",
+      "placementSha256": "94b1360daa9467a33f814a0caa1f195695556d18d68eff87f1b788911ecc0273",
+      "textLayout": "art-delivery/records/layouts/loading.json",
+      "textLayoutSha256": "a9767c79b92d700a92777cefda3c24855d62149326872d04053ac19cc42ffb37",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/loading--states-1.png",
+      "screenSha256": "31ab148c4ae8d21dfa057696263dab8e355bc48f3cef47b665ac7aa756d2f274",
+      "placementFile": "art-delivery/records/resource-placements/loading--states-1.json",
+      "placementSha256": "7c95622d3272bc08e9a2698705e84125348f785e73f5392b702a0adf6f58fbd9",
+      "textLayout": "art-delivery/records/layouts/loading--states-1.json",
+      "textLayoutSha256": "406567cfc147e6480d9561ade837077b7d71417000442f3652bbd1caae8530c9",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/tutorial.png",
+      "screenSha256": "ae6b95eb7b8088854ab676993911c17a3ac3a046440cccf5185ab887649c7989",
+      "placementFile": "art-delivery/records/resource-placements/tutorial.json",
+      "placementSha256": "ee56d148d50b1abd64c1a46595c0c6da6d2596cef86b66c3e7ed36f0ccf6a546",
+      "textLayout": "art-delivery/records/layouts/tutorial.json",
+      "textLayoutSha256": "e9cccad78230511a697b1d65fb722e18fdd4c5e1e442ec9f5a4cc22ef796ecb4",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/tutorial--states-1.png",
+      "screenSha256": "987d88816f6ae9322bc9e0ac5829987e57aaa4326ae600e6af2bc7f8757d918d",
+      "placementFile": "art-delivery/records/resource-placements/tutorial--states-1.json",
+      "placementSha256": "5e7c980a97fff85ae3a7d5ba3328aee511552b350e9355fb434c2afd6b107e34",
+      "textLayout": "art-delivery/records/layouts/tutorial--states-1.json",
+      "textLayoutSha256": "aa8dcb6bf337334ff71ebc6661ce3dc02b500b425c324cad404d998d26578e76",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/game-hud.png",
+      "screenSha256": "45ffe76dcf6cb3e321ee31275576e11ff436d9c07cd09da949569c8448a30c12",
+      "placementFile": "art-delivery/records/resource-placements/game-hud.json",
+      "placementSha256": "0f89e34f256a7832afba9a1a21a38e8d67dec421cd1569b883428bc31de13e5e",
+      "textLayout": "art-delivery/records/layouts/game-hud.json",
+      "textLayoutSha256": "610e2abf13dc288bf932944de925584cbf8633db4996c0a749c41f557d4e8d06",
+      "imageAreaCount": 14
+    },
+    {
+      "file": "art-delivery/designs/states/game-hud--states-1.png",
+      "screenSha256": "e4c633754c1613a1453d66d3c657ecd95c7542665a98f26b5b081106a3ec1d15",
+      "placementFile": "art-delivery/records/resource-placements/game-hud--states-1.json",
+      "placementSha256": "f945c997a2f600253b17c1100ed241af6a3fda52bfd033950c2259406c191eb2",
+      "textLayout": "art-delivery/records/layouts/game-hud--states-1.json",
+      "textLayoutSha256": "60abaa7422245f8913eeaf44bcf3d0d20414960af0d909504dd8588eb2250c9e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/game-hud--states-2.png",
+      "screenSha256": "349ab184045ec9170f256effba16eab1729a27cdbab7a710ceb6bb37b9740235",
+      "placementFile": "art-delivery/records/resource-placements/game-hud--states-2.json",
+      "placementSha256": "ca0d27660c77b4399c7865ff11255aac5e15c0cf9311b44af3a5a4020e33a946",
+      "textLayout": "art-delivery/records/layouts/game-hud--states-2.json",
+      "textLayoutSha256": "1d87c86dab5302ce0a1c97fc706370ae918d5aa9be882024a33aebcf48665be3",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/aim-ranged.png",
+      "screenSha256": "bdca811d6000b0d052a3d2f5bf055cf0bf56d4d68c75dbe177e66fa93342fab4",
+      "placementFile": "art-delivery/records/resource-placements/aim-ranged.json",
+      "placementSha256": "ce0cbe05ca444ab56ff033dd26dd049d8fd9bf9f1bd54b3f3259d4d6fb61f398",
+      "textLayout": "art-delivery/records/layouts/aim-ranged.json",
+      "textLayoutSha256": "1a63d0e7705fc2bb2738d71e07675ab3bc6c895fe2cac4f6c92028ca1a400945",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/aim-ranged--states-1.png",
+      "screenSha256": "c461e7b5df1c7ae978a759e02e40c84860040b73e8f890fc3d1550ae82cf4371",
+      "placementFile": "art-delivery/records/resource-placements/aim-ranged--states-1.json",
+      "placementSha256": "bbd1356d7705aa6518a66d037147d1573f948a7a7e6962fa27c5096397194abe",
+      "textLayout": "art-delivery/records/layouts/aim-ranged--states-1.json",
+      "textLayoutSha256": "7ba5f2da79e8082cecddf616a2216f145bd35adb8e0d641ff60576c4f39381e5",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/throw-target.png",
+      "screenSha256": "5431e91e75b15a0dcfc734d56b4af20ee25358b285c6835210de48e46ae5799b",
+      "placementFile": "art-delivery/records/resource-placements/throw-target.json",
+      "placementSha256": "c21421588e6cca13f21b164524c33c242fbc0bb3083a40711737a8a7080e357e",
+      "textLayout": "art-delivery/records/layouts/throw-target.json",
+      "textLayoutSha256": "53ae17ed7a3cbcd3bd085055c3e0afddc56ae44de2dba9b45bfc47e705289326",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/throw-target--states-1.png",
+      "screenSha256": "80a3b28fc613b32ab163ade8da1714c7a93ff6180603e02fccf695282c4ca734",
+      "placementFile": "art-delivery/records/resource-placements/throw-target--states-1.json",
+      "placementSha256": "d1f5ffd289cd0acc54d4196c480e044586e080488364cb1e0fea985839a116c0",
+      "textLayout": "art-delivery/records/layouts/throw-target--states-1.json",
+      "textLayoutSha256": "97a9f25641813d10928ee0921e1d0f345cf2d54a6f345b8d6446079407ed2805",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/look-examine.png",
+      "screenSha256": "62fc9e1cf7cccf45e555e7cd5b3c95243e647f0ae1356416686f22d243378746",
+      "placementFile": "art-delivery/records/resource-placements/look-examine.json",
+      "placementSha256": "637e6d7a7f20a4bf58c946eb8bd6641057b3fdeeb4304e6553f48b52a2c928d2",
+      "textLayout": "art-delivery/records/layouts/look-examine.json",
+      "textLayoutSha256": "bfa8987ec81142b02655d59b6b282c83f0586f3f3f12bddbe8fbb516790ef227",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/look-examine--states-1.png",
+      "screenSha256": "a341ddae6f2303a0a3d58ea859dd9f880be0390f4dea277b5bd8161892aadd50",
+      "placementFile": "art-delivery/records/resource-placements/look-examine--states-1.json",
+      "placementSha256": "7b96277acaa4f50a7535390131c55067daa0b967c0def4291a4d412c411a5d7b",
+      "textLayout": "art-delivery/records/layouts/look-examine--states-1.json",
+      "textLayoutSha256": "ce38fa1696f310cc5270928c1f7a66fd6abc39a4fa4a3460e1347d6bb8b0ef53",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/nearby-creatures.png",
+      "screenSha256": "47e603552933c47635c8bb237201e7c21bca32e31aa17b06a65a2ce1dc27ec19",
+      "placementFile": "art-delivery/records/resource-placements/nearby-creatures.json",
+      "placementSha256": "12df958326458d6c6aee716827ecf3b0098757ef41d353aec460299e58776b89",
+      "textLayout": "art-delivery/records/layouts/nearby-creatures.json",
+      "textLayoutSha256": "c70bdbb355545ff5176b351ab4c50dc7d2b7322f18b5bc18f5103db4c21cc390",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/nearby-creatures--states-1.png",
+      "screenSha256": "5e51ebb5906b81c5de26392d65c3db69bde58a10d2f08ed739d863531711c1a3",
+      "placementFile": "art-delivery/records/resource-placements/nearby-creatures--states-1.json",
+      "placementSha256": "a240f7e4d51693aeb58d6b087f796ce81e6f86e708fbf1ef0f502fa25522c57c",
+      "textLayout": "art-delivery/records/layouts/nearby-creatures--states-1.json",
+      "textLayoutSha256": "06b30e51f6b005fd22e05b534d6e51c3cd9999c992bae1f493d6d29a2b586a73",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/message-log.png",
+      "screenSha256": "2254d9552d858b558ba79550c2c88ff3d07730b8e8c06f9449741e84d353b7e6",
+      "placementFile": "art-delivery/records/resource-placements/message-log.json",
+      "placementSha256": "1a0afc93b53eb626465e19fa8246db16c3ac7a52367e6a7e4d8e5d9c35bbdf8c",
+      "textLayout": "art-delivery/records/layouts/message-log.json",
+      "textLayoutSha256": "8d9b6a9971d67bc142b8b2ecf9b9dd3e77bb630c6bc9f947421beb4b300d8190",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/message-log--states-1.png",
+      "screenSha256": "0af9697fe81e94999813fd10d7b7596ede85114bbdc252534b6060a2e68548bc",
+      "placementFile": "art-delivery/records/resource-placements/message-log--states-1.json",
+      "placementSha256": "39abf841a75e47036cce01a5e2eed8dd870bebeb40599f26b4ab9a8ac5145313",
+      "textLayout": "art-delivery/records/layouts/message-log--states-1.json",
+      "textLayoutSha256": "f404ea75dd4591ae9ada818cafabb9f4465cdcf9a3cf5e263743ee5b96c89451",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/body-health.png",
+      "screenSha256": "c4db1e3fad87d5efa8610560cac808176fd210aa1a82d9b994922a33dcf0e2c1",
+      "placementFile": "art-delivery/records/resource-placements/body-health.json",
+      "placementSha256": "3737ccea65f0e739594266db147fa6f8c62f1202228554fcc482c899c60b9e12",
+      "textLayout": "art-delivery/records/layouts/body-health.json",
+      "textLayoutSha256": "b14ca5520bd83a85b53b490f97a4056a0ba70bbc41371cd2d2654dea114089b3",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/body-health--states-1.png",
+      "screenSha256": "bb6f9aed1480e626a95563221036dc61a4977fe5aaaf5a9ab59ee2c5f515ac9d",
+      "placementFile": "art-delivery/records/resource-placements/body-health--states-1.json",
+      "placementSha256": "b331fe41ce97e536f98d643bd4f1e3b82b1ce48c7bff8087448d83cf66ec8e58",
+      "textLayout": "art-delivery/records/layouts/body-health--states-1.json",
+      "textLayoutSha256": "9d56877127539248cc5cef3ada559384aa0252ca2ec69ebc2da4d8417b712542",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/medical-treatment.png",
+      "screenSha256": "098357a5574d2516d18341e68c03eaf778d3f9bb511c33fdd8e8ed1bb8f918bd",
+      "placementFile": "art-delivery/records/resource-placements/medical-treatment.json",
+      "placementSha256": "8b67c4b5d2e4ca68d2e9cf62c30ba1a8f2bc01227f2e635083e8a9e21bb09d89",
+      "textLayout": "art-delivery/records/layouts/medical-treatment.json",
+      "textLayoutSha256": "4df0f0da56b4395c3f4d78dada501646139a0c96a98780261feaf373e71481e9",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/medical-treatment--states-1.png",
+      "screenSha256": "a3b524bf52dd1a4a011d7cea6ca3b014b0d889bb1299b2412ccadfc2ac9bfaa7",
+      "placementFile": "art-delivery/records/resource-placements/medical-treatment--states-1.json",
+      "placementSha256": "a619dc44473d571ec4f6fc85a792d3b575c67447cf29a3cadf75a57c49b47929",
+      "textLayout": "art-delivery/records/layouts/medical-treatment--states-1.json",
+      "textLayoutSha256": "a7c1c45b4c3da4e75bb0294184a2c013d9b6cb066ee28009fed5fcadb82d7b0d",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/status-effects.png",
+      "screenSha256": "a6c50451bd41d8c7af4b689bd7a85a7cde1f1c9d17f5f504cc1e77352e3d0bec",
+      "placementFile": "art-delivery/records/resource-placements/status-effects.json",
+      "placementSha256": "a80d457c4ca0fbf8323b69b8c5e611929331a4071d6920c8086784c957c0d89d",
+      "textLayout": "art-delivery/records/layouts/status-effects.json",
+      "textLayoutSha256": "76d51e6f71b8f7a60d5be6ad1c03799f259430e7a600fd7fe6f96590bff4cc92",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/status-effects--states-1.png",
+      "screenSha256": "70c08b13aaacb7337c8193a2651c93cfb3caee7dfac3a59d7c1812e6dfd65153",
+      "placementFile": "art-delivery/records/resource-placements/status-effects--states-1.json",
+      "placementSha256": "7861a60b5b9335da4f73897058147ee0f53c6e6e5b63c79f86ccbc80caec883d",
+      "textLayout": "art-delivery/records/layouts/status-effects--states-1.json",
+      "textLayoutSha256": "60612aaabffcfedf09c002344a4e1cd27931800388c903e84d689eb8a96ce87a",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/morale.png",
+      "screenSha256": "ead7497906774e397589ee1d68b3c58ec8da19d39d77fe70be4c137e7b719ed3",
+      "placementFile": "art-delivery/records/resource-placements/morale.json",
+      "placementSha256": "5cd7180fd89b90d7192242b7983d6996dbeba70430fa31bc8e79e5d942261c52",
+      "textLayout": "art-delivery/records/layouts/morale.json",
+      "textLayoutSha256": "c2bdbec92a279c93c4bbe0a2d94e7edf853e10f992aaa20c466b71286632e3d6",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/morale--states-1.png",
+      "screenSha256": "7dd173e9a131f99d5a1f97b636f23f26c475f13533af4c1b91770bae10b4b983",
+      "placementFile": "art-delivery/records/resource-placements/morale--states-1.json",
+      "placementSha256": "ceb908bf50aecef7453295f78516d7c96fd9e9e9c5c5d304c58517f88f6358bf",
+      "textLayout": "art-delivery/records/layouts/morale--states-1.json",
+      "textLayoutSha256": "5d6cb12ba484f6dbaff35c75a05e9ed0bb84431502289a9ed3e5370c9cb6675a",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/overmap.png",
+      "screenSha256": "d3baa8f14110cabc7b9620d801f0f7e2cad5c8db68133d6002975417f00a5f30",
+      "placementFile": "art-delivery/records/resource-placements/overmap.json",
+      "placementSha256": "8a6e5c58d39e05610ed740f98adccd1d06862ca08e1502b534c4640a700817c4",
+      "textLayout": "art-delivery/records/layouts/overmap.json",
+      "textLayoutSha256": "a7546f03dc443a12a22e4158c65c7357edf294c37b4b56b9a844a933661fdf35",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/overmap--states-1.png",
+      "screenSha256": "7a6c88cff675eb2499596e4f419c300f9102a501abd44432c3298cdee6053c3f",
+      "placementFile": "art-delivery/records/resource-placements/overmap--states-1.json",
+      "placementSha256": "89b9744c9bda1f8245c8ed2843bce0d9b3b1ee77baf0f1b36ed5036da16dbce0",
+      "textLayout": "art-delivery/records/layouts/overmap--states-1.json",
+      "textLayoutSha256": "70dacdde9be6ec980604c2f2801d46787eabbd16693ba271ece1837c3aa7d3df",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/map-notes.png",
+      "screenSha256": "dfb2b5ae15270f1d23055e1526cea06dd6f418b0d417864464692de41a7ee9d9",
+      "placementFile": "art-delivery/records/resource-placements/map-notes.json",
+      "placementSha256": "989b7f9125771bd6faa9bed8223d2e2171c5dc512dedf998e4091b6dc0a60d2d",
+      "textLayout": "art-delivery/records/layouts/map-notes.json",
+      "textLayoutSha256": "dd954b0823c382fd8f37a519ee8ae2707e0d65c2dbcd14d50674ba2327b6c6dc",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/map-notes--states-1.png",
+      "screenSha256": "ac18ead7aa12f2121dc668051ddfbb8a120ed7eb8396aae96aa763b9fca26ed2",
+      "placementFile": "art-delivery/records/resource-placements/map-notes--states-1.json",
+      "placementSha256": "bea6d44310a4597ddd18cfb96256e822fa63bf414a39a8a5a70408bede3a1279",
+      "textLayout": "art-delivery/records/layouts/map-notes--states-1.json",
+      "textLayoutSha256": "c1db4384c92cd93b0d230f4c3eba65907a22705329588c2e6ceec390eea3083b",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/route-travel.png",
+      "screenSha256": "8fc210cd6e17f09d364f09d9adccd34e1a555bd30caf590e8c81b8fd2af331c1",
+      "placementFile": "art-delivery/records/resource-placements/route-travel.json",
+      "placementSha256": "f5e5f90d6fe7c8156c08d9c703cb8d04da6750059c46e952fd10c82ff658ec0a",
+      "textLayout": "art-delivery/records/layouts/route-travel.json",
+      "textLayoutSha256": "24cf1d96dd6503839fae5e9b51877e814fee7a41e9b79b1a6c06e4a27ef1f3e0",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/route-travel--states-1.png",
+      "screenSha256": "73396d418a0f61fe084228f3801bb4972e2d819bb6436ebc302234714e296f24",
+      "placementFile": "art-delivery/records/resource-placements/route-travel--states-1.json",
+      "placementSha256": "5c8ce573b8d8a54147f11a127f0d445f4d5648014330574b4084e0060cd3c959",
+      "textLayout": "art-delivery/records/layouts/route-travel--states-1.json",
+      "textLayoutSha256": "8ecad340ca6ba51e8af82656b9615d1bffd757123e9f89ad673cabc9675b9e31",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/route-travel--states-2.png",
+      "screenSha256": "ab5814c04259526f8ee80da822403f562562f59b48c5f901682df0a4112f9da1",
+      "placementFile": "art-delivery/records/resource-placements/route-travel--states-2.json",
+      "placementSha256": "6e1cfb8aead50dd653663dfc77d6e0f49a659e6f5e776604f288ddd8b8b6b7e9",
+      "textLayout": "art-delivery/records/layouts/route-travel--states-2.json",
+      "textLayoutSha256": "20b542e1051f02bc094ae7b679e52c7c35e1b3c7101dc65766abd02aea689658",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/zone-manager.png",
+      "screenSha256": "dcf5a3c4776401e1ba493e0ab4c5ac7ab751ec7ee5ec27baa83843dce9fda613",
+      "placementFile": "art-delivery/records/resource-placements/zone-manager.json",
+      "placementSha256": "d31212b123b49e25c4b75782177a1d72a6bfe650201c96fec49a082e9c534c52",
+      "textLayout": "art-delivery/records/layouts/zone-manager.json",
+      "textLayoutSha256": "d89f9bf9aabcc98cce78f7b99b1ee8b8b391cf684a44dcd51b6b0dcfae8ca2c5",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/zone-manager--states-1.png",
+      "screenSha256": "7fcdc6f46c7c7b5e9063284059627a220c7e6842f95599b85ac6166b13bb3d82",
+      "placementFile": "art-delivery/records/resource-placements/zone-manager--states-1.json",
+      "placementSha256": "a9c01805e92f47236572bb5c82097f18dd74f7cf2a5d42aeacc8053dd5d826cc",
+      "textLayout": "art-delivery/records/layouts/zone-manager--states-1.json",
+      "textLayoutSha256": "7d0a36ec5677b44421e1e039c8dd98c2c25c420b5b9c6b532e7040787df70872",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-talk.png",
+      "screenSha256": "3556c32b8dcd6e45fb2c0f1745cf1e63190b624dbd0ebc5e4b872c2b9031d19f",
+      "placementFile": "art-delivery/records/resource-placements/npc-talk.json",
+      "placementSha256": "468ef29d0a2f2a1c3f06a01e7ae07d2f69da0c98b90a7786ef912f036e578533",
+      "textLayout": "art-delivery/records/layouts/npc-talk.json",
+      "textLayoutSha256": "d4d7637d329ebd81e714ec68b4377d52d0c3d4265e5ce0683b6f9199f9f0cd6d",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/npc-talk--states-1.png",
+      "screenSha256": "a33faf3f738aeaf636d8dbd7601cd6205827c0ce8d21247b24f14f65e0b610ce",
+      "placementFile": "art-delivery/records/resource-placements/npc-talk--states-1.json",
+      "placementSha256": "1153d5acca79267f2367c966675ff22fbabf2eebbb5d034c73bdc76d95c485af",
+      "textLayout": "art-delivery/records/layouts/npc-talk--states-1.json",
+      "textLayoutSha256": "e6b3b94406dd43ab8a0692cce5f93b0686828bb3aa6c3fbec0ae62b93cfeedc9",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-trade.png",
+      "screenSha256": "dcd9cee3937a93299874305b18ca1f392be104183a5887684a215887dd74ce82",
+      "placementFile": "art-delivery/records/resource-placements/npc-trade.json",
+      "placementSha256": "0644ebd88d6ba51cfb5dff97401693fb48410c860af2b03727ac702a91f0dbd8",
+      "textLayout": "art-delivery/records/layouts/npc-trade.json",
+      "textLayoutSha256": "23cfadf17f66ab0cf943efac50b2af2885c8188350a7587c7ff3ccf4be306eca",
+      "imageAreaCount": 32
+    },
+    {
+      "file": "art-delivery/designs/states/npc-trade--states-1.png",
+      "screenSha256": "5a4090eb832b9f3cded1ee948531141d01d40d7a6c6cafc96bb09e19e953d3ca",
+      "placementFile": "art-delivery/records/resource-placements/npc-trade--states-1.json",
+      "placementSha256": "0d3b0178d6e90527a10babbc0781f690f7809d1c5c1b9722d6ad9b05e382a37a",
+      "textLayout": "art-delivery/records/layouts/npc-trade--states-1.json",
+      "textLayoutSha256": "16b9e3afeda0cc493c3a99a5ce299d5f57745106557cbc9a21cabc785814c697",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/npc-trade--states-2.png",
+      "screenSha256": "d639dc0aef96625644cbba47465da474f74c1f857de9c06f468ab50abeb231d7",
+      "placementFile": "art-delivery/records/resource-placements/npc-trade--states-2.json",
+      "placementSha256": "15ccd6a386d6c5cbe8df2845d41a17a35a2acc81e6621da46abb84612660f7f3",
+      "textLayout": "art-delivery/records/layouts/npc-trade--states-2.json",
+      "textLayoutSha256": "ac93842cb060a8c0ef2b2af547069cc787277a77ffd0fdbc417bedb2a4b91e7b",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/missions.png",
+      "screenSha256": "205f87464e83be208fcaa1cf927e7ddacddcfc141b92bd269e6f8a49e53f3c53",
+      "placementFile": "art-delivery/records/resource-placements/missions.json",
+      "placementSha256": "1b96cd5e90f0e47326e9557f1fd13048f27c7462deaaa57131193a2eecd63119",
+      "textLayout": "art-delivery/records/layouts/missions.json",
+      "textLayoutSha256": "0a49a458975345fb811c1772cf88baae138d767d60e540747a412a6159b1cb15",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/missions--states-1.png",
+      "screenSha256": "9be0f0382d6fce7ae6f666993673f91ca489fd7e4cd2417baa66e8ffa74a6663",
+      "placementFile": "art-delivery/records/resource-placements/missions--states-1.json",
+      "placementSha256": "5468187b2eef180009b4293c03e4a67c8239e5d325ed842436024216a3add609",
+      "textLayout": "art-delivery/records/layouts/missions--states-1.json",
+      "textLayoutSha256": "45a4beff2b16d45161c5cd9bd44e3b2dd832fa8c5e41d0008c6cacfbb80fa294",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/factions.png",
+      "screenSha256": "298da72196d7524c7d36fcccb69d57018aadd1978989614bbacb4bf0d205e340",
+      "placementFile": "art-delivery/records/resource-placements/factions.json",
+      "placementSha256": "af54aa0e587b9c1b9d5d0bc1ecb3018bd8508467e4710630b1f9681b20f798f4",
+      "textLayout": "art-delivery/records/layouts/factions.json",
+      "textLayoutSha256": "377b4a704e7aebfa30cfd153fb878e1705793db2178df2e9ced1483fe99074d8",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/factions--states-1.png",
+      "screenSha256": "db332a8d1a5a16624262b083d579b67a95bc56944652ee74a204059fa6d4f1b9",
+      "placementFile": "art-delivery/records/resource-placements/factions--states-1.json",
+      "placementSha256": "fb9ffa9bc11bf77a47cea58c30f24744ef41fcb7d8fad205241653321482d24e",
+      "textLayout": "art-delivery/records/layouts/factions--states-1.json",
+      "textLayoutSha256": "4403c7e9e645930fb2d9726fa79c63f3bdad38e91e92ec4c058e86ca8c0e6730",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/followers.png",
+      "screenSha256": "08a926732c631e3728f9ad2cdb67921a3d6a6dafba83ed8184c06dd20f7203a2",
+      "placementFile": "art-delivery/records/resource-placements/followers.json",
+      "placementSha256": "493e70b810a7f383af6ffbcf561c234300e611413642d745463efc5067aa6c61",
+      "textLayout": "art-delivery/records/layouts/followers.json",
+      "textLayoutSha256": "9e91e67d254837ec2c56f9bdb0a99ec5c0b88a7165f75e932f33adb64d97c82a",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/followers--states-1.png",
+      "screenSha256": "b9d605476aff6078f39ba8baa24402c4800c11de539a031e3ac017c1a9e2c88e",
+      "placementFile": "art-delivery/records/resource-placements/followers--states-1.json",
+      "placementSha256": "2fa47770181b9018027650bf03eae344d761a748ad421a7ea27589f32629fa24",
+      "textLayout": "art-delivery/records/layouts/followers--states-1.json",
+      "textLayoutSha256": "f027e07ffe981e9c94802dd7c5fe00389393fef161f7323716a0834407bb2b2d",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/creature-codex.png",
+      "screenSha256": "2fd370dd79cdab39f42906f65cf5d5a8e84f48aafc8c3383752e0449b0b0aa20",
+      "placementFile": "art-delivery/records/resource-placements/creature-codex.json",
+      "placementSha256": "71706740098f3ce35d6e47f1e4337a3797fce366ee3153a2261b85090a824ec6",
+      "textLayout": "art-delivery/records/layouts/creature-codex.json",
+      "textLayoutSha256": "8fa0346b9a1777362f91be92f91a6e6f8a28a91529b5c5d7ce223c7eb625faa5",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/creature-codex--states-1.png",
+      "screenSha256": "6fa92b2645c1d8d4fbf131b3761071d4e80a1adba441d6de76093c6791f28228",
+      "placementFile": "art-delivery/records/resource-placements/creature-codex--states-1.json",
+      "placementSha256": "41e237326a8b941138ce09715631c988eee87dd6dbe1a38c52c516fae7950a38",
+      "textLayout": "art-delivery/records/layouts/creature-codex--states-1.json",
+      "textLayoutSha256": "2f15bfc973a2ede4f5c7b094b4e4f409b8e5cf8c521b5877cd9c4bc32a09813e",
+      "imageAreaCount": 17
+    },
+    {
+      "file": "art-delivery/designs/screens/camp-overview.png",
+      "screenSha256": "264479a6ea0c46e4a4954319fae4156809e3f5b7edebaec6c1c0078b42e48bfe",
+      "placementFile": "art-delivery/records/resource-placements/camp-overview.json",
+      "placementSha256": "2f6a8b0d8cee6cc4ef02d3d56e6dfced22a00b9c6b62366ee0a0f9b16e8b7029",
+      "textLayout": "art-delivery/records/layouts/camp-overview.json",
+      "textLayoutSha256": "f0eb7ae14c18525ee08088b3e9f1c6c9a66d9dd6b30644fc326278f5e22cd413",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/camp-overview--states-1.png",
+      "screenSha256": "873b6445acf8ba9ddcadc1eef64a9437fa22841eef478f6133d5412f11a2f242",
+      "placementFile": "art-delivery/records/resource-placements/camp-overview--states-1.json",
+      "placementSha256": "d2c2048019552bda971a25c86cb53e2c2c8d46b75e62922dc59e139b2c2799f1",
+      "textLayout": "art-delivery/records/layouts/camp-overview--states-1.json",
+      "textLayoutSha256": "dcb20e0fd34db3cbe15a84fa037db4040a1811a3455c0c65345a541c8b6b5d66",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/companion-assignment.png",
+      "screenSha256": "7c3e2218659b6498ff92df995120cfab2029fc7ece507c5c4ace512570482bfb",
+      "placementFile": "art-delivery/records/resource-placements/companion-assignment.json",
+      "placementSha256": "d41267af060957d7ed2e7e6e694f7842a3afaafce23eff87aeb3005aad784327",
+      "textLayout": "art-delivery/records/layouts/companion-assignment.json",
+      "textLayoutSha256": "558705919dfc9a578906c033361d9ef37bcf55d638bfd548516df585003d9ca6",
+      "imageAreaCount": 27
+    },
+    {
+      "file": "art-delivery/designs/states/companion-assignment--states-1.png",
+      "screenSha256": "4533b29f26a95f7acd7579917b1e02dda086257c4e4de942f57d6f9ebe0159aa",
+      "placementFile": "art-delivery/records/resource-placements/companion-assignment--states-1.json",
+      "placementSha256": "be1fb9a2766e5d4ebd467ed5ab451bacbe9f058e15bd68e8111226693cf0cd65",
+      "textLayout": "art-delivery/records/layouts/companion-assignment--states-1.json",
+      "textLayoutSha256": "5c640f376f6b71ba300cfd81e967bed50f9a1b098a0c2b7ea35e2733d8ec22f6",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/companion-assignment--states-2.png",
+      "screenSha256": "97c837d31465bbb2b3c079115b77bfe51b48e05b5bfee211e80a860f6b787db5",
+      "placementFile": "art-delivery/records/resource-placements/companion-assignment--states-2.json",
+      "placementSha256": "44faf7a1bdafc392affc53c7a8db8d74e70976c75cdb6d4289a9208afce5e08b",
+      "textLayout": "art-delivery/records/layouts/companion-assignment--states-2.json",
+      "textLayoutSha256": "5ce072fbde66c1a1f1eff2f01f53fc0bd4fa5d056fb3c4453170adb4435b9e85",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/camp-upgrade.png",
+      "screenSha256": "844fa5e396b1729c13674f254d7ba35896a1e7f10fc0410196cdd74de0d15de1",
+      "placementFile": "art-delivery/records/resource-placements/camp-upgrade.json",
+      "placementSha256": "be138ff12311a6ddae78ebccdd7a550ad7191aad206e8ac9c01b74255e14f653",
+      "textLayout": "art-delivery/records/layouts/camp-upgrade.json",
+      "textLayoutSha256": "3928bc23b1b69bf9afb60f8191d218ef4bc1681b8c6b045bcecce9d6b9a225cc",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/camp-upgrade--states-1.png",
+      "screenSha256": "9d7afae196ebb0d66d6963424fcdc2ddc1335cfa6de8536e2915a4cc1a5f51cd",
+      "placementFile": "art-delivery/records/resource-placements/camp-upgrade--states-1.json",
+      "placementSha256": "4523162d8e6e09bf3c907b76460fa8777afd6dee398a64abb4fcef0852793772",
+      "textLayout": "art-delivery/records/layouts/camp-upgrade--states-1.json",
+      "textLayoutSha256": "a17a23787ad190a4d8847ecfce2f154b77a6d5236b065c7eaa687a15458622c6",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/camp-upgrade--states-2.png",
+      "screenSha256": "7caf3bf877bf3393595e1e648de0572298313c7da0ac73ff45ec1a8750939afa",
+      "placementFile": "art-delivery/records/resource-placements/camp-upgrade--states-2.json",
+      "placementSha256": "aa4b5e6fcf4b048ad26c937b4b7904922d143ad393a27a7d85f5751bcc5b0c8f",
+      "textLayout": "art-delivery/records/layouts/camp-upgrade--states-2.json",
+      "textLayoutSha256": "860f10eae06cf304b9f28711def606f9c08d5e257b882eb0ca6deb6727ee81e5",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-dashboard.png",
+      "screenSha256": "5428645952b513219eb1051b3e2b6303ef6149d69a9c7220e2478bb6eea3bb87",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-dashboard.json",
+      "placementSha256": "0884f067e0f1e5ea22edb3fa9cc6bf233784d987f7a9a3fffd57fabda25f6cd1",
+      "textLayout": "art-delivery/records/layouts/vehicle-dashboard.json",
+      "textLayoutSha256": "56e5505ccae45080fb04dc8da96161633e696b346cd1d058758c2309601d270f",
+      "imageAreaCount": 13
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-dashboard--states-1.png",
+      "screenSha256": "b582cee75cf8a7f690148f4ab3150c8dd84543de64015f82f2a2334689eb8396",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-dashboard--states-1.json",
+      "placementSha256": "edc8329c2a3a46d19f1321fbc560b4ef74164ad5411c22d0a2f8fdbda30b1190",
+      "textLayout": "art-delivery/records/layouts/vehicle-dashboard--states-1.json",
+      "textLayoutSha256": "63f4bbce7af6628705ef60671f62234e1708e7040837ae2261fac804e0282198",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-dashboard--states-2.png",
+      "screenSha256": "348fee88646637da25041a614e93c77e67e392c952b668b3c56b0d0ec1c58a5f",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-dashboard--states-2.json",
+      "placementSha256": "ad11d65f0d4c01e87319327b169b28e2932040092e1a4f93b353a29dfaccec96",
+      "textLayout": "art-delivery/records/layouts/vehicle-dashboard--states-2.json",
+      "textLayoutSha256": "6ac565c16b965c123b233ec068bdb62946c2db1c669beb39d56e667b1ebe8643",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-parts.png",
+      "screenSha256": "5c9699d332f0dc65a7a1e63092c3aff5fb61659c2d952ba3b177201b0b537b2e",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-parts.json",
+      "placementSha256": "6c76d0f7fc1f0158b6d65b631ff2a1d524c083d0dacc13b4336e69cc009aa2ef",
+      "textLayout": "art-delivery/records/layouts/vehicle-parts.json",
+      "textLayoutSha256": "691c1bd04ab5966252cbdda972c6c1943d1153a93d57e73af19ce07fb1e244a3",
+      "imageAreaCount": 34
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-parts--states-1.png",
+      "screenSha256": "43e3bb7e3edfc732e9e49cd4c986ec98ffce028321c4e2709208ddc5cbe6e5f0",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-parts--states-1.json",
+      "placementSha256": "b521bda5615f3dd824b44a5ccafbf72e6dd1f2686d8e78d7968a7d84c2361024",
+      "textLayout": "art-delivery/records/layouts/vehicle-parts--states-1.json",
+      "textLayoutSha256": "2d52c1d451a5d83f819199bae73a0d3e7a1947b5094ed0df0e2229b5744e6471",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-parts--states-2.png",
+      "screenSha256": "0b955bfa67dc5c894b88fb0e618f53b0588d3236f63f785072a866aa0a2d8738",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-parts--states-2.json",
+      "placementSha256": "c2fd545050afad550256a00d1b35039bf4666ed8d38e69cf7ba386ae8231c1a2",
+      "textLayout": "art-delivery/records/layouts/vehicle-parts--states-2.json",
+      "textLayoutSha256": "73c6594a794285034f3a87413e29b3d397c4f2e70f28211b6d36209e03fd9fc1",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/vehicle-refill.png",
+      "screenSha256": "ae62af1d6877e38a2ff3f171149ed02f9092382c4279ce585fe7976d1edcbb11",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-refill.json",
+      "placementSha256": "5172ace7ff23b7747bb4aa1a5886dd39b4c4aed8e8c4f151e6632573907b0390",
+      "textLayout": "art-delivery/records/layouts/vehicle-refill.json",
+      "textLayoutSha256": "12228c8fa201752063a5785005174c7a60dac612af74845cb270b175f255674f",
+      "imageAreaCount": 27
+    },
+    {
+      "file": "art-delivery/designs/states/vehicle-refill--states-1.png",
+      "screenSha256": "8410160725880c3c9a0c9a048417920aa56fc4929fbe73de3aab0544ec452a13",
+      "placementFile": "art-delivery/records/resource-placements/vehicle-refill--states-1.json",
+      "placementSha256": "8a03d7fc2468d5966afd2b64b915ddea9a7c94203a17ad779b92c727b28dfec0",
+      "textLayout": "art-delivery/records/layouts/vehicle-refill--states-1.json",
+      "textLayoutSha256": "6632e0c68313c7f08841c644f1f327b6ef334c03e9b8c20c01b9551d3a1a9f1c",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/bionics.png",
+      "screenSha256": "c83981af72d47e6cb4b89ce78c6f848b50e5196df7b82c1233d549e574018909",
+      "placementFile": "art-delivery/records/resource-placements/bionics.json",
+      "placementSha256": "ec315008736a89cfeaac7adbee461d876b48a4ce1fc7b0d5f0c3e5eb56e8a04a",
+      "textLayout": "art-delivery/records/layouts/bionics.json",
+      "textLayoutSha256": "28c896ac79e32a994e8d21e682e76f2d323546c30a3ab501743d065314899f18",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/bionics--states-1.png",
+      "screenSha256": "f85f1c72b4dd04d6ac48d036da56d123bf2f07b87f7845318d3304e993db12b9",
+      "placementFile": "art-delivery/records/resource-placements/bionics--states-1.json",
+      "placementSha256": "8dcafed7c1d3bdecbd4b18e0f6f2a8ed12bd9b4188db17505e7bc0aca8065a47",
+      "textLayout": "art-delivery/records/layouts/bionics--states-1.json",
+      "textLayoutSha256": "230848c5e082381b88072f3a244cb0c76bd13985e695b8f60783975ab9cd009f",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/bionics--states-2.png",
+      "screenSha256": "d8193c47d4fcd9ec9def4b9c9f5bc786a80c16187563ab892cf21e8e4095e711",
+      "placementFile": "art-delivery/records/resource-placements/bionics--states-2.json",
+      "placementSha256": "eaa919585e67c9d82f65dacb6e1243fec266661c208b35725110d7ed394e862e",
+      "textLayout": "art-delivery/records/layouts/bionics--states-2.json",
+      "textLayoutSha256": "c4c241adc4c84a986c90a3e71721178f500271e14c248d6876a21b4104fba1a6",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/bionic-surgery.png",
+      "screenSha256": "2b191a9e971d8ad74dc1803ae502c81e73ecc30b087330d76bffc295c0468db1",
+      "placementFile": "art-delivery/records/resource-placements/bionic-surgery.json",
+      "placementSha256": "1b883c0fe3e71ff46af66c515e7f5d9e89a40a47337aabb06f7e683f00bf0014",
+      "textLayout": "art-delivery/records/layouts/bionic-surgery.json",
+      "textLayoutSha256": "991f971de9a739f8ec4b4334e687c185f7ca361bd0f4c780614c0d2646d9697e",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/bionic-surgery--states-1.png",
+      "screenSha256": "16fc172e35f8b21972cc606f45dcce55d399377966e981d2984276177c8ba295",
+      "placementFile": "art-delivery/records/resource-placements/bionic-surgery--states-1.json",
+      "placementSha256": "316df18dc55b9977ee864ecda2b7847481aadfa1302c67b27c4dec9e3582f4eb",
+      "textLayout": "art-delivery/records/layouts/bionic-surgery--states-1.json",
+      "textLayoutSha256": "4460818d23bcb92c6905d9995fdc08a201da111d5a234a79690628ef0199c670",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/bionic-surgery--states-2.png",
+      "screenSha256": "f2634c245d590013e1aefabfc7f519e711743fe599e03a3d54178adc4e33003d",
+      "placementFile": "art-delivery/records/resource-placements/bionic-surgery--states-2.json",
+      "placementSha256": "2de3c935a3188a984900317a3e2fdafd060829f1b2404297ff944c21ee8680f2",
+      "textLayout": "art-delivery/records/layouts/bionic-surgery--states-2.json",
+      "textLayoutSha256": "0c71fcad72a06c16f313bc789420125c80157e47be5738d3ba1c8ab7d1411b21",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/mutations.png",
+      "screenSha256": "4713ad4537b5eb8e460a98458eaf5477d310961c83ceead4eaa1f82b1bfa141b",
+      "placementFile": "art-delivery/records/resource-placements/mutations.json",
+      "placementSha256": "e73cf72c6a95b1179d06cf0b960b2216362f3cf1e8efc0eb0e6a27b50caaa1d0",
+      "textLayout": "art-delivery/records/layouts/mutations.json",
+      "textLayoutSha256": "9d67bb71278ca904bb1385a317191f075526bc43198d9fd491191f8cd5a62eae",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/mutations--states-1.png",
+      "screenSha256": "9dfe2413a7c3fee7c20b6177b50922dee4fa0d04399dce0833b5828ea0e2a760",
+      "placementFile": "art-delivery/records/resource-placements/mutations--states-1.json",
+      "placementSha256": "fbb5a7afa0348480f6ec363fc6bae92a21ab49c4836d32512244a96bb61f1275",
+      "textLayout": "art-delivery/records/layouts/mutations--states-1.json",
+      "textLayoutSha256": "408c9c00ad557e5f66c04176f4b3fe34aee74a813c8f553f72fbd8a8cb3327b5",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/martial-arts.png",
+      "screenSha256": "2cf54dd6351ed4063ab474b603a227e929aff54be74060305f3bfb655306a1f5",
+      "placementFile": "art-delivery/records/resource-placements/martial-arts.json",
+      "placementSha256": "6d44185139ad33b8a3906dfe3eeb4d42db58933599756703e6c0a236797331ec",
+      "textLayout": "art-delivery/records/layouts/martial-arts.json",
+      "textLayoutSha256": "98f7f0208da38ddb719ac87cced01fb541d5b9c58ae89a999db48a120deee090",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/martial-arts--states-1.png",
+      "screenSha256": "0f7c11d4c2aaa63458585763eadc553609a568e5d3b4b833218ffabc98b57c1a",
+      "placementFile": "art-delivery/records/resource-placements/martial-arts--states-1.json",
+      "placementSha256": "aaf4b46a4c0616920345d58077b3ec63ebfd6e7b05d7be0b7c336ccb0f6e39a4",
+      "textLayout": "art-delivery/records/layouts/martial-arts--states-1.json",
+      "textLayoutSha256": "77ae56798f503793bd9b148a990e85f5752fcc44fd8c52b6ef6ef31708bbe56f",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/spellbook.png",
+      "screenSha256": "12c4f5006ce7965be4d10c8d4c7f07ba077bb8d42112a7886fac58e8c8d8feda",
+      "placementFile": "art-delivery/records/resource-placements/spellbook.json",
+      "placementSha256": "af89e16003b3dc3dfcaacac61b0f145b5edadab28d65fd3f593d8c300c8e0319",
+      "textLayout": "art-delivery/records/layouts/spellbook.json",
+      "textLayoutSha256": "d3950d7df296c020176291601e9ec7ee61fafe5c610a6283d64f94fbbb5f5967",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/spellbook--states-1.png",
+      "screenSha256": "69b45cfff063307dc234c86fc564e9cec62a76ab79574d4f3845f75ed2e6e3a1",
+      "placementFile": "art-delivery/records/resource-placements/spellbook--states-1.json",
+      "placementSha256": "2e458f5e154a2ff45bfe1b7506f89735a0660090043bf5a48f26b3b410cb6fec",
+      "textLayout": "art-delivery/records/layouts/spellbook--states-1.json",
+      "textLayoutSha256": "57d600816815b732984ede0987e3574c8093dc6449e7d3c8ebf8fe832e74c1f3",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/spell-target.png",
+      "screenSha256": "c1e296aef3bfb483c19dd0e1390a4b97b124d2b0be8bba11af0c802964b43a0a",
+      "placementFile": "art-delivery/records/resource-placements/spell-target.json",
+      "placementSha256": "6a461a3c7bbd6c4da99ecd98b926f1bd5467a4d9877630c02ee69b1770e399f8",
+      "textLayout": "art-delivery/records/layouts/spell-target.json",
+      "textLayoutSha256": "64dbd4d3fdef5ad1661059998e3d99ea8df8906d67bda5d339eceb5cfe27bfb0",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/spell-target--states-1.png",
+      "screenSha256": "c9f12282145369c65c7a2dade528689d827969a925622f8a585ad9a59b11b2b0",
+      "placementFile": "art-delivery/records/resource-placements/spell-target--states-1.json",
+      "placementSha256": "f15878023d8a1b5045f103078ffb39a94c163ab4131d0a637b72b6a2576fd156",
+      "textLayout": "art-delivery/records/layouts/spell-target--states-1.json",
+      "textLayoutSha256": "133eaa7f0572b83812e4ce2830046512e55276e1365c23ee40189e95f0e43ffe",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/achievements.png",
+      "screenSha256": "a728fdfbe866b40dc322c9bf936e8fc34b880f4dbe3ba923d080d66bbe97240a",
+      "placementFile": "art-delivery/records/resource-placements/achievements.json",
+      "placementSha256": "c8bda2bd00efe3fed622810e479464c1760c8d87af2956dfe43d530a6cf4b6ea",
+      "textLayout": "art-delivery/records/layouts/achievements.json",
+      "textLayoutSha256": "abdc7b97fb15dbdeb88a709277db355a1da8bc87bef92dbe8672c574efcce748",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/achievements--states-1.png",
+      "screenSha256": "daad7b9d5c4f9cfb75ba06b36f62aa2d4f417e669010ed8ae40afea5f93e71c0",
+      "placementFile": "art-delivery/records/resource-placements/achievements--states-1.json",
+      "placementSha256": "b9184f055b8094e24c9f7946d61a0ac6b971929b5612da006b6c3b30fff2fdb3",
+      "textLayout": "art-delivery/records/layouts/achievements--states-1.json",
+      "textLayoutSha256": "ddaf8ebca2f376c9c1d6621a735f14b1e7543acd84842ae8be9fd4326db49d53",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/memorial.png",
+      "screenSha256": "fb167442467eb7f2ed3b9f61a7d45726a7bbdf6151095088631b2e6270f85add",
+      "placementFile": "art-delivery/records/resource-placements/memorial.json",
+      "placementSha256": "0a486ac64800772509d2f747cd2d8ee69392f8e14757c837a7c8ee72237e5bc8",
+      "textLayout": "art-delivery/records/layouts/memorial.json",
+      "textLayoutSha256": "99c4f008e814f87f3fb31fe195538fdbe12da28ee36c58523fb1637325d3f499",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/memorial--states-1.png",
+      "screenSha256": "e62a00d40b3ce6c5677e5401017c0bf4c00fedf88dbddea1805bcd6f7c55c03a",
+      "placementFile": "art-delivery/records/resource-placements/memorial--states-1.json",
+      "placementSha256": "9979056c1a20fd1a9b9b31a4710fd1fc017ee4bb7e27b87e357ed6eb7044dbeb",
+      "textLayout": "art-delivery/records/layouts/memorial--states-1.json",
+      "textLayoutSha256": "8441df01c91a82dba40c7e42c76be360c4c11de7838b3ea9d4c269c7b16911ef",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/diary.png",
+      "screenSha256": "b0269a118b45b2b49fad7667b6b90078348df1fa728c4a8aa8eb8ff2037f3bd8",
+      "placementFile": "art-delivery/records/resource-placements/diary.json",
+      "placementSha256": "524128123426fdfc9644de44654a8c473b7e03da86092a584b27417d0449230a",
+      "textLayout": "art-delivery/records/layouts/diary.json",
+      "textLayoutSha256": "27b8aa8d0642c5f804872e1400c1adfe15854225d31a5608fd95e51f4ebeb87d",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/diary--states-1.png",
+      "screenSha256": "08294211309846fb76ed6057a55b23f81f02dbbd5483f8a2f4e852f0664d0c3b",
+      "placementFile": "art-delivery/records/resource-placements/diary--states-1.json",
+      "placementSha256": "3108cb275259e612ea20975d39ecc0a430b005b480d2018061dbcb478c62bd0e",
+      "textLayout": "art-delivery/records/layouts/diary--states-1.json",
+      "textLayoutSha256": "167cdc9f9618d39485a3395803d9e73eedf8c55b8abe83912c1ee62c90a95d98",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/terminal.png",
+      "screenSha256": "66508357f328073c17c95200e4994b39bf033f41cad77bfac11853cab3c3afcf",
+      "placementFile": "art-delivery/records/resource-placements/terminal.json",
+      "placementSha256": "273d780768f7dcdda65460a19b30574adbf6d4f8e9983f43a71c3f5d26073c08",
+      "textLayout": "art-delivery/records/layouts/terminal.json",
+      "textLayoutSha256": "db4795709d3cc00639ba90ae65b092a433cc2c2bf8d323c3be425cbb101a0847",
+      "imageAreaCount": 18
+    },
+    {
+      "file": "art-delivery/designs/states/terminal--states-1.png",
+      "screenSha256": "df174f067326e44f6840958c77fd7d9b083234deabbee59ac529d78df5429550",
+      "placementFile": "art-delivery/records/resource-placements/terminal--states-1.json",
+      "placementSha256": "d4f31fb881e8819146b501b415395ae1b6d0b7d01f712bdca3c56d1a2d8013e3",
+      "textLayout": "art-delivery/records/layouts/terminal--states-1.json",
+      "textLayoutSha256": "d2c97543fe0c5dc1684a641844ff2000178e48ba0c4fa9ebf990da05de80ee98",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/terminal--states-2.png",
+      "screenSha256": "6bef278b5170985e4ba2fcb674bcdc7ffc02821488f1707d4d445abe61db1430",
+      "placementFile": "art-delivery/records/resource-placements/terminal--states-2.json",
+      "placementSha256": "9cda760930d4ff72cbd2c79b5cf88479e9f17bba211c1df5e8d1610d8bba7117",
+      "textLayout": "art-delivery/records/layouts/terminal--states-2.json",
+      "textLayoutSha256": "7b1d35a5bda715fa40ecdc6168b329111bd36993b5a0ba28a4270e2fc5c3ef86",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/atm-bank.png",
+      "screenSha256": "703ac4f40f9251e169dfe8dba873b6c7642eccb27fe83b4799ee35a29173fccc",
+      "placementFile": "art-delivery/records/resource-placements/atm-bank.json",
+      "placementSha256": "e462b1c5abc21c0f9aef4043fcf46785e58b43382e335239a851d8ba8279adf8",
+      "textLayout": "art-delivery/records/layouts/atm-bank.json",
+      "textLayoutSha256": "58584b310f8f21bd56a0e99b2bae6a62830064dde595bbd6184651ce88d28a1f",
+      "imageAreaCount": 21
+    },
+    {
+      "file": "art-delivery/designs/states/atm-bank--states-1.png",
+      "screenSha256": "c1bc6b9313d252abc60518f558cf05eeebffeb109e95ff54e23a17c8f6819f28",
+      "placementFile": "art-delivery/records/resource-placements/atm-bank--states-1.json",
+      "placementSha256": "6f0e67e280d58204b581e00d5e567d9a4f879257a871272b32091dc564fa5188",
+      "textLayout": "art-delivery/records/layouts/atm-bank--states-1.json",
+      "textLayoutSha256": "7b379eeb920c07df7d67027040a0dcc23214a19aade40911b67b893c5b5b32c7",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/vending-machine.png",
+      "screenSha256": "6391dc033f7b4bb9ed33cf8c966f4382528662e03fea9d16aec7b8918e827fe1",
+      "placementFile": "art-delivery/records/resource-placements/vending-machine.json",
+      "placementSha256": "536943c66e4ea46dcc6520edcb90fcabad5498fbd1851d1cbf329dc50712510a",
+      "textLayout": "art-delivery/records/layouts/vending-machine.json",
+      "textLayoutSha256": "a274c642281f0a815bf9fe0aae1c14c7a902d4cd1710e0d6601a69650c965774",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/vending-machine--states-1.png",
+      "screenSha256": "5e081cdec840e67273536b41c3c80a494cc161175cc9607e633546ce2a763d86",
+      "placementFile": "art-delivery/records/resource-placements/vending-machine--states-1.json",
+      "placementSha256": "40daeea6e8e7d82bec037b4c4342d745065e3512c8f75e723247c21f270a1c01",
+      "textLayout": "art-delivery/records/layouts/vending-machine--states-1.json",
+      "textLayoutSha256": "ba15a739c8298167aaea7013e4e0531d517ffd660489f4cfc91d7cc78e01da34",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/translocator.png",
+      "screenSha256": "913f02e8b460a7ee7e5f5b5accf5a40a1f19b99a98fc22aa919a892bd7abeedb",
+      "placementFile": "art-delivery/records/resource-placements/translocator.json",
+      "placementSha256": "db04d5c2a02828b5df295c764d4367d76f4f679301d35c42ce0cc5cceb543d4f",
+      "textLayout": "art-delivery/records/layouts/translocator.json",
+      "textLayoutSha256": "2c4fcf769aaeb2ec9349339f0a5adfbec7c3ef29def3cd193bd42e234f040c19",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/translocator--states-1.png",
+      "screenSha256": "7990b0298b409e36b539c48901f1354257f2b37f00ca181bdc339af3fe5d7966",
+      "placementFile": "art-delivery/records/resource-placements/translocator--states-1.json",
+      "placementSha256": "51719378249c0a9492f096cb8bdccfe0989cb0066beab2ff0e4ae70bab5160b0",
+      "textLayout": "art-delivery/records/layouts/translocator--states-1.json",
+      "textLayoutSha256": "1aa5cd400302aebfc92a169bb53f061ad65775cd7d97dae9329aa6f294823ad4",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/screens/safemode-rules.png",
+      "screenSha256": "d0bd0ec3dd42476605511fdb0dce89b5b139f5f860448b148e70f673d32f574c",
+      "placementFile": "art-delivery/records/resource-placements/safemode-rules.json",
+      "placementSha256": "cacd21c2af304424aa91cdaefc4d0c82d79f60f33a5dcccf3888b05b27729652",
+      "textLayout": "art-delivery/records/layouts/safemode-rules.json",
+      "textLayoutSha256": "f8e8cd57d40d7793fc5639545dc051f7ed4359a7f5f4ec91be252c913912ba1a",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/safemode-rules--states-1.png",
+      "screenSha256": "38604141e6934a29b693a3667ee6738f8a451e2c1a0de40bf8a6bd80e76dddfe",
+      "placementFile": "art-delivery/records/resource-placements/safemode-rules--states-1.json",
+      "placementSha256": "b745bcd2d26f0037878f989fa5ba3af6e83b62de4173b7df3c44fb296cd602af",
+      "textLayout": "art-delivery/records/layouts/safemode-rules--states-1.json",
+      "textLayoutSha256": "c3bf9c90a2c49427c2756290412f0793ae5e4f4e6fd735bcd9215abc2b6cb194",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/safemode-rules--states-2.png",
+      "screenSha256": "8b5e9b76f999f308bb6e440e045f621e2c405ff2b9095f18a5e8184eb7e64ff0",
+      "placementFile": "art-delivery/records/resource-placements/safemode-rules--states-2.json",
+      "placementSha256": "2cc98bbe17d7f100cd5452b6dbf7333498e58c3e63a931f1990b9e4e82005ba1",
+      "textLayout": "art-delivery/records/layouts/safemode-rules--states-2.json",
+      "textLayoutSha256": "93a3c3e47aa70c74c43768a5267f880da0646645c3c79579ce058767513cc607",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/autopickup-rules.png",
+      "screenSha256": "dbec7c2928ece729c2cf7e163b52c7a0dfad961f0587bf13523f2e9c8c69a0ca",
+      "placementFile": "art-delivery/records/resource-placements/autopickup-rules.json",
+      "placementSha256": "3be4355ed1ce62215206639545100b1dc7372e9657d8743ccae6230bf76a4a9b",
+      "textLayout": "art-delivery/records/layouts/autopickup-rules.json",
+      "textLayoutSha256": "25168ec3cdbfeae3e84c46bf940c26a22587a0d275e9802583caa16b9d2d944c",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/autopickup-rules--states-1.png",
+      "screenSha256": "8cf4c76124c345597aa774e9f7318196c4ec94494fb7502e54e6f434da9af462",
+      "placementFile": "art-delivery/records/resource-placements/autopickup-rules--states-1.json",
+      "placementSha256": "58d13cbcad1c0c8104d2d00aea9280c36ac636e4c05f1719c6e0e0f3dd8f3ea1",
+      "textLayout": "art-delivery/records/layouts/autopickup-rules--states-1.json",
+      "textLayoutSha256": "9c904f4c05287cc821dffaf06a754ec2cdf45d92b6a13b011eba7eb67c6f245b",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/autopickup-rules--states-2.png",
+      "screenSha256": "736121bb333c0c15a78d47e65dae6361116628e66bdd23bfa6938461e59fa00f",
+      "placementFile": "art-delivery/records/resource-placements/autopickup-rules--states-2.json",
+      "placementSha256": "43e588062fe0c274dc0b925a0858646b1a1d8b813c2e4c479b8e6255b41dd91d",
+      "textLayout": "art-delivery/records/layouts/autopickup-rules--states-2.json",
+      "textLayoutSha256": "529a7db15f785a7d760cbdc94b6c4832e559d4d75058819d30b8d2df70614def",
+      "imageAreaCount": 11
+    },
+    {
+      "file": "art-delivery/designs/screens/construction.png",
+      "screenSha256": "d4de7dbdbfb9ff9d95c560e819a93e4c157c3341b383aae29dd80176abe19843",
+      "placementFile": "art-delivery/records/resource-placements/construction.json",
+      "placementSha256": "8d4011d9f1b4e4b8ea90ace15a6704169948f9424c44cdde2ac20049a123aa0f",
+      "textLayout": "art-delivery/records/layouts/construction.json",
+      "textLayoutSha256": "dd867503621f3ec5e511c0172b90b27cc4375622ad99897bc0f06b2c81ec7199",
+      "imageAreaCount": 25
+    },
+    {
+      "file": "art-delivery/designs/states/construction--states-1.png",
+      "screenSha256": "ff073cfe8a1e7f984b12e536133c3c62e044efd5b85f43d1e014e31870817968",
+      "placementFile": "art-delivery/records/resource-placements/construction--states-1.json",
+      "placementSha256": "5161f59162d734b403fcf2c17498557d89bbff295840083c910efc27996df967",
+      "textLayout": "art-delivery/records/layouts/construction--states-1.json",
+      "textLayoutSha256": "887cc86c1d46ac6b4b38de4f4ee150be95ebefe62bc8eb60282602abbb90c358",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/construction-place.png",
+      "screenSha256": "e366f8cd6bab19eda987b26dfa1e71ee362029c9bb1d53ea0f3a9c5db92e7ce8",
+      "placementFile": "art-delivery/records/resource-placements/construction-place.json",
+      "placementSha256": "0e9d481a4df15d0e2ec2273a3c226ecb0cbb3fab6ad81937d9a6d616725295b5",
+      "textLayout": "art-delivery/records/layouts/construction-place.json",
+      "textLayoutSha256": "592e85d0a95770f33f99b3a6d28ca470daf26f63d8a79fa7c03cade215967ec3",
+      "imageAreaCount": 15
+    },
+    {
+      "file": "art-delivery/designs/states/construction-place--states-1.png",
+      "screenSha256": "fab008f893fec8d3e1c7263c335468bb4e8d3e5b061f875dd16b1d5a539aaf5e",
+      "placementFile": "art-delivery/records/resource-placements/construction-place--states-1.json",
+      "placementSha256": "7d8a2ae937f3e3f962a5d74716e2f183fda3735e416f173d5597d37a9033b608",
+      "textLayout": "art-delivery/records/layouts/construction-place--states-1.json",
+      "textLayoutSha256": "b32a09f36e438dbaea5ddd0d8f1313c5ed69529477c4449a785fb9467b551bf0",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/wait-sleep.png",
+      "screenSha256": "7a8c4d818ceb813306f78e1df2169dd89461efdcafdaeee24a0c8bcceb48bd36",
+      "placementFile": "art-delivery/records/resource-placements/wait-sleep.json",
+      "placementSha256": "50bfa547c8e68d3e223f3b5fb0338c0a1b5e041314019e829748188f590a1333",
+      "textLayout": "art-delivery/records/layouts/wait-sleep.json",
+      "textLayoutSha256": "7036cb3bb17034c2d4af73e73c56cca934f8317c70c421e4b79b1e4581f6f8e7",
+      "imageAreaCount": 22
+    },
+    {
+      "file": "art-delivery/designs/states/wait-sleep--states-1.png",
+      "screenSha256": "89b67fdd2bd6067a07463a2531dd5fb23179d63852722491a12ac3a463976e1e",
+      "placementFile": "art-delivery/records/resource-placements/wait-sleep--states-1.json",
+      "placementSha256": "ac5b30b1a8ab1130cfacdfbb6c9413d16045c68079580d69b78396093182a681",
+      "textLayout": "art-delivery/records/layouts/wait-sleep--states-1.json",
+      "textLayoutSha256": "9f8196632af6c879385c9041d8493ef355af3c4ae295a74b7b665a02a7a130c1",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/wait-sleep--states-2.png",
+      "screenSha256": "83f57536dab9d6df4d584e2b244315959c3b63f34478fa228b519ad55fcbbe4e",
+      "placementFile": "art-delivery/records/resource-placements/wait-sleep--states-2.json",
+      "placementSha256": "54d20ed95b714e20e645fdb7818eee84b1caef7b07edef373f817e57f60808a9",
+      "textLayout": "art-delivery/records/layouts/wait-sleep--states-2.json",
+      "textLayoutSha256": "ae0328e98377a691f22a2467395a7d33c3e152a0b4edb86b9afc9866ce882467",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/activity-progress.png",
+      "screenSha256": "72e624cbba6cbbd20090aca9ba13cccf1b25319f063143df2a3e2fa5f1cd0ba1",
+      "placementFile": "art-delivery/records/resource-placements/activity-progress.json",
+      "placementSha256": "927b0fee9a7e0f390d21e9fdab06233ffacb4a565b0ca3ff4faead2b6c87d971",
+      "textLayout": "art-delivery/records/layouts/activity-progress.json",
+      "textLayoutSha256": "85661dec61d7a179cb02232320b1a989fb174436c9113f25e113f597127140c5",
+      "imageAreaCount": 19
+    },
+    {
+      "file": "art-delivery/designs/states/activity-progress--states-1.png",
+      "screenSha256": "fab0120e82b18352238be25b87c3e0c548849f70075528ac4d9d8f4fc5ed357c",
+      "placementFile": "art-delivery/records/resource-placements/activity-progress--states-1.json",
+      "placementSha256": "da0296a7a0221f4be2c092f0c3cb320db2e73a8d2b022c8adcd1975fee9971a8",
+      "textLayout": "art-delivery/records/layouts/activity-progress--states-1.json",
+      "textLayoutSha256": "a69f47257c6ba3d72c04ebc907a6c3314213a8c5e7f7bcda220c3fab371b406e",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/activity-progress--states-2.png",
+      "screenSha256": "638b4cce2f831bffc3940ccdbaa95b81dcd7f0f5a587151d2be68659be795f65",
+      "placementFile": "art-delivery/records/resource-placements/activity-progress--states-2.json",
+      "placementSha256": "877c542480db334f440cf371efaf74990bf46067328e69c3ef1f77e0722cd5cc",
+      "textLayout": "art-delivery/records/layouts/activity-progress--states-2.json",
+      "textLayoutSha256": "108110e8033ff37d1e76c5c0eed60f31951743d0db01247dacf7bc7bdeb98f8e",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/butcher-harvest.png",
+      "screenSha256": "08d08347ef15d113d994f79bbe84ec50dfedf9045df44232e0c58fcf2475cb74",
+      "placementFile": "art-delivery/records/resource-placements/butcher-harvest.json",
+      "placementSha256": "758930ef26c793f4c36cd2eef7c627195b4d1fdb36cfbbabf9988f0be0d82db4",
+      "textLayout": "art-delivery/records/layouts/butcher-harvest.json",
+      "textLayoutSha256": "44f3a2446797cc6465253e6a671c77b32b67def40045bcad2d341f3f9186171b",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/butcher-harvest--states-1.png",
+      "screenSha256": "5b22fe208f6709cde6f3438244b861ce77b48202f289bc5239941f1a176a5dc3",
+      "placementFile": "art-delivery/records/resource-placements/butcher-harvest--states-1.json",
+      "placementSha256": "cc77019cc41ef8df2153799661682fd8b4e8fc73cf656143622cb69792ba35ec",
+      "textLayout": "art-delivery/records/layouts/butcher-harvest--states-1.json",
+      "textLayoutSha256": "a90289ab408fd7df3e9ef5d9b6ca9abe3015afcde3db05476987ca85eec00fc3",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/butcher-harvest--states-2.png",
+      "screenSha256": "917ed2dff482f4ead9a63e2295868d5e516d477f95b6be460e5a86e0aa83da29",
+      "placementFile": "art-delivery/records/resource-placements/butcher-harvest--states-2.json",
+      "placementSha256": "1ac52946fd8112341bb1742815c22f5a94c9075e683cf8f0e63f8cbd1cfa125b",
+      "textLayout": "art-delivery/records/layouts/butcher-harvest--states-2.json",
+      "textLayoutSha256": "40d5d8f6329f98f8974f2f38a7c562000ec405b9ce6f4997169ef5d8f2f70266",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/zone-activities.png",
+      "screenSha256": "7b19401079132b66e40487fc172618ba76e7cf4617461acb0ac7f4d81cf43b1b",
+      "placementFile": "art-delivery/records/resource-placements/zone-activities.json",
+      "placementSha256": "563d9759ab359644c71b23cdc80255584b1238755041b329a0afa88d3ddc2247",
+      "textLayout": "art-delivery/records/layouts/zone-activities.json",
+      "textLayoutSha256": "8aad66fd3fe75679126f61f693ee0487107581b4aecf60b05418e9933f84be38",
+      "imageAreaCount": 20
+    },
+    {
+      "file": "art-delivery/designs/states/zone-activities--states-1.png",
+      "screenSha256": "7dcf8ed6c951cc526e0c2fe66acb7e6f749eefa1649ff6533cc99280c18abebe",
+      "placementFile": "art-delivery/records/resource-placements/zone-activities--states-1.json",
+      "placementSha256": "766594bd7908de22ff0009b552d738374eceed7910140718a82c26a8f181c476",
+      "textLayout": "art-delivery/records/layouts/zone-activities--states-1.json",
+      "textLayoutSha256": "13f91d590d8ec141318bb291882dfbbc7a8160a41647bf0f18ff93ac403c52a5",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/npc-orders.png",
+      "screenSha256": "99914ed6d7414e3adae48725401660baf3f036bf5a03562f31f4f2db0c2d6a67",
+      "placementFile": "art-delivery/records/resource-placements/npc-orders.json",
+      "placementSha256": "d018fd727235d6ec50f5f261d5d1c1de2d55b3fd2f3d1b2b593ae8fe67fce6fd",
+      "textLayout": "art-delivery/records/layouts/npc-orders.json",
+      "textLayoutSha256": "942abfbaa2064a6387ff6755862ef26ff9ac2c617382e71188e70d0123d289e6",
+      "imageAreaCount": 24
+    },
+    {
+      "file": "art-delivery/designs/states/npc-orders--states-1.png",
+      "screenSha256": "f66b550115c9bb102d1e84e3dd5d379229452289d85f57fdff4b12d42be61203",
+      "placementFile": "art-delivery/records/resource-placements/npc-orders--states-1.json",
+      "placementSha256": "1795f9f56a12be5820e2b2b452be18b3e6e61421a093b1526d46948263d3e8f3",
+      "textLayout": "art-delivery/records/layouts/npc-orders--states-1.json",
+      "textLayoutSha256": "00dbf6ed175eff0f77ac80eb4acbeac4fae22d85f2243d482fc09220baa2941c",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/screens/animal-care.png",
+      "screenSha256": "6f45df5364ee9bf1d6e55579a81a38140aa7b3d16de4b9502399c23ec36a11e1",
+      "placementFile": "art-delivery/records/resource-placements/animal-care.json",
+      "placementSha256": "7c8b0b6905512e600c92f65083945b279d3e13bba6176ec19a3e3d53e63cd149",
+      "textLayout": "art-delivery/records/layouts/animal-care.json",
+      "textLayoutSha256": "d1709d3aa77ae34f0c8210c5efbbdb0538fe899b04d998f25c4324b8df681197",
+      "imageAreaCount": 24
+    },
+    {
+      "file": "art-delivery/designs/states/animal-care--states-1.png",
+      "screenSha256": "e3fcd3c9299554162edb9876553ca0127570049e6e25fe2efa2e1dc0f3719941",
+      "placementFile": "art-delivery/records/resource-placements/animal-care--states-1.json",
+      "placementSha256": "607b531510ad564ebef8eb649d9c09b535cb5656817dbcd91cb5fd1e56d5cc94",
+      "textLayout": "art-delivery/records/layouts/animal-care--states-1.json",
+      "textLayoutSha256": "fbcc9e7db323f0fefe6406246a3835f14b0390d81ff90dc78ba3425f7fd52ebe",
+      "imageAreaCount": 23
+    },
+    {
+      "file": "art-delivery/designs/states/animal-care--states-2.png",
+      "screenSha256": "d06ff14cc47dab28a462eb8ad5ef2c66d7412febe37bb7f52636895d2bf6e871",
+      "placementFile": "art-delivery/records/resource-placements/animal-care--states-2.json",
+      "placementSha256": "60d0c5666d9efdd66db1bdda83e4dd79099a2ad0c32443230ba949459ad4e0b1",
+      "textLayout": "art-delivery/records/layouts/animal-care--states-2.json",
+      "textLayoutSha256": "f6418c9cb8a1595a38564ae1805d3e3d3c2ecbdc4c764e875b93fdaa33ab5006",
+      "imageAreaCount": 8
+    },
+    {
+      "file": "art-delivery/designs/screens/common-dialogs.png",
+      "screenSha256": "e50e2ee72c772410b8e24b972601de23df75fac136e9761c0cddfda56b4d2240",
+      "placementFile": "art-delivery/records/resource-placements/common-dialogs.json",
+      "placementSha256": "0d04dc5e4b62c34cd18665eaf0cb5fd79b12fd97e0a6828b0fb6b48b2522b0d8",
+      "textLayout": "art-delivery/records/layouts/common-dialogs.json",
+      "textLayoutSha256": "08a8dc30797781e0e4d979223cf80ad4e2ad1eb2f703a27cf7c29221f2b88e26",
+      "imageAreaCount": 31
+    },
+    {
+      "file": "art-delivery/designs/states/common-dialogs--states-1.png",
+      "screenSha256": "c3c40e512823bb59455edf866c41f188aa10ee171dc8375bc7da1b1f618a1cbe",
+      "placementFile": "art-delivery/records/resource-placements/common-dialogs--states-1.json",
+      "placementSha256": "ee43b3dcebd8e1b473c95cbfdbe359035b571c0ee81e4e371ac02098b2b91471",
+      "textLayout": "art-delivery/records/layouts/common-dialogs--states-1.json",
+      "textLayoutSha256": "c42ab0284d62017609a547685ce659786167a028998e841792c14b3fdd687cc6",
+      "imageAreaCount": 23
+    }
+  ],
+  "advisory": {
+    "zeroCenterBands": [
+      {
+        "file": "art-delivery/designs/screens/world-create.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-create.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-create.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-create.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-create.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-create.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-options.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-options.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-options.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-options.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-options.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/world-options.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-general.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-general.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-general.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-general.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-general.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-general.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-interface.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-interface.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-interface.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-interface.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-interface.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-interface.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-graphics.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-graphics.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-graphics.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-graphics.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-graphics.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-graphics.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-audio.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-audio.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-audio.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-audio.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-audio.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/settings-audio.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/keybindings.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/keybindings.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/keybindings.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/keybindings.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/keybindings.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/keybindings.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/colors-theme.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/colors-theme.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/colors-theme.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/colors-theme.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/colors-theme.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/colors-theme.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/game-hud.png",
+        "id": "panel-tooltip",
+        "drawOrder": 1,
+        "rect": [
+          40,
+          35,
+          590,
+          174
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          35,
+          58,
+          35,
+          116
+        ],
+        "centerPixelSize": [
+          520,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/aim-ranged.png",
+        "id": "panel-tooltip",
+        "drawOrder": 1,
+        "rect": [
+          40,
+          35,
+          590,
+          174
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          35,
+          58,
+          35,
+          116
+        ],
+        "centerPixelSize": [
+          520,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/aim-ranged.png",
+        "id": "panel-tooltip",
+        "drawOrder": 5,
+        "rect": [
+          430,
+          765,
+          825,
+          114
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          23,
+          38,
+          23,
+          76
+        ],
+        "centerPixelSize": [
+          779,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/throw-target.png",
+        "id": "panel-tooltip",
+        "drawOrder": 1,
+        "rect": [
+          40,
+          35,
+          590,
+          174
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          35,
+          58,
+          35,
+          116
+        ],
+        "centerPixelSize": [
+          520,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/throw-target.png",
+        "id": "panel-tooltip",
+        "drawOrder": 5,
+        "rect": [
+          430,
+          765,
+          825,
+          114
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          23,
+          38,
+          23,
+          76
+        ],
+        "centerPixelSize": [
+          779,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/vehicle-dashboard.png",
+        "id": "panel-tooltip",
+        "drawOrder": 1,
+        "rect": [
+          40,
+          35,
+          590,
+          174
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          35,
+          58,
+          35,
+          116
+        ],
+        "centerPixelSize": [
+          520,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/spell-target.png",
+        "id": "panel-tooltip",
+        "drawOrder": 1,
+        "rect": [
+          40,
+          35,
+          590,
+          174
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          35,
+          58,
+          35,
+          116
+        ],
+        "centerPixelSize": [
+          520,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/spell-target.png",
+        "id": "panel-tooltip",
+        "drawOrder": 5,
+        "rect": [
+          430,
+          765,
+          825,
+          114
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          23,
+          38,
+          23,
+          76
+        ],
+        "centerPixelSize": [
+          779,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/safemode-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/safemode-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/safemode-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/safemode-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/safemode-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/autopickup-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 13,
+        "rect": [
+          1270,
+          350,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/autopickup-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 15,
+        "rect": [
+          1270,
+          420,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/autopickup-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 17,
+        "rect": [
+          1270,
+          490,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/autopickup-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 19,
+        "rect": [
+          1270,
+          560,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/autopickup-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 21,
+        "rect": [
+          1270,
+          630,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      },
+      {
+        "file": "art-delivery/designs/screens/autopickup-rules.png",
+        "id": "tab-normal",
+        "drawOrder": 23,
+        "rect": [
+          1270,
+          700,
+          452,
+          49
+        ],
+        "borderRenderedLeftBottomRightTop": [
+          62,
+          26,
+          62,
+          23
+        ],
+        "centerPixelSize": [
+          328,
+          0
+        ]
+      }
+    ],
+    "meaning": "Some small-height preview rectangles have a zero-height center band after the frozen renderer rounds target borders. The trace accurately records that existing composition; source Sprite borders remain valid. Do not copy preview border values into Unity source SpriteImporter Border. Derive actual RectTransform sizing and border behavior during the next Unity stage."
+  },
+  "limitations": [
+    "Metadata geometric advice only; no RectTransform conversion or Unity rendering validation.",
+    "Original PNG visual acceptance and bounded footer-repair review are tracked separately; this revision reads current metadata and hashes only."
+  ]
+}

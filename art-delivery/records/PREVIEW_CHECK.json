@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-26T14:49:39.4881765+00:00",
+  "url": "http://127.0.0.1:4377/previews/index.html?v=final",
+  "browser": "Codex in-app browser",
+  "actualPageTitle": "青岚余生 · 全游戏UI美术图集",
+  "visiblyDisplayedCount": 101,
+  "observedCards": [
+    "启程首页",
+    "今日告示"
+  ],
+  "screenshotsInspected": true,
+  "localHttpStatus": 200,
+  "scope": "Static art catalogue display; no gameplay or Unity runtime claim"
+}

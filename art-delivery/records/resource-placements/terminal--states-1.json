@@ -1,0 +1,713 @@
+{
+  "file": "art-delivery/designs/states/terminal--states-1.png",
+  "screenSha256": "df174f067326e44f6840958c77fd7d9b083234deabbee59ac529d78df5429550",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "rectOrder": "x,y,width,height",
+  "operation": "Geometry trace of the exact frozen composition recipe; no PNG pixels were regenerated or modified",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "traceTool": {
+    "file": "tools/export_resource_placements.py",
+    "sha256": "36f5db005c8b50c4e853f2542157584e249b45055be3e4ef0051f706fb713310"
+  },
+  "imageAreas": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "sourceSize": [
+        1672,
+        941
+      ],
+      "render": "Pillow ImageOps.fit, Lanczos, centering=(0.5,0.5)",
+      "layer": "background",
+      "drawOrder": 0,
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae"
+    },
+    {
+      "id": "panel-main",
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "rect": [
+        38,
+        62,
+        1844,
+        972
+      ],
+      "sourceSize": [
+        1440,
+        840
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        148,
+        125,
+        148,
+        112
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        115,
+        98,
+        115,
+        87
+      ],
+      "layer": "skin",
+      "drawOrder": 1,
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e"
+    },
+    {
+      "id": "title",
+      "file": "art-delivery/resources/ui/title.png",
+      "rect": [
+        645,
+        24,
+        630,
+        131
+      ],
+      "sourceSize": [
+        716,
+        145
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        180,
+        34,
+        170,
+        31
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        140,
+        27,
+        133,
+        24
+      ],
+      "layer": "skin",
+      "drawOrder": 2,
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        95,
+        956,
+        220,
+        62
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 3,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        76,
+        210,
+        1758,
+        730
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 4,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        103,
+        238,
+        548,
+        319
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 5,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        134,
+        469,
+        238,
+        61
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 6,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        389,
+        469,
+        231,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 7,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        675,
+        238,
+        548,
+        319
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 8,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "button-secondary-disabled",
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "rect": [
+        706,
+        469,
+        238,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 9,
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        961,
+        469,
+        231,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 10,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        1247,
+        238,
+        548,
+        319
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 11,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        1278,
+        469,
+        238,
+        61
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 12,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        1533,
+        469,
+        231,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 13,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        103,
+        578,
+        548,
+        319
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 14,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        134,
+        809,
+        238,
+        61
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 15,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        389,
+        809,
+        231,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 16,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        675,
+        578,
+        548,
+        319
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 17,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "button-secondary-disabled",
+      "file": "art-delivery/resources/ui/button-secondary-disabled.png",
+      "rect": [
+        706,
+        809,
+        238,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 18,
+      "sha256": "e6d33aed4b1445605bf29e13593c096472fe066bb26ed236d760384d080d723c"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        961,
+        809,
+        231,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 19,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    },
+    {
+      "id": "panel-content",
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "rect": [
+        1247,
+        578,
+        548,
+        319
+      ],
+      "sourceSize": [
+        1080,
+        620
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        145,
+        122,
+        145,
+        108
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        113,
+        95,
+        113,
+        84
+      ],
+      "layer": "skin",
+      "drawOrder": 20,
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2"
+    },
+    {
+      "id": "button-primary-normal",
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "rect": [
+        1278,
+        809,
+        238,
+        61
+      ],
+      "sourceSize": [
+        460,
+        112
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        82,
+        34,
+        82,
+        30
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        64,
+        27,
+        64,
+        23
+      ],
+      "layer": "skin",
+      "drawOrder": 21,
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777"
+    },
+    {
+      "id": "button-secondary-normal",
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "rect": [
+        1533,
+        809,
+        231,
+        61
+      ],
+      "sourceSize": [
+        271,
+        82
+      ],
+      "render": "nine-slice",
+      "borderSourceLeftBottomRightTop": [
+        30,
+        27,
+        30,
+        27
+      ],
+      "borderRenderedLeftBottomRightTop": [
+        23,
+        21,
+        23,
+        21
+      ],
+      "layer": "skin",
+      "drawOrder": 22,
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5"
+    }
+  ],
+  "vectorUI": [
+    {
+      "shape": "full-canvas-dim",
+      "colorRGBA": [
+        23,
+        49,
+        39,
+        55
+      ]
+    }
+  ],
+  "textLayout": "art-delivery/records/layouts/terminal--states-1.json",
+  "unityStatus": "Placement advice, not imported or verified in Unity"
+}

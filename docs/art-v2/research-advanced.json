@@ -1,0 +1,1734 @@
+{
+  "schemaVersion": 1,
+  "commit": "eb86dffd20072d6fde54af568cf229f3cd4d751f",
+  "repository": "https://github.com/CleverRaven/Cataclysm-DDA",
+  "referenceRoot": "reference/Cataclysm-DDA",
+  "verifiedDate": "2026-10-26",
+  "taskTitle": "青岚余生（暂定名）— 道家Q版全游戏UI美术",
+  "researchMethod": "Actual cloned source implementations, action registration, JSON UI and mod configuration. Evidence lines tied to commit. Visual adaptation only; no Unity implementation.",
+  "globalAssumptions": [
+    "所有人物名、地点、数量与示例对白必须标为样例，不能冒充源游戏固定数据。",
+    "可重排为道家Q版视觉，但不改变功能关系、现实单位或条件语义。",
+    "每条主视图覆盖适用选择/确认/结果/返回与空态异常；共享状态皮肤不得代替具体失败原因。",
+    "身体/地图/车辆结构示意不代表Unity模型、导航、Prefab、业务逻辑或引擎验收。"
+  ],
+  "features": [
+    {
+      "id": "game-hud",
+      "system": "生存与战斗",
+      "title": "生存主界面",
+      "source": [
+        {
+          "file": "data/json/ui/sidebar.json",
+          "symbol": "\"id\": \"custom_sidebar\"",
+          "line": 3
+        }
+      ],
+      "flow": [
+        "进入世界",
+        "观察生命/体力/需求/环境",
+        "选择行动",
+        "回合推进"
+      ],
+      "states": [
+        "常态",
+        "受伤",
+        "饥渴",
+        "疲劳",
+        "负重",
+        "警戒",
+        "乘车",
+        "活动中"
+      ],
+      "assumptions": [
+        "按源sidebar信息组重排；场景和数值是设计样例。"
+      ],
+      "layoutPattern": "hud",
+      "availability": "base"
+    },
+    {
+      "id": "aim-ranged",
+      "system": "生存与战斗",
+      "title": "瞄准与射击",
+      "source": [
+        {
+          "file": "src/ranged.cpp",
+          "symbol": "target_ui::run",
+          "line": 2847
+        }
+      ],
+      "flow": [
+        "远程武器",
+        "选目标",
+        "选瞄准精度/射击模式",
+        "确认射击",
+        "主界面"
+      ],
+      "states": [
+        "瞄准中",
+        "无弹药",
+        "超范围",
+        "目标丢失",
+        "友方弹道确认",
+        "取消"
+      ],
+      "assumptions": [
+        "显示命中Great/Normal/Graze概率层级；不加入无依据技能轮盘。"
+      ],
+      "layoutPattern": "targeting",
+      "availability": "base"
+    },
+    {
+      "id": "throw-target",
+      "system": "生存与战斗",
+      "title": "投掷目标",
+      "source": [
+        {
+          "file": "src/ranged.cpp",
+          "symbol": "target_handler::mode_throw",
+          "line": 504
+        }
+      ],
+      "flow": [
+        "选投掷物",
+        "选生物/地面",
+        "看距离轨迹",
+        "确认或取消"
+      ],
+      "states": [
+        "物品选中",
+        "合法轨迹",
+        "超范围",
+        "盲投",
+        "取消"
+      ],
+      "assumptions": [
+        "与射击共用目标框与轨迹资源。"
+      ],
+      "layoutPattern": "targeting",
+      "availability": "base"
+    },
+    {
+      "id": "look-examine",
+      "system": "探索",
+      "title": "观察与环境详情",
+      "source": [
+        {
+          "file": "src/game.cpp",
+          "symbol": "std::optional<tripoint_bub_ms> game::look_around()",
+          "line": 5977
+        }
+      ],
+      "flow": [
+        "观察",
+        "移动光标",
+        "读取地形/生物/物品",
+        "返回"
+      ],
+      "states": [
+        "可见",
+        "视线受阻",
+        "黑暗",
+        "无物",
+        "切换楼层"
+      ],
+      "assumptions": [
+        "美术地图为功能示意，不等于游戏真实世界或Unity导航。"
+      ],
+      "layoutPattern": "detail",
+      "availability": "base"
+    },
+    {
+      "id": "nearby-creatures",
+      "system": "探索",
+      "title": "附近物品与目标",
+      "source": [
+        {
+          "file": "src/surroundings_menu.cpp",
+          "symbol": "std::string io::enum_to_string<surroundings_menu_tab_enum>",
+          "line": 73
+        }
+      ],
+      "flow": [
+        "附近列表",
+        "物品/生物/地形家具",
+        "筛选",
+        "详情",
+        "返回"
+      ],
+      "states": [
+        "有目标",
+        "无目标",
+        "无搜索结果",
+        "选中",
+        "危险"
+      ],
+      "assumptions": [
+        "源菜单实际三类对象；不是敌人掉落领取界面。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "message-log",
+      "system": "记录",
+      "title": "消息日志",
+      "source": [
+        {
+          "file": "src/messages.cpp",
+          "symbol": "void Messages::display_messages()",
+          "line": 924
+        }
+      ],
+      "flow": [
+        "日志",
+        "历史消息",
+        "滚动查看",
+        "返回"
+      ],
+      "states": [
+        "有记录",
+        "无记录",
+        "长文",
+        "错误提示"
+      ],
+      "assumptions": [
+        "游戏事件日志，不是玩家聊天频道。"
+      ],
+      "layoutPattern": "list",
+      "availability": "base"
+    },
+    {
+      "id": "body-health",
+      "system": "身体与状态",
+      "title": "身体状态总览",
+      "source": [
+        {
+          "file": "src/body_status_ui.cpp",
+          "symbol": "bool body_status_ui::display()",
+          "line": 200
+        },
+        {
+          "file": "src/body_status_ui.h",
+          "symbol": "enum class body_status_tab",
+          "line": 28
+        }
+      ],
+      "flow": [
+        "身体状态",
+        "选择部位",
+        "子部位/伤势/穿戴",
+        "返回"
+      ],
+      "states": [
+        "完整",
+        "受伤",
+        "部位缺失",
+        "选中",
+        "治疗后"
+      ],
+      "assumptions": [
+        "保留身体/子身体部位结构，不以全局血条替代。"
+      ],
+      "layoutPattern": "body",
+      "availability": "base"
+    },
+    {
+      "id": "medical-treatment",
+      "system": "身体与状态",
+      "title": "处理伤势",
+      "source": [
+        {
+          "file": "src/body_status_ui.cpp",
+          "symbol": "void body_status_callback::confirm",
+          "line": 601
+        },
+        {
+          "file": "src/medical_ui.cpp",
+          "symbol": "void medical_ui::draw_limbs_details",
+          "line": 496
+        }
+      ],
+      "flow": [
+        "医疗标签",
+        "受伤部位",
+        "可用治疗",
+        "确认",
+        "活动进度"
+      ],
+      "states": [
+        "待处理",
+        "无伤势",
+        "无药物工具",
+        "选中治疗",
+        "完成",
+        "中断"
+      ],
+      "assumptions": [
+        "实际调用pick_wound_fix；不设计通用一键满血。"
+      ],
+      "layoutPattern": "body-detail",
+      "availability": "base"
+    },
+    {
+      "id": "status-effects",
+      "system": "身体与状态",
+      "title": "状态效果",
+      "source": [
+        {
+          "file": "src/player_display.cpp",
+          "symbol": "static void draw_effects_tab",
+          "line": 742
+        }
+      ],
+      "flow": [
+        "角色信息",
+        "效果标签",
+        "选择效果",
+        "说明",
+        "返回"
+      ],
+      "states": [
+        "正面",
+        "负面",
+        "无效果",
+        "长说明"
+      ],
+      "assumptions": [
+        "强度持续时间仅样例；环境伤害药物等来源保留。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "morale",
+      "system": "身体与状态",
+      "title": "士气与专注",
+      "source": [
+        {
+          "file": "src/morale.cpp",
+          "symbol": "void player_morale::display",
+          "line": 530
+        }
+      ],
+      "flow": [
+        "士气",
+        "正负来源",
+        "合计/专注影响",
+        "返回"
+      ],
+      "states": [
+        "正士气",
+        "负士气",
+        "无来源",
+        "惩罚叠加"
+      ],
+      "assumptions": [
+        "不是社交好感度或运营活跃度。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "overmap",
+      "system": "地图与旅行",
+      "title": "区域地图",
+      "source": [
+        {
+          "file": "src/overmap_ui.cpp",
+          "symbol": "void overmap_sidebar::draw_tile_info",
+          "line": 194
+        }
+      ],
+      "flow": [
+        "大地图",
+        "平移缩放楼层",
+        "选地点",
+        "地点任务详情"
+      ],
+      "states": [
+        "探索过",
+        "未知",
+        "地点选中",
+        "天气图层",
+        "任务目标",
+        "楼层"
+      ],
+      "assumptions": [
+        "地名与坐标样例，图层和文字分离。"
+      ],
+      "layoutPattern": "map",
+      "availability": "base"
+    },
+    {
+      "id": "map-notes",
+      "system": "地图与旅行",
+      "title": "地图标记与搜索",
+      "source": [
+        {
+          "file": "src/overmap_ui.cpp",
+          "symbol": "void overmap_sidebar::draw_quick_reference",
+          "line": 279
+        }
+      ],
+      "flow": [
+        "地图",
+        "搜索/标记列表",
+        "新增编辑",
+        "保存/删除确认",
+        "地图"
+      ],
+      "states": [
+        "有标记",
+        "无标记",
+        "无结果",
+        "编辑",
+        "删除确认"
+      ],
+      "assumptions": [
+        "标记图标和原生文字独立，不能烘焙所有地点。"
+      ],
+      "layoutPattern": "map-detail",
+      "availability": "base"
+    },
+    {
+      "id": "route-travel",
+      "system": "地图与旅行",
+      "title": "路线与自动旅行",
+      "source": [
+        {
+          "file": "src/overmap_ui.cpp",
+          "symbol": "static bool try_travel_to_destination",
+          "line": 2000
+        }
+      ],
+      "flow": [
+        "选目的地",
+        "规划",
+        "步行/驾驶确认",
+        "自动行进",
+        "到达/中断"
+      ],
+      "states": [
+        "可达",
+        "无路径",
+        "楼层不一致",
+        "负重警告",
+        "车内非驾驶",
+        "行进",
+        "取消"
+      ],
+      "assumptions": [
+        "不是任意点付费传送，保留同Z层和驾驶状态限制。"
+      ],
+      "layoutPattern": "map-confirm",
+      "availability": "base"
+    },
+    {
+      "id": "zone-manager",
+      "system": "营地与区域",
+      "title": "区域管理",
+      "source": [
+        {
+          "file": "src/zone_manager_ui.cpp",
+          "symbol": "void zone_manager_ui::display_zone_manager",
+          "line": 159
+        }
+      ],
+      "flow": [
+        "区域",
+        "地图选区",
+        "类型/启停",
+        "排序",
+        "保存"
+      ],
+      "states": [
+        "选中",
+        "无区域",
+        "启用",
+        "禁用",
+        "个人区域",
+        "车辆区域"
+      ],
+      "assumptions": [
+        "分类存放、农田、施工、车辆工作区域；不是PvP领土。"
+      ],
+      "layoutPattern": "map-list",
+      "availability": "base"
+    },
+    {
+      "id": "npc-talk",
+      "system": "人物与关系",
+      "title": "人物交谈",
+      "source": [
+        {
+          "file": "src/dialogue_imgui.cpp",
+          "symbol": "void dialogue_imgui_impl::draw_responses",
+          "line": 410
+        }
+      ],
+      "flow": [
+        "接近/无线电联系NPC",
+        "历史",
+        "回答/说服/交易/任务",
+        "返回"
+      ],
+      "states": [
+        "常态",
+        "多段历史",
+        "不可选",
+        "说服成功",
+        "说服失败",
+        "结束"
+      ],
+      "assumptions": [
+        "人物名与对白样例；头像和原生文字分离。"
+      ],
+      "layoutPattern": "dialogue",
+      "availability": "base"
+    },
+    {
+      "id": "npc-trade",
+      "system": "人物与关系",
+      "title": "交易与交换",
+      "source": [
+        {
+          "file": "src/trade_ui.cpp",
+          "symbol": "bool trade_ui::_confirm_trade",
+          "line": 301
+        }
+      ],
+      "flow": [
+        "NPC交谈",
+        "双方物品",
+        "数量",
+        "价值余额",
+        "成交确认"
+      ],
+      "states": [
+        "可成交",
+        "拒收",
+        "价值不足",
+        "容量不足",
+        "信用上限",
+        "确认",
+        "取消"
+      ],
+      "assumptions": [
+        "真实以物易物/信用/部分银行余额，不是元宝商城。"
+      ],
+      "layoutPattern": "dual-inventory",
+      "availability": "base"
+    },
+    {
+      "id": "missions",
+      "system": "任务",
+      "title": "任务与兴趣点",
+      "source": [
+        {
+          "file": "src/mission_ui.cpp",
+          "symbol": "void mission_ui_impl::draw_selected_description",
+          "line": 378
+        },
+        {
+          "file": "src/mission_ui.cpp",
+          "symbol": "enum class mission_ui_tab_enum",
+          "line": 39
+        }
+      ],
+      "flow": [
+        "任务",
+        "进行中/完成/失败/兴趣点",
+        "详情",
+        "设目标/地图定位"
+      ],
+      "states": [
+        "进行中",
+        "已完成",
+        "已失败",
+        "无任务",
+        "限时",
+        "目标选中"
+      ],
+      "assumptions": [
+        "奖励交付按NPC或任务脚本，不添加全任务一键领奖。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "factions",
+      "system": "人物与关系",
+      "title": "阵营资料",
+      "source": [
+        {
+          "file": "src/faction_ui.cpp",
+          "symbol": "void faction_ui::draw_other_factions_tab",
+          "line": 650
+        }
+      ],
+      "flow": [
+        "阵营",
+        "自己/其他",
+        "选择",
+        "关系描述",
+        "返回"
+      ],
+      "states": [
+        "已知",
+        "无记录",
+        "友好",
+        "敌对",
+        "中立"
+      ],
+      "assumptions": [
+        "世界内阵营，不是玩家公会。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "followers",
+      "system": "人物与关系",
+      "title": "同伴与随行状态",
+      "source": [
+        {
+          "file": "src/faction_ui.cpp",
+          "symbol": "void faction_ui::your_follower_display",
+          "line": 455
+        }
+      ],
+      "flow": [
+        "同伴",
+        "列表",
+        "位置状态工作",
+        "命令/营地详情",
+        "返回"
+      ],
+      "states": [
+        "随行",
+        "驻营",
+        "工作中",
+        "未响应",
+        "无同伴",
+        "受伤"
+      ],
+      "assumptions": [
+        "NPC关系，不包含网络组队/副本匹配。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "creature-codex",
+      "system": "人物与关系",
+      "title": "生物见闻",
+      "source": [
+        {
+          "file": "src/faction_ui.cpp",
+          "symbol": "void faction_ui::creature_display",
+          "line": 847
+        }
+      ],
+      "flow": [
+        "生物见闻",
+        "已记录生物",
+        "危险/体型/物种/感官/说明"
+      ],
+      "states": [
+        "已记录",
+        "无目击照片",
+        "高危",
+        "长文"
+      ],
+      "assumptions": [
+        "依据目击拍照记录，非宠物抽取养成。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "camp-overview",
+      "system": "营地与区域",
+      "title": "营地总览",
+      "source": [
+        {
+          "file": "src/faction_camp.cpp",
+          "symbol": "void talk_function::basecamp_mission",
+          "line": 777
+        }
+      ],
+      "flow": [
+        "联系营地负责人",
+        "任务",
+        "管理生产扩建",
+        "确认",
+        "返回"
+      ],
+      "states": [
+        "可管理",
+        "无权限",
+        "无人",
+        "食物不足",
+        "任务可用",
+        "任务中"
+      ],
+      "assumptions": [
+        "食物热量、工人和设施；不伪造放置离线收益。"
+      ],
+      "layoutPattern": "management",
+      "availability": "base"
+    },
+    {
+      "id": "companion-assignment",
+      "system": "营地与区域",
+      "title": "同伴工作与派遣",
+      "source": [
+        {
+          "file": "src/faction_camp.cpp",
+          "symbol": "void basecamp::worker_assignment_ui",
+          "line": 2096
+        }
+      ],
+      "flow": [
+        "营地",
+        "选工作/任务",
+        "同伴",
+        "条件时间",
+        "派遣",
+        "回收"
+      ],
+      "states": [
+        "无人",
+        "可指派",
+        "技能不符",
+        "工作中",
+        "未到时间",
+        "可回收",
+        "召回"
+      ],
+      "assumptions": [
+        "实际任务时间危险成果以定义为准，画面均样例。"
+      ],
+      "layoutPattern": "roster",
+      "availability": "base"
+    },
+    {
+      "id": "camp-upgrade",
+      "system": "营地与区域",
+      "title": "营地扩建与生产",
+      "source": [
+        {
+          "file": "src/faction_camp.cpp",
+          "symbol": "void basecamp::start_upgrade",
+          "line": 1926
+        }
+      ],
+      "flow": [
+        "营地",
+        "扩建方向方案",
+        "材料技能食物时间",
+        "工人",
+        "确认",
+        "施工"
+      ],
+      "states": [
+        "可建",
+        "缺材料",
+        "缺食物",
+        "前置不足",
+        "施工",
+        "完工",
+        "撤销"
+      ],
+      "assumptions": [
+        "农耕采伐采集共用任务详情，不画无依据科技树。"
+      ],
+      "layoutPattern": "requirements",
+      "availability": "base"
+    },
+    {
+      "id": "vehicle-dashboard",
+      "system": "载具",
+      "title": "驾驶与载具控制",
+      "source": [
+        {
+          "file": "src/vehicle_use.cpp",
+          "symbol": "void vehicle::control_engines",
+          "line": 405
+        },
+        {
+          "file": "src/vehicle_use.cpp",
+          "symbol": "void vehicle::build_electronics_menu",
+          "line": 310
+        },
+        {
+          "file": "src/smart_controller_ui.cpp",
+          "symbol": "void smart_controller_ui::refresh",
+          "line": 41
+        }
+      ],
+      "flow": [
+        "驾驶位",
+        "引擎速度能源电子控制",
+        "行驶/制动",
+        "停车"
+      ],
+      "states": [
+        "关闭",
+        "启动",
+        "无燃料",
+        "移动",
+        "停车",
+        "自动驾驶",
+        "故障"
+      ],
+      "assumptions": [
+        "保留速度燃料电池现实单位，不改坐骑战力。"
+      ],
+      "layoutPattern": "hud",
+      "availability": "base"
+    },
+    {
+      "id": "vehicle-parts",
+      "system": "载具",
+      "title": "车辆部件与改装",
+      "source": [
+        {
+          "file": "src/veh_interact.cpp",
+          "symbol": "void veh_interact::do_main_loop",
+          "line": 518
+        }
+      ],
+      "flow": [
+        "检查车辆",
+        "选结构部位",
+        "安装维修拆卸",
+        "工具材料",
+        "确认活动"
+      ],
+      "states": [
+        "正常",
+        "损坏",
+        "不可修",
+        "材料技能不足",
+        "驾驶中禁止",
+        "部件选中",
+        "完成"
+      ],
+      "assumptions": [
+        "结构配置示意，非Unity车辆模型完成。"
+      ],
+      "layoutPattern": "vehicle-plan",
+      "availability": "base"
+    },
+    {
+      "id": "vehicle-refill",
+      "system": "载具",
+      "title": "车辆补给",
+      "source": [
+        {
+          "file": "src/veh_interact.cpp",
+          "symbol": "void veh_interact::do_refill",
+          "line": 1289
+        }
+      ],
+      "flow": [
+        "车辆",
+        "选可补给部件",
+        "兼容燃料液体",
+        "确认",
+        "返回"
+      ],
+      "states": [
+        "可补给",
+        "无兼容物",
+        "已满",
+        "移动中禁止",
+        "目标选中",
+        "完成"
+      ],
+      "assumptions": [
+        "按部件类型处理，非万能货币能源。"
+      ],
+      "layoutPattern": "requirements",
+      "availability": "base"
+    },
+    {
+      "id": "bionics",
+      "system": "身体与成长",
+      "title": "义体管理",
+      "source": [
+        {
+          "file": "src/bionics_ui.cpp",
+          "symbol": "void avatar::power_bionics",
+          "line": 586
+        }
+      ],
+      "flow": [
+        "义体",
+        "主动/被动",
+        "说明耗能燃料",
+        "开关",
+        "返回"
+      ],
+      "states": [
+        "无义体",
+        "启动",
+        "关闭",
+        "能量不足",
+        "无燃料",
+        "节能阈值",
+        "故障"
+      ],
+      "assumptions": [
+        "保留kJ能量语义，道家装饰不改变消耗逻辑。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "bionic-surgery",
+      "system": "身体与成长",
+      "title": "义体手术与风险",
+      "source": [
+        {
+          "file": "src/bionics.cpp",
+          "symbol": "bool Character::can_install_bionics",
+          "line": 2468
+        }
+      ],
+      "flow": [
+        "安装者/手术台",
+        "CBM",
+        "麻醉无菌槽位成功率",
+        "确认",
+        "手术",
+        "结果"
+      ],
+      "states": [
+        "可装",
+        "已装",
+        "槽位不足",
+        "污染",
+        "缺麻醉",
+        "确认",
+        "成功",
+        "失败"
+      ],
+      "assumptions": [
+        "手术世界交互，不是拖入装备格即安装。"
+      ],
+      "layoutPattern": "confirm-risk",
+      "availability": "base"
+    },
+    {
+      "id": "mutations",
+      "system": "身体与成长",
+      "title": "变异与主动特征",
+      "source": [
+        {
+          "file": "src/mutation_ui.cpp",
+          "symbol": "void avatar::power_mutations",
+          "line": 103
+        }
+      ],
+      "flow": [
+        "变异",
+        "主动/被动",
+        "描述",
+        "激活停用/快捷键",
+        "返回"
+      ],
+      "states": [
+        "无变异",
+        "被动不可激活",
+        "关闭",
+        "生效",
+        "资源不足",
+        "永久特征"
+      ],
+      "assumptions": [
+        "非标准等级天赋树，不额外设计升星突破。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "martial-arts",
+      "system": "身体与成长",
+      "title": "武术与招式",
+      "source": [
+        {
+          "file": "src/character.cpp",
+          "symbol": "bool character_martial_arts::pick_style",
+          "line": 8442
+        }
+      ],
+      "flow": [
+        "武术",
+        "已知流派",
+        "招式与兼容武器",
+        "选用/空手",
+        "返回"
+      ],
+      "states": [
+        "已学",
+        "未选择",
+        "当前选用",
+        "武器兼容说明",
+        "义体提供"
+      ],
+      "assumptions": [
+        "列表来自所学或激活义体提供，不默认固定门派。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "spellbook",
+      "system": "可选超自然内容",
+      "title": "法术与超自然能力（可选）",
+      "source": [
+        {
+          "file": "src/magic.cpp",
+          "symbol": "spell &known_magic::select_spell",
+          "line": 3373
+        },
+        {
+          "file": "data/mods/Magiclysm/modinfo.json",
+          "symbol": "\"id\": \"magiclysm\"",
+          "line": 4
+        }
+      ],
+      "flow": [
+        "相关内容启用并掌握能力",
+        "列表",
+        "详情收藏快捷键",
+        "施展"
+      ],
+      "states": [
+        "未启用",
+        "无能力",
+        "已学",
+        "能量不足",
+        "失败率",
+        "收藏"
+      ],
+      "assumptions": [
+        "完整仙术示例仅针对Magiclysm等配置；底层spell引擎还用于部分基础义体/特殊内容，不算所有基础人物固有能力。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "mod-only"
+    },
+    {
+      "id": "spell-target",
+      "system": "可选超自然内容",
+      "title": "法术目标与施展（可选）",
+      "source": [
+        {
+          "file": "src/ranged.cpp",
+          "symbol": "target_handler::trajectory target_handler::mode_spell",
+          "line": 586
+        }
+      ],
+      "flow": [
+        "选能力",
+        "合法生物/地面/车辆目标",
+        "范围",
+        "确认",
+        "结果"
+      ],
+      "states": [
+        "可施展",
+        "无合法目标",
+        "能量不足",
+        "超范围",
+        "范围预览",
+        "取消"
+      ],
+      "assumptions": [
+        "同spellbook为相关可选内容扩展，不默认基础人物都有法术栏。"
+      ],
+      "layoutPattern": "targeting",
+      "availability": "mod-only"
+    },
+    {
+      "id": "achievements",
+      "system": "记录",
+      "title": "成就、准则与战绩",
+      "source": [
+        {
+          "file": "src/scores_ui.cpp",
+          "symbol": "enum class scores_ui_tab",
+          "line": 36
+        }
+      ],
+      "flow": [
+        "战绩",
+        "成就/准则/分数/击杀",
+        "进度记录",
+        "返回"
+      ],
+      "states": [
+        "未完成",
+        "已完成",
+        "违背准则",
+        "空记录",
+        "调试人物禁用"
+      ],
+      "assumptions": [
+        "本地记录，无全服排行、货币领奖或每日签到。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "memorial",
+      "system": "记录",
+      "title": "旅程终局与纪念",
+      "source": [
+        {
+          "file": "src/game.cpp",
+          "symbol": "void game::death_screen",
+          "line": 2939
+        },
+        {
+          "file": "src/game.cpp",
+          "symbol": "bool game::is_game_over",
+          "line": 2859
+        }
+      ],
+      "flow": [
+        "人物死亡",
+        "临终观察/终局",
+        "日记成绩",
+        "NPC阵营后记",
+        "主菜单"
+      ],
+      "states": [
+        "死亡",
+        "临终观察",
+        "成绩",
+        "无击杀",
+        "后记",
+        "纪念"
+      ],
+      "assumptions": [
+        "基础死亡终局，无通用付费复活；特殊防死内容例外需另标。"
+      ],
+      "layoutPattern": "summary",
+      "availability": "base"
+    },
+    {
+      "id": "diary",
+      "system": "记录",
+      "title": "生存日记",
+      "source": [
+        {
+          "file": "src/diary_ui.cpp",
+          "symbol": "void diary::show_diary_ui",
+          "line": 175
+        }
+      ],
+      "flow": [
+        "日记",
+        "页面列表",
+        "变化正文",
+        "编辑页",
+        "返回"
+      ],
+      "states": [
+        "无日记",
+        "已记录",
+        "长文",
+        "编辑",
+        "保存",
+        "取消"
+      ],
+      "assumptions": [
+        "本地日记，不是邮件收件箱，正文样例。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "terminal",
+      "system": "世界交互",
+      "title": "电子终端",
+      "source": [
+        {
+          "file": "src/computer_session.cpp",
+          "symbol": "void computer_session::use",
+          "line": 153
+        }
+      ],
+      "flow": [
+        "交互终端",
+        "权限",
+        "绕过安全确认",
+        "功能",
+        "结果/警报"
+      ],
+      "states": [
+        "接入",
+        "锁定",
+        "破解确认",
+        "破解失败",
+        "无权限",
+        "成功",
+        "关闭"
+      ],
+      "assumptions": [
+        "终端登录是世界内计算机认证，不是游戏账号登录。"
+      ],
+      "layoutPattern": "terminal",
+      "availability": "base"
+    },
+    {
+      "id": "atm-bank",
+      "system": "世界交互",
+      "title": "现金卡与银行终端",
+      "source": [
+        {
+          "file": "src/iexamine.cpp",
+          "symbol": "class atm_menu",
+          "line": 861
+        }
+      ],
+      "flow": [
+        "ATM",
+        "余额",
+        "购卡/存取/兑换/转卡",
+        "输入数额",
+        "结果"
+      ],
+      "states": [
+        "正常",
+        "无卡",
+        "余额不足",
+        "数量输入",
+        "手续费确认",
+        "成功"
+      ],
+      "assumptions": [
+        "世界内现金卡银行，不是现实支付或充值。"
+      ],
+      "layoutPattern": "choice-detail",
+      "availability": "base"
+    },
+    {
+      "id": "vending-machine",
+      "system": "世界交互",
+      "title": "自动售货机",
+      "source": [
+        {
+          "file": "src/iexamine.cpp",
+          "symbol": "void iexamine::vending",
+          "line": 1046
+        }
+      ],
+      "flow": [
+        "售货机",
+        "商品列表详情",
+        "可用金额",
+        "购买",
+        "库存变化"
+      ],
+      "states": [
+        "有货",
+        "售罄",
+        "无卡",
+        "余额不足",
+        "商品选中",
+        "购买结果"
+      ],
+      "assumptions": [
+        "库存来自场景设备，价格和商品为样例。"
+      ],
+      "layoutPattern": "list-detail",
+      "availability": "base"
+    },
+    {
+      "id": "translocator",
+      "system": "世界交互",
+      "title": "已激活传送装置",
+      "source": [
+        {
+          "file": "src/iexamine.cpp",
+          "symbol": "void iexamine::translocator",
+          "line": 799
+        }
+      ],
+      "flow": [
+        "发现装置",
+        "激活/停用",
+        "高级装置传送",
+        "已知目的地"
+      ],
+      "states": [
+        "未激活",
+        "已激活",
+        "无目的地",
+        "停用确认",
+        "目的地选择"
+      ],
+      "assumptions": [
+        "特定世界装置条件入口，非任意地图点付费传送。"
+      ],
+      "layoutPattern": "map-confirm",
+      "availability": "conditional-world-device"
+    },
+    {
+      "id": "safemode-rules",
+      "system": "辅助规则",
+      "title": "安全模式规则",
+      "source": [
+        {
+          "file": "src/safemode_ui.cpp",
+          "symbol": "void safemode::show( const std::string &custom_name_in",
+          "line": 56
+        }
+      ],
+      "flow": [
+        "规则管理",
+        "全局/人物",
+        "编辑启停排序",
+        "测试",
+        "保存"
+      ],
+      "states": [
+        "无规则",
+        "启用",
+        "禁用",
+        "距离态度类别",
+        "匹配",
+        "无匹配",
+        "未保存"
+      ],
+      "assumptions": [
+        "危险行动保护，不是自动战斗。"
+      ],
+      "layoutPattern": "table",
+      "availability": "base"
+    },
+    {
+      "id": "autopickup-rules",
+      "system": "辅助规则",
+      "title": "自动拾取规则",
+      "source": [
+        {
+          "file": "src/auto_pickup.cpp",
+          "symbol": "void user_interface::show",
+          "line": 308
+        }
+      ],
+      "flow": [
+        "自动拾取",
+        "全局/人物",
+        "包含排除通配",
+        "测试",
+        "保存"
+      ],
+      "states": [
+        "无规则",
+        "启用",
+        "禁用",
+        "包含",
+        "排除",
+        "匹配",
+        "无匹配",
+        "未保存"
+      ],
+      "assumptions": [
+        "顺序容器和材质规则影响结果，不是挂机收益。"
+      ],
+      "layoutPattern": "table",
+      "availability": "base"
+    },
+    {
+      "id": "construction",
+      "system": "建造与活动",
+      "title": "建造计划",
+      "source": [
+        {
+          "file": "src/construction.cpp",
+          "symbol": "construction_id construction_menu",
+          "line": 522
+        }
+      ],
+      "flow": [
+        "建造",
+        "分类可建筛选",
+        "阶段详情",
+        "材料工具技能",
+        "位置"
+      ],
+      "states": [
+        "全部",
+        "材料就绪但地点缺失",
+        "此处可建",
+        "缺材料",
+        "缺技能",
+        "太暗"
+      ],
+      "assumptions": [
+        "源码明确all/ready missing location/buildable here三种筛选。"
+      ],
+      "layoutPattern": "requirements",
+      "availability": "base"
+    },
+    {
+      "id": "construction-place",
+      "system": "建造与活动",
+      "title": "施工位置预览",
+      "source": [
+        {
+          "file": "src/construction.cpp",
+          "symbol": "construction_preview_callback(",
+          "line": 465
+        }
+      ],
+      "flow": [
+        "选方案",
+        "附近合法格预览",
+        "位置",
+        "确认",
+        "进度"
+      ],
+      "states": [
+        "有效",
+        "无效",
+        "占用",
+        "多阶段",
+        "确认",
+        "返回"
+      ],
+      "assumptions": [
+        "位置状态图，不宣称Unity碰撞导航实现。"
+      ],
+      "layoutPattern": "map-target",
+      "availability": "base"
+    },
+    {
+      "id": "wait-sleep",
+      "system": "建造与活动",
+      "title": "等待、休息与闹钟",
+      "source": [
+        {
+          "file": "src/handle_action.cpp",
+          "symbol": "Wait for how long?",
+          "line": 1237
+        }
+      ],
+      "flow": [
+        "休息",
+        "等待/睡眠/闹钟",
+        "时长自然时间",
+        "确认",
+        "推进"
+      ],
+      "states": [
+        "定时",
+        "等天亮天气",
+        "恢复体力",
+        "等同伴",
+        "无表近似",
+        "驾驶禁止",
+        "取消"
+      ],
+      "assumptions": [
+        "有无表影响时间选项，非离线奖励或免费恢复。"
+      ],
+      "layoutPattern": "choice",
+      "availability": "base"
+    },
+    {
+      "id": "activity-progress",
+      "system": "建造与活动",
+      "title": "长时活动与中断",
+      "source": [
+        {
+          "file": "src/player_activity.cpp",
+          "symbol": "player_activity::get_progress_message",
+          "line": 134
+        }
+      ],
+      "flow": [
+        "阅读制作修车休息等",
+        "进度",
+        "危险/取消",
+        "中断继续",
+        "完成"
+      ],
+      "states": [
+        "进行中",
+        "可中断",
+        "危险打断",
+        "可恢复",
+        "不可恢复",
+        "完成",
+        "取消"
+      ],
+      "assumptions": [
+        "真实活动信息视觉封装，不是实时挂机任务。"
+      ],
+      "layoutPattern": "progress",
+      "availability": "base"
+    },
+    {
+      "id": "butcher-harvest",
+      "system": "建造与活动",
+      "title": "处理遗骸与收获",
+      "source": [
+        {
+          "file": "src/butchery.cpp",
+          "symbol": "butcher_submenu(",
+          "line": 1184
+        }
+      ],
+      "flow": [
+        "选目标",
+        "处理方式",
+        "工具时间",
+        "确认",
+        "进度产物"
+      ],
+      "states": [
+        "无目标",
+        "缺工具",
+        "快速",
+        "完整处理",
+        "解剖",
+        "知识要求",
+        "完成失败"
+      ],
+      "assumptions": [
+        "中性图标和文字避免血腥，不改成战斗宝箱。"
+      ],
+      "layoutPattern": "choice-detail",
+      "availability": "base"
+    },
+    {
+      "id": "zone-activities",
+      "system": "建造与活动",
+      "title": "区域工作与批量活动",
+      "source": [
+        {
+          "file": "src/handle_action.cpp",
+          "symbol": "menu.title = _( \"Pick action:\" )",
+          "line": 1496
+        }
+      ],
+      "flow": [
+        "定义区域",
+        "工作入口",
+        "分类/农耕/采伐/修车/施工",
+        "条件",
+        "活动"
+      ],
+      "states": [
+        "无兼容区域",
+        "就绪",
+        "缺工具",
+        "工作中",
+        "完成",
+        "中断"
+      ],
+      "assumptions": [
+        "保留源区域活动入口，子活动共用选择和进度资源。"
+      ],
+      "layoutPattern": "choice-detail",
+      "availability": "base"
+    },
+    {
+      "id": "npc-orders",
+      "system": "人物与关系",
+      "title": "同伴命令与行为规则",
+      "source": [
+        {
+          "file": "src/npctalk.cpp",
+          "symbol": "static void npc_temp_orders_menu",
+          "line": 884
+        }
+      ],
+      "flow": [
+        "同伴交谈/喊话入口",
+        "选择一位或多位同伴",
+        "临时命令与行为规则",
+        "切换近随/交战/枪械/睡眠策略",
+        "确认并返回"
+      ],
+      "states": [
+        "无同伴",
+        "一人/多人选中",
+        "默认行为",
+        "临时覆盖",
+        "已启用",
+        "恢复默认"
+      ],
+      "assumptions": [
+        "与followers资料页分别表达操作和信息；多人命令可能覆盖不同原规则，不添加网络团队权限。"
+      ],
+      "layoutPattern": "choice-detail",
+      "availability": "base"
+    },
+    {
+      "id": "animal-care",
+      "system": "人物与关系",
+      "title": "驯养动物与骑乘交互",
+      "source": [
+        {
+          "file": "src/monexamine.cpp",
+          "symbol": "bool monexamine::pet_menu",
+          "line": 649
+        },
+        {
+          "file": "src/monexamine.cpp",
+          "symbol": "bool Character::can_mount",
+          "line": 636
+        }
+      ],
+      "flow": [
+        "接近已友善/驯养动物",
+        "查看可用交互",
+        "改名/牵引/背包/护具/治疗/骑乘",
+        "选择物品或确认",
+        "返回世界"
+      ],
+      "states": [
+        "友善",
+        "已牵引/已拴住",
+        "可骑乘",
+        "不可骑乘",
+        "负载过重",
+        "缺绳索/器具",
+        "受伤"
+      ],
+      "assumptions": [
+        "这是世界动物的条件性交互，非抽宠、升星或玩家坐骑战力；物种与装备条件必须明确。"
+      ],
+      "layoutPattern": "choice-detail",
+      "availability": "conditional-creature"
+    }
+  ],
+  "notApplicable": [
+    {
+      "id": "online-login-server",
+      "title": "在线账号登录与区服列表",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "主菜单为本地新游戏、存档、世界和设置；共享地图参数不等于网游认证或分服。",
+      "source": [
+        {
+          "file": "src/main_menu.cpp",
+          "symbol": "vMenuItems.emplace_back",
+          "line": 462
+        }
+      ]
+    },
+    {
+      "id": "premium-store",
+      "title": "充值与付费货币商城",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "源NPC交易、ATM现金卡和售货机是世界内买卖，不是现实支付或元宝充值。",
+      "source": [
+        {
+          "file": "src/trade_ui.cpp",
+          "symbol": "bool trade_ui::_confirm_trade",
+          "line": 301
+        }
+      ]
+    },
+    {
+      "id": "daily-liveops",
+      "title": "运营活动、每日签到、限时礼包",
+      "status": "not-confirmed-as-base-flow",
+      "reason": "本次已读玩家菜单、任务与战绩未确认运营式日签礼包；MOTD是本地信息而非运营活动中心。",
+      "source": [
+        {
+          "file": "src/main_menu.cpp",
+          "symbol": "PATH_INFO::motd",
+          "line": 435
+        }
+      ]
+    },
+    {
+      "id": "online-social",
+      "title": "玩家好友、世界聊天、邮件、网络组队",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "实际为NPC交谈、同伴、阵营和无线电联系，不能叠加玩家社交系统。",
+      "source": [
+        {
+          "file": "src/faction_ui.cpp",
+          "symbol": "void faction_ui::radio_the_faction",
+          "line": 991
+        }
+      ]
+    },
+    {
+      "id": "guild-raid",
+      "title": "帮会、副本匹配、网络团队邀请",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "阵营/营地/同伴是世界内NPC与工作流程，不是玩家帮会和匹配副本。",
+      "source": [
+        {
+          "file": "src/faction_camp.cpp",
+          "symbol": "void talk_function::basecamp_mission",
+          "line": 777
+        }
+      ]
+    },
+    {
+      "id": "online-leaderboard",
+      "title": "全服排行榜与排名奖励",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "scores为本地成就、准则、分数、击杀，不推导全服排名与领奖。",
+      "source": [
+        {
+          "file": "src/scores_ui.cpp",
+          "symbol": "enum class scores_ui_tab",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "id": "global-teleport",
+      "title": "大地图任意点付费传送",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "大地图规划步行驾驶路线；特定装置另有条件入口，不推广为任意点传送。",
+      "source": [
+        {
+          "file": "src/overmap_ui.cpp",
+          "symbol": "static bool try_travel_to_destination",
+          "line": 2000
+        }
+      ]
+    },
+    {
+      "id": "paid-revive",
+      "title": "死亡付费复活",
+      "status": "not-applicable-to-reviewed-base-flow",
+      "reason": "基础死亡流程进入终局/成绩/后记，特殊防死内容不能证明通用付费复活。",
+      "source": [
+        {
+          "file": "src/game.cpp",
+          "symbol": "bool game::is_game_over",
+          "line": 2859
+        }
+      ]
+    },
+    {
+      "id": "debug-developer-tools",
+      "title": "开发调试和ImGui Demo",
+      "status": "excluded-player-scope",
+      "reason": "调试地图实体编辑/开发调试控制台不是常规玩家UI；源scores明确调试人物成就禁用。",
+      "source": [
+        {
+          "file": "src/scores_ui.cpp",
+          "symbol": "Achievements and conducts are disabled for debug characters.",
+          "line": 197
+        }
+      ]
+    }
+  ]
+}

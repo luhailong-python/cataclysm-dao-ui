@@ -1,0 +1,815 @@
+{
+  "id": "item-detail",
+  "file": "art-delivery/designs/screens/item-detail.png",
+  "sha256": "ce95c8207fd2f47674e8b10b0ffa9f00170ec8a45070828beaabd304eced18da",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateOrigin": "top-left",
+  "fontFile": "art-delivery/resources/fonts/NotoSansCJKsc-Regular.otf",
+  "phase": "art-only, not Unity verified",
+  "operation": "Deterministic composition of recorded painted PNGs, vector UI indicators, and independent text. No model generation for this full-screen composite.",
+  "recipeInputs": {
+    "tools/art_screens.py": "1ecccaaf5d999921046f2670f7920a5896bb87467cb0b54dc8335b15c90d287f",
+    "tools/art_screen_data.py": "9b586eb0ef316a36d29c5ffd5fb4790f2a1a8adeecadd5cd18268af92493f28e",
+    "docs/art-v2/copy-core.json": "8967dd1fe2aacab594719188f0c2894e3002c81b4aa23dbc8f4dbf4646669ff8",
+    "docs/art-v2/copy-advanced.json": "1cb82916f8e8f8a43336a6c1b7a96f1de2b4d10321488b6a3b91e2324e6e3de5"
+  },
+  "derivedFrom": [
+    {
+      "file": "art-delivery/resources/backgrounds/entry-keyart.png",
+      "sha256": "7a8086aefcc5ec2e95660e401901b9143436e373ff9481750ba0dbc5da147bae",
+      "record": "art-delivery/resources/backgrounds/entry-keyart.png.source.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/icon-blade.png",
+      "sha256": "4f10322dbfced9be6135fb37b07e20ee101df3b05a8954d448aeecd488be2c7f",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/icon-boots.png",
+      "sha256": "b980fcec5f8e7307174d45f8f74ef432dfbbbf5f3343c2067976af1a9cdbe2f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/icon-herbs.png",
+      "sha256": "8ccf54b829b45d339dfe5b2030629d250effe77e6393ec45a374dba79877225e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/icon-sword.png",
+      "sha256": "78fdcdcd01d7ca2e3bbb50969dadfec852fbbc42a99e626db904c0976cdc4268",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-ammo.png",
+      "sha256": "e3d5583b68a2496cc425faa121493de2ea7599617e8c800b0a7931cc2cf3a8c0",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-backpack.png",
+      "sha256": "12dd18d60efdaefbabefc2e980ea82ae9f76d07dbdfa904abf7750095bdd35fc",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-bandage.png",
+      "sha256": "ecdbdd75e3272ec1f330595d879d9a4684343db610e6a13af5a95fc5b5126bed",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-battery.png",
+      "sha256": "8dfc32b2e42d8d0d878d1ecb94727c82b15d42839110f6e09307267c56de7c3e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-book.png",
+      "sha256": "797e947ef96371e9b0f390e3149df30c2b0acfcd9c8b46942e4cb87434d9df40",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-circuit.png",
+      "sha256": "4e77d33be02d17b4c4c3e446049455cb1d0653bb448f5c246e742a32569d6601",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-compass.png",
+      "sha256": "8c000b46688a3bba9f3686e9bb855fc1c724fb39053346bcbd67f793ececc01a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-flashlight.png",
+      "sha256": "c430a1fe0db76480220d7e60e8d50b62732732dbb051670f5bc156cbf891eaf9",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-food.png",
+      "sha256": "4db3f71fac44e1779fc99a2b2490ff017aa8b0a2c12111166dd6abedc587bdce",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-map.png",
+      "sha256": "96943faf480e26228d7f0f0cf3884edcaa809daca0aa2fa5d10568e53398c077",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-meat.png",
+      "sha256": "71235215c1c9e588b1a0b77541df89912a24363b6f20592a643cb06bfa2de040",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-pot.png",
+      "sha256": "7940e41d4e8ee7ef7aeb55e384534ba66b05549f64ab7f596868d9c1c30ee2a5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-radio.png",
+      "sha256": "226336cffa478798014cb09a9f38e0479f053c5eb794e675e33fce63ab72202f",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-seeds.png",
+      "sha256": "0fe4aefcde5a8bf0a7208edb630b80d489644cb2ed9a95558db4ed2f39f7682c",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-water.png",
+      "sha256": "34ed04b7cd4bcd83ec699cfe55a375d5b60d0029f557def05f2f7133a650131f",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/icons/survival-wrench.png",
+      "sha256": "4e910926258c9abb2693968727335ac885105f7560a522fd600ab4fdf5980185",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-primary-normal.png",
+      "sha256": "6f352d7c3b21ae2d1b5d2d0cce08ab5f0d31b951362ce6f7d8f93547b5080777",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/button-secondary-normal.png",
+      "sha256": "96fe5fe53fb30def6e5ee8931179911cfd6a21be1d092359f69d5941cb2999f5",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-content.png",
+      "sha256": "7fec7a6aa7481651784738a908efde76e0edafe6045cd30e24dfdc36b66421a2",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/panel-main.png",
+      "sha256": "69958de6ca9e4b9da98043beb59431ab785ad3a75c2cdbb3f9dc4eeb79be5f2e",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/slot-normal.png",
+      "sha256": "f668e4495358dcfaef8b624f3d0621b8ece24d0751b9fbaef5610d850aa732df",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/slot-selected.png",
+      "sha256": "ad1c9953d0fe0b5783a5f8f2a03fb9f3746b8366e15702661e2c0b9dcbac24e9",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-normal.png",
+      "sha256": "739afbf15673e6818831744e3d17223597a5340db81f758f769dbca5ad834c50",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/tab-selected.png",
+      "sha256": "e6a73b3841ba899b9599ce7790b52edbfb5993a0e63897afc8b61742b1f49e5a",
+      "record": "art-delivery/records/asset-manifest.json"
+    },
+    {
+      "file": "art-delivery/resources/ui/title.png",
+      "sha256": "fa4ca4798de24591dd169419d547af635106692ed2b40621175a5aeb4b4d54c7",
+      "record": "art-delivery/records/asset-manifest.json"
+    }
+  ],
+  "assets": [
+    "art-delivery/resources/backgrounds/entry-keyart.png",
+    "art-delivery/resources/icons/icon-blade.png",
+    "art-delivery/resources/icons/icon-boots.png",
+    "art-delivery/resources/icons/icon-herbs.png",
+    "art-delivery/resources/icons/icon-sword.png",
+    "art-delivery/resources/icons/survival-ammo.png",
+    "art-delivery/resources/icons/survival-backpack.png",
+    "art-delivery/resources/icons/survival-bandage.png",
+    "art-delivery/resources/icons/survival-battery.png",
+    "art-delivery/resources/icons/survival-book.png",
+    "art-delivery/resources/icons/survival-circuit.png",
+    "art-delivery/resources/icons/survival-compass.png",
+    "art-delivery/resources/icons/survival-flashlight.png",
+    "art-delivery/resources/icons/survival-food.png",
+    "art-delivery/resources/icons/survival-map.png",
+    "art-delivery/resources/icons/survival-meat.png",
+    "art-delivery/resources/icons/survival-pot.png",
+    "art-delivery/resources/icons/survival-radio.png",
+    "art-delivery/resources/icons/survival-seeds.png",
+    "art-delivery/resources/icons/survival-water.png",
+    "art-delivery/resources/icons/survival-wrench.png",
+    "art-delivery/resources/ui/button-primary-normal.png",
+    "art-delivery/resources/ui/button-secondary-normal.png",
+    "art-delivery/resources/ui/panel-content.png",
+    "art-delivery/resources/ui/panel-main.png",
+    "art-delivery/resources/ui/slot-normal.png",
+    "art-delivery/resources/ui/slot-selected.png",
+    "art-delivery/resources/ui/tab-normal.png",
+    "art-delivery/resources/ui/tab-selected.png",
+    "art-delivery/resources/ui/title.png"
+  ],
+  "textAreas": [
+    {
+      "id": "text-0",
+      "text": "物品详情",
+      "displayText": "物品详情",
+      "rect": [
+        805.0,
+        50.209999999999994,
+        310,
+        52
+      ],
+      "fontSize": 35,
+      "color": "#fff5d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-1",
+      "text": "青岚余生  ·  暂定名",
+      "displayText": "青岚余生  ·  暂定名",
+      "rect": [
+        92,
+        154,
+        270,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-2",
+      "text": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "displayText": "生存回合制 · 道家 Q 版 UI 美术方案",
+      "rect": [
+        365,
+        163,
+        1390,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-3",
+      "text": "启程与世界",
+      "displayText": "启程与世界",
+      "rect": [
+        101,
+        251,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-4",
+      "text": "人物与成长",
+      "displayText": "人物与成长",
+      "rect": [
+        101,
+        340,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-5",
+      "text": "物品与制作",
+      "displayText": "物品与制作",
+      "rect": [
+        101,
+        429,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#fff2d5",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-6",
+      "text": "探索与战斗",
+      "displayText": "探索与战斗",
+      "rect": [
+        101,
+        518,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-7",
+      "text": "地图与营地",
+      "displayText": "地图与营地",
+      "rect": [
+        101,
+        607,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-8",
+      "text": "社交与载具",
+      "displayText": "社交与载具",
+      "rect": [
+        101,
+        696,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-9",
+      "text": "设置与辅助",
+      "displayText": "设置与辅助",
+      "rect": [
+        101,
+        785,
+        212,
+        37
+      ],
+      "fontSize": 25,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-10",
+      "text": "样例数据\n仅为美术排版",
+      "displayText": "样例数据\n仅为美术排版",
+      "rect": [
+        93,
+        882,
+        220,
+        56
+      ],
+      "fontSize": 19,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-11",
+      "text": "item-detail  ·  设计预览 / 非游戏运行截图",
+      "displayText": "item-detail  ·  设计预览 / 非游戏运行截图",
+      "rect": [
+        365,
+        974,
+        750,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-12",
+      "text": "返回",
+      "displayText": "返回",
+      "rect": [
+        107,
+        964.02,
+        196,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#214d41",
+      "align": "center",
+      "exampleData": true
+    },
+    {
+      "id": "text-13",
+      "text": "随身物品   /   分类与筛选",
+      "displayText": "随身物品   /   分类与筛选",
+      "rect": [
+        405,
+        260,
+        800,
+        38
+      ],
+      "fontSize": 26,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-14",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        493,
+        404,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-15",
+      "text": "3",
+      "displayText": "3",
+      "rect": [
+        657,
+        404,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-16",
+      "text": "2",
+      "displayText": "2",
+      "rect": [
+        821,
+        404,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-17",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        985,
+        404,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-18",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        1149,
+        404,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-19",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        493,
+        524,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-20",
+      "text": "3",
+      "displayText": "3",
+      "rect": [
+        657,
+        524,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-21",
+      "text": "2",
+      "displayText": "2",
+      "rect": [
+        821,
+        524,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-22",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        985,
+        524,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-23",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        1149,
+        524,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-24",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        493,
+        644,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-25",
+      "text": "3",
+      "displayText": "3",
+      "rect": [
+        657,
+        644,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-26",
+      "text": "2",
+      "displayText": "2",
+      "rect": [
+        821,
+        644,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-27",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        985,
+        644,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-28",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        1149,
+        644,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-29",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        493,
+        764,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-30",
+      "text": "3",
+      "displayText": "3",
+      "rect": [
+        657,
+        764,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-31",
+      "text": "2",
+      "displayText": "2",
+      "rect": [
+        821,
+        764,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-32",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        985,
+        764,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-33",
+      "text": "1",
+      "displayText": "1",
+      "rect": [
+        1149,
+        764,
+        28,
+        27
+      ],
+      "fontSize": 18,
+      "color": "#214d41",
+      "align": "right",
+      "exampleData": true
+    },
+    {
+      "id": "text-34",
+      "text": "负重  18.6 / 32 kg       容量  12.4 / 18 L",
+      "displayText": "负重  18.6 / 32 kg       容量  12.4 / 18 L",
+      "rect": [
+        450,
+        803,
+        730,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-35",
+      "text": "便携手电",
+      "displayText": "便携手电",
+      "rect": [
+        1330,
+        527,
+        450,
+        46
+      ],
+      "fontSize": 31,
+      "color": "#214d41",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-36",
+      "text": "手电筒（示例物品）\n电池供电 · 便携照明\n检查剩余电量与耐久，再决定是否使用。",
+      "displayText": "手电筒（示例物品）\n电池供电 · 便携照明\n检查剩余电量与耐久，再决定是否使用。",
+      "rect": [
+        1330,
+        589,
+        440,
+        102
+      ],
+      "fontSize": 23,
+      "color": "#243e36",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-37",
+      "text": "耐久   良好",
+      "displayText": "耐久   良好",
+      "rect": [
+        1350,
+        745,
+        400,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-38",
+      "text": "重量   0.8 kg",
+      "displayText": "重量   0.8 kg",
+      "rect": [
+        1350,
+        791,
+        400,
+        31
+      ],
+      "fontSize": 21,
+      "color": "#68776a",
+      "align": "left",
+      "exampleData": true
+    },
+    {
+      "id": "text-39",
+      "text": "物品操作",
+      "displayText": "物品操作",
+      "rect": [
+        1372,
+        944.52,
+        311,
+        40
+      ],
+      "fontSize": 27,
+      "color": "#fff4d7",
+      "align": "center",
+      "exampleData": true
+    }
+  ],
+  "stateControls": [],
+  "allBusinessData": "illustrative layout examples",
+  "source": [
+    {
+      "file": "src/ui_iteminfo.cpp",
+      "symbol": "iteminfo_window::draw_controls / iteminfo_window::execute",
+      "line": 47,
+      "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/eb86dffd20072d6fde54af568cf229f3cd4d751f/src/ui_iteminfo.cpp#L47"
+    }
+  ]
+}
